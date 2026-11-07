@@ -52,6 +52,7 @@ jobs:
           name: zenodo-metrolinea-extracted
           path: |
             data/reports/zenodo_metrolinea_inventory.json
+            data/reports/zenodo_metrolinea_stations.csv
             data/reports/zenodo_rar_file_listing.txt
             /tmp/metrolinea-zenodo/extracted/
           if-no-files-found: error
