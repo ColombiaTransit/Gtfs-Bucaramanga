@@ -1,0 +1,54 @@
+name: Download and inventory Zenodo Metrolínea RAR
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  zenodo-rar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install RAR extractor and XLSX reader
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full
+          python -m pip install "openpyxl>=3.1,<4"
+      - name: Download and verify original RAR
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/metrolinea-zenodo
+          curl --fail --location --retry 5 --retry-all-errors --connect-timeout 30 \
+            --max-time 900 \
+            "https://zenodo.org/records/23147409/files/ANEXO_4_Geolocalizacion_Metrolinea_Bucaramanga.rar?download=1" \
+            -o /tmp/metrolinea-zenodo/source.rar
+          echo "d2d21c0818ca99a99b752d1d83134ea0  /tmp/metrolinea-zenodo/source.rar" | md5sum --check -
+          file /tmp/metrolinea-zenodo/source.rar
+          7z l /tmp/metrolinea-zenodo/source.rar > /tmp/metrolinea-zenodo/archive-list.txt
+      - name: Extract RAR and inventory contents
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/metrolinea-zenodo/extracted
+          7z x -y -o/tmp/metrolinea-zenodo/extracted /tmp/metrolinea-zenodo/source.rar
+          python scripts/inventory_zenodo_rar.py \
+            --root /tmp/metrolinea-zenodo/extracted \
+            --output data/reports/zenodo_metrolinea_inventory.json
+          cp /tmp/metrolinea-zenodo/archive-list.txt data/reports/zenodo_rar_file_listing.txt
+      - name: Upload extracted research files and inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: zenodo-metrolinea-extracted
+          path: |
+            data/reports/zenodo_metrolinea_inventory.json
+            data/reports/zenodo_rar_file_listing.txt
+            /tmp/metrolinea-zenodo/extracted/
+          if-no-files-found: error
+          retention-days: 14
