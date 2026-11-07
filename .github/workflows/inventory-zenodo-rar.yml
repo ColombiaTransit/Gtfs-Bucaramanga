@@ -2,6 +2,10 @@ name: Download and inventory Zenodo Metrolínea RAR
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/inventory_zenodo_rar.py'
+      - '.github/workflows/inventory-zenodo-rar.yml'
 
 permissions:
   contents: read
