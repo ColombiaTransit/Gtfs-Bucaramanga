@@ -1,0 +1,25 @@
+name: Inventory historic Metrolínea ArcGIS corridors
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Export ArcGIS GeoJSON and field inventory
+        run: python scripts/export_metrolinea_arcgis.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: metrolinea-historic-arcgis
+          path: |
+            data/raw/arcgis_metrolinea_corridors.geojson
+            data/reports/arcgis_metrolinea_inventory.json
+          if-no-files-found: error
