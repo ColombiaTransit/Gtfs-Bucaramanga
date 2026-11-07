@@ -74,3 +74,14 @@ AMB metropolitan mobility master plan map `Rutas Metrolínea 2025 - Portal Norte
 2. Extract Zenodo RAR, inventory station/portal records and deduplicate coordinates.
 3. Cross-check 21 report routes and planned RG27 against dated 2026 official notices; distinguish suspended, modified and active variants.
 4. Determine whether any actual route shapes, stop sequences and headways can be substantiated from primary sources.
+
+
+### Zenodo extraction: verified workflow run 42418470730 (2026-11-07)
+- Run: https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42418470730
+- Artifact: https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42418470730/artifacts/13592088158
+- Extraction completed successfully: 12 original files, one GeoPackage table, one Excel worksheet.
+- `metrolineanodes.gpkg`: table `coordenadasmetrolinea` has **24 records**; fields `fid`, `geom`, `MUNICIPIO`, `NOMBRE`, `TIPO`, `LATITUD`, `LONGITUD`, `FOTOS (CANT)`, `OPERATIVA`, `TERMINADA`.
+- First eight observed: Quebrada Seca (NO), San Mateo (NO), Chorreras (NO), La Rosita (NO), La Isla (NO), Diamante (NO), Provenza Central (SI), Provenza Oriental (SI); all eight `TERMINADA=SI`. These are research dataset classifications, **not independently verified live status**.
+- `ANEXO33_COORDENADAS METROLINEA.xlsx`: sheet `Hoja1`, 28 rows / 9 columns, blank first row, column headers in row 2. First observed entries match the GPKG station records.
+- Other original files: two photographic geolocation PDFs; `MAPA ACTUALIZADO METROLINEA 2026.pdf`; three QGIS project files; two proposal maps in PDF and PNG versions; one additional map PDF. These have **not** been reviewed for routes or stop sequences.
+- Next: enumerate all 24 stations, compare XLSX vs GPKG, validate coordinates and operational statuses, inspect QGIS layer references and maps, then cross-check active service with dated official sources.
