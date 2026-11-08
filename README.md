@@ -20,6 +20,8 @@ The official [September 2024 Metrolínea route poster](https://www.metrolinea.go
 - [Dated changes and official operational-model observations](data/sitme/route_change_log.csv)
 - [15 route variants from the 2026-11-08 SITME API snapshot](data/sitme/official_schedule_sources.csv)
 - [First and last departures by source, day type and departure location](data/sitme/first_last_departure_evidence.csv)
+- [Operational status by route and 2026-11-08 API ID](data/sitme/route_operational_status_2026-11-08.csv)
+- [Route-variant and identity issues](data/sitme/route_variant_review_2026-11-08.csv)
 - [Provisional historical peak/off-peak clock-time model](data/sitme/provisional_peak_valley_windows.csv)
 
 See the [central research register](docs/research-register.md) for source hierarchy, conflicts, unknowns, and outstanding verification. No GTFS generator or published feed exists yet.
