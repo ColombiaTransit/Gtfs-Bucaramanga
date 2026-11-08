@@ -64,6 +64,7 @@ def main():
             except Exception as exc:
                 xlsx_sheets.append({"file": path.relative_to(root).as_posix(), "error": str(exc)})
     if station_records:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
         csv_path = args.output.parent / "zenodo_metrolinea_stations.csv"
         with csv_path.open("w", encoding="utf-8", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(station_records[0]))
