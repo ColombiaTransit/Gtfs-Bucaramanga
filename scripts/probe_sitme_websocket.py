@@ -101,8 +101,10 @@ def main():
             any_event("Route_monitoring_data_notify", payload)
     try:
         # Angular supplies Authorization as a Socket.IO query parameter.
-        client.connect(HOST + "?Authorization=" + quote(token, safe=""),
-                       socketio_path=SOCKET_PATH, transports=["websocket"], wait_timeout=15)
+        client.connect(HOST + NAMESPACE + "?Authorization=" + quote(token, safe=""),
+                       socketio_path=SOCKET_PATH, namespaces=[NAMESPACE],
+                       headers={"X-EngineIO-Version": "3"},
+                       transports=["websocket"], wait_timeout=15)
         time.sleep(args.seconds)
     except Exception as exc:
         # Avoid printing exception messages: some include URLs containing credentials.
