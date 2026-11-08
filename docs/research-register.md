@@ -397,3 +397,42 @@ These are **status observations**, not edits to or replacements for [`baseline_r
 
 **Point 3 research status: in progress**, with confirmed closure of PTB/PTN, primary-source operation evidence for 10 2026 complementary route codes, and unresolved actual operation of P18/AN3 and some directional variant mappings. **No GTFS generator exists.**
 
+## Point 3 — historical versus active routes: 2026-11-08 assessment
+
+**Scope and interpretation.** We assessed **all 15 API records** in the SITME 2026-11-08 route inventory (14 public codes: `PTN` appears twice) against dated **official 2026 operation announcements**, and, where absent, secondary Moovit listings. The result is recorded row-by-row in [`data/sitme/route_activity_assessment_2026-11-08.csv`](../data/sitme/route_activity_assessment_2026-11-08.csv). **A route record with stops in the API is not proof of a live bus, and official announcements dated before 8 November cannot prove the presence of trips on the actual reference day.** Status is therefore "recently officially documented operation", not "real-time active now".
+
+### Evidence-driven classification of the 15 API records
+
+| Status class | API records | Public route codes | Assessment |
+| --- | ---: | --- | --- |
+| Recent 2026 official operation notice | **9** | **P1, P2, P3, P8 (`P08` in API), P10, P14, P16N, P16S, P19** | Strong basis for continuing service in the research model, barring later cancellations |
+| Recent official notice with unresolved route-code matching | **1** | **RD27** API vs **RD27-15** in October 2026 | The combined label is officially mentioned in service detours; verify whether API route 3350 is the same route, a combined route, a directional variant, or a changed designation. Do not double-count RD27 and RD15 |
+| 2026 API + Q1 planning table + secondary route listing only | **2** | **P18, AN3** | Active candidates, but no post-Q1 official confirmation found in examined publications; neither automatically exclude nor assert current operation |
+| Officially withdrawn as of 2026-05-31 | **3** | **PTB** ID 3302; **PTN** IDs 3317 and 3343 | Historical records only. Two PTN IDs do not establish two independent live services |
+
+**Note:** there are **12 complementary codes** in the official Q1 2026 plan, but the API additionally retains three discontinued PTB/PTN records. The official [2026-05-29 operator notice](https://mail.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283) says the post-adjustment network consists of 12 complementary and 13 integrated routes. The 2026 API set is **not a complete census of all 13 integrated routes** and this assessment does not cover those separate integrated routes.
+
+### Official 2026 citations that support operation by route
+
+| Route codes | Most relevant official 2026 evidence | Evidence date and interpretation |
+| --- | --- | --- |
+| P1, P2, P3, P8, **RD27-15** | [Bucaramanga Metrolínea diversion for FCV marathon](https://www.bucaramanga.gov.co/noticias/metrolinea-informa-desvios-del-sitm-por-media-maraton-fcv/) | **2026-10-16**, named as services affected on 17–18 October; **RD27-15 label is not proven to map 1:1 to API RD27** |
+| P3, P14, P16N, P16S, **RD27-15** | [Bucaramanga protest diversion](https://www.bucaramanga.gov.co/noticias/sitme-informa-sobre-desvios-operacionales-por-jornada-de-protestas-en/) | **2026-10-14**, specifically named; supports that P16N/P16S still had distinct operation identifiers in October despite earlier planned consolidation |
+| P8, P14, P16N, P16S | [Bucaramanga Feria Bonita diversions](https://www.bucaramanga.gov.co/noticias/sitme-anuncia-cambios-temporales-en-la-operacion-por-cierres-viales/) | **2026-09-04**, specific route names and temporary diversion |
+| P10, P14, P19, P1 | [Metrolínea 2026-05-29 change after end of PTB/PTN](https://mail.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283) | Continues P10/P14 corridor, P1 center link, P19 replacement coverage starting 2026-05-31 |
+| P19 | [Bucaramanga 2026-08-31 route and timetable publication](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/) | More recent **2026-09-01** route-specific service and fare validator implementation |
+| PTB, PTN | [Metrolínea 2026-05-29 service withdrawal](https://mail.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283) | Both officially cease operating from **2026-05-31**; retain historical windows from point 2 |
+| P18, AN3 | [P18 Moovit](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-p18-Bucaramanga-4324-926178-350266610-0), [AN3 Moovit](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-an3-Bucaramanga-4324-926180-337429893-0) | Secondary route listings **with no reliable source-effective date**; Q1 2026 official planning table and 2026-11-08 API entries independently support *candidate* status but not confirmed current operation |
+
+### Open data-quality and network-scope tasks
+
+1. **RD27 vs RD27-15:** 2026-08-03 [operator diversion](https://www.bucaramanga.gov.co/noticias/sitme-informa-desvios-operacionales-por-cierre-temporal-de-la-autopista-entre-floridablanca-y-piedecuesta/) prints `RD27 -15`; the October official bulletins print `RD27-15`. This supports a possible service combination or merged identifier but **does not resolve mapping** to `3350 RD27` or the distinct `RD15` name in third-party stop data. Verify alignment, stopping pattern, geometry and operator dispatch identity before treating as one or two GTFS routes.
+2. **P16N and P16S:** both independently named in September and October 2026 operator notices. The Q1 2026 planning suggestion that the two **might merge** was not an implemented merger by the October notices.
+3. **PTN duplicate ID:** `3317` and `3343` are preserved as separate *API record identities* and both share the discontinued PTN public code. Do not create two public routes from these rows.
+4. **P18 and AN3:** investigate whether these are actually dispatched in 2026, and whether `AN3` Moovit contains two actual service patterns or only third-party itinerary representations. No official 2026 post-Q1 operation notice found in this phase; these remain **not yet confirmed**, rather than deemed inactive.
+5. **2024 poster-only codes** (`RDF`, `AP9`, `P17`, `MORRO`, `44`, `D15`) are **missing from this limited 15-record API snapshot**. That does **not** prove that any of these ceased to exist: some could belong to the integrated network or have different route codes. Preserve poster baseline and investigate separately only if expanding research scope.
+6. **Integrated services:** 13 complementary-to-network integrated routes are separately mentioned by the operator. Do not misinterpret the **15-record API snapshot** as the whole network; include separate discovery/route inventory work later.
+7. **Research vs publication:** even the nine strongly supported routes have **no confirmed actual 2026-11-08 trip log**, day-by-day holiday service, or validated direction and stop sequence. Source evidence does **not** imply GTFS publication readiness. **No GTFS generator has been created.**
+
+**Point 3 result:** among the **15 API records**, **9** have recent official same-code operation evidence, **1** has recent official evidence under a changed/combined code, **2** remain source-supported *candidates only*, and **3** are explicitly withdrawn. Further research should prioritize **P18, AN3, RD27-15/3350 matching**, then the **13 integrated lines** (separate from this 15-record API sample).
+
