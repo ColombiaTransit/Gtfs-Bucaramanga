@@ -2,6 +2,8 @@
 """Read-only Socket.IO connection/authentication probe for SITME monitoring."""
 import argparse, base64, collections, datetime, json, os, pathlib, time
 from urllib.parse import quote
+import re
+import requests
 import socketio
 
 HOST = "https://api.voa.metgroupsas.com"
@@ -17,6 +19,35 @@ def expiry(token):
         return datetime.datetime.fromtimestamp(claims["exp"], datetime.timezone.utc).isoformat()
     except (ValueError, KeyError, IndexError):
         return None
+
+def classify_error(value):
+    """Return only safe diagnostics; never persist URLs, tokens or response bodies."""
+    raw = str(value)
+    status = re.search(r"\\b(?:HTTP(?:/\\d(?:\\.\\d)?)?\\s*|status(?: code)?[=: ]+)([1-5]\\d\\d)\\b", raw, re.I)
+    return {
+        "exception_type": type(value).__name__,
+        "http_status": int(status.group(1)) if status else None,
+        "likely_auth_failure": bool(re.search(r"\\b(401|403|unauthorized|forbidden)\\b", raw, re.I)),
+        "likely_handshake_or_version_failure": bool(re.search(r"\\b(400|unsupported|protocol|handshake|invalid transport)\\b", raw, re.I)),
+        "likely_network_failure": bool(re.search(r"timeout|timed out|name resolution|connection refused|dns", raw, re.I)),
+    }
+
+def handshake_probe(token, engineio_version):
+    """Safe HTTP polling handshake: identify status and Engine.IO compatibility."""
+    url = HOST + "/" + SOCKET_PATH + "/"
+    try:
+        response = requests.get(
+            url,
+            params={"EIO": str(engineio_version), "transport": "polling",
+                    "Authorization": token},
+            timeout=12, allow_redirects=False,
+        )
+        # Do not expose body or response URL; they might contain credentials.
+        return {"engineio_version": engineio_version, "http_status": response.status_code,
+                "response_is_engineio_open": response.text.startswith("0{"),
+                "redirect": response.is_redirect}
+    except requests.RequestException as exc:
+        return {"engineio_version": engineio_version, "error": classify_error(exc)}
 
 def main():
     p = argparse.ArgumentParser()
@@ -35,7 +66,13 @@ def main():
         "subscription_sent": False, "events": {}, "event_field_names": {},
         "error_type": None, "connect_error": False,
         "room_supplied": bool(args.room), "route_supplied": bool(args.route_id),
+        "http_handshakes": [], "error_diagnostics": None, "socketio_connect_error_type": None,
     }
+    for version in (4, 3):
+        result = handshake_probe(token, version)
+        report["http_handshakes"].append(result)
+        print("Engine.IO", version, "HTTP status:", result.get("http_status"),
+              "open packet:", result.get("response_is_engineio_open", False))
     counts = collections.Counter()
     client = socketio.Client(reconnection=False, logger=False, engineio_logger=False, request_timeout=12)
     @client.event
@@ -49,7 +86,8 @@ def main():
     @client.event
     def connect_error(data):
         report["connect_error"] = True
-        print("Connect error received (details withheld)")
+        report["socketio_connect_error_type"] = type(data).__name__
+        print("Socket.IO connect_error (details withheld)")
     @client.on("*")
     def any_event(event, *payload):
         counts[event] += 1
@@ -69,7 +107,8 @@ def main():
     except Exception as exc:
         # Avoid printing exception messages: some include URLs containing credentials.
         report["error_type"] = type(exc).__name__
-        print("Connection/listen failed:", type(exc).__name__)
+        report["error_diagnostics"] = classify_error(exc)
+        print("Connection/listen failed:", json.dumps(report["error_diagnostics"]))
     finally:
         if client.connected:
             client.disconnect()
