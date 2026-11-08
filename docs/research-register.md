@@ -172,3 +172,24 @@ The resolution also discusses special early/late feeder intervals, Sunday/holida
 5. Reconcile the route-station quality warnings and distinguish planning geometry and API checkpoints from confirmed stop sequences.
 6. Exclude unverified calendar/day-type assumptions; do not create GTFS `frequencies.txt` or `stop_times.txt` directly from this evidence ledger.
 
+### Focused investigation: peak/off-peak clock boundaries (2026-11-08)
+
+**Research outcome: the exact switch-over clock times for the 12 complementary routes in the current 2026 model remain UNKNOWN.** The Q1 2026 [official management report, PDF pages 15–16](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) gives route-specific **HP/HV headways** but **no time-of-day bands**. The [2026-08-31 municipal P19 notice](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/) likewise distinguishes peak/valley frequencies but does not state when each applies. A review of the [2025 annual report](https://www.metrolinea.gov.co/v3.0/sites/default/files/informe_gestion_anual_consolidado_2025_compressed.pdf) did not reveal a supported current clock-boundary definition. **Do not populate `frequencies.txt.start_time` or `end_time` from a guessed universal peak period.**
+
+The documented **historical** time references below must retain source date, applicable route, and meaning. The machine-readable trace is in [`data/sitme/peak_valley_window_evidence.csv`](../data/sitme/peak_valley_window_evidence.csv).
+
+| Source / regime | Exact documented times | What they mean | Can be used as 2026 HP/HV boundaries? |
+| --- | --- | --- | --- |
+| [Metrolínea, 2018-06-14 vacation adjustment](https://www.metrolinea.gov.co/v3.0/metrolinea-ajustara-su-operacion-por-temporada-vacacional-1364) | APD3 08:30–11:42; 14:06–17:18; 19:42–21:18 | Three **route-specific temporary valley operating windows** from 2018-06-15 | **No** |
+| [Metrolínea, 2020-05-03 economic reopening](https://www.metrolinea.gov.co/v3.0/el-sistema-metrolinea-ajusta-su-operacion-ante-la-reactivacion-economica-1583) | 06:00–08:00; 16:00–18:00 | **Observed passenger demand peaks in 2020 COVID conditions**, not a dispatch programming calendar | **No** |
+| [Metrolínea, 2020-06-01 changed service](https://metrolinea.gov.co/v3.0/node/1590) | P9 05:40–07:40 (morning, south→north) and 15:40–18:40 (afternoon, opposite direction); T3 04:40–08:40 | **Route-specific peak-only operation** for the 2020 temporary network | **No** |
+| [Metrolínea, 2022-08-26 station notice](https://www.metrolinea.gov.co/v3.0/estaciones-estancia-mensuli-campoalegre-y-espanolita-cerraran-en-horas-valle-1971) | Four Piedecuesta stations closed 09:00–16:00 and again from 20:00 | **Station staffing/closure rule** for valley hours from 2022-08-29, **not** the scheduled per-route headway bands | **No** |
+| [Metrolínea, 2022 complementarity proposal V3 (document pp. 44–45)](https://concejobga.cloud/descargas/RESPUESTA_METROLINEA_PROPOSICION_93_3_2022.pdf) | No boundaries | Has **three distinct frequency columns HP / HI-HF / HV**. Column labels are confirmed; do not infer HI/HF clock boundaries. It is also a **proposal**. | **No** |
+| [Metrolínea, 2024 Q4 report](https://metrolinea.gov.co/v3.0/sites/default/files/informe_de_gestion_cuarto_trimestre_2024_ok_firmado.pdf) | No verified boundaries | Route-level HP/HV frequency and cycle tables, without evidence of actual period switch times | **No** |
+| [Metrolínea, Q1 2026 report](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) | No boundaries | Official route-level HP/HV headways for 12 complementary routes | **No** |
+| [Bucaramanga, 2026-08-31 P19](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/) | No peak/valley switch times | Day-type headways and first/last departures; terms **hora pico**, **hora valle** lack clock boundaries | **No** |
+
+**Why this matters:** Metrolínea's [official glossary](https://www.metrolinea.gov.co/v3.0/node/363) defines `Franjas Horarias` as ranges in which a uniform frequency applies, and `Tabla-Horaria` as a precise dispatch table (and arrivals at stations). Thus the best next **primary-source target** is the dated **`programación operativa` / `tabla-horaria` / `plan de servicios` / dispatch sheets** for the 2026 complementary network, with **route ID, direction, working day/Saturday/Sunday-holiday, and each HP/HV transition**. Ask specifically for the current program used for P1, P2, P3, P8, P10, P14, RD27, P16N, P16S, P18, AN3, and P19.
+
+**Status:** `current_peak_window_confirmed=false` and `current_valley_window_confirmed=false` for all 12 complementary routes. Historical traces are preserved only for future comparison; no assumptions or edits to the GTFS generator were made.
+
