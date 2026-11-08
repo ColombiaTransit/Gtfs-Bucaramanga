@@ -1,0 +1,38 @@
+name: Scrape SITME route data
+on:
+  workflow_dispatch:
+    inputs:
+      service_date:
+        description: "SITME date (YYYY-MM-DD); blank uses UTC today"
+        required: false
+        type: string
+  schedule:
+    - cron: "17 10 * * 1"
+permissions:
+  contents: read
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch SITME public route data
+        env:
+          SERVICE_DATE: ${{ inputs.service_date }}
+        run: |
+          if [ -n "$SERVICE_DATE" ]; then
+            python scripts/scrape_sitme.py --date "$SERVICE_DATE"
+          else
+            python scripts/scrape_sitme.py
+          fi
+      - name: Upload snapshot and quality inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-route-snapshot
+          path: data/sitme/
+          if-no-files-found: warn
+          retention-days: 30
