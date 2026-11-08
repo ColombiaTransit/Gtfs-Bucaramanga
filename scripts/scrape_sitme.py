@@ -19,6 +19,13 @@ def fetch(path, timeout=60):
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.load(response)
 
+def safe_fetch(path):
+    try:
+        return fetch(path)
+    except (urllib.error.HTTPError, urllib.error.URLError) as exc:
+        print(f"WARNING: optional endpoint {path}: {exc}")
+        return []
+
 def records(payload):
     if isinstance(payload, list):
         return payload
@@ -110,15 +117,16 @@ def main():
         routes_payload = fetch(f"/route/detail/{CLIENT}/{args.date}")
         stations_payload = fetch(f"/route/stations/{CLIENT}/{args.date}")
     route_catalog_payload = (json.loads(pathlib.Path(args.route_catalog_file).read_text(encoding="utf-8"))
-                             if args.route_catalog_file else fetch("/route"))
+                             if args.route_catalog_file else safe_fetch("/route"))
     station_catalog_payload = (json.loads(pathlib.Path(args.station_catalog_file).read_text(encoding="utf-8"))
-                               if args.station_catalog_file else fetch(f"/geo_zone/stations_by_client/{CLIENT}"))
+                               if args.station_catalog_file else safe_fetch(f"/geo_zone/stations_by_client/{CLIENT}"))
     routes, stations = records(routes_payload), records(stations_payload)
     route_catalog, station_catalog = records(route_catalog_payload), records(station_catalog_payload)
     target = pathlib.Path(args.output) / args.date
     target.mkdir(parents=True, exist_ok=True)
     report = inventory(routes, stations, args.date)
     report["catalog_comparison"] = catalog_comparison(routes, stations, route_catalog, station_catalog)
+    report["catalog_note"] = "Zero catalog rows can indicate an unavailable endpoint; see workflow warnings."
     for name, data in (("route_detail.json", routes_payload), ("route_stations.json", stations_payload),
                        ("route_catalog.json", route_catalog_payload),
                        ("station_catalog.json", station_catalog_payload),
