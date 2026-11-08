@@ -220,7 +220,7 @@ The model is versioned in [`data/sitme/provisional_peak_valley_windows.csv`](../
 
 ### Point 2 — first and last departure evidence (2026-11-08)
 
-**Status: partly documented, not fully resolved for current 2026 service.** Preserve source **date**, **day type**, **departure location**, and **kind of time** separately. The structured companion is [`data/sitme/first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv), containing **25 source-specific rows** and blanks for unavailable times. These are evidence records, not synthesized 2026 GTFS service windows.
+**Status: partly documented, not fully resolved for current 2026 service.** Preserve source **date**, **day type**, **departure location**, and **kind of time** separately. The structured companion is [`data/sitme/first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv), containing **29 source-specific rows** and blanks for unavailable times. These are evidence records, not synthesized 2026 GTFS service windows.
 
 #### Key findings — most recent dated sources
 
@@ -304,4 +304,22 @@ The poster does **not** include RD27, P16N, P16S, P18, P19, AN3, PTB or PTN. Abs
 4. Do not treat the 2024 poster's start and end times as verified 2026 first/last trips. Use them as **fallback research candidates** for missing 2026 windows; flag any subsequent use as assumption.
 5. The working model of weekday peak/valley periods remains provisional, and Saturdays, Sundays and holidays are not assigned inferred frequency bands without an explicit policy.
 6. **GTFS generator: not yet created.** These registers only establish the research and change-management basis for a future GTFS build.
+
+### PTB and PTN historical service-window addendum — 2026-11-08
+
+**Correction to earlier point-2 gap inventory:** PTB **does** have a documented historical operating window from an official 2026 source. PTN has a **secondary (Moovit), undated/stale candidate**; the latter is **not** official confirmation. Neither route should enter the active service calendar after the [2026-05-31 closure](https://dev.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283).
+
+**PTB, from Bucaramanga's [official 2026-04-07 article](https://www.bucaramanga.gov.co/noticias/sitme-pone-en-operacion-la-nueva-ruta-ptb-eje-estrategico-de-la-movilidad-en-bucaramanga/), service started 2026-04-06:**
+
+| Day type | Published route operating hours | Published headway |
+| --- | --- | --- |
+| Monday–Friday | **05:00–22:00** | **10 min** |
+| Saturday | **05:00–21:00** | **15 min** |
+| Sunday/public holiday | **05:30–20:00** | **25 min** |
+
+The 2026 Q1 management report [PDF](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) documents **different programmed intervals for PTB** (weekday HP/HV 10/12; Saturday 15; Sunday/holiday 20). This is a **source discrepancy**: an earlier operating-plan table vs a later route-launch announcement. Keep both by date/scope; use the later official dated announcement as PTB's published service-hour reference for **April–May 2026**, not as verified terminal dispatch times. The route was discontinued from 2026-05-31.
+
+**PTN secondary candidate:** [Moovit PTN schedule page](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-ptn-Bucaramanga-4324-3595156-308529268-0) displays **Monday–Saturday 05:00–21:00 with 12-minute frequency; Sunday: no service**. The web page does not provide an unambiguous **historical validity date** and still describes PTN service despite the official 2026-05-31 cessation. Treat as a **stale third-party historical candidate**, not proof that PTN operated those hours on any particular day or that either PTN API ID 3317 vs 3343 uses that exact window. The [2025 Q4 report](https://www.metrolinea.gov.co/v3.0/sites/default/files/informe_gestion_concejo_4_trim_2025_0.pdf) describes a **projected** PTN+ frequency range of **7–12 minutes** with full fleet, without confirmed day-type dispatch windows. **Official PTN first/last departure remains unverified.**
+
+Both are appended as separate source-specific rows to [`first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv) and as **4 further events** to the [dated change log](../data/sitme/route_change_log.csv); the 2024 baseline remains unchanged.
 
