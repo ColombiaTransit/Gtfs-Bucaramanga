@@ -351,3 +351,49 @@ Both are appended as separate source-specific rows to [`first_last_departure_evi
 
 **Next research phase:** point 3, reconcile which route codes/patterns were actually operated on the intended reference date. No GTFS generator or published feed has been created.
 
+## Point 3 — operational route and variant verification (snapshot 2026-11-08)
+
+**Research principle:** a route returned by the SITME API is a route *database entry*, **not** proof of active passenger operation. The previous [run 42471926616 snapshot](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42471926616) was rechecked **directly using the locally supplied** `sitme-route-snapshot.zip` (`2026-11-08/route_detail.json`, `route_stations.json`, `inventory.json`). It contains **15 route records / 14 distinct public codes**. All 15 have `ROUTE.VISIBLE=1`, including PTB and both PTN rows that were explicitly ceased as of May 31. For **all 15 records**, `ROUTE_DISPATCHS=[]`, `ROUTE_SCHEDULLE=[]` and `ROUTE_SCHEDULLE_NOVELTY=[]`. **Neither visibility nor presence of geometry/stops is evidence of actual dated dispatch.**
+
+Two new structured results are the source of truth for this verification stage:
+- [`data/sitme/route_operational_status_2026-11-08.csv`](../data/sitme/route_operational_status_2026-11-08.csv): **21 entries** — 15 exact API IDs + the six 2024-poster-only route codes; explicit source evidence/status per record.
+- [`data/sitme/route_variant_review_2026-11-08.csv`](../data/sitme/route_variant_review_2026-11-08.csv): **8 detailed variant and identification cases**, including confirmed aliases and unresolved source equivalences.
+These are **status observations**, not edits to or replacements for [`baseline_routes_2024.csv`](../data/sitme/baseline_routes_2024.csv) or a GTFS generator (none exists).
+
+### 2026-11-08 API snapshot: source-graded operation status
+
+| Classification | API records | Distinct codes | Interpretation |
+| --- | --- | --- | --- |
+| **2026 primary-source operation evidence** | 10 | **P1 P2 P3 P8 (API `P08`) P10 P14 P16N P16S RD27 P19** | Later official notices explicitly identify service/corridor or planned event diversions for those routes. Not a check of live vehicle trips at 2026-11-08  |
+| **Only Q1 2026 planning + API (+secondary timetable data)** | 2 | **P18 AN3** | Have documented planned frequencies, geometry and route names, and secondary Moovit timetables, but no independently confirmed later official operation date found. **Do not mark definitively active or cancelled** |
+| **Explicitly ended 2026-05-31** | 3 | **PTB PTN** | Official 2026-05-29 announcement explicitly removes these services on 2026-05-31; API still exposes PTB (3302), PTN (3317), PTN (3343). **Do not count as active** |
+| **Only September 2024 poster, not in API inventory** | 6 additional historic codes | **RDF AP9 P17 MORRO 44 D15** | Absence from this API snapshot is not legal proof of termination, nor proof that an integrated TPC descendant is absent |
+
+**2026 official operational sources and evidence limits:**
+- **2026-10-16**, Bucaramanga municipality [Media Maratón diversion notice](https://www.bucaramanga.gov.co/noticias/metrolinea-informa-desvios-del-sitm-por-media-maraton-fcv/) lists complementary **P1, P2, P3, P8, RD27-15** among the routes affected by the October 17/18 event. These are recent evidence of planned operation, not confirmed actual GPS operation for every calendar date.
+- **2026-10-14**, Bucaramanga municipality [protest diversion notice](https://www.bucaramanga.gov.co/noticias/sitme-informa-sobre-desvios-operacionales-por-jornada-de-protestas-en/) explicitly identifies **P3, P14, P16N, P16S, RD27-15** separately, strongly arguing **against treating the previously discussed P16N/P16S unification as completed**.
+- **2026-05-29**, [Metrolínea operator closure notice](https://dev.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283): **PTB and PTN end on 2026-05-31**; replacement service through **P19**, **P1**, **P10 and P14**. The same notice says 12 complementary and 13 integrated routes as a system-level claim; this is **not** a named current 12-route roster.
+- **2026-08-31**, [municipal P19 announcement](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/): confirms P19 route and distinct direction tracings with service changes effective **2026-09-01**. Earlier Q1 P19 headway 8/12 and later published headway 10–12/15 are both retained with dates.
+- **Q1 2026**, [official Metrolínea management report (PDF report pages 13–16)](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) enumerates the twelve *planning-model* routes, including P18 and AN3. Parts of the document explicitly describe expansion and **routes projected under the transition**. The table alone **does not verify individual actual operations on November 8**, and must not be interpreted as a date-resolved dispatch log.
+
+### Internal API variants and identity caveats
+
+1. **PTN API IDs are not identical copies.** `3317` has a Portal Norte **round-trip geometry with 597 DETAIL elements and 28 STATIONS rows**; `3343` is a Provenza Oriental → Portal Norte **directional geometry with 156 DETAIL and 14 STATIONS rows**. The source contains both `VISIBLE=1` in November despite May cessation. Keep **both historical IDs with separate geometries**; a shared public `PTN` code does not make two independent active public services.
+2. **RD27/RD15 direction pairing.** Official [2022-09-01 launch notice](https://metrolinea.gov.co/v3.0/se-implementa-la-ruta-rd27-y-rd15-entre-portal-del-valle-y-el-parque-estacion-uis-1972) documents **RD27 outward via carrera 27**, **RD15 return via carrera 15**, joining Portal del Valle and UIS. October 2026 notices use the combined designation **RD27-15**. SITME API code `RD27` (ID `3350`) has **1,047 DETAIL elements and 94 STATIONS rows** covering a loop from Portal del Valle back to that portal. Its **directional stop sequence and exact current mapping still need verification**; do not invent an independent RD15 API record or double count trips.
+3. **P16N and P16S remain distinct in official notices dated October 2026.** Q1 planning's future **P16** unification was a *proposal*, not evidence of a completed replacement.
+4. **P08 is public P8.** One API ID `3345`, no second P8 service.
+5. **AN3** has one API ID `3356` (421 DETAIL / 16 STATIONS), but secondary Moovit describes more than one circular pattern. An official Q1 2026 trace includes Bosconia, Portal Norte and María Paz. Do not generate new variants or active runs until matched to the same stop sequence.
+6. **2024 P17 and Q1 2026 planned P17 are not automatically the same route**: 2024 fiche describes a Café Madrid/Provenza/Porvenir service; the 2026 proposal describes Oasis–Centro–UIS. Likewise, **2024 MORRO** may relate to integrated **03 Morro**, but no ID and service-lineage equivalence has been proved.
+7. **Out-of-snapshot planning mentions:** the Q1 2026 report also contains proposals and descriptions for `P20`, `P17`, `PT2`, `PT3` and `RG27`. They are **not included among the 15 API route records**; this is not evidence that these services never existed, but no current trips should be inferred for them from the planning section alone.
+
+### Remaining point-3 checks
+
+1. **P18 and AN3:** find a post-Q1-2026 operator route roster, operating log or independent verifiable official dated operation notice. Moovit route listings are secondary timetable evidence; operating today remains **unconfirmed**.
+2. **RD27-15:** inspect 2026 route geometry and ordered stations for the outbound/inbound pattern relationship, especially how RD15 maps onto API `3350`.
+3. **AN3:** establish whether two apparent Moovit loops are true distinct stopping patterns or presentation variants of API `3356`.
+4. **2024 historical routes and proposed 2026 changes:** track separate changes/crosswalks; do not add routes to the current GTFS scope solely because of a poster, API presence or proposal.
+5. **Official AMB legal scope:** the AMB [2026 Secretaría General register](https://www.amb.gov.co/resoluciones-secretaria-general-2026/) lists **Resolution 000349 of October 26, 2026**, extending/redefining Metrolínea's operator authorization in the context of Resolution 000058/2026 and SITME. The **actual article-level provisions and route annexes have not been reviewed** in this verification; the listing proves the document exists, not which routes were operational.
+6. The **15 existing route–station discrepancy warnings** from the SITME scraper remain a later stop-matching quality task. An API `STATIONS` entry is not yet a verified GTFS `stop_times` sequence.
+
+**Point 3 research status: in progress**, with confirmed closure of PTB/PTN, primary-source operation evidence for 10 2026 complementary route codes, and unresolved actual operation of P18/AN3 and some directional variant mappings. **No GTFS generator exists.**
+
