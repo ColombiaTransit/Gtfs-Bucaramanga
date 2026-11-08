@@ -193,3 +193,28 @@ The documented **historical** time references below must retain source date, app
 
 **Status:** `current_peak_window_confirmed=false` and `current_valley_window_confirmed=false` for all 12 complementary routes. Historical traces are preserved only for future comparison; no assumptions or edits to the GTFS generator were made.
 
+### Provisional weekday HP/HV classification — user-approved modelling baseline (2026-11-08)
+
+**Decision:** use the previously recorded **historical** hour bands as the starting point for a **provisional** SITME service-planning model. This is an explicit modelling choice, **not** a finding that the 2026 Metrolínea dispatch schedule uses these exact boundaries. It supersedes the earlier research-only decision to leave all working periods unassigned; it does **not** overwrite any historical source or promote inferred boundaries to verified facts.
+
+The model is versioned in [`data/sitme/provisional_peak_valley_windows.csv`](../data/sitme/provisional_peak_valley_windows.csv). Local times use `America/Bogota`; ranges are half-open (`start <= t < end`). **Default scope: provisional weekday (Monday–Friday) classification only.** Saturday, Sunday and public-holiday headway-band transitions remain **unassigned**, even where the latest P19 source discusses peak and valley on those days.
+
+| Local time | Provisional classification | Evidence / inference |
+| --- | --- | --- |
+| Before 06:00 | **HV** (off-peak) | **Model assumption**: earlier starts exist historically, but no published network-wide 2026 frequency-band boundary |
+| 06:00–08:00 | **HP** (peak) | Metrolínea described this as a **demand peak in 2020**; not proof of dispatch frequency bands |
+| 08:00–16:00 | **HV** (off-peak) | 2022 described **09:00–16:00** as station valley closure; **08:00–09:00 is extrapolated** |
+| 16:00–18:00 | **HP** (peak) | Metrolínea described this as an **afternoon demand peak in 2020**; not proof of programmed 2026 headways |
+| After 18:00 | **HV** (off-peak) | 2022 station notice refers to valley from **20:00**; **18:00–20:00 is extrapolated** |
+
+**Interpretation / guardrails:**
+1. These five rows **only classify the time of day**. They do **not** authorize service during 00:00–06:00 or 18:00–24:00. Any eventual timetable must **clip every row to the route's independently evidenced first/last departure, day type and validity date**. An unknown service window remains unknown, not 00:00–24:00.
+2. The Q1 2026 official route frequencies (HP/HV minutes) remain untouched in `official_schedule_sources.csv`. This table can provisionally map those labels to clock bands **only for research/simulation**, never as a verified current timetable.
+3. **P19:** a later 2026-08-31 publication reports different headways from Q1 2026: weekday/Saturday peak **10–12 min** and valley **15 min**, and Sunday/holiday **10, 12 or 15 min**, without assigning precise sub-bands. Do **not** silently choose either 10 or 12 for the whole peak. The provisional weekday band classification may be used for comparison, but the numeric headway remains a range until better evidence exists.
+4. **P16N/P16S:** preserve the distinct 2025 all-day 12-minute publication and Q1 2026 HP/HV (7/12) values; using the model does **not** establish the transition date between these schemes.
+5. **PTB and PTN:** remain marked discontinued from 2026-05-31; do not apply provisional active service to them merely because the API still exposes their IDs.
+6. **Historical exceptions** (P9 in 2020, APD3 in 2018, individual station closures in 2022) are not universal rules and remain in the evidence register with their original periods.
+7. The working model has **no GTFS publication status**. This repository remains **research only**; **no generator or feed exists**. If a future generator uses assumed periods, it must explicitly disclose modelling provenance and allow authoritative route/day-type overrides.
+
+**Point 1 decision:** closed **provisionally with documented assumptions**; the request for the actual route/day-type `programación operativa` / `tabla-horaria` remains an evidence gap. Next focus: verify current route-level first and last departures (point 2) before deriving complete usable service windows.
+
