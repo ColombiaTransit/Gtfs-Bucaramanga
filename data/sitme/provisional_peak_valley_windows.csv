@@ -1,0 +1,6 @@
+sequence,start_local,end_local,frequency_class,basis,verified_for_2026,caution
+1,00:00,06:00,HV,planning_assumption_only,No,"Historical evidence does not establish entire pre-06:00 off-peak; classification only, not service hours"
+2,06:00,08:00,HP,2020_observed_demand_peaks_not_dispatch_schedule,No,Based on Metrolínea 2020 demand peaks; not validated 2026 programming
+3,08:00,16:00,HV,2022_station_valley_09_to_16_plus_08_to_09_extrapolation,No,"09:00–16:00 historical valley refers to station closure, not headway; 08:00–09:00 modeled extension"
+4,16:00,18:00,HP,2020_observed_demand_peaks_not_dispatch_schedule,No,Based on Metrolínea 2020 demand peaks; not validated 2026 programming
+5,18:00,24:00,HV,2022_station_valley_after_20_plus_18_to_20_extrapolation,No,"After 20:00 historical valley only for station closure; 18:00–20:00 modeled; classification only, not service hours"
