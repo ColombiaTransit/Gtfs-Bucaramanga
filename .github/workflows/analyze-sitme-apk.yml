@@ -1,0 +1,51 @@
+name: SITME APK static research (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct HTTPS URL to an APK (not Google Play or an HTML landing page)'
+        required: true
+        type: string
+      expected_sha256:
+        description: 'Optional SHA-256 of APK from trusted source'
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Android package inspector
+        run: sudo apt-get update && sudo apt-get install -y aapt
+      - name: Download APK and verify optional hash
+        env:
+          APK_URL: ${{ inputs.apk_url }}
+          EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, urllib.parse
+          u=urllib.parse.urlsplit(os.environ["APK_URL"])
+          if u.scheme!="https" or not u.hostname or u.username or u.password:
+              raise SystemExit("Only direct HTTPS URLs without embedded credentials are allowed")
+          if u.hostname.lower() in ("play.google.com", "google.com"):
+              raise SystemExit("Google Play listing is not a direct APK URL")
+          PY
+          mkdir -p /tmp/sitme
+          curl --fail --location --retry 2 --connect-timeout 25 --max-time 240 --max-filesize 180000000 --output /tmp/sitme/app.apk "$APK_URL"
+          sha256sum /tmp/sitme/app.apk
+          if [ -n "$EXPECTED_SHA256" ]; then
+            echo "$EXPECTED_SHA256  /tmp/sitme/app.apk" | sha256sum --check --status
+          fi
+      - name: Static inventory and package verification
+        run: python3 scripts/inventory_sitme_apk.py --apk /tmp/sitme/app.apk
+      - name: Upload report only (never APK)
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-static-inventory
+          path: data/reports/sitme_apk_static_inventory.json
+          if-no-files-found: error
+          retention-days: 14
