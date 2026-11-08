@@ -8,11 +8,11 @@ on:
         required: true
         type: string
       room:
-        description: "Optional known monitoring room/company ID"
+        description: "SITME monitoring room (clientId; default 195)"\n        default: "195"
         required: false
         type: string
       route_id:
-        description: "Optional route ID (required with room for subscription)"
+        description: "ROUTE.ID from SITME route/detail (optional; needed to subscribe)"
         required: false
         type: string
 permissions:
