@@ -59,12 +59,30 @@ def main():
     args = p.parse_args()
     if not 5 <= args.seconds <= 120:
         p.error("seconds must be between 5 and 120")
+    if not args.route_id:
+        try:
+            today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).date().isoformat()
+            response = requests.get(f"https://apisitme.metrolinea.gov.co/route/detail/195/{today}", timeout=30)
+            response.raise_for_status()
+            payload = response.json()
+            routes = payload if isinstance(payload, list) else payload.get("data", [])
+            candidates = [(str(row["ROUTE"]["ID"]), str(row["ROUTE"].get("CODE", "")))
+                          for row in routes if isinstance(row, dict)
+                          and isinstance(row.get("ROUTE"), dict) and row["ROUTE"].get("ID") is not None]
+            if candidates:
+                args.route_id, route_code = candidates[0]
+                print("Selected SITME route:", route_code, "ID:", args.route_id)
+            else:
+                print("No route ID found; subscription skipped")
+        except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
+            print("SITME route lookup failed:", type(exc).__name__)
     token = os.getenv("SITME_MONITORING_TOKEN") or HISTORICAL_TOKEN
     report = {
         "tested_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "host": HOST, "socket_path": SOCKET_PATH, "namespace": NAMESPACE, "room": args.room,
         "token_source": "env" if os.getenv("SITME_MONITORING_TOKEN") else "historical_js",
         "token_expiry": expiry(token), "connected": False,
+        "selected_route_id": args.route_id, "engineio_connected": False,
         "subscription_sent": False, "events": {}, "event_field_names": {},
         "error_type": None, "connect_error": False,
         "room_supplied": bool(args.room), "route_supplied": bool(args.route_id),
@@ -77,15 +95,15 @@ def main():
               "open packet:", result.get("response_is_engineio_open", False))
     counts = collections.Counter()
     client = socketio.Client(reconnection=False, logger=False, engineio_logger=False, request_timeout=12)
-    @client.event
+    @client.on("connect", namespace=NAMESPACE)
     def connect():
         report["connected"] = True
-        print("Connected to Socket.IO")
+        print("Connected to Socket.IO namespace:", NAMESPACE)
         if args.room and args.route_id:
             client.emit("subscribeToMonitoringContraint", int(args.room) if args.room.isdigit() else args.room, namespace=NAMESPACE)
             report["subscription_sent"] = True
             print("Subscription sent")
-    @client.event
+    @client.on("connect_error", namespace=NAMESPACE)
     def connect_error(data):
         report["connect_error"] = True
         report["socketio_connect_error_type"] = type(data).__name__
@@ -107,6 +125,9 @@ def main():
                        socketio_path=SOCKET_PATH, namespaces=[NAMESPACE],
                        headers={"X-EngineIO-Version": "3"},
                        transports=["websocket"], wait_timeout=15)
+        report["engineio_connected"] = client.eio.state == "connected"
+        print("Engine.IO connected:", report["engineio_connected"])
+        print("Namespace connected:", NAMESPACE in client.namespaces)
         time.sleep(args.seconds)
     except Exception as exc:
         # Avoid printing exception messages: some include URLs containing credentials.
