@@ -8,7 +8,8 @@ on:
         required: true
         type: string
       room:
-        description: "SITME monitoring room (clientId; default 195)"\n        default: "195"
+        description: "SITME monitoring room (clientId; default 195)"
+        default: "195"
         required: false
         type: string
       route_id:
