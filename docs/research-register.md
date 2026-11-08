@@ -93,3 +93,82 @@ AMB metropolitan mobility master plan map `Rutas Metrolínea 2025 - Portal Norte
 - Play listing explicitly advertises available transit routes, nearby stations, origin-destination trip planning, transfers, estimated times, service notices and alerts. This does **not** independently establish availability of raw route shapes, stop sequences, exact headways or downloadable schedules.
 - Research next step: obtain APK from an authorized source and statically inspect app network configuration, route/station models, API base URLs and data schemas; document evidence and redact credentials. No authentication bypass or collection of personal/payment data. Compare route IDs/stations with the Zenodo GIS and official route publications.
 - Distinguish this package from `com.metgroupsas.metsiuapp` (METSIU), another app by the same publisher; do not conflate their datasets.
+
+## Consolidated official SITME schedule evidence (2026-11-08)
+
+This section is the **canonical central research register** for identified official SITME route/frequency/window evidence as of 2026-11-08. Its machine-readable 15-record companion is [`data/sitme/official_schedule_sources.csv`](../data/sitme/official_schedule_sources.csv). The CSV is a **research input, not a deployable GTFS timetable**. Local timezone: America/Bogota.
+
+### Evidence classification
+
+- **Observed API inventory:** GitHub Actions [run 42471926616](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42471926616/artifacts/13613444443) produced 15 route records (14 distinct codes) and 529 route-station endpoint rows for 2026-11-08. The API reported no populated `ROUTE_SCHEDULLE` or `ROUTE_DISPATCHS` for any of the 15. Presence of an API record does **not** prove present-day operation.
+- **Official planning/programming:** [Metrolínea Q1 2026 management report, PDF pp. 15–16](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) lists *Frecuencia HP/HV* for 12 complementary routes in the **SITM Metrolínea–TPC complementarity** operating model. These values describe the reported operating scheme/planning context; they are **not independently verified November 2026 dispatches**. The participating TPC companies in this scheme must not be confused with an ordinary TPC feed.
+- **Superseding service change:** [Metrolínea notice of 2026-05-29](https://www.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283) explicitly states **PTB and PTN leave service from 2026-05-31**. Both PTN API records and the PTB record therefore remain in the research inventory only. Do not publish them as active without newer evidence of reinstatement.
+- **Later route publication:** the [2026-08-31 P19 announcement](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/) has later, different headways and day-type departures than the Q1 planning table. The figures below are transcribed from the 2026-11-08 source-research notes; recheck the original article before any GTFS activation.
+- **Historical references:** [P16N/P16S launch bulletin, 2025-07-30](https://www.metrolinea.gov.co/v3.0/node/2232) and [Metrolínea route fiches, September 2024](https://www.metrolinea.gov.co/v3.0/sites/default/files/2024/9/09/archivos_articulo/rutas_pdf.docx.pdf) provide dated frequency or first/last reference times. They must **not** be silently carried forward into 2026.
+
+### Route-level source inventory
+
+| API ID | API code | Public code | Q1 2026 HP/HV (min) | Other official timing evidence | Assessment for current GTFS |
+| --- | --- | --- | --- | --- | --- |
+| 3302 | PTB | PTB | — | — | ceased_2026_05_31 |
+| 3317 | PTN | PTN | — | — | ceased_2026_05_31 |
+| 3341 | P16S | P16S | 7/12 | 2025-07-30: 12 min, 04:20–19:30, Monday–Sunday | requires_current_confirmation |
+| 3342 | P16N | P16N | 7/12 | 2025-07-30: 12 min, 04:20–19:30, Monday–Sunday | requires_current_confirmation |
+| 3343 | PTN | PTN | — | — | ceased_2026_05_31 |
+| 3345 | P08 | P8 | 8/12 | Sep 2024: 04:30–20:00 | historical_departures_only |
+| 3346 | P14 | P14 | 12/15 | Sep 2024: 04:50–20:50 | historical_departures_only |
+| 3350 | RD27 | RD27 | 8/12 | Sep 2024: 05:00–20:00 | historical_departures_only |
+| 3351 | P1 | P1 | 10/12 | Sep 2024: 05:00–20:20 | historical_departures_only |
+| 3352 | P2 | P2 | 10/12 | Sep 2024: 04:40–21:40 | historical_departures_only |
+| 3353 | P3 | P3 | 8/12 | Sep 2024: 04:40–21:50 | historical_departures_only |
+| 3354 | P10 | P10 | 8/10 | Sep 2024: 04:50–20:50 | historical_departures_only |
+| 3355 | P18 | P18 | 30/30 | — | missing_departures |
+| 3356 | AN3 | AN3 | 10/12 | — | missing_departures |
+| 3357 | P19 | P19 | 8/12 | 2026-08-31: weekday/Sat peak 10–12 min, valley 15; Sun/holiday 10/12/15; starts 04:48/05:00/06:00, ends 19:30/18:30/17:30 by day type | newer_official_2026_publication |
+
+**Conflict handling and qualifications:**
+1. **P19:** Q1 2026 planning says 8/12 minutes; the later 2026-08-31 publication says peak **10–12** and valley **15** minutes for weekdays/Saturdays. Keep both facts with their dates; the later announcement controls the dated published pattern, but peak/dal clock boundaries are unknown. Different Sunday/holiday intervals are not mapped to known clock windows.
+2. **P16N / P16S:** 2025 bulletin says constant 12-minute frequency, 04:20–19:30, Monday–Sunday. Q1 2026 report says 7/12 minutes and describes an eventual **future P16 merger**; the 2026-11-08 API still has separate records, not proof that the merger occurred.
+3. **P08 / P8:** record the original API code `P08` and the public report's `P8` as aliases; do not change the stable API ID `3345`.
+4. **PTN duplication:** API IDs `3317` and `3343` both use `PTN`; investigate as distinct internal variants, never as two independently confirmed operating routes.
+5. **API quality:** inventory has **16 warnings**: one duplicate PTN code and a `station_count_mismatch` for **all 15** records. API detail checkpoints and route/stations endpoint rows have different semantics; do not infer final stop sequences until reconciled.
+6. **Station last departures:** the 2026-08-04 restoration of last station departures is **not** a set of per-route `last_departure` values.
+
+### Historical legal context — AMB Resolution 000017, 2014-01-17
+
+The user-supplied 16-page AMB Resolution 000017 modifies SITM feeder alignments **AB2 and AB3** and includes historic route fiches. Examples already extracted from its tables (field **`FRECUENCIA MAXIMA (Min.)`**, not a proven constant headway):
+
+| Route | 2014 first departure | 2014 last departure | 2014 maximum interval (min) |
+| --- | --- | --- | --- |
+| T1 | 05:30 | 21:00 | 10 |
+| T3 | 04:40 | 22:15 | 10 |
+| P1 | 04:40 | 22:00 | 12 |
+| P6 | 05:00 | 21:30 | 7 |
+| P8 | 04:45 | 22:00 | 10 |
+| P10 | 05:00 | 22:00 | 10 |
+| AP1 | 04:40 | 23:00 | 10 |
+| APD1 | 04:15 | 23:00 | 12 |
+
+The resolution also discusses special early/late feeder intervals, Sunday/holiday flexibility, and coordination of headways **by corridor**. These do not justify using a single all-day per-route frequency in a contemporary feed. **Source integrity flag:** the considerations mention a June 2014 letter despite the stated 2014-01-17 date; verify the administrative chronology before relying on effective-date conclusions. This is a **partial historical extract**, not a full transcription of every route in the resolution.
+
+### Source index (retrieved/reviewed 2026-11-08)
+
+| ID | Source and dated scope |
+| --- | --- |
+| `API_2026_11_08` | https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42471926616/artifacts/13613444443 |
+| `Q1_2026` | https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf |
+| `STOP_2026_05_29` | https://www.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283 |
+| `P16_2025_07_30` | https://www.metrolinea.gov.co/v3.0/node/2232 |
+| `P19_2026_08_31` | https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/ |
+| `FICHES_2024_09` | https://www.metrolinea.gov.co/v3.0/sites/default/files/2024/9/09/archivos_articulo/rutas_pdf.docx.pdf |
+| `AMB_2014_000017` | https://www.amb.gov.co/rutas/ |
+
+### Outstanding verification before GTFS publication
+
+1. Obtain exact clock boundaries for `hora pico` and `hora valle` (route and day type) rather than inventing generic peak hours.
+2. Confirm whether the Q1 2026 programmed headways were actually operated and identify any later route-specific overrides.
+3. Confirm current first and last dispatches for P1, P2, P3, P8, P10, P14, RD27, P18 and AN3; keep 2024 values historical.
+4. Keep PTB and both PTN API records out of active 2026-11-08 service pending formal reinstatement evidence.
+5. Reconcile the route-station quality warnings and distinguish planning geometry and API checkpoints from confirmed stop sequences.
+6. Exclude unverified calendar/day-type assumptions; do not create GTFS `frequencies.txt` or `stop_times.txt` directly from this evidence ledger.
+
