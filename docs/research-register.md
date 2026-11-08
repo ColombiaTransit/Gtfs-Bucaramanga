@@ -459,3 +459,25 @@ These are **status observations**, not edits to or replacements for [`baseline_r
 
 **Implementation note:** the probe currently emits the room identifier `195` to `subscribeToMonitoringContraint`, while `route_id` only selects the route-specific event name and is not included in the emitted subscription payload. Therefore confirm the provider's subscription semantics from authorized client code before inferring that picking a different route ID changes the server's subscription. Avoid logging credentials or full token-bearing URLs.
 
+### Second live-monitoring WebSocket probe — workflow run 42521884064
+
+**Run:** [`42521884064`, 2026-11-08 20:47–20:49 UTC](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42521884064), workflow **Probe SITME monitoring WebSocket**, job result **success**; [sanitized artifact `sitme-websocket-probe` ID `13633389087`](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42521884064/artifacts/13633389087) downloaded and `report.json` independently inspected.
+
+**Experiment changed from previous [run 42521353570](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42521353570):** explicit **`route_id=3357` (P19)**, `room=195`, `listen_seconds=120` (previously auto-selected discontinued PTB 3302 for 40 seconds). This is a deliberately more relevant observation target but **not** a guaranteed active trip during the exact test.
+
+| Check | Actual new run result |
+| --- | --- |
+| Engine.IO 4 polling handshake | HTTP 200, valid Engine.IO open packet |
+| Engine.IO 3 polling handshake | HTTP 200, **not** a valid open packet |
+| Socket.IO `/monitoring-route-v2` | Connected; `connected=true`, `engineio_connected=true` |
+| `subscribeToMonitoringContraint` | Client says **sent**; no positive acknowledgement of subscription recorded |
+| Selected route/room | **3357 (P19)** / **195** |
+| Captured monitoring events | **0**: `events={}`, `event_field_names={}` |
+| Runtime or connect error | None recorded, `error_type=null`, `connect_error=false` |
+| Authentication token | `token_source=historical_js`; JWT expiry **2025-11-29 15:59:09 UTC**, i.e. expired by test time |
+| Execution | GitHub job successful = client ran, **not** server dispatch or route activity verified |
+
+**Interpretation:** A longer probe against P19 still received zero events, so **the first run's choice of retired PTB alone does not explain the outcome**. However, this second run provides **no active vehicle data** and cannot establish that P19 has no operating trips, nor that the monitoring endpoint lacks data. The test's historical token is expired; the server may allow namespace connection without authorizing data broadcasts. Subscription details also warrant validation: present code emits **room 195** and uses `route_id` only to construct an event listener, not the emitted payload. Other possible causes include timing or an incorrect room/event subscription.
+
+**Recommended next controlled test:** provide a **fresh legitimately obtained token** using the existing `SITME_MONITORING_TOKEN` GitHub Actions secret; keep route **P19 3357** and room **195** for the first token-only comparison. Verify subscription acknowledgement/event names in the official client, and inspect only sanitized event fields and counts. Do **not** treat successful connection or a 0-event run as definitive activity-status evidence or republish credentials. Do **not** override point 3 activity classifications based on this run.
+
