@@ -436,3 +436,26 @@ These are **status observations**, not edits to or replacements for [`baseline_r
 
 **Point 3 result:** among the **15 API records**, **9** have recent official same-code operation evidence, **1** has recent official evidence under a changed/combined code, **2** remain source-supported *candidates only*, and **3** are explicitly withdrawn. Further research should prioritize **P18, AN3, RD27-15/3350 matching**, then the **13 integrated lines** (separate from this 15-record API sample).
 
+### SITME live monitoring WebSocket probe — workflow run 42521353570
+
+**Run:** [Probe SITME monitoring WebSocket, 2026-11-08 20:40–20:41 UTC](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42521353570) — GitHub Actions job **successful**, artifact [`sitme-websocket-probe` (ID 13633522089)](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42521353570/artifacts/13633522089). The JSON report was inspected (not just the job status). It is a **read-only connectivity probe**, not GTFS output or a verified activity inventory.
+
+| Report field | Recorded value | Interpretation |
+| --- | --- | --- |
+| Monitoring host / namespace | `https://api.voa.metgroupsas.com` / `/monitoring-route-v2` | Monitoring endpoint identified |
+| Engine.IO v4 HTTP polling | HTTP **200**, valid Engine.IO open packet | Polling handshake supported |
+| Engine.IO v3 HTTP polling | HTTP **200**, but **not** a valid Engine.IO open packet | No proof of EIO3-compatible polling |
+| Socket.IO connected | `connected=true`, `engineio_connected=true` | WebSocket and namespace connection succeeded |
+| Subscription | `subscription_sent=true` | Client **emitted** `subscribeToMonitoringContraint`; report does **not** confirm server accepted the subscription |
+| Events | `{}` (none) | **No realtime data received** during 40-second listening window |
+| Selected route | **PTB / 3302** | Script selects **first API route** when `route_id` is blank; PTB has officially ceased from **2026-05-31**, so it is unsuitable for active-route monitoring validation |
+| Room | `195` | Default clientId/room supplied |
+| Token source/expiry | `historical_js`; expiry **2025-11-29T15:59:09Z** | No `SITME_MONITORING_TOKEN` secret supplied; hard-coded historical token **expired almost a year before the run**. Socket.IO connection success does **not** prove authorization to receive monitoring events |
+| Errors | `error_type=null`, `connect_error=false` | Probe ran without an exception; no events is still an unresolved data result |
+
+**Conclusion for point 3:** The monitoring transport endpoint is reachable, and namespace connection works, but **no bus operation, active vehicle, route-specific trip, or monitoring payload was confirmed**. Hence this run **does not upgrade P18, AN3, RD27 or any other route to "live-verified"**.
+
+**Prioritized follow-up experiment:** run the existing manual workflow with **explicit route ID of a recently officially documented route**, e.g. **P19 = 3357** or **P16N = 3342**, not the automatically selected retired PTB 3302; supply a legitimately obtained **current** monitoring token via the existing Actions secret if authentication is required; listen up to the workflow's maximum of **120 seconds**. Inspect `events` and `event_field_names` in the **sanitized** artifact and then separately validate event timestamps, route IDs and service days. A successful socket connect or emitted subscription should not be reported as verified live feed.
+
+**Implementation note:** the probe currently emits the room identifier `195` to `subscribeToMonitoringContraint`, while `route_id` only selects the route-specific event name and is not included in the emitted subscription payload. Therefore confirm the provider's subscription semantics from authorized client code before inferring that picking a different route ID changes the server's subscription. Avoid logging credentials or full token-bearing URLs.
+
