@@ -323,3 +323,31 @@ The 2026 Q1 management report [PDF](https://concejobga.cloud/descargas1/CONTROL_
 
 Both are appended as separate source-specific rows to [`first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv) and as **4 further events** to the [dated change log](../data/sitme/route_change_log.csv); the 2024 baseline remains unchanged.
 
+### Point 2 follow-up — closing three missing-window research leads (2026-11-08)
+
+**Decision:** for the purpose of the **provisional, historically grounded research baseline**, RD27, P18 and AN3 now have **complete candidate daily service windows**, sourced from secondary **Moovit** route timetable pages. The source pages do **not** give a reliable timetable effective-date history; these values are not confirmed as 2026 operator dispatchs. This supersedes the previous **"no usable window found"** research status for these three routes, but **does not** mean their exact present-day timetables or weekday/holiday calendars have been verified. The 2024 poster remains the **baseline only for routes on that poster**; none of these three appears on it.
+
+| API route | Provisional candidate service hours | Days shown by Moovit | Moovit published headway (secondary, not adopted) | Q1 2026 official programmed HP/HV minutes (retained) |
+| --- | --- | --- | --- | --- |
+| **RD27** (`3350`) | **05:00–20:00** | Monday–Sunday | 30 | **8/12** |
+| **P18** (`3355`) | **05:00–20:00** | Monday–Friday; Sat/Sun listed without service | 50 | **30/30** |
+| **AN3** (`3356`) | **05:00–19:48** | Monday–Saturday; Sun listed without service | 20 | **10/12** |
+
+**Sources / provenance, checked 2026-11-08:**
+- [Moovit RD27, Portal del Valle → Parque Estación UIS](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-rd27-Bucaramanga-4324-3277577-301161825-0): 05:00–20:00 daily. Not a demonstrated **terminal-specific first/last dispatch** for all RD27 route variants or dates.
+- [Moovit P18, Provenza Oriental ⇄ Terrazas](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-p18-Bucaramanga-4324-926178-350266610-0): 05:00–20:00 weekdays only. This is an operating span of the described loop, not exact dispatch by stop.
+- [Moovit AN3, María Paz ⇄ Bosconia](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-an3-Bucaramanga-4324-926180-337429893-0) and [Moovit AN3, Portal Norte ⇄ Bosconia](https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-an3-Bucaramanga-4324-926180-344193123-0): **two different circular patterns** each list 05:00–19:48 Monday–Saturday and no service Sunday. This is NOT proof there are two SITME API route IDs: the 2026-11-08 snapshot has a single AN3 ID `3356`. Preserve the pattern distinction for future stop-sequence reconciliation.
+- [Caracol Radio, 2022-02-12 AN3 inauguration coverage](https://caracol.com.co/emisora/2022/02/12/bucaramanga/1644677416_039364.html) reports a **historical 05:00–21:00** system-standard window for the launch planned from 2022-02-14. This is a separate time-period and secondary account; **the days of operation are not stated**. Do not overwrite the undated Moovit 19:48 or claim the 2022 window is current.
+- [Metrolínea Q1 2026 operating report, pp. 15–16](https://concejobga.cloud/descargas1/CONTROL_POLITICO_METROLINEA_GESTION_ABRIL_2026.pdf) retains official **route-specific programmed** peak/valley frequencies. Do not use Moovit frequency values (30, 50, 20) to replace the official HP/HV (8/12, 30/30, 10/12).
+- Official [SITME deviation notice, 2026-10-14](https://www.bucaramanga.gov.co/noticias/sitme-informa-sobre-desvios-operacionales-por-jornada-de-protestas-en/) uses `RD27-15` alongside other routes. **Check how the combined RD27/RD15 operation maps to API route `3350` before claiming that every 2026 service uses the historical separate RD27 span.** This notice confirms route-identifier context, **not** first/last trip times.
+
+**Data updates (append-only where appropriate):**
+- [`first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv): **5 new source-specific rows** (RD27, P18, two AN3 patterns, and separate 2022 AN3 historical item) — now **34** evidence records.
+- [`route_change_log.csv`](../data/sitme/route_change_log.csv): **4 new evidence events** (three undated Moovit candidate windows plus separate 2022 AN3 report) — now **27** recorded events. No false `effective_from` is assigned to Moovit.
+- [`official_schedule_sources.csv`](../data/sitme/official_schedule_sources.csv): the three API route rows are now classified `secondary_window_candidate_only` with first/last **candidate** clock values and their source IDs; `eligible_for_current_gtfs_without_more_evidence` remains **No** for every affected row.
+- [`baseline_routes_2024.csv`](../data/sitme/baseline_routes_2024.csv) is **unchanged**.
+
+**Point 2 practical status: historic/provisional window coverage is now complete for the 12 2026 Q1 complementary routes** (6 from 2024 official poster, P16N/P16S from 2025 operator publication, P19 from later 2026 municipality publication, and RD27/P18/AN3 from secondary Moovit evidence). PTB has an official Apr–May 2026 historical window; PTN has only a secondary undated historic candidate. This is **baseline completeness**, not the same as verifying all day types, route-specific terminal departures, daily active service, or exact timetable validity. Retain those gaps for future primary-source checking.
+
+**Next research phase:** point 3, reconcile which route codes/patterns were actually operated on the intended reference date. No GTFS generator or published feed has been created.
+
