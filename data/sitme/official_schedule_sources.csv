@@ -6,11 +6,11 @@ api_id,api_code,public_code,api_name,snapshot_date,q1_2026_peak_minutes,q1_2026_
 3343,PTN,PTN,Ruta PTN,2026-11-08,,,,,,,,,ceased_2026_05_31,No,"Second PTN API variant; distinct API ID, not evidence of live service"
 3345,P08,P8,Ruta P08,2026-11-08,8,12,Q1_2026,,,04:30,20:00,FICHES_2024_09,historical_departures_only,No,P08 API code corresponds to P8 in official report; 2024 clock times not current
 3346,P14,P14,Ruta General P14,2026-11-08,12,15,Q1_2026,,,04:50,20:50,FICHES_2024_09,historical_departures_only,No,2024 clock times not current
-3350,RD27,RD27,Ruta General RD27,2026-11-08,8,12,Q1_2026,,,,,,missing_departures,No,No RD27 first/last times in cited 2024 leaflet; a June 2023 temporary 19:10 last departure from Portal del Valle is recorded separately
+3350,RD27,RD27,Ruta General RD27,2026-11-08,8,12,Q1_2026,,,05:00,20:00,MOOVIT_RD27_2026_11_08,secondary_window_candidate_only,No,Moovit undated Mon-Sun 05:00-20:00 candidate; Moovit 30 minute interval conflicts with official Q1 2026 8/12
 3351,P1,P1,Ruta P1,2026-11-08,10,12,Q1_2026,,,05:00,20:20,FICHES_2024_09,historical_departures_only,No,2024 clock times not current
 3352,P2,P2,Ruta P2,2026-11-08,10,12,Q1_2026,,,04:40,21:40,FICHES_2024_09,historical_departures_only,No,2024 clock times not current
 3353,P3,P3,Ruta P3,2026-11-08,8,12,Q1_2026,,,04:40,21:50,FICHES_2024_09,historical_departures_only,No,2024 clock times not current
 3354,P10,P10,Ruta P10,2026-11-08,8,10,Q1_2026,,,04:50,20:50,FICHES_2024_09,historical_departures_only,No,2024 clock times not current
-3355,P18,P18,Ruta P18.,2026-11-08,30,30,Q1_2026,,,,,,missing_departures,No,2026 Q1 plan 30/30; no exact peak windows
-3356,AN3,AN3,Ruta AN3,2026-11-08,10,12,Q1_2026,,,,,,missing_departures,No,2026 Q1 plan 10/12; no exact peak windows
+3355,P18,P18,Ruta P18.,2026-11-08,30,30,Q1_2026,,,05:00,20:00,MOOVIT_P18_2026_11_08,secondary_window_candidate_only,No,Moovit undated Mon-Fri 05:00-20:00 candidate with no Sat/Sun service; Moovit 50 minutes conflicts with official Q1 2026 30/30
+3356,AN3,AN3,Ruta AN3,2026-11-08,10,12,Q1_2026,,,05:00,19:48,MOOVIT_AN3_MARIA_2026_11_08,secondary_window_candidate_only,No,Moovit undated Mon-Sat 05:00-19:48 candidate; Sunday no service listed; Moovit 20 minutes conflicts with official Q1 2026 10/12; 2022 historical 05:00-21:00 unverified for 2026
 3357,P19,P19,Ruta P19,2026-11-08,8,12,Q1_2026,Weekdays/Sat peak 10-12 min; off-peak 15 min; Sun/holidays 10/12/15 min (window unknown),P19_2026_08_31,Workdays 04:48; Sat 05:00; Sun/hol 06:00,Workdays 19:30; Sat 18:30; Sun/hol 17:30,P19_2026_08_31,newer_official_2026_publication,No,Q1 2026 plan 8/12 differs from Aug 2026 bulletin; retain both; verify exact time bands
