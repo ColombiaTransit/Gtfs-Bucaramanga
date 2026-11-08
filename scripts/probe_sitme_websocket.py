@@ -7,7 +7,7 @@ import requests
 import socketio
 
 HOST = "https://api.voa.metgroupsas.com"
-SOCKET_PATH = "monitoring-route-v2"
+SOCKET_PATH = "socket.io"\nNAMESPACE = "/monitoring-route-v2"\nROOM = "195"
 # Expired historical JWT from publicly distributed SITME JavaScript.
 # Use only for the requested compatibility test; never log token or full URL.
 HISTORICAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk0ZWMzY2JlNWMyMmZiYmYzODcyMWRhMzllNDUxZDE5Ojk3ZDA3ZjEyNzJhZGZkMDk3ZTg1ZmU3NzdkMGFmMTdjZGRmNTlmYjc3NTIxZTU0NDY5NDYxN2ZhN2VmZWRmYTNhMmFmZjM3MTcwMjg3NjNmYWI1MCIsImlhdCI6MTc2NDM1OTk0OSwiZXhwIjoxNzY0NDMxOTQ5fQ.mmIN6p408ue8vJumTjyDQOZTXjFQL9VsP6RDftG4uFxuEG0ee8Y9JM2178DuTh4C041TFgg2h-bP9Mo8bvKyEqjHMtLIeSbabcxgzVmBSOp90S_w7Rg3SzKgxCbrO_NKmuP2rsc4dVEeBgg-6Z47neRIElLR6SwB7Rtjl9pfwTbb2jaCW3M7HYwu0qgYPE-_morctVDlQmAEhXzt65WDpZUl6h2bJSMX0MGnJk1OgOy0FYbX9xtDX7MjlVq6Jlf33-Lm-7_sjo062cik2KtiNwBWe4LanvbWmHr4TxUPpuTynYpheQjD-59qrjosZA7kJsa9LJV-QUc5bRYqr6vznQzEmWOGIvKe9xJIisWomnCAvZiH7XIQpitf1HBFALxsIm_QfQoD_yUcXavGrYNOcyP-S1uVJQvd8byU4VlbgJfrRh0Z_ZRRDgM3eS91RlRdtYjFxMl3HgCBhue_Hg1yvOCZU6nMxjWuLv0km3qfXiMb32HKPzWd4dPjMDyayNetCywiLRZ1b6Z7I0_IIzkcnZnlAn5qOstV1S0_bRGlA-_VXBrYU-cqMopvdMgufFAYpPI9RK7wl7oPk_3_z0l4eBQPCFhrKX9py6wkfkt8VSwSYXVs-ZcSqeQvYqhbgSx_1ZfS7ooedKqnQLX7fRNrjCUsDViCxhZ9Sphnz8JTOxs"
@@ -52,7 +52,7 @@ def handshake_probe(token, engineio_version):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--seconds", type=int, default=40)
-    p.add_argument("--room", default="")
+    p.add_argument("--room", default=ROOM)
     p.add_argument("--route-id", default="")
     args = p.parse_args()
     if not 5 <= args.seconds <= 120:
@@ -60,7 +60,7 @@ def main():
     token = os.getenv("SITME_MONITORING_TOKEN") or HISTORICAL_TOKEN
     report = {
         "tested_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "host": HOST, "socket_path": SOCKET_PATH,
+        "host": HOST, "socket_path": SOCKET_PATH, "namespace": NAMESPACE, "room": args.room,
         "token_source": "env" if os.getenv("SITME_MONITORING_TOKEN") else "historical_js",
         "token_expiry": expiry(token), "connected": False,
         "subscription_sent": False, "events": {}, "event_field_names": {},
@@ -71,7 +71,7 @@ def main():
     for version in (4, 3):
         result = handshake_probe(token, version)
         report["http_handshakes"].append(result)
-        print("Engine.IO", version, "HTTP status:", result.get("http_status"),
+        print("Engine.IO", version, "default Socket.IO path HTTP status:", result.get("http_status"),
               "open packet:", result.get("response_is_engineio_open", False))
     counts = collections.Counter()
     client = socketio.Client(reconnection=False, logger=False, engineio_logger=False, request_timeout=12)
@@ -80,7 +80,7 @@ def main():
         report["connected"] = True
         print("Connected to Socket.IO")
         if args.room and args.route_id:
-            client.emit("subscribeToMonitoringContraint", args.room)
+            client.emit("subscribeToMonitoringContraint", int(args.room) if args.room.isdigit() else args.room, namespace=NAMESPACE)
             report["subscription_sent"] = True
             print("Subscription sent")
     @client.event
@@ -88,7 +88,7 @@ def main():
         report["connect_error"] = True
         report["socketio_connect_error_type"] = type(data).__name__
         print("Socket.IO connect_error (details withheld)")
-    @client.on("*")
+    @client.on("*", namespace=NAMESPACE)
     def any_event(event, *payload):
         counts[event] += 1
         if event not in report["event_field_names"]:
@@ -96,7 +96,7 @@ def main():
             report["event_field_names"][event] = sorted(obj.keys())[:60] if isinstance(obj, dict) else []
         print("Event:", event)
     if args.route_id and args.room:
-        @client.on(f"Route_monitoring_data_notify_{args.route_id}_{args.room}")
+        @client.on(f"Route_monitoring_data_notify_{args.route_id}_{args.room}", namespace=NAMESPACE)
         def monitoring_event(payload):
             any_event("Route_monitoring_data_notify", payload)
     try:
