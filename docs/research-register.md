@@ -85,3 +85,11 @@ AMB metropolitan mobility master plan map `Rutas Metrolínea 2025 - Portal Norte
 - `ANEXO33_COORDENADAS METROLINEA.xlsx`: sheet `Hoja1`, 28 rows / 9 columns, blank first row, column headers in row 2. First observed entries match the GPKG station records.
 - Other original files: two photographic geolocation PDFs; `MAPA ACTUALIZADO METROLINEA 2026.pdf`; three QGIS project files; two proposal maps in PDF and PNG versions; one additional map PDF. These have **not** been reviewed for routes or stop sequences.
 - Next: enumerate all 24 stations, compare XLSX vs GPKG, validate coordinates and operational statuses, inspect QGIS layer references and maps, then cross-check active service with dated official sources.
+
+
+### SITME Android app — candidate operational data source (2026-11-08)
+- Google Play: https://play.google.com/store/apps/details?id=com.metgroupsas.siumetrolinea
+- Package: `com.metgroupsas.siumetrolinea`; publisher: MET GROUP S.A.S.; Play listing last updated 2026-05-13.
+- Play listing explicitly advertises available transit routes, nearby stations, origin-destination trip planning, transfers, estimated times, service notices and alerts. This does **not** independently establish availability of raw route shapes, stop sequences, exact headways or downloadable schedules.
+- Research next step: obtain APK from an authorized source and statically inspect app network configuration, route/station models, API base URLs and data schemas; document evidence and redact credentials. No authentication bypass or collection of personal/payment data. Compare route IDs/stations with the Zenodo GIS and official route publications.
+- Distinguish this package from `com.metgroupsas.metsiuapp` (METSIU), another app by the same publisher; do not conflate their datasets.
