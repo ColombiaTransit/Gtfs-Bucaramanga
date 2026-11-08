@@ -99,6 +99,7 @@ def main():
     parser.add_argument("--route-catalog-file", help="Optional local /route JSON")
     parser.add_argument("--station-catalog-file", help="Optional local station catalog JSON")
     args = parser.parse_args()
+    args.date = args.date.strip()
     dt.date.fromisoformat(args.date)
     if bool(args.routes_file) != bool(args.stations_file):
         parser.error("Provide both --routes-file and --stations-file, or neither")
