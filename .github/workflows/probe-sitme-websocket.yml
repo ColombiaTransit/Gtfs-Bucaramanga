@@ -1,0 +1,45 @@
+name: Probe SITME monitoring WebSocket
+on:
+  workflow_dispatch:
+    inputs:
+      listen_seconds:
+        description: "Listen duration (5-120 seconds)"
+        default: "40"
+        required: true
+        type: string
+      room:
+        description: "Optional known monitoring room/company ID"
+        required: false
+        type: string
+      route_id:
+        description: "Optional route ID (required with room for subscription)"
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Socket.IO client
+        run: python -m pip install "python-socketio[client]>=5.11,<6" websocket-client
+      - name: Probe monitoring connection
+        env:
+          SITME_MONITORING_TOKEN: ${{ secrets.SITME_MONITORING_TOKEN }}
+          SECONDS: ${{ inputs.listen_seconds }}
+          ROOM: ${{ inputs.room }}
+          ROUTE_ID: ${{ inputs.route_id }}
+        run: python scripts/probe_sitme_websocket.py --seconds "$SECONDS" --room "$ROOM" --route-id "$ROUTE_ID"
+      - name: Upload sanitized probe report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-websocket-probe
+          path: data/sitme/websocket-probe/
+          if-no-files-found: warn
+          retention-days: 30
