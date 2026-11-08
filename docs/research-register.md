@@ -257,3 +257,51 @@ The model is versioned in [`data/sitme/provisional_peak_valley_windows.csv`](../
 - **Target for follow-up:** 2026 **`programación operativa` / `tabla-horaria`** and route-end terminal dispatch sheets; the last departure from a *station* must be linked to an actual route ID, direction and terminal before inclusion.
 - **No GTFS generator or published GTFS feed exists in this repository.** No generator code is modified by this registration.
 
+## Historical route poster baseline and dated change tracking (2026-11-08)
+
+**User-approved source policy:** the Metrolínea [`NUEVAS RUTAS DEL MASIVO 2024` official poster](https://www.metrolinea.gov.co/v3.0/sites/default/files/2024/9/09/archivos_articulo/rutas_pdf.docx.pdf) is the **reference starting point** for this project. We **preserve all 12 poster entries** as a dated, immutable historical baseline, then track later changes **as independent dated events**. This is a **research baseline**, not a statement that every 2024 route or timetable still operates in 2026.
+
+Files:
+- **[2024 official baseline](../data/sitme/baseline_routes_2024.csv)** — complete 12-route transcription of poster's route codes, origin/destination, `HORA INICIO`, `HORA FIN` and `FRECUENCIA` (minutes); `day_type` is `not_specified` because the poster does not specify one. A min/max range is retained where the poster prints it. Only the six matching public route codes are linked to API IDs from the 2026-11-08 snapshot.
+- **[Dated change log](../data/sitme/route_change_log.csv)** — **19 entries** recording observed changes/new route publications, 2026 Q1 operational-program frequency classifications and confirmed route termination notices, with source date, effective date when known, day type, source scope and original URL.
+- **[2026 API inventory and source comparison](../data/sitme/official_schedule_sources.csv)** — 15 API records (14 public codes); do not treat an API row as a live trip.
+- **[First/last departure evidence](../data/sitme/first_last_departure_evidence.csv)** — source-specific departure records, including station times, which do not automatically override the origin-terminal's route operating hours.
+- **[Historical provisional peak/off-peak clock model](../data/sitme/provisional_peak_valley_windows.csv)** — separately marked assumptions, not verified 2026 scheduling periods.
+
+### Complete 2024 route poster baseline
+
+| Route | Poster first | Poster last | Poster frequency (min) | 2026 SITME API code observed? |
+| --- | --- | --- | --- | --- |
+| RDF | 04:50 | 21:50 | 10 | No |
+| AP9 | 04:45 | 22:15 | 12–15 | No |
+| P1 | 05:00 | 20:20 | 15 | Yes |
+| P2 | 04:40 | 21:40 | 15 | Yes |
+| P3 | 04:40 | 21:50 | 15 | Yes |
+| P8 | 04:30 | 20:00 | 15 | Yes, API spells `P08` |
+| P10 | 04:50 | 20:50 | 10 | Yes |
+| P14 | 04:50 | 20:50 | 10 | Yes |
+| P17 | 05:00 | 19:00 | 10–12 | No |
+| MORRO | 05:00 | 20:00 | 12 | No |
+| 44 | 05:00 | 19:00 | 15 | No |
+| D15 | 04:40 | 20:00 | 15 | No |
+
+The poster does **not** include RD27, P16N, P16S, P18, P19, AN3, PTB or PTN. Absence from the poster does **not** prove those routes did not exist; absence from the 2026 API of RDF/AP9/P17/MORRO/44/D15 does **not** prove their legal termination. These are **different-date inventories**, not a definitive list of openings and closures.
+
+### Reading the change log (do not conflate evidence types)
+
+- **2025-07-30:** two new complementary route publications for P16N/P16S: `04:20–19:30`, 12 minutes, Monday–Sunday. This route-level source is not a Portal Piedecuesta-specific dispatch table.
+- **Q1 2026:** 12 complementary route codes have HP/HV programmed headways in the official report, with **no proven effective date, specific day type, or clock boundary**. This is recorded as an `operational_model_peak_offpeak` event rather than a verified, dispatch-level schedule update. Differences from the 2024 poster are **historical comparisons**, not verified dates of frequency change.
+- **2026-05-31:** PTB and PTN exit operation per Metrolínea's 2026-05-29 notice; it remains true even though the 2026-11-08 API retains PTB and two PTN records.
+- **2026-09-01:** later published P19 route-level day-type windows replace the older source for that route/period: weekdays `04:48–19:30`, Saturdays `05:00–18:30`, Sundays/holidays `06:00–17:30`. Peak is **10–12 min** and off-peak **15 min** on weekdays/Saturdays; Sunday/holiday published 10/12/15 min values lack clock assignments.
+- **P16 terminal ambiguity:** 2025 Q3 *Portal Piedecuesta* departures are separately stored in `first_last_departure_evidence.csv`. Do not overwrite `04:20–19:30` headline route hours with station departure values.
+- **No baseline RDF/AP9/P17/MORRO/44/D15 change evidence** has been verified; leave their present-day status **unknown**, not inactive-by-inference.
+
+### Future update procedure
+
+1. Identify the **specific route code**, normalize public aliases only (`P8 ↔ P08`), and preserve distinct API IDs.
+2. For each new document, add a **new event** to `route_change_log.csv` with publication date, effective date **only if explicitly stated**, day type, source URL, before/after *comparability* and scope (route-level vs station-level vs proposed operating model). Do **not** overwrite `baseline_routes_2024.csv`.
+3. When sources conflict, retain both dated records. Prefer later **explicitly applicable** route-specific operational sources **only for the same field and scope**; distinguish programmed HP/HV frequencies, published route operating times, actual terminal dispatches and station departure cutoffs.
+4. Do not treat the 2024 poster's start and end times as verified 2026 first/last trips. Use them as **fallback research candidates** for missing 2026 windows; flag any subsequent use as assumption.
+5. The working model of weekday peak/valley periods remains provisional, and Saturdays, Sundays and holidays are not assigned inferred frequency bands without an explicit policy.
+6. **GTFS generator: not yet created.** These registers only establish the research and change-management basis for a future GTFS build.
+
