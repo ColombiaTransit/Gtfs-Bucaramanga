@@ -117,7 +117,7 @@ This section is the **canonical central research register** for identified offic
 | 3343 | PTN | PTN | — | — | ceased_2026_05_31 |
 | 3345 | P08 | P8 | 8/12 | Sep 2024: 04:30–20:00 | historical_departures_only |
 | 3346 | P14 | P14 | 12/15 | Sep 2024: 04:50–20:50 | historical_departures_only |
-| 3350 | RD27 | RD27 | 8/12 | Sep 2024: 05:00–20:00 | historical_departures_only |
+| 3350 | RD27 | RD27 | 8/12 | 2023-06 temporary last 19:10 from Portal del Valle; no RD27 times in cited Sep 2024 poster | missing_departures |
 | 3351 | P1 | P1 | 10/12 | Sep 2024: 05:00–20:20 | historical_departures_only |
 | 3352 | P2 | P2 | 10/12 | Sep 2024: 04:40–21:40 | historical_departures_only |
 | 3353 | P3 | P3 | 8/12 | Sep 2024: 04:40–21:50 | historical_departures_only |
@@ -217,4 +217,43 @@ The model is versioned in [`data/sitme/provisional_peak_valley_windows.csv`](../
 7. The working model has **no GTFS publication status**. This repository remains **research only**; **no generator or feed exists**. If a future generator uses assumed periods, it must explicitly disclose modelling provenance and allow authoritative route/day-type overrides.
 
 **Point 1 decision:** closed **provisionally with documented assumptions**; the request for the actual route/day-type `programación operativa` / `tabla-horaria` remains an evidence gap. Next focus: verify current route-level first and last departures (point 2) before deriving complete usable service windows.
+
+### Point 2 — first and last departure evidence (2026-11-08)
+
+**Status: partly documented, not fully resolved for current 2026 service.** Preserve source **date**, **day type**, **departure location**, and **kind of time** separately. The structured companion is [`data/sitme/first_last_departure_evidence.csv`](../data/sitme/first_last_departure_evidence.csv), containing **25 source-specific rows** and blanks for unavailable times. These are evidence records, not synthesized 2026 GTFS service windows.
+
+#### Key findings — most recent dated sources
+
+1. **P19: full route-level first/last departures published 2026-08-31**, effective 2026-09-01. [Bucaramanga article](https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/) reports:
+   - Weekdays **04:48–19:30**.
+   - Saturdays **05:00–18:30**.
+   - Sundays/holidays **06:00–17:30**.
+   These are the best currently found route-specific day-type service-window values (subject to later changes). They are NOT frequency-class transition times.
+2. **P16N and P16S: two distinct 2025 primary sources**:
+   - Metrolínea's [2025-07-30 launch article](https://www.metrolinea.gov.co/v3.0/node/2232) publishes **route operating hours 04:20–19:30**, Monday–Sunday, 12-minute frequencies. The article does not give a specific departure station for those headline times.
+   - The official [Q3 2025 report (printed page 88, PDF page index 88)](https://www.metrolinea.gov.co/v3.0/sites/default/files/informe_de_gestion_concejo_tercer_trimestre_compressed-1.pdf) contains a *Portal Piedecuesta* **first/last trip table** for P16N and P16S: weekday **04:45–21:00**, Saturday **04:45–20:30**, holiday **P16N 04:45–20:00** and **P16S 04:45–21:00**. These **station-specific** records cannot be silently compared to a whole-route operating-hours claim as if both described the same starting terminal.
+3. **P8/P08**: the same Q3 2025 *Portal Piedecuesta* table gives **last trip** weekday **22:40**, Saturday **21:40**, holiday **20:30**, but marks the **first trip N/A**. Do not infer a P8 first-trip time from that table. These values refer to Portal Piedecuesta, not necessarily the route's full-day terminal dispatch window.
+4. **All-route last trips at stations, from 2026-08-04:** [Metrolínea's post-vacation announcement](https://dev.metrolinea.gov.co/v3.0/sitme-normaliza-sus-horarios-de-operacion-desde-este-martes-4-de-agosto-2296) announces weekday last departing services at Portal del Norte **21:30**, Parque Estación UIS **21:50**, Provenza Occidental **22:10**, Portal Piedecuesta **22:40**. These are **station-level system announcements**, not a schedule for any specified route. **Never apply 22:40 to P8/P16 merely because that time appears for Portal Piedecuesta.**
+5. **Six route fiches from September 2024 (historical only):** [official 2024 route poster, page 1](https://www.metrolinea.gov.co/v3.0/sites/default/files/2024/9/09/archivos_articulo/rutas_pdf.docx.pdf) prints the following **HORA INICIO/HORA FIN**, without specifying a day-type and direction-specific dispatch table:
+
+| Route | Sep 2024 published start | Sep 2024 published end | Caution |
+| --- | --- | --- | --- |
+| P1 | 05:00 | 20:20 | historic whole-route fiche |
+| P2 | 04:40 | 21:40 | historic whole-route fiche |
+| P3 | 04:40 | 21:50 | historic whole-route fiche |
+| P8 | 04:30 | 20:00 | historic whole-route fiche; note later 2025 portal-specific P8 evening values |
+| P10 | 04:50 | 20:50 | historic whole-route fiche |
+| P14 | 04:50 | 20:50 | historic whole-route fiche |
+
+**Correction to previous register:** `RD27 05:00–20:00` had been attributed to this September 2024 poster. **The poster does not list RD27**, so the claimed 2024 times are **withdrawn as unsupported** and removed from `official_schedule_sources.csv`. The [temporary June 2023 vacation notice](https://metrolinea.gov.co/v3.0/el-sitm-metrolinea-adelanta-cierre-de-operacion-por-temporada-vacacional-2066) gives a last RD27 departure at **19:10 from Portal del Valle**, only for that temporary historical regime. No current RD27 first/last departure has been verified.
+6. **AN3 and P18:** no route-specific first/last trip clock times located in the official publications reviewed for 2025–2026. The Q1 2026 operating-plan frequency table is NOT a full timetable. AN3's earlier 2022 service history must not be used to infer 2026 hours: [Metrolínea launched AN3 in February 2022](https://www.metrolinea.gov.co/v3.0/node/1833), and later 2022 socialization records refer to suspension in April 2022; the Q1 2026 register again describes AN3 under a changed operator. Preserve dates rather than merge different historical incarnations.
+
+#### Current coverage and next work
+
+- **2026 route-specific weekday/saturday/holiday first and last:** P19 only (one of 12 complementary route codes).
+- **2025 station-specific portal times:** P16N/P16S/P8; useful but not directly comparable to a route terminal's first/last dispatch.
+- **2024 historical full-route service-hour references:** P1/P2/P3/P8/P10/P14; may be considered as **unverified model candidates only after an explicit research decision**, never promoted automatically.
+- **Gaps:** current terminal departures, direction, day type and effective dates for P1/P2/P3/P8/P10/P14/RD27/P16N/P16S/AN3/P18; especially no meaningful recent route-level times for AN3/P18 and no corroborated first/last for RD27. PTB/PTN remain excluded pending evidence of reinstatement.
+- **Target for follow-up:** 2026 **`programación operativa` / `tabla-horaria`** and route-end terminal dispatch sheets; the last departure from a *station* must be linked to an actual route ID, direction and terminal before inclusion.
+- **No GTFS generator or published GTFS feed exists in this repository.** No generator code is modified by this registration.
 
