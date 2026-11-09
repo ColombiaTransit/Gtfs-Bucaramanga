@@ -51,12 +51,18 @@ jobs:
       - name: Cross-check SITME stop candidates with OpenStreetMap
         shell: bash
         env:
-          OVERPASS_URL: ${{ vars.OVERPASS_URL }}
+          OVERPASS_URL: ${{ secrets.API_OVERPASS }}
+          CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
           OVERPASS_BEARER_TOKEN: ${{ secrets.OVERPASS_BEARER_TOKEN }}
           OVERPASS_EXTRA_HEADERS_JSON: ${{ secrets.OVERPASS_EXTRA_HEADERS_JSON }}
           INCLUDE_ROADS: ${{ github.event.inputs.include_roads }}
         run: |
           set -euo pipefail
+          if [[ -z "${OVERPASS_URL:-}" ]]; then
+            echo '::error::Missing org secret API_OVERPASS or it is not authorized for this repository'
+            exit 1
+          fi
           extra=()
           if [[ "${INCLUDE_ROADS}" == "false" ]]; then extra+=(--skip-roads); fi
           python3 scripts/audit_sitme_osm_stop_positions.py \
