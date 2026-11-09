@@ -1,0 +1,105 @@
+name: SITME stop-position and OSM evidence QA
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_roads:
+        description: "Also download OSM roads for direction-side diagnostics (can take longer)"
+        type: boolean
+        required: false
+        default: true
+  push:
+    paths:
+      - '.github/workflows/audit-sitme-osm-stop-positions.yml'
+      - 'scripts/audit_sitme_osm_stop_positions.py'
+      - 'tests/test_audit_sitme_osm_stop_positions.py'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: sitme-stop-position-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download immutable SITME route snapshot
+        uses: actions/download-artifact@v4
+        with:
+          name: sitme-route-snapshot
+          run-id: 42471926616
+          repository: ColombiaTransit/Gtfs-Bucaramanga
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: snapshot
+      - name: Build snapshot ZIP and validate baselines
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f snapshot/2026-11-08/route_detail.json
+          test -f snapshot/2026-11-08/route_stations.json
+          test -s data/sitme/stop_candidates_reconciled_2026-11-09.csv
+          test -s data/sitme/route_stop_visits_reconciled_2026-11-09.csv
+          test -s data/sitme/stop_identity_decisions_2026-11-09.csv
+          (cd snapshot && zip -qr ../sitme-route-snapshot.zip .)
+      - name: Unit tests for directional stops and conservative OSM matching
+        run: python3 -m unittest discover -s tests -p 'test_audit_sitme_osm_stop_positions.py' -v
+      - name: Cross-check SITME stop candidates with OpenStreetMap
+        shell: bash
+        env:
+          OVERPASS_URL: ${{ vars.OVERPASS_URL }}
+          OVERPASS_BEARER_TOKEN: ${{ secrets.OVERPASS_BEARER_TOKEN }}
+          OVERPASS_EXTRA_HEADERS_JSON: ${{ secrets.OVERPASS_EXTRA_HEADERS_JSON }}
+          INCLUDE_ROADS: ${{ github.event.inputs.include_roads }}
+        run: |
+          set -euo pipefail
+          extra=()
+          if [[ "${INCLUDE_ROADS}" == "false" ]]; then extra+=(--skip-roads); fi
+          python3 scripts/audit_sitme_osm_stop_positions.py \
+            --snapshot sitme-route-snapshot.zip \
+            --candidates data/sitme/stop_candidates_reconciled_2026-11-09.csv \
+            --visits data/sitme/route_stop_visits_reconciled_2026-11-09.csv \
+            --output osm-stop-results \
+            --fetch-osm "${extra[@]}"
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('osm-stop-results/summary.json').read_text())
+          if x['input_candidates']!=528 or x['input_route_visits']!=950:
+              raise SystemExit('Unexpected 528/950 source counts')
+          if x['osm_stop_features']<1:
+              raise SystemExit('OSM query returned zero transit features; investigate, do not infer absence')
+          assert x['gtfs_ready_count']==0
+          PY
+      - name: Upload raw OSM evidence and interactive map
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-osm-stop-qa
+          path: osm-stop-results/
+          if-no-files-found: warn
+          retention-days: 60
+      - name: Publish CSV audit results and provenance in repository
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp osm-stop-results/stop_osm_quality_2026-11-09.csv data/sitme/stop_osm_quality_2026-11-09.csv
+          cp osm-stop-results/route_stop_direction_checks_2026-11-09.csv data/sitme/route_stop_direction_checks_2026-11-09.csv
+          cp osm-stop-results/stop_manual_review_queue_2026-11-09.csv data/sitme/stop_manual_review_queue_2026-11-09.csv
+          cp osm-stop-results/stop_osm_audit_report.md docs/sitme_stop_osm_audit_latest.md
+          cp osm-stop-results/summary.json data/sitme/stop_osm_audit_summary.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sitme/stop_osm_quality_2026-11-09.csv \
+            data/sitme/route_stop_direction_checks_2026-11-09.csv \
+            data/sitme/stop_manual_review_queue_2026-11-09.csv \
+            data/sitme/stop_osm_audit_summary.json docs/sitme_stop_osm_audit_latest.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit SITME 528 stop candidates against OSM stop and road evidence"
+            git push
+          fi
