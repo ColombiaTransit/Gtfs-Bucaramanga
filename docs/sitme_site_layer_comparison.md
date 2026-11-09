@@ -1,6 +1,6 @@
 # SITME public map sites versus route checkpoint locations
 
-Retrieved: 2026-11-09T09:44:42.234127+00:00
+Retrieved: 2026-11-09T09:48:09.312539+00:00
 
 - Map site records: **10**
 - Unique route LOCATION_IDs: **531**
@@ -19,6 +19,21 @@ Retrieved: 2026-11-09T09:44:42.234127+00:00
 - name_within_100m: 1
 - spatial_only_review: 4
 - unmatched: 5
+
+## Global route LOCATION_ID reconciliation
+
+- Route STATIONS: **950** visits using **531** unique LOCATION_IDs.
+- Repeated checkpoint visits across these IDs: **419**.
+- /route/stations: **526** unique LOCATION_IDs, one row each.
+- Truly missing from /route/stations: **5** unique LOCATION_IDs.
+
+### Five location IDs for focused research
+
+- 150798 — San Carlos S-n (P8; 1 visit(s))
+- 150873 — Mac Pollo N-s (P8; 1 visit(s))
+- 150877 — Pretecor N-s (P16N;P16S; 2 visit(s))
+- 163015 — Parada la VEGA S-n. (P16N; 1 visit(s))
+- 164171 — Carrera 4 Calle 0 S-n. (P16S; 1 visit(s))
 
 ## Interpretation
 
