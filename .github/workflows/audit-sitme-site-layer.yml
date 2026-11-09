@@ -1,0 +1,60 @@
+name: SITME public map sites vs route locations
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/audit-sitme-site-layer.yml'
+      - 'scripts/compare_sitme_site_layers.py'
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download immutable November 8 SITME route snapshot
+        uses: actions/download-artifact@v4
+        with:
+          name: sitme-route-snapshot
+          run-id: 42471926616
+          repository: ColombiaTransit/Gtfs-Bucaramanga
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: snapshot
+      - name: Verify snapshot files
+        run: |
+          test -f snapshot/2026-11-08/route_detail.json
+          test -f snapshot/2026-11-08/route_stations.json
+          (cd snapshot && zip -qr ../sitme-route-snapshot.zip .)
+      - name: Fetch sites and compare route LOCATION_IDs
+        env:
+          SITME_API_BEARER_TOKEN: ${{ secrets.SITME_API_BEARER_TOKEN }}
+        run: |
+          python3 scripts/compare_sitme_site_layers.py \
+            --snapshot sitme-route-snapshot.zip \
+            --output site-layer-results
+      - name: Upload research results including raw public site API JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-site-layer-comparison
+          path: site-layer-results/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Save comparison CSVs and report to repository
+        if: success()
+        run: |
+          cp site-layer-results/site_matches.csv data/sitme/site_layer_matches.csv
+          cp site-layer-results/route_location_site_crosswalk.csv data/sitme/route_location_site_crosswalk.csv
+          cp site-layer-results/site_layer_comparison.md docs/sitme_site_layer_comparison.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sitme/site_layer_matches.csv data/sitme/route_location_site_crosswalk.csv docs/sitme_site_layer_comparison.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Record SITME site layer vs 2026-11-08 route location audit"
+            git push
+          fi
