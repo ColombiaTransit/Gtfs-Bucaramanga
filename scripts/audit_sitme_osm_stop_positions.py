@@ -382,6 +382,17 @@ def score_candidates(candidates, stops, visits, details, roads):
     return rows,passage,candidate_choices
 
 
+
+def resolve_overpass_endpoint(value):
+    """Append exactly /interpreter to the supplied private base URL; never add /api."""
+    parsed=urllib.parse.urlsplit(str(value or '').strip())
+    if parsed.scheme.lower()!='https' or not parsed.netloc:
+        raise ValueError('Private HTTPS Overpass base URL required in API_OVERPASS')
+    root=parsed.path.rstrip('/')
+    path=root if root.endswith('/interpreter') else root+'/interpreter'
+    return urllib.parse.urlunsplit((parsed.scheme,parsed.netloc,path,parsed.query,parsed.fragment))
+
+
 def overpass(query, endpoint, retries=3):
     hdr={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
          'Accept':'application/json', 'Accept-Language':'en-US,en;q=0.9',
@@ -538,9 +549,10 @@ def main():
     parser.add_argument('--overpass-url',default=os.getenv('OVERPASS_URL','').strip())
     args=parser.parse_args()
     if args.fetch_osm:
-        endpoint=urllib.parse.urlsplit(args.overpass_url)
-        if endpoint.scheme.lower()!='https' or not endpoint.netloc:
-            parser.error('Private HTTPS Overpass endpoint is required in API_OVERPASS (OVERPASS_URL); no public fallback')
+        try:
+            args.overpass_url=resolve_overpass_endpoint(args.overpass_url)
+        except ValueError:
+            parser.error('Valid private HTTPS API_OVERPASS base URL required; no public fallback')
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     candidates=csv_rows(args.candidates); visits=csv_rows(args.visits)
     details=load_snapshot(args.snapshot)
