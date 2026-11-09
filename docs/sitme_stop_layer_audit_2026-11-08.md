@@ -42,7 +42,7 @@ Snapshot source: ColombiaTransit/Gtfs-Bucaramanga Actions run **42471926616**, a
 
 ### UI category hypothesis and checkpoint-field verification — 2026-11-09
 
-**Trigger:** User provided a mobile webpage screenshot showing the map layer menu **"Puntos de Recarga"**, **"Estaciones y Paraderos"**, **"Estaciones más cercanas"**, and **"Sitios de Interés"**, with a separate "Seleccione Una Ruta" control. An identical *menu vocabulary* is discoverable on the METSIU/MET GROUP web template at https://juarezbus.chihuahua.gob.mx/rutas . This identifies a likely common UI template **but not the source URL of the user's screenshot** and not proof that the Chihuahua implementation uses Bucaramanga's datasets. **No actual JavaScript bundle from the user's photographed page was supplied or inspected**; UI control handlers, backend requests and filtering rules therefore remain unknown.
+**Trigger:** User provided a mobile webpage screenshot showing the map layer menu **"Puntos de Recarga"**, **"Estaciones y Paraderos"**, **"Estaciones más cercanas"**, and **"Sitios de Interés"**, with a separate "Seleccione Una Ruta" control. An identical *menu vocabulary* is discoverable on the METSIU/MET GROUP web template at https://juarezbus.chihuahua.gob.mx/rutas . This identifies a likely common UI template **but not the source URL of the user's screenshot** and not proof that the Chihuahua implementation uses Bucaramanga's datasets. **Correction (2026-11-09):** Previously uploaded JavaScript bundles from the exact SITME site were later recovered and inspected; see the verified analysis below. The original sentence was an outdated retrieval error.
 
 **Direct structural checks from our archived Bucaramanga SITME JSON (2026-11-08):**
 - In the 12 selected routes, `DETAIL` has **10,699 rows**, of which **950** have `IS_CHECKPOINT=1` and match the embedded `STATIONS` array. The independent `route_stations` response selects only **526** of the 950.
@@ -52,4 +52,36 @@ Snapshot source: ColombiaTransit/Gtfs-Bucaramanga Actions run **42471926616**, a
 - Conversely, many selected records include `Inicio`/`Fin` names. **Do not claim every selected row is a confirmed boarding location** without validation.
 - UI category labels **are not** supported evidence that these are implemented as distinct backend `station_type` values; the "nearest stations" layer could be a spatial query over the same station inventory rather than a new stop category.
 
-**Research rule:** Preserve the 950 checkpoint source occurrences and the 526 endpoint selections, but avoid making either subset the final GTFS boarding-stop list. Keep `BREAK` route geometry separate. Obtain **the exact route page URL or its HTML/JS bundle** and inspect (1) the click handler for "Estaciones y Paraderos"; (2) request URL(s) and parameters, including route ID and client ID; (3) response schema and status/type flags; (4) how markers and stop-list rows are filtered; and (5) whether route-specific `STATIONS`, global location markers and `route_stations` are different services. Correlate backend IDs with checkpoint `LOCATION_ID`, `ORDER` and `IS_CHECKPOINT` to classify genuine boarding stops. **Do not claim JavaScript source analysis is complete yet.**
+**Research rule:** Preserve the 950 checkpoint source occurrences and the 526 endpoint selections, but avoid making either subset the final GTFS boarding-stop list. Keep `BREAK` route geometry separate. The exact route page and previously supplied JavaScript have now been identified and inspected. See the resolved frontend analysis below. For remaining backend validation, inspect (1) the click handler for "Estaciones y Paraderos"; (2) request URL(s) and parameters, including route ID and client ID; (3) response schema and status/type flags; (4) how markers and stop-list rows are filtered; and (5) whether route-specific `STATIONS`, global location markers and `route_stations` are different services. Correlate backend IDs with checkpoint `LOCATION_ID`, `ORDER` and `IS_CHECKPOINT` to classify genuine boarding stops. **Frontend JS menu and route rendering are now verified; undocumented backend filtering remains open.**
+
+### Actual SITME `/rutas` JavaScript analysis — 2026-11-09 (verified from previously supplied bundles)
+
+**Source:** The user previously supplied the 2026-11-08 JavaScript build of `https://sitme.metrolinea.gov.co/rutas`. Relevant existing original files were retrieved from the user's Library, not fetched from a different city's template:
+- `chunk-TRMRAHU2.js` (localization labels `MAP_OPTIONS.STATIONS_AND_STOPS`, `NEAREST_STATIONS`, `POINTS_OF_RECHARGE`, `POINTS_OF_INTEREST`, API config `https://apisitme.metrolinea.gov.co`, `clientId=195`).
+- `chunk-7TJ6VLLM.js` (Angular user-service and route-planner station selector).
+- `chunk-UBSKBW72.js` (Angular main map/menu handlers, route map draw functions).
+
+**Verified HTTP methods and purpose (all from `chunk-7TJ6VLLM.js`):**
+| Client method | Request path | Use confirmed in client |
+|---|---|---|
+| `getRoutesDetail(clientId, date)` | `GET /route/detail/{clientId}/{date}` | Gets `DETAIL` and `STATIONS` for selected-route rendering |
+| `getStationsRoutes(clientId, date)` | `GET /route/stations/{clientId}/{date}` | Supplies route-planner `getStations()` selector; `getStations()` collapses duplicate `location_id.NAME` values |
+| `getSitesInterest(clientId)` | `GET /site/by_client/{clientId}` | Supplies **map-layer points of interest**, separately from route checkpoints |
+| `getAllStationsByClient(clientId)` | `GET /geo_zone/stations_by_client/{clientId}` | Defined in API service; do not assume the shown menu calls it |
+| `getStationsPlanYourTrip(clientId)` | `GET /site/stations-plan/by_client/{clientId}` | Defined in API service; not established as the shown layer's source |
+
+**Verified map option handlers (all from `chunk-UBSKBW72.js`):**
+- `stationsAndStops()`: calls **`getSitesInterest(clientId)`** then only selects `r.geozoneType.NAME=="Terminal de transporte" || r.geozoneType.NAME=="Estación"`. Despite the Spanish label **"Estaciones y Paraderos"**, there is **no explicit `"Paradero"` type in this filter**. Whether named paraderos are classified as "Estación" in API data requires checking the response.
+- `getNearestStations()`: same **`getSitesInterest`** response, filters `geozoneType.NAME=="Estación"`, then divides sites by **5 km** great-circle proximity from user location.
+- `chargingPoints()`: same **`getSitesInterest`** response, filters `geozoneType.NAME=="Centro Comercial"`. It is not demonstrated to filter a dedicated top-up terminal type.
+- `pointsInterest()`: same **`getSitesInterest`**, filters `geozoneCategory.NAME=="Sitios de interés"`. It is distinct from stop records.
+
+**Critical route-marker finding:** `selectRoute()` calls `getMarkersRoute()`, which iterates `for (let i of e.STATIONS ?? [])` using **every embedded route `STATIONS` entry**, with **no explicit extra stop-category filter** in this draw method. Markers use `i.location_id.COORDINATES[0]` and `i.location_id.NAME`, with a `bus-stop.png` icon and sequential marker label. `getPolylines()` separately uses every `DETAIL[].location_id.COORDINATES`. The first coordinate of a polygon used by the website is **not proof of a correct GTFS stop point**.
+
+**Implications for the existing 2026-11-08 12-route audit:**
+1. The **950 embedded `STATIONS` checkpoint occurrences** are the candidate stop sequence that the official UI actually paints when a route is selected. The **526 records** from `/route/stations` are a **different client-facing API selection**, and its data is used by the trip planner, **not** as the sole route-map marker inventory. Preserve all 950 in the audit, including repeat passages; keep each original `LOCATION_ID`/`ORDER`.
+2. The map's **global category layer** is `/site/by_client/195`, not `/route/stations/195/{date}`, so **it does not explain or validate the server-side 950-vs-526 discrepancy**. Avoid merging all three endpoint families into one presumed station-type enum.
+3. The route map drawing code does not guarantee all 950 are *operable boarding/alighting stops*; for instance, route start/end markers and intermediate checkpoints still need GTFS stop usability checks, and the API may encode platforms or transfer visits differently. Do not publish them blindly in `stops.txt`.
+4. **Remaining technical unknown:** server-side selection rules for `/route/stations`, `/site/by_client` data content and site-to-`LOCATION_ID` identity relationships. The browser source code establishes what the **client** requests and displays, not undocumented backend business rules.
+
+**Research status:** The *frontend JavaScript analysis and meaning of the menu filters are now resolved*. The **server-side omission of 424 checkpoint occurrences** remains an open data-model question. The next targeted task is reconcile `STATIONS` by `LOCATION_ID` and route `ORDER` against `/site/by_client/195` and `/route/stations/195/{date}`; classify route checkpoint versus actual GTFS boarding point by evidence, not by which subset an API returned.
