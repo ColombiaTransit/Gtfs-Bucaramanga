@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).with_name('audit_sitme_osm_stop_positions.py')
+SCRIPT = Path(__file__).resolve().parents[1]/'scripts'/'audit_sitme_osm_stop_positions.py'
 spec=importlib.util.spec_from_file_location('sitme_stop_audit',SCRIPT)
 audit=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(audit)
