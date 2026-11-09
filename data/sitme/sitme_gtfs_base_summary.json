@@ -1,0 +1,33 @@
+{
+  "source": "SITME 2026-11-08 immutable route detail snapshot",
+  "scope": "12 selected complementary routes only; PTB/PTN not included",
+  "external_osm_used": false,
+  "routes": 12,
+  "stops": 528,
+  "original_location_ids": 531,
+  "stop_visits": 950,
+  "shape_points": 10699,
+  "coordinate_method": "official SITME frontend marker convention: first coordinate of location_id.COORDINATES",
+  "stop_identity_aliases": {
+    "150873": "150965",
+    "150877": "150969",
+    "163015": "163024"
+  },
+  "distinct_stop_pairs": [
+    [
+      "150798",
+      "150973"
+    ],
+    [
+      "164171",
+      "164933"
+    ]
+  ],
+  "limitations": [
+    "Stop coordinates are SITME geofence vertices, not guaranteed exact platform positions",
+    "These four GTFS base tables do not form a complete GTFS feed: trips, stop_times and service calendars are not generated",
+    "RD27/RD15 is kept as one combined route geometry; unresolved official Carrera 27 vs API Carrera 33/32 mismatch",
+    "P18 and AN3 direction patterns are not separately inferred from the route geometry",
+    "All SITME STATIONS visits are retained in the supplied sequence; no per-stop boarding permissions asserted"
+  ]
+}
