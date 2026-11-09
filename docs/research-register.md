@@ -572,3 +572,28 @@ The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://
 **Decision recorded:** `RD27 / RD15 / RD27-15` forms **one active-inventory route family** backed by recent official operation notices; **API ID 3350 covers both directional parts**. Preserve the split at `ORDER 527/528` for future candidate geometry and two directional labels, but **do not yet decide whether UIS is a GTFS trip boundary**—a continuous through-service is also plausible without a dispatch schedule. Do **not double-count departures/frequency/agency service**. The **route identity / direction count question is closed** absent contradictory evidence; the **geometry conflict, station-count discrepancy, calendar, official first/last dispatch and frequency execution remain open data-quality items**, not reasons to reopen route activity research. `eligible_for_current_gtfs_without_more_evidence=No`, no generator or published feed yet. The 2024 poster historical baseline stays unchanged.
 
 **Files updated for this finding:** `data/sitme/route_variant_review_2026-11-08.csv`, `route_operational_status_2026-11-08.csv`, `route_activity_assessment_2026-11-08.csv`, `official_schedule_sources.csv`, `first_last_departure_evidence.csv`, and `route_change_log.csv`.
+
+### SITME stop source comparison — 2026-11-09 (snapshot 2026-11-08)
+
+**Completed:** verified 12 provisional complementary routes against the unmodified [SITME snapshot Actions artifact 13613444443](https://github.com/ColombiaTransit/Gtfs-Bucaramanga/actions/runs/42471926616/artifacts/13613444443). This completes the *cross-layer correspondence audit*, not final stop/shape validation.
+
+- **10,699** `DETAIL` geometry records; **950** checkpoint records and exactly **950** embedded `STATIONS` records. All embedded records match `DETAIL` checkpoint ID, ORDER and LOCATION_ID.
+- **526** `route_stations` endpoint rows for the 12 selected route IDs (15-record snapshot total **529**, of which three belong to historical PTB/PTN). Every one of the 526 is an exact row/ID/order/location match to `DETAIL`. There are **no endpoint-only records**.
+- **424** additional checkpoint *occurrences* do not appear as selected rows in the endpoint. These correspond to **370** distinct checkpoint locations outside the endpoint's selected LOCATION_ID set plus **54** repeated visits to locations in the DETAIL checkpoint sequences. These are **not 424 automatically missing physical bus stops**.
+- `DETAIL` ORDERS are contiguous; NEXT_LOCATION_ID always matches the next record's LOCATION_ID for all 12. The technical mismatch file is empty (zero schema/order/link breakages).
+- All **526** endpoint locations are multi-vertex geometries rather than single, verified stop points. Research-only polygon centroids must never be directly imported as GTFS `stop_lat`/`stop_lon` without validating the actual passenger platform.
+- 526 endpoint records have 526 different LOCATION_IDs. A 30m research-centroid proximity scan found **46** cross-route pairs; just **6** match after normalized punctuation/accents. **No automatic spatial merges**: opposite boarding sides can be close but distinct.
+
+**Source priority:** use `route_stations` for candidate stop *selection*, and `DETAIL` / `STATIONS` to reconstruct original order and repeated visits. Do not treat a checkpoint as an accepted passenger stop merely because it appears in `STATIONS`. Preserve IDs and raw names; normalized names are comparison fields only. No `stops.txt`, `shapes.txt` or `stop_times.txt` built at this stage.
+
+**Manual follow-up priorities:** P14 (89 uniquely excluded checkpoint locations), P16S (67), P16N (59) and P1 (40) must be checked for endpoint filtering semantics before expanding the stop set; P18/AN3 loop repeats need variant review; RD27/RD15 outbound route still conflicts on Carrera 27 versus API Carrera 33/32. P19 has no distinct location IDs outside endpoint, only six repeated checkpoint occurrences. Investigate 46 spatial proximity candidates before cross-route stop deduplication.
+
+**Reproducible output and records:**
+- [Detailed audit report](sitme_stop_layer_audit_2026-11-08.md)
+- [Per-route source counts](../data/sitme/stop_layer_summary_2026-11-08.csv)
+- [526 endpoint-selected stop candidates](../data/sitme/stop_endpoint_candidates_2026-11-08.csv)
+- [424 extra DETAIL checkpoints](../data/sitme/stop_additional_checkpoints_2026-11-08.csv)
+- [46 proximity checks](../data/sitme/stop_spatial_review_2026-11-08.csv)
+- [Python reproduction script](../scripts/audit_sitme_stop_layers.py): download archived ZIP while the Actions artifact is retained, run with `--snapshot ... --output ...`.
+
+**Status:** cross-layer audit completed; stop usability/geometry verification pending. Do not treat preliminary stop records, derived centroids, or the mismatched RD27 direction as GTFS-ready. No new generator has been created.
