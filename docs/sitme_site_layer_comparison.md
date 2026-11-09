@@ -1,6 +1,6 @@
 # SITME public map sites versus route checkpoint locations
 
-Retrieved: 2026-11-09T09:48:09.312539+00:00
+Retrieved: 2026-11-09T09:49:56.647718+00:00
 
 - Map site records: **10**
 - Unique route LOCATION_IDs: **531**

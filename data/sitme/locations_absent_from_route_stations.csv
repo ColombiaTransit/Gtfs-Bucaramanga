@@ -1,0 +1,6 @@
+location_id,route_checkpoint_name,routes,checkpoint_visits,route_stations_selected_visits,site_matches,site_ids,site_types,site_categories,gtfs_boarding_stop_verified
+150798,San Carlos S-n,P8,1,0,0,,,,No
+150873,Mac Pollo N-s,P8,1,0,0,,,,No
+150877,Pretecor N-s,P16N;P16S,2,0,0,,,,No
+163015,Parada la VEGA S-n.,P16N,1,0,0,,,,No
+164171,Carrera 4 Calle 0 S-n.,P16S,1,0,0,,,,No
