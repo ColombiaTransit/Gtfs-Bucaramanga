@@ -1,0 +1,532 @@
+location_id,route_checkpoint_name,routes,checkpoint_visits,route_stations_selected_visits,site_matches,site_ids,site_types,site_categories,gtfs_boarding_stop_verified
+164162,Inicio Zafiro  Carrera 2 Calle 11.,P16S,1,1,0,,,,No
+164164,Carrera 3 Calle 10 S-n,P16S,1,1,0,,,,No
+164163, Calle 08 Carrera 3 S-n.,P16S,1,1,0,,,,No
+164165,Carrera 2 Calle 7 S-n.,P16S,1,1,0,,,,No
+164166,Carrera 2 Calle 4 S-n.,P16S,1,1,0,,,,No
+164167,Calle 3 Carrera 2 S-n.,P16S,1,1,0,,,,No
+164168,Carrera 4 Calle 1C S-n.,P16S,1,1,0,,,,No
+164169,Carrera 4 Calle 1B S-n.,P16S,1,1,0,,,,No
+164171,Carrera 4 Calle 0 S-n.,P16S,1,0,0,,,,No
+164170,Carrera 4 Calle 0 S-n.,P16S,1,1,0,,,,No
+164172,Carrera 4 Calle 3 S-n. ,P16S,1,1,0,,,,No
+150880,Portal de Piedecuesta N-s,P16N;P16S;P8,3,1,0,,,,No
+150800,Centro Comercial Eco centro,P16S;P8;RD27/RD15,3,1,0,,,,No
+150917,Parada ICP S-n,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150802,Puente Peatonal Españolita S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150919,Paradero Campo Alegre S-n,P16S;RD27/RD15,2,1,0,,,,No
+150804,Vivero Platacero,P16N;P16S;P8,3,1,0,,,,No
+150805,Puente Peatonal Palmichal S-n,P16S;P8,2,1,0,,,,No
+150806,Puente Peatonal Menzuly S-n,P16S;P8,2,1,0,,,,No
+150807,Puente Peatonal  la Estancia S-n,P16S;P8;RD27/RD15,3,1,0,,,,No
+150808,Mac Pollo S-n,P16N;P16S;P8,3,1,0,,,,No
+150809,EDS Aranzoque S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150926,Papi Quiero Piña Sn,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150927,Universidad Santo Tomas Sn,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150812,Puente Peatonal Lagos S-n,P16N;P16S;P8,3,1,0,,,,No
+150813,Panamericano Cañaveral paralela S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150929,Estación Cañaveral Vagón Norte s-n,P16N;P16S;P19;RD27/RD15,5,1,0,,,,No
+150814,Puente Peatonal  molinos S-n,P14;P16N;P16S;P19;P2;P3;P8;RD27/RD15,8,1,0,,,,No
+150815,Puente Peatonal Hormigueros S-n,P14;P16S;P19;P2;P3;P8;RD27/RD15,7,1,0,,,,No
+150816,Puente Peatonal  Payador S-n,P14;P16S;P19;P2;P3;P8;RD27/RD15,7,1,0,,,,No
+150817,Estacion de transferencia Provenza Oriental,P1;P16S;P18;P19;P2;P3;P8,8,1,0,,,,No
+150818,Miradores de San Lorenzo S-n,P16N;P16S;P18;P8;RD27/RD15,5,1,0,,,,No
+150819,Glorieta Cacique S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150820,Centro Comercial Cacique S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150821,Colegio la Merced S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150822,Clinica Bucaramanga S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150823,Gratamira S-n,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150824,Parque San Pio S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150825,Carrera 33 calle 42 S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150826,Carrera 33 calle 38 S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150827,Carrera 33 calle 34 S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150828,plaza Guarín S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150846,Centro Comercial Megamoll S-n.,P16S;P8,2,1,0,,,,No
+150844,Quinta Brigada S-n.,P16S;P8,2,1,0,,,,No
+150832,Velódromo S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+150833,Estadio Américo Montanini S-n,P14;P16N;P16S;P8;RD27/RD15,5,1,0,,,,No
+163549,Parada Colegio Tecnológico.,P14;P16N;P16S;RD27/RD15,4,1,0,,,,No
+150839,Transferencia Parque Estación UIS,P10;P16N;P16S;P2;P3;P8;RD27/RD15,12,1,0,,,,No
+159204,Parada SENA N-s.,P14;P16N;P16S;P3,4,1,0,,,,No
+163601,Parada Carrera 27 Calle 19 N-s.,P14;P16N;P16S;P3,4,1,0,,,,No
+155754,Parque de los Niños,P14;P16N;P16S;P3,4,1,0,,,,No
+163623,Parada Carrera 27 Calle 34 N-s,P14;P16N;P16S;P3,4,1,0,,,,No
+163624,Parada Carrera 27 Calle 37. ,P14;P16N;P16S;P3,4,1,0,,,,No
+163634,Parada Parque TURBAY N-s.,P16N;P16S;P2;P3,5,1,0,,,,No
+163642,Parada Carrera 27 Calle 55 N-s.,P16N;P16S;P3,3,1,0,,,,No
+164650,Conucos N-s.,P16S;P2;P3,3,1,0,,,,No
+150954,Antonia Santos N-s,P1;P16N;P16S;P19;P2;P3;RD27/RD15,7,1,0,,,,No
+150955,Estación Diamante N-s,P1;P16N;P16S;P19;P3;RD27/RD15,6,1,0,,,,No
+150863,Estacion de Transferencia Provenza Occidental,P1;P10;P14;P16N;P16S;P19;P2;P3;P8;RD27/RD15,10,1,0,,,,No
+150864,Puente Peatonal  Payador N-s,P14;P16S;P19;P2;P3;P8,6,1,0,,,,No
+150865,Puente Peatonal  Hormigueros N-s,P14;P16N;P16S;P2;P3;P8,6,1,0,,,,No
+150959,Puente Peatonal Molinos Occidental N-s,P14;P16N;P16S;P2;P3;RD27/RD15,6,1,0,,,,No
+150867,Cañaveral Paralela N-s,P16N;P16S;P8,3,1,0,,,,No
+150868,Estación Panamericano,P16N;P16S;P8,3,1,0,,,,No
+150869,Puente Peatonal  lagos N-s,P16S;P8,2,1,0,,,,No
+150962,Estación la Riviera,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150963,Papi Quiero Piña N-s,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150872,EDS el TIGGER,P16N;P16S;P8,3,1,0,,,,No
+150965,Mac Pollo N-s,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150874,Puente Peatonal  la Estancia N-s,P16S;P8,2,1,0,,,,No
+150967,Estación Menzuly N-s,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150968,Puente Peatonal Palmichal N-s,P16N;P16S,2,1,0,,,,No
+150877,Pretecor N-s,P16N;P16S,2,0,0,,,,No
+150970,Estación Campo Alegre N-s,P16N;P16S;P8;RD27/RD15,4,1,0,,,,No
+150879,Puente Peatonal  Españolita N-s,P16S;P8,2,1,0,,,,No
+150972,Portal de Piedecuesta,P16N;P16S;RD27/RD15,3,1,0,,,,No
+150881,Centro Comercial DELACUESTA,P16S;P8,2,1,0,,,,No
+164913,Centro Comercial DE LA CUESTA.,P16S,1,1,0,,,,No
+164918,Calle 3AN Carrera 8 N-s.,P16S,1,1,0,,,,No
+164926,Calle 3AN Carrera 6 N-s.,P16S,1,1,0,,,,No
+164930,Calle 3AN Carrera 5 la Argentina N-s,P16S,1,1,0,,,,No
+164931,Calle 3AN Carrera 4,P16S,1,1,0,,,,No
+164932,Carrera 4 Calle 1AD N-s.,P16S,1,1,0,,,,No
+164933,Carrera 4 No. 0-30 N-s.,P16S,1,1,0,,,,No
+164934,Carrera 4 Avenida 1B N-s.,P16S,1,1,0,,,,No
+164935,Torres de Campo Verde Carrera 4 Calle 1D N-s.,P16S,1,1,0,,,,No
+164936,Calle 2 Carrera 3 N-s.,P16S,1,1,0,,,,No
+164937,Calle 2 Carrera 2.,P16S,1,1,0,,,,No
+164938,Parada Cancha Los Tigres.,P16S,1,1,0,,,,No
+164939,Calle 2 carrera 3 Chacarita N-s.,P16S,1,1,0,,,,No
+164940,Finalizacion Carrera 2 Calle 9.,P16S,1,1,0,,,,No
+163009,Estación Ruta P16N,P16N,1,1,0,,,,No
+163010,Parada Fundación Nueva Colombia.,P16N,1,1,0,,,,No
+163011,Parada Quebrada Nueva Colombia,P16N,1,1,0,,,,No
+163012,Parada los Bambues,P16N,1,1,0,,,,No
+163014,Parada Primera Y Guatiguara S-n,P16N,1,1,0,,,,No
+163015,Parada la VEGA S-n.,P16N,1,0,0,,,,No
+163023,Parada Puerto Nuevo S-n.,P16N,1,1,0,,,,No
+163021,Parada SENA Guatiguara S-n,P16N,1,1,0,,,,No
+163020,Parada ASOPENDER S-n,P16N,1,1,0,,,,No
+163017,Parada SEDE UIS - Guatiguara S-n.,P16N,1,1,0,,,,No
+163025,Parada Barrio el Paraiso S-n.,P16N,1,1,0,,,,No
+163157,Parada Coovicop Guatiguara S-n,P16N,1,1,0,,,,No
+163158,Parada Kilometro 4 Via Guatiguara S-n.,P16N,1,1,0,,,,No
+163159,Parada Portal de Santillana  S-n.,P16N,1,1,0,,,,No
+150916,Centro Comercial Ecocentro Sn,P16N,1,1,0,,,,No
+150878,Campo Alegre N-s,P16N,1,1,0,,,,No
+150921,Paradero Palmichal S-n,P16N;RD27/RD15,2,1,0,,,,No
+150922,Paradero Menzuly S-n,P16N;RD27/RD15,2,1,0,,,,No
+150923,Estación Estancia Sn,P16N,1,1,0,,,,No
+150931,Hormigueros Sn,P16N,1,1,0,,,,No
+150932,Payador Sn,P16N,1,1,0,,,,No
+150933,Estacion de Transferencia Provenza Sn,P16N,1,1,0,,,,No
+150829,UCC,P14;P16N;P8;RD27/RD15,4,1,0,,,,No
+150830,Carrera 32 Calle 19 S-n,P14;P16N;P8;RD27/RD15,4,1,0,,,,No
+150831,Carrera 32 Calle 14 S-n,P14;P16N;P8;RD27/RD15,4,1,0,,,,No
+150957,Payador N-s,P16N;RD27/RD15,2,1,0,,,,No
+150961,Estación Lagos N-s,P16N;RD27/RD15,2,1,0,,,,No
+150966,Estación la Estancia N-s,P16N;RD27/RD15,2,1,0,,,,No
+150971,Estación Españolita N-s,P16N;RD27/RD15,2,1,0,,,,No
+163018,Parada SEDE UIS Guatiguara N-s.,P16N,1,1,0,,,,No
+163881,Parada ASOPENDER N-s.,P16N,1,1,0,,,,No
+163022,Parada SENA Guatiguara N-s.,P16N,1,1,0,,,,No
+163016,Parada Puerto Nuevo N-s..,P16N,1,1,0,,,,No
+163024,Parada la VEGA S-n.,P16N,1,1,0,,,,No
+163013,Parada Primera Y Guatiguara N-s.,P16N,1,1,0,,,,No
+163923,Parada Conjunto Residencial La Vega de San Roque..,P16N,1,1,0,,,,No
+163924,Parada Quebrada Nueva Colombia N-s.,P16N,1,1,0,,,,No
+163925,Parada Fundación Nueva Colombia N-s.,P16N,1,1,0,,,,No
+163926,Fin - Estación Matecaña.,P16N,1,1,0,,,,No
+150779,Inicio  Tejaditos,P8,1,1,0,,,,No
+150780,Comuneros S-n,P8,1,1,0,,,,No
+150781,Aires de Belén S-n,P8,1,1,0,,,,No
+150782,Urbanización Miraflores Avenida 173W S-n,P8,1,1,0,,,,No
+150783,Calle 173W Barro Blanco S-n,P8,1,1,0,,,,No
+150784,Carrera 17 Puente del Portal del Valle,P8,1,1,0,,,,No
+150785,Calle 172W Villa Marcela S-n,P8,1,1,0,,,,No
+150786,Carrera 171W Hoyo Grande,P8,1,1,0,,,,No
+150787,Carrera 4 calle 16 S-n,P8,1,1,0,,,,No
+150788,Calle 15 carrera 4 S-n,P8,1,1,0,,,,No
+150789,Calle 15 Carrera 6 S-n,P8,1,1,0,,,,No
+150790,Carrera 7 Calle 14 S-n,P8,1,1,0,,,,No
+150791,Carrera 7 Calle 12 S-n,P8,1,1,0,,,,No
+150792,Carrera 7 calle 10 S-n,P8,1,1,0,,,,No
+150793,Calle 10 carrera 8 S-n,P8,1,1,0,,,,No
+150794,Carrera 9 calle 7 S-n,P8,1,1,0,,,,No
+150911,Cabecera del Llano Sn,P8,1,1,0,,,,No
+150912,La Normal Sn,P8;RD27/RD15,2,1,0,,,,No
+150797,San francisco S-n,P8;RD27/RD15,2,1,0,,,,No
+150798,San Carlos S-n,P8,1,0,0,,,,No
+150915,Quinta Granada Sn,P8;RD27/RD15,2,1,0,,,,No
+150801,ICP,P8,1,1,0,,,,No
+150803,Puente Peatonal Campoalegre S-n,P8,1,1,0,,,,No
+150810,PQP S-n,P8,1,1,0,,,,No
+150811,Universidad Santo Tomas S-n,P8,1,1,0,,,,No
+150834,Calle 9 Carrera 23,P14;P3;P8,3,1,0,,,,No
+150835,Iglesia Cristo Rey,P10;P14;P3;P8,4,1,0,,,,No
+150836,Calle 11 carrera 18 S-n,P10;P14;P3;P8,4,1,0,,,,No
+150837,Calle 11 Carrera 20 S-n,P10;P14;P3;P8,4,1,0,,,,No
+150838,Calle 11 carrera 23 S-n,P10;P14;P2;P3;P8,5,1,0,,,,No
+150840,Calle 11 Carrera 28 N-s,P8,1,1,0,,,,No
+150841,Estadio Américo Montanini N-s,P8,1,1,0,,,,No
+150842,Velódromo N-s,P8,1,1,0,,,,No
+150843,Calle 14 Carrera 32C N-s,P8,1,1,0,,,,No
+150845,2 Quinta Brigada  N-s,P8,1,1,0,,,,No
+150847,Plaza Guarín N-s,P8,1,1,0,,,,No
+150848,Carrera 33 Calle 35 Viejo chiflas N-s,P8,1,1,0,,,,No
+150849,Carrera 33 Calle 37 N-s,P8,1,1,0,,,,No
+150850,Carrera 33 Calle 42 N-s,P8,1,1,0,,,,No
+150851,Carrera 33 calle 45 N-s,P8,1,1,0,,,,No
+150852,Carrera 33 Calle 47 N-s,P8,1,1,0,,,,No
+150853,Carrera 33 calle 49 N-s Club Unión,P8,1,1,0,,,,No
+150854,Clínica Bucaramanga N-s,P8,1,1,0,,,,No
+150855,Carrera 33 calle 58 N-s,P8,1,1,0,,,,No
+150856,Colegio La merced N-s,P8,1,1,0,,,,No
+150857,Centro comercial Cacique N-s,P8,1,1,0,,,,No
+150858,Carrera 24 Calle 80 N-s,P8,1,1,0,,,,No
+150859,Calle 83 Carrera 23,P8,1,1,0,,,,No
+150860,Calle 89 carrera 21 N-s,P8,1,1,0,,,,No
+150861,Calle 89 Carrera 23 N-s,P8,1,1,0,,,,No
+150862,Calle 89 carrera 25 N-s,P8,1,1,0,,,,No
+150866,Puente Peatonal Molinos N-s,P8,1,1,0,,,,No
+150871,PQP N-s,P8,1,1,0,,,,No
+150873,Mac Pollo N-s,P8,1,0,0,,,,No
+150875,Puente Peatonal Menzuly N-s,P8,1,1,0,,,,No
+150876,Puente Peatonal  Palmichal N-s,P8;RD27/RD15,2,1,0,,,,No
+150969,Pretecor N-s,P8;RD27/RD15,2,1,0,,,,No
+150882,Carrera 16 1NC Paseo Galicia,P8,1,1,0,,,,No
+150883,Diagonal 6 Carrera 8,P8,1,1,0,,,,No
+150884,Carrera 8 Calle 2,P8,1,1,0,,,,No
+150885,Carrera 8 Calle 3,P8,1,1,0,,,,No
+150886,Carrera 8 Calle 5,P8,1,1,0,,,,No
+150887,Carrera 8 Calle 7,P8,1,1,0,,,,No
+150888,Carrera 8 calle 9,P8,1,1,0,,,,No
+150889,Carrera 8 Calle 10,P8,1,1,0,,,,No
+150890,Carrera 8 calle 12,P8,1,1,0,,,,No
+150891,Calle 14 Carrera 7 N-s,P8,1,1,0,,,,No
+150892,Calle 14 Carrera 6 N-s,P8,1,1,0,,,,No
+150893,Carrera 6 calle 14,P8,1,1,0,,,,No
+150894,Carrera 6 calle 16,P8,1,1,0,,,,No
+150895,Carrera 6 Calle 14 N-s,P8,1,1,0,,,,No
+150897,Calle 17 Carrera 4 N-s,P8,1,1,0,,,,No
+150898,Carrera 17 1W Hoyo Grande,P8,1,1,0,,,,No
+150899,Calle 17 Carrera 0W Villa Marcela,P8,1,1,0,,,,No
+150900,Calle 17 carrera 2W N-s.,P8,1,1,0,,,,No
+150901,Tejaditos,P8,1,1,0,,,,No
+150902,Carrera 5W Calle 16D N-s,P8,1,1,0,,,,No
+150903,FIN Tejaditos,P8,1,1,0,,,,No
+165014,Inicio Calle 5 Carrera 13 Altamira,P14,1,1,0,,,,No
+165015,Calle 5 Carrera 10.,P14,1,1,0,,,,No
+165016,Carrera 8 Calle 3 S-n.,P14,1,1,0,,,,No
+165017,Conjunto Residencial Paragüitas I.,P14,1,1,0,,,,No
+165018,Jardín Botánico ELOY VALENZUELA.,P14,1,1,0,,,,No
+165019,Colegio Vicente Azuero S-n,P14;P3,2,1,0,,,,No
+165020,Calle 41 Carrera 4 S-n.,P14;P3,2,1,0,,,,No
+165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,P14;P3,2,1,0,,,,No
+165123,Iglesia Santamaria de Los Lagos. S-n.,P14;P3,2,1,0,,,,No
+165136,Kr 29 Cl 8 S-n.,P14;P3,2,1,0,,,,No
+165024,Parque Acualago S-n.,P14;P3,2,1,0,,,,No
+165025,Supermercado La Canasta.,P14;P3,2,1,0,,,,No
+165026,Carrera 12 Calle 27 S-n.,P14;P2;P3,3,1,0,,,,No
+151099,Calle 105 Carrera 25 S-n,P10;P14,2,1,0,,,,No
+151100,Parada MasxMenos,P10;P14,2,1,0,,,,No
+151101,Calle 105 Carrera 21 S-n,P10;P14,2,1,0,,,,No
+151102,Colegio INEM S-n,P10;P14,2,1,0,,,,No
+151103,Colegio Divino Niño S-n,P10;P14,2,1,0,,,,No
+151104,Transversal Metropolitana Calle 104C S-n,P10;P14,2,1,0,,,,No
+151105,Transversal Metropolitana Calle 103B S-n,P10;P14,2,1,0,,,,No
+151106,Transversal Metropolitana Carrera 14 Venecia S-n,P10;P14,2,1,0,,,,No
+151107,Transversal Metropolitana Carrera 13A S-n,P10;P14,2,1,0,,,,No
+151108,Terminal de Transportes de Bucaramanga S-n,P10;P14,2,1,0,,,,No
+151109,Puente el Bueno,P10;P14,2,1,0,,,,No
+151110,Barrio Bucaramanga S-n,P10;P14,2,1,0,,,,No
+151111,Calle 65 Carrera 7 S-n,P10;P14,2,1,0,,,,No
+151112,Barrio Guayacanes,P14,1,1,0,,,,No
+151113,Calle 61 Carrera 1 Occidente S-n,P10;P14,2,1,0,,,,No
+151117,Calle 55 Carrera 3 S-n,P10;P14,2,1,0,,,,No
+151118,Calle 55 Carrera 6  S-n,P10;P14,2,1,0,,,,No
+151119,Calle 61 Carrera 7 S-n,P10;P14,2,1,0,,,,No
+151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,P10;P14,2,1,0,,,,No
+151121,Carrera 15 Calle 55 S-n,P10;P14,2,1,0,,,,No
+151122,Carrera 17 Calle 55 S-n,P10;P14,2,1,0,,,,No
+151150,Diagonal 15 calle 55 S-n,P1;P14;P19,3,1,0,,,,No
+150937,Parque Turbay Sn,P14;P3,2,1,0,,,,No
+150943,ESTACION UIS,P14,1,1,1,6091,Estación,Rutas,No
+150951,Diagonal 15 Avenida la Rosita,P1;P10;P14;P19;RD27/RD15,5,1,0,,,,No
+151124,Calle 56 Carrera 15 N-s.,P10;P14,2,1,0,,,,No
+151125,Calle 56 Carrera 14 Macaregua,P10;P14,2,1,0,,,,No
+151126,Unidades Tecnológicas de Santander,P10;P14,2,1,0,,,,No
+151127,Calle 57 Carrera 7 N-s,P10;P14,2,1,0,,,,No
+151128,Calle 57 Carrera 3 N-s,P10;P14,2,1,0,,,,No
+151129,Calle 55 Carrera 3 N-s,P10;P14,2,1,0,,,,No
+151130,Balconcitos,P10;P14,2,1,0,,,,No
+151131,Carrera 2 Occidente Calle 55A N-s,P10;P14,2,1,0,,,,No
+151132,Recrear el Mutis,P10;P14,2,1,0,,,,No
+151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,P10;P14,2,1,0,,,,No
+151134,Carrera 2W Calle 63 N-s,P10;P14,2,1,0,,,,No
+151135,Carrera 10 Calle 64 Cancha el Bueno,P10;P14,2,1,0,,,,No
+151136,Calle 65 carrera 3 N-s,P10;P14,2,1,0,,,,No
+151137,Plaza de Mercado Campesino,P10;P14,2,1,0,,,,No
+151138,Parada Puente el Bueno N-s,P10;P14,2,1,0,,,,No
+151139,Terminal de Transportes N-s,P10;P14,2,1,0,,,,No
+151140,Bomba San Fermín N-s,P10;P14,2,1,0,,,,No
+151141,Transversal Metropolitana Calle 103 N-s,P10;P14,2,1,0,,,,No
+151142,Transversal Metropolitana Calle 104A,P10;P14,2,1,0,,,,No
+151143,Colegio Divino Niño N-s,P10;P14,2,1,0,,,,No
+151144,Colegio INEM N-s,P10;P14,2,1,0,,,,No
+151145,Calle 105 Carrera 20 N-s,P10;P14,2,1,0,,,,No
+151146,Calle 105 carrera 22 N-s,P10;P14,2,1,0,,,,No
+151147,Parroquia Cristo Resucitado,P10;P14,2,1,0,,,,No
+166038,Centro Comercial Cañaveral,P14;P2;P3,3,1,0,,,,No
+166054,Centro Comercial Parque Caracolí,P14;P19;P2;P3,4,1,0,,,,No
+166061,Parque Acualago N-s.,P14;P3,2,1,0,,,,No
+165023,Carrera 29 Calle 8 S-n.,P14,1,1,0,,,,No
+165022,Plaza la Colmena N-s.,P14;P3,2,1,0,,,,No
+166091,Carrera 3 Calle 48 N-s.,P14;P3,2,1,0,,,,No
+166092,Colegio Vicente Azuero N-s.,P14;P3,2,1,0,,,,No
+166133,Hospital San Juan de Dios.,P14,1,1,0,,,,No
+166134,Plaza de Mercado Floridablanca,P14,1,1,0,,,,No
+166135,Dirrecion de Transito de Floridablanca.,P14,1,1,0,,,,No
+166154,Calle 11 Carrera 8 Servientrega.,P14,3,1,0,,,,No
+166155,Calle 205 Carrera 38A,P14,2,1,0,,,,No
+166157,Calle 205 Carrera 40 N-s.,P14,2,1,0,,,,No
+166169,Carrera 40 Calle 204B los ANDES.,P14,1,1,0,,,,No
+166156,Finalización Calle 5 Limoncito.,P14,1,1,0,,,,No
+150985,Inicio Portal del Valle,RD27/RD15,1,1,0,,,,No
+150904,Carrera 2W Calle 23 S-n,RD27/RD15,1,1,0,,,,No
+150982,Carrera 2W Calle 24B.,RD27/RD15,2,1,0,,,,No
+150905,Cisnes Sn,RD27/RD15,1,1,0,,,,No
+150906,Salida de los Cisnes Sn,RD27/RD15,1,1,0,,,,No
+150907,Condominio Hacienda San Juan Sn,RD27/RD15,1,1,0,,,,No
+150908,EDS Barlovento Sn,RD27/RD15,1,1,0,,,,No
+170489,Sede Recreacional Lomas del Viento.,RD27/RD15,1,1,0,,,,No
+150909,EDS el Molino del Viento Sn,RD27/RD15,1,1,0,,,,No
+150910,Los Troncos S-n,RD27/RD15,1,1,0,,,,No
+150795,Cabecera del Llano S-n,RD27/RD15,1,1,0,,,,No
+150914,San Carlos S-n,RD27/RD15,1,1,0,,,,No
+150920,Paradero Vivero Platacero Sn,RD27/RD15,1,1,0,,,,No
+150924,Mac Pollo Sn,RD27/RD15,1,1,0,,,,No
+150928,Estación Lagos Sn,RD27/RD15,1,1,0,,,,No
+151149,Estación de Transferencia Provenza Oriental,RD27/RD15,1,1,0,,,,No
+150944,Carrera 26 Calle 13 Ns,P2;RD27/RD15,2,1,0,,,,No
+150945,Boulevar Santander Carrera 22 Ns,P2;RD27/RD15,2,1,0,,,,No
+150946,Boulevar Santander carreras 17-18,RD27/RD15,1,1,0,,,,No
+151155,Estación Quebradaseca N-s,P1;P10;P19;RD27/RD15,4,1,0,,,,No
+150948,Estación San Mateo Ns,P19;RD27/RD15,2,1,0,,,,No
+150949,Estación Chorreras Ns,P1;P19;RD27/RD15,3,1,0,,,,No
+150950,la Rosita Centro Comercial Ns,P1;P10;P19;RD27/RD15,5,1,0,,,,No
+150952,Estación la Isla,RD27/RD15,1,1,0,,,,No
+150953,Diagonal 15 Calle 60 N-s,P1;P19;P2;RD27/RD15,6,1,0,,,,No
+150958,Puente Peatonal Hormigueros Occidental N-s,RD27/RD15,1,1,0,,,,No
+150960,Estación Cañaveral N-s,RD27/RD15,1,1,0,,,,No
+150964,EDS el Tigger N-s,RD27/RD15,1,1,0,,,,No
+150973,San Carlos N-s,RD27/RD15,1,1,0,,,,No
+150974,San Francisco N-s,RD27/RD15,1,1,0,,,,No
+150975,San Luis N-s,RD27/RD15,1,1,0,,,,No
+150976,Puerto Madero N-s,RD27/RD15,1,1,0,,,,No
+150977,Cabecera del llano N-s,RD27/RD15,1,1,0,,,,No
+150978,EDS el Molino N-s,RD27/RD15,1,1,0,,,,No
+150979,Lomas del Viento N-s,RD27/RD15,1,1,0,,,,No
+150980,EDS Barlovento N-s,RD27/RD15,1,1,0,,,,No
+150981,Condominio Hacienda San Miguel N-s,RD27/RD15,1,1,0,,,,No
+150983,Carrera 2W Calle 24 N-s,RD27/RD15,1,1,0,,,,No
+150984,Fin Portal del Valle,RD27/RD15,1,1,0,,,,No
+170504,Inicio CENDAS.,P1,1,1,0,,,,No
+170505,Carrera 54 Calle 141.,P1,1,1,0,,,,No
+170512,Calle 142 Carrera 55,P1,1,1,0,,,,No
+170516,Parque de la Familia - CENDAS.,P1,2,1,0,,,,No
+170530,Carrera 9E Calle 33.,P1,1,1,0,,,,No
+171017,Calle 30 Carrera 7E,P1;P2,2,1,0,,,,No
+171023,Calle 30 Carrera 5E,P1;P2,2,1,0,,,,No
+171031,Calle 30 Carrera 3E,P1;P2,2,1,0,,,,No
+171032,La HACIENDA S-n,P1;P2,2,1,0,,,,No
+171056,Carrera 3 calle 15 S-n,P1;P2,2,1,0,,,,No
+171057,Carrera 3 Calle 13 S-n.,P1;P2,2,1,0,,,,No
+171058,Calle 11 Carrera 5,P1;P2,2,1,0,,,,No
+171059,Plaza de Mercado SANTANA.,P1;P2,2,1,0,,,,No
+171095,Calle 4 Carrera 10 S-n,P1;P2,2,1,0,,,,No
+171115,Puente Peatonal la GALLERA.,P1,1,1,0,,,,No
+171116,Puente Peatonal la CASTELLANA S-n,P1,1,1,0,,,,No
+171117,Calle 114 Carrera 28 NIZA,P1,1,1,0,,,,No
+150934,Antonia Santos,P1;P19;P2;P3,4,1,0,,,,No
+151152,Estación Chorreras S-n,P1;P10;P19,3,1,0,,,,No
+151003,Estacion San mateo S-n,P1;P10;P19,3,1,0,,,,No
+151154,Estación Quebradaseca S-n,P1;P10;P19,4,1,0,,,,No
+151156,Estación San Mateo N-s,P1;P10,2,1,0,,,,No
+151272,Calle 56 Diagonal 15 S-n.,P1,1,1,0,,,,No
+171301,Diagonal 105 Transversal 29,P1;P10;P18,3,1,0,,,,No
+171302,Plaza Satélite.,P1;P10,2,1,0,,,,No
+171303,Carrera 33 Calle 109 N-s.,P1;P10,2,1,0,,,,No
+171304,CAI NIZA,P1,1,1,0,,,,No
+171305,Puente Peatonal la CASTELLANA N-s.,P1,1,1,0,,,,No
+171306,Puente Peatonal la GALLERA N-s.,P1,1,1,0,,,,No
+171307,Casetas de Villabel.,P1,1,1,0,,,,No
+171308,Calle 4 Carrera 10 N-s.,P1;P2,2,1,0,,,,No
+171309,Plaza de Mercado SANTANA N-s.,P1;P2,2,1,0,,,,No
+171310,Calle 8 Carrera 4,P1;P2,2,1,0,,,,No
+171311,Carrera 3 Calle 13 N-s.,P1;P2,2,1,0,,,,No
+171312,Carrera 3 Calle 15 N-s,P1;P2,3,1,0,,,,No
+171313,LA HACIENDA,P1;P2,2,1,0,,,,No
+171314,Calle 30 Carrera 1.,P1;P2,2,1,0,,,,No
+171315,Calle 29A Carrera 3E.,P1;P2,2,1,0,,,,No
+171316,Calle 28 Carrera 5E.,P1;P2,2,1,0,,,,No
+171446,Calle 28 Carrera 7E.,P1;P2,2,1,0,,,,No
+171447,Calle 28 Carrera 8AE,P1;P2,2,1,0,,,,No
+171448,Carrera 9E Calle 30,P1;P2,2,1,0,,,,No
+171449,Calle 31 Carrera 9E N-s.,P1;P2,2,1,0,,,,No
+171451,Carrera 54 Calle 142 N-s,P1,1,1,0,,,,No
+171452,Fin Estacion CENDAS.,P1,1,1,0,,,,No
+171483,Carrera 11E Calle 30A,P2,1,1,0,,,,No
+171493,Calle 30 Carrera 9E N-s.,P2,1,1,0,,,,No
+171581,Carrera 11 Calle 11 S-n.,P2,1,1,0,,,,No
+171582,Carrera 12 Calle 12. S-n.,P2,1,1,0,,,,No
+171601,Carrera 12 Calle 16 S-n.,P2,1,1,0,,,,No
+171608,Carrera 12 Calle 19 S-n.,P2,1,1,0,,,,No
+171602,Carrera 12 Calle 23 S.n,P2,1,1,0,,,,No
+171691,Carrera 21 Calle 54 S-n.,P2,1,1,0,,,,No
+171696,Parque la CONCORDIA.,P2,1,1,0,,,,No
+171698,Carrera 21 Calle 37,P2,1,1,0,,,,No
+171699,Carrera 21 Calle 34.,P2,1,1,0,,,,No
+171700,Parque ANTONIA SANTOS.,P2,1,1,0,,,,No
+171702,Carrera 21 Calle 28.,P2,1,1,0,,,,No
+171701,Carrera 21 Calle 20.,P2,1,1,0,,,,No
+171703,Carrera 21 Calle 15.,P2,1,1,0,,,,No
+171804,Carrera 22 Calle 22.,P2,1,1,0,,,,No
+171805,Parque ANTONIA SANTOS N-s.,P2,1,1,0,,,,No
+171806,Carrera 22 calle 34.,P2,1,1,0,,,,No
+171807,Carrera 22 Calle 39.,P2,1,1,0,,,,No
+171808,Carrera 22 calle 45.,P2,1,1,0,,,,No
+171809,Parque la CONCORDIA N-s.,P2,1,1,0,,,,No
+171810,Carrera 22 Calle 53.,P2,1,1,0,,,,No
+171850,Carrera 22 Calle 55,P2,1,1,0,,,,No
+171961,Carrera 12 calle 22 N-s.,P2,1,1,0,,,,No
+171965,Carrera 12 calle 19 N-s.,P2,1,1,0,,,,No
+171966,Plaza de Mercado VILLABEL N-s.,P2,1,1,0,,,,No
+171967,Carrera 11 Calle 8 N-s.,P2,1,1,0,,,,No
+171968,Estación de Bombeo Amb N-s.,P2,1,1,0,,,,No
+172072,Estacion Barrio CARACOLI. ,P3,2,1,0,,,,No
+172073,Calle 8 Carrera 6.,P3,1,1,0,,,,No
+172074,Carrera 7 Calle 5 S-n.,P3,1,1,0,,,,No
+172075,Sector 18 S-n.,P3,1,1,0,,,,No
+172076,Sector 19 S-n.,P3,1,1,0,,,,No
+172077,Mercomfenalco BUCARICA.,P3,1,1,0,,,,No
+172078,Sector 10-10 S-n.,P3,1,1,0,,,,No
+172079,Cancha BUCARICA.,P3,1,1,0,,,,No
+172080,Sector 3-3 S-n.,P3,1,1,0,,,,No
+150935,Conucos S-n,P3,1,1,0,,,,No
+150936,Carrera 27 Calle 55 Sn,P3,1,1,0,,,,No
+150938,Carrera 27 Calle 37 Sn,P3,1,1,0,,,,No
+150939,Decoriente Sn,P3,1,1,0,,,,No
+150940,Carrera 27 Calle 19 Sn,P3,1,1,0,,,,No
+150941,Sena Sn,P3,1,1,0,,,,No
+150942,Carrera 27 Calle 11 Sn,P3,1,1,0,,,,No
+172628,Sector 3-2 N-s.,P3,1,1,0,,,,No
+172629,Sector 6-5 N-s.,P3,1,1,0,,,,No
+172630,Sector 13-3 N-s.,P3,1,1,0,,,,No
+172631,Sede Bomberos de Floridablanca.,P3,1,1,0,,,,No
+172632,Sector 21-9 N-s.,P3,1,1,0,,,,No
+172633,Carrera 6 Calle 5 N-s.,P3,1,1,0,,,,No
+172634,Calle 7A Carrera 5 N-s.,P3,1,1,0,,,,No
+172682,Inicio Avenida 60 calle 142.,P10,1,1,0,,,,No
+172683,Iglesia el CARMEN.,P10,2,1,0,,,,No
+172684,Avenida 60  Calle 46 S-n.,P10,1,1,0,,,,No
+172685,Carrera 8 calle 49.,P10,2,1,0,,,,No
+172686,Calle 50 Carrera 9,P10,1,1,0,,,,No
+172687,Plaza de Mercado VILLALUZ.,P10,1,1,0,,,,No
+172688,Calle 53 Carrera 15A.,P10,2,1,0,,,,No
+172689,Calle 53 Carrera 13.,P10,2,1,0,,,,No
+172690,Carrera 13 Calle 55A.,P10,2,1,0,,,,No
+172734,Calle 53 Carrera 13  Cancha ALARES,P10,1,1,0,,,,No
+172735,Calle 58 Carrera 14A.,P10,1,1,0,,,,No
+172736,Carrera 15 Calle 57.,P10,1,1,0,,,,No
+172737,Carrera 15 Calle 57A.,P10,1,1,0,,,,No
+172738,Carrera 15A Calle 57.,P10,2,1,0,,,,No
+172739,SANTA HELENA DE LA SIERRA.,P10,1,1,0,,,,No
+172740,Calle 59 Carrera 18A.,P10,1,1,0,,,,No
+172741,Carrera 20 Calle 107 CAMPANAZO.,P10,1,1,0,,,,No
+172742,SAN BERNARDO.,P10,1,1,0,,,,No
+172743,Calle 107 Carrera 37.,P10,1,1,0,,,,No
+172744,Carrera 37 Calle 119 S-n.,P10,1,1,0,,,,No
+172745,Virgen la CASTELLANA S-n.,P10,1,1,0,,,,No
+172747,Iglesia LA INMACULADA. S-n.,P10,2,1,0,,,,No
+172864,Plaza Satélite S-n,P10;P18,2,1,0,,,,No
+172865,Transversal 29 Diagonal 105.,P10,1,1,0,,,,No
+151098,Conjunto Residencial Moravia,P10,1,1,0,,,,No
+151114,Carrera 2 Occidente Calle 64 S-n,P10,1,1,0,,,,No
+151115,Carrera 2 Occidente Calle 57 S-n,P10,1,1,0,,,,No
+151116,Calle 55 carrera 1 Occidente S-n,P10,1,1,0,,,,No
+173189,Iglesia PERPETO SOCORRO.,P10,4,1,0,,,,No
+151001,Puente Peatonal la Rosita S-n,P10;P19,2,1,0,,,,No
+151289,Carrera 15 Calle 22 S-n,P10;P19,2,1,0,,,,No
+151287,Carrera 15 Calle 18 S-n,P10;P19,2,1,0,,,,No
+151285,Carrera 15 Calle 15 S-n,P10;P19,2,1,0,,,,No
+151282,Carrera 15 Calle 11 S-n,P10;P19,2,1,0,,,,No
+154170,Calle 10 Carrera 23,P10,1,1,0,,,,No
+154171,Colegio Bethlemitas,P10,1,1,0,,,,No
+151283,Carrera 15 Calle 13 N-s,P10;P19,2,1,0,,,,No
+151284,Carrera 15 calle 16 N-s,P10;P19,2,1,0,,,,No
+151286,Carrera 15 calle 19 N-s,P10;P19,2,1,0,,,,No
+151288,Carrera 15 Calle 21 N-s,P10;P19,2,1,0,,,,No
+151157,Estación chorreras N-s,P10,1,1,0,,,,No
+173774,Carrera 17 calle 51A.,P10,1,1,0,,,,No
+151148,Calle 105 Carrera 25 N-s,P10,1,1,0,,,,No
+174693,"VIRGEN DE LA CASTELLANA N-s,",P10,1,1,0,,,,No
+174694,Colegio ISIDRO CABALLERO.,P10,1,1,0,,,,No
+174695,Calle 107 Carrera 39.,P10,1,1,0,,,,No
+174696,SAN BERNARDO N-s.,P10,1,1,0,,,,No
+174698,Calle 59 Carrera 18A N-s.,P10,1,1,0,,,,No
+174699,SANTA HELENA DE LA SIERRA N-s.,P10,1,1,0,,,,No
+174701,Carrera 16 Calle 56 N-s.,P10,1,1,0,,,,No
+174702,Carrera 14 Calle 58 N-s.,P10,1,1,0,,,,No
+174703,Cancha ALARES N-s.,P10,1,1,0,,,,No
+174704,Calle 51 Carrera 12 N-s.,P10,1,1,0,,,,No
+174705,Carrera 8 Calle 49 N-s.,P10,1,1,0,,,,No
+174706,CAI EL CARMEN.,P10,1,1,0,,,,No
+174707,Puente Peatonal COLEGIO EL CARMEN.,P10,1,1,0,,,,No
+174708,Avenida 60 Calle 139.,P10,1,1,0,,,,No
+175129,CACIQUE CONDOMINIO.,P18,2,1,0,,,,No
+175130,LA GRANJITA.,P18,2,1,0,,,,No
+175131,"""Y"" entrada cementerio LAS COLINAS.",P18,2,1,0,,,,No
+175132,Carrera 45 Calle 64.,P18,2,1,0,,,,No
+175133,Calle 62 Carrera 45.,P18,2,1,0,,,,No
+175134,Calle 56 Carrera 46 S-n.,P18,2,1,0,,,,No
+175135,PIZZA RITMO.,P18,6,1,0,,,,No
+175244,Carrera 50 Calle 54.,P18,2,1,0,,,,No
+175245,Carrera 50 Calle 53.,P18,2,1,0,,,,No
+175246,Carrera 51 Calle 50 LOS CEDROS.,P18,1,1,0,,,,No
+175247,Carrera 55 Calle 50.,P18,1,1,0,,,,No
+175248,Carrera 55 Calle 51.,P18,1,1,0,,,,No
+175249,Carrera 54 Calle 52.,P18,1,1,0,,,,No
+175250,Carrera 52 Calle 52.,P18,1,1,0,,,,No
+175251,Glorieta PAN DE AZUCAR.,P18,2,1,0,,,,No
+175469,Barrio LA LIBERTAD.,P18,1,1,0,,,,No
+175496,BOSCONIA.,AN3,2,1,0,,,,No
+175497,Ferreteria CHUCHO.,AN3,2,1,0,,,,No
+175498,Carrera 34A Calle 16N,AN3,2,1,0,,,,No
+175499,Drogueria CIUDAD NORTE,AN3,2,1,0,,,,No
+175500,CAI LA ESPERANZA,AN3,2,1,0,,,,No
+175501,Carrera 26 Calle 8N,AN3,1,1,0,,,,No
+175502,Calle 1 Carrera 20,AN3,2,1,0,,,,No
+151275,Casetas el Bosque S-n,AN3;P19,2,1,0,,,,No
+151273,Portal Norte,AN3;P19,4,1,0,,,,No
+172946,Lote Estación Ferrocarril,P19,2,1,0,,,,No
+173188,Carrera 8b Calle 35 an,P19,1,1,0,,,,No
+175909,Colegio CAFE MADRID.,P19,1,1,0,,,,No
+174697,Carrera 8-B Calle 34-AN,P19,1,1,0,,,,No
+174700,Calle 34N Carrera 8C,P19,1,1,0,,,,No
+174709,Vía la cemento girón,P19,1,1,0,,,,No
+175128,Avenida Café Madrid Kra 10,P19,1,1,0,,,,No
+176042,Retorno las HAMACAS,P19,1,1,0,,,,No
+176044,LAS HAMACASC,P19,1,1,0,,,,No
+176043,Balconcitos del KENNEDY,P19,1,1,0,,,,No
+176045,Carrera 12 calle 21N,P19,1,1,0,,,,No
+176079,Plaza de Mercado KENNEDY,P19,1,1,0,,,,No
+175503,COLSEGUROS,P19,1,1,0,,,,No
+151274,Ancianato Albeiro Vargas N-s,P19,1,1,0,,,,No
+151276,Carrera 15 Calle 3N San Rafael N-s,P19,1,1,0,,,,No
+151277,Parada la Virgen N-s,P19,1,1,0,,,,No
+151279,Carrera 15 calle 9 N-s,P19,1,1,0,,,,No
+151158,Diagonal 15 Calle 56 N-s,P19,1,1,0,,,,No
+176419,VILLA ESPAÑA,P19,1,1,0,,,,No
+176420,PARQUE SAN AGUSTIN.,P19,1,1,0,,,,No
+176460,FOSCAL INTERNACIONAL FOSUNAB.,P19,1,1,0,,,,No
+176422,IROKA,P19,1,1,0,,,,No
+151280,Carrera 15 Calle 9 S-n,P19,1,1,0,,,,No
+151278,Carrera 15 Calle 4 S-n,P19,1,1,0,,,,No
+176080,Hospital del NORTE.,P19,1,1,0,,,,No
+176740,TEJAR NORTE.,P19,1,1,0,,,,No
+176741,Carrera 10 Calle 18N,P19,1,1,0,,,,No
+176742,Carrera 10 Calle 21.,P19,1,1,0,,,,No
+176743,VILLA ALEGRIA,P19,2,1,0,,,,No

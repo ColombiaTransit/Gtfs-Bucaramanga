@@ -1,0 +1,11 @@
+site_id,site_name,geozone_type,geozone_category,site_lat,site_lon,explicit_location_id,matched_location_id,method,distance_m,nearby_location_ids
+5990,Parque Santander,Parque,Sitios de interés,7.119667956232575,-73.12284323866783,,,unmatched,,171699;171806;171698
+6090,Parque SanPio,Parque,Sitios de interés,7.118624847277918,-73.11054835049826,,,unmatched,,150824;150851;150852
+6096,Estacion Temprana,Estación,Rutas,7.002400447661808,-73.05506268139901,,,spatial_only_review,18.3,150880;150972;150800
+6095,Estacion San Mateo,Estación,Rutas,7.118864575345579,-73.12680682300041,,,spatial_only_review,2.3,150948;151003;151156
+6094,Estacion Portal Norte,Estación,Rutas,7.146338461312271,-73.13070448815044,,,unmatched,,151273;151274;151275
+6093,Estacion Provenza Oriental,Estación,Rutas,7.091328316916697,-73.1088129781908,,,spatial_only_review,21.1,151149;150817;150933
+6092,Estacion Provenza Occ,Estación,Rutas,7.090286994784937,-73.10949970445914,,,spatial_only_review,24.1,150863;150933;150817
+6091,Estacion Uis,Estación,Rutas,7.137171848151617,-73.12224248085668,,150943,name_within_100m,27.2,150839;150943;150838
+6057,Alcaldía de Bucaramanga,Dependencias de gobierno,Sitios de interés,7.117443833000538,-73.13029319380183,,,unmatched,,150948;151156;151003
+6024,Oficina Principal SITME-Metrolínea,Dependencias de gobierno,Sitios de interés,7.090193447216481,-73.10946534877347,,,unmatched,,150863;150933;150817
