@@ -64,3 +64,21 @@ Nearby names and distances support **candidate associations** only. They do not 
 5. If additional data is needed, inspect the distinct `/geo_zone/stations_by_client/195` and `/site/stations-plan/by_client/195` endpoints present in the supplied JavaScript. Their semantics and availability have **not** been verified here.
 
 **Status:** direct API comparison complete; five-LOCATION_ID exception list ready; GTFS `stops.txt` not yet generated.
+
+### Physical-stop ID decision — user verification (2026-11-09)
+
+The 5 omitted source LOCATION_ID values were manually reconciled with candidate nearby locations by the user. **Do not use distances between derived polygon centroids to merge two stops or infer that they are on the same roadside.**
+
+| Omitted LOCATION_ID | Compared LOCATION_ID | Verified relationship | Preparation decision |
+|---|---|---|---|
+| 150798 San Carlos S-n | 150973 San Carlos N-s | **Different direction; opposite sides of road** | Keep separate; no merge |
+| 150873 Mac Pollo N-s | 150965 Mac Pollo N-s | **Same physical stop** | Canonical ID 150965 |
+| 150877 Pretecor N-s | 150969 Pretecor N-s | **Same physical stop** | Canonical ID 150969 |
+| 163015 Parada la VEGA S-n | 163024 Parada la VEGA S-n | **Same physical stop** | Canonical ID 163024; retain both P16N route visits (orders 87 and 969) |
+| 164171 Carrera 4 Calle 0 S-n | 164933 Carrera 4 No. 0-30 N-s | **Different physical stops; user reports physical separation too great for merger, with at least a different road side** | Keep separate; no merge |
+
+**Important qualification:** Distances such as ~9 m between 164171 and 164933 reported by the earlier script are distances between *derived coordinate centers of polygons*. They are **not verified stop-to-stop boarding-point distances** and must not override the user's direct assessment. A further `150914 San Carlos S-n` is present in the source; do not automatically equate it to 150798, which has a different source ID, until reviewed.
+
+The five source IDs must remain in the unchanged 950 route-STATIONS/checkpoint visits; the three confirmed same-stop relationships are candidate GTFS stop identity *aliases*, not permission to delete route visits. Applying only those three identities to the 531 original unique LOCATION_IDs produces **528 tentative candidate stops**, all requiring precise boarding-coordinate and usability verification; it does **not** establish a final GTFS stops.txt count.
+
+**Machine-readable decision file:** [stop_identity_decisions_2026-11-09.csv](../data/sitme/stop_identity_decisions_2026-11-09.csv). The 2026-11-08 immutable API snapshot and earlier evidence remain intact.
