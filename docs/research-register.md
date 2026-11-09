@@ -644,3 +644,11 @@ The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://
 4. **Remaining technical unknown:** server-side selection rules for `/route/stations`, `/site/by_client` data content and site-to-`LOCATION_ID` identity relationships. The browser source code establishes what the **client** requests and displays, not undocumented backend business rules.
 
 **Research status:** The *frontend JavaScript analysis and meaning of the menu filters are now resolved*. The **server-side omission of 424 checkpoint occurrences** remains an open data-model question. The next targeted task is reconcile `STATIONS` by `LOCATION_ID` and route `ORDER` against `/site/by_client/195` and `/route/stations/195/{date}`; classify route checkpoint versus actual GTFS boarding point by evidence, not by which subset an API returned.
+
+## 2026-11-09 correction — global LOCATION_ID reconciliation
+
+**The earlier 424 endpoint-omitted checkpoint occurrences are NOT 424 missing boarding stops.** There are **950 STATIONS/checkpoint occurrences representing 531 unique LOCATION_IDs**. Of these, **419 are repeated usages**. The `/route/stations` endpoint has **526 rows, all with unique LOCATION_IDs**, covering 526 of those 531 IDs. Exactly **five globally distinct LOCATION_IDs** are absent from that endpoint: `150798` (San Carlos S-n), `150873` (Mac Pollo N-s), `150877` (Pretecor N-s, used on two routes), `163015` (Parada la VEGA S-n.), and `164171` (Carrera 4 Calle 0 S-n.).
+
+Live `/site/by_client/195` was successfully fetched on 2026-11-09: just **10 objects** (6 Estación, 2 Parque, 2 Dependencias de gobierno), a map-site catalog, not the route-stop inventory. Only one site matched a route checkpoint using unique exact normalized name plus distance; four were spatially near but need interpretation. No route stop may be excluded because it lacks a match in this small site catalog.
+
+See [full corrected interpretation](sitme_stop_site_reconciliation_2026-11-09.md), [automated site-layer report](sitme_site_layer_comparison.md), and [reproducible comparison script](../scripts/compare_sitme_site_layers.py). The earlier per-route '370 missing locations' phrase counted missing **per-route** appearances, not distinct globally missing stops; do not use it for the GTFS stop count.
