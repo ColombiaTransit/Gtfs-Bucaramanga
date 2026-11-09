@@ -15,6 +15,19 @@ spec.loader.exec_module(audit)
 
 
 class MatchingAndRouteTests(unittest.TestCase):
+    def test_private_overpass_interpreter_suffix(self):
+        self.assertEqual(
+            'https://overpass.example.org/interpreter',
+            audit.resolve_overpass_endpoint('https://overpass.example.org'))
+        self.assertEqual(
+            'https://overpass.example.org/interpreter',
+            audit.resolve_overpass_endpoint('https://overpass.example.org/interpreter/'))
+        self.assertEqual(
+            'https://overpass.example.org/custom/interpreter',
+            audit.resolve_overpass_endpoint('https://overpass.example.org/custom/'))
+        with self.assertRaises(ValueError):
+            audit.resolve_overpass_endpoint('')
+
     def test_direction_is_different(self):
         self.assertEqual('S-N',audit.direction('San Carlos S-n'))
         self.assertEqual('N-S',audit.direction('San Carlos N-s'))
