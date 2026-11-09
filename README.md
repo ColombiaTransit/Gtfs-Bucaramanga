@@ -25,3 +25,15 @@ The official [September 2024 Metrolínea route poster](https://www.metrolinea.go
 - [Provisional historical peak/off-peak clock-time model](data/sitme/provisional_peak_valley_windows.csv)
 
 See the [central research register](docs/research-register.md) for source hierarchy, conflicts, unknowns, and outstanding verification. No GTFS generator or published feed exists yet.
+
+## Stop data reconciliation (2026-11-09)
+
+The [12-route SITME stop-layer audit](docs/sitme_stop_layer_audit_2026-11-08.md) checks the unmodified November 8 snapshot: 10,699 DETAIL points, 950 checkpoint/STATIONS rows and 526 matching `route_stations` candidate records. It records 424 additional checkpoint visits, 46 proximity-review pairs and no broken API ordering/linkage. **These are research-only candidate records, not an approved GTFS stop list.**
+
+- [Per-route counts](data/sitme/stop_layer_summary_2026-11-08.csv)
+- [Candidate stop records](data/sitme/stop_endpoint_candidates_2026-11-08.csv)
+- [Additional checkpoint review](data/sitme/stop_additional_checkpoints_2026-11-08.csv)
+- [Cross-route proximity review](data/sitme/stop_spatial_review_2026-11-08.csv)
+- [Re-run audit script](scripts/audit_sitme_stop_layers.py)
+
+Next: validate endpoint-selection semantics, precise platform coordinates, P18/AN3 loop stop orders and RD27/RD15 Carrera 27 geometry before GTFS generation.
