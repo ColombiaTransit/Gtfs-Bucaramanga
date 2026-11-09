@@ -670,3 +670,17 @@ The 5 omitted source LOCATION_ID values were manually reconciled with candidate 
 The five source IDs must remain in the unchanged 950 route-STATIONS/checkpoint visits; the three confirmed same-stop relationships are candidate GTFS stop identity *aliases*, not permission to delete route visits. Applying only those three identities to the 531 original unique LOCATION_IDs produces **528 tentative candidate stops**, all requiring precise boarding-coordinate and usability verification; it does **not** establish a final GTFS stops.txt count.
 
 **Machine-readable decision file:** [stop_identity_decisions_2026-11-09.csv](../data/sitme/stop_identity_decisions_2026-11-09.csv). The 2026-11-08 immutable API snapshot and earlier evidence remain intact.
+
+### Superseding SITME-only GTFS source decision — 2026-11-09
+
+**Accepted source hierarchy:** SITME itself provides stop identity, ordered `STATIONS` records, `DETAIL` route geometry and source GPS. We will **not require OpenStreetMap/Overpass matching** to generate the GTFS; the prior OSM QA reports remain archived experimental research, not an acceptance gate. All 12 selected complementary route paths will be retained as returned by the archived API, including RD27/RD15 as its single combined source path; discontinued PTB/PTN remains excluded.
+
+- **528** canonical stops from **531** original `LOCATION_ID`s (only the 3 user-confirmed aliases are applied).
+- **950** source station visits retained in route order, including repeats.
+- **10,699** source route points retained in `shapes.txt`.
+- Official SITME map marker GPS convention: `location_id.COORDINATES[0]` for `stop_lat`/`stop_lon`. This first polygon vertex is **not independently proven to be the precise curb-side boarding point**, but is accepted as the SITME-supplied location for this initial build.
+- **Do not merge** San Carlos 150798 / 150973 or Carrera 4 164171 / 164933; these were confirmed to be separate stops.
+
+The reproducible generator is [`scripts/build_sitme_gtfs_base.py`](../scripts/build_sitme_gtfs_base.py) and GitHub workflow [`build-sitme-gtfs-base.yml`](../.github/workflows/build-sitme-gtfs-base.yml). The detailed decision and output specification is [`SITME_GTFS_BASE.md`](SITME_GTFS_BASE.md).
+
+**Important:** This is a GTFS *foundation*, not an operationally publishable complete feed. No `trips.txt`, `stop_times.txt` or `calendar.txt` is invented. Departure times, trip durations, calendars and some pattern/shape discrepancies need specific source-backed follow-up. These are the next tasks, not another OSM validation round.
