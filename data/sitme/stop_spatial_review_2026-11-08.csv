@@ -1,0 +1,47 @@
+route_a,route_b,location_id_a,location_id_b,name_a,name_b,centroid_distance_m,normalized_names_equal,status
+P16N,RD27/RD15,150916,150800,Centro Comercial Ecocentro Sn,Centro Comercial Eco centro,1.6,no,manual_review_keep_separate_until_verified
+P16N,P8,150878,150803,Campo Alegre N-s,Puente Peatonal Campoalegre S-n,22.7,no,manual_review_keep_separate_until_verified
+P16N,RD27/RD15,150878,150919,Campo Alegre N-s,Paradero Campo Alegre S-n,22.3,no,manual_review_keep_separate_until_verified
+P16N,RD27/RD15,150878,150970,Campo Alegre N-s,Estación Campo Alegre N-s,8.4,no,manual_review_keep_separate_until_verified
+P16N,RD27/RD15,150923,150807,Estación Estancia Sn,Puente Peatonal  la Estancia S-n,3.1,no,manual_review_keep_separate_until_verified
+P16N,P19,150931,150815,Hormigueros Sn,Puente Peatonal Hormigueros S-n,11.2,no,manual_review_keep_separate_until_verified
+P16N,P19,150932,150816,Payador Sn,Puente Peatonal  Payador S-n,13.1,no,manual_review_keep_separate_until_verified
+P16N,RD27/RD15,150933,151149,Estacion de Transferencia Provenza Sn,Estación de Transferencia Provenza Oriental,29.1,no,manual_review_keep_separate_until_verified
+P16N,P19,150933,150817,Estacion de Transferencia Provenza Sn,Estacion de transferencia Provenza Oriental,27.0,no,manual_review_keep_separate_until_verified
+P16N,P8,150968,150805,Puente Peatonal Palmichal N-s,Puente Peatonal Palmichal S-n,20.2,no,manual_review_keep_separate_until_verified
+P16N,RD27/RD15,150968,150876,Puente Peatonal Palmichal N-s,Puente Peatonal  Palmichal N-s,10.6,yes,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150911,150795,Cabecera del Llano Sn,Cabecera del Llano S-n,0.7,yes,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150911,150977,Cabecera del Llano Sn,Cabecera del llano N-s,29.3,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150801,150917,ICP,Parada ICP S-n,0.3,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150803,150919,Puente Peatonal Campoalegre S-n,Paradero Campo Alegre S-n,0.5,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150803,150970,Puente Peatonal Campoalegre S-n,Estación Campo Alegre N-s,21.1,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150804,150920,Vivero Platacero,Paradero Vivero Platacero Sn,1.5,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150804,150969,Vivero Platacero,Pretecor N-s,16.1,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150805,150921,Puente Peatonal Palmichal S-n,Paradero Palmichal S-n,28.4,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150805,150876,Puente Peatonal Palmichal S-n,Puente Peatonal  Palmichal N-s,25.8,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150806,150922,Puente Peatonal Menzuly S-n,Paradero Menzuly S-n,2.9,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150806,150967,Puente Peatonal Menzuly S-n,Estación Menzuly N-s,23.3,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150808,150924,Mac Pollo S-n,Mac Pollo Sn,3.1,yes,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150810,150926,PQP S-n,Papi Quiero Piña Sn,4.0,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150811,150927,Universidad Santo Tomas S-n,Universidad Santo Tomas Sn,2.2,yes,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150812,150928,Puente Peatonal Lagos S-n,Estación Lagos Sn,12.7,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150841,150833,Estadio Américo Montanini N-s,Estadio Américo Montanini S-n,14.4,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150842,150832,Velódromo N-s,Velódromo S-n,23.1,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150850,150825,Carrera 33 Calle 42 N-s,Carrera 33 calle 42 S-n,10.0,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150854,150822,Clínica Bucaramanga N-s,Clinica Bucaramanga S-n,29.7,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150857,150820,Centro comercial Cacique N-s,Centro Comercial Cacique S-n,14.2,no,manual_review_keep_separate_until_verified
+P8,P3,150866,150959,Puente Peatonal Molinos N-s,Puente Peatonal Molinos Occidental N-s,2.0,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150867,150960,Cañaveral Paralela N-s,Estación Cañaveral N-s,9.6,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150869,150928,Puente Peatonal  lagos N-s,Estación Lagos Sn,22.8,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150869,150961,Puente Peatonal  lagos N-s,Estación Lagos N-s,5.4,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150871,150963,PQP N-s,Papi Quiero Piña N-s,7.0,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150872,150809,EDS el TIGGER,EDS Aranzoque S-n,16.5,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150872,150964,EDS el TIGGER,EDS el Tigger N-s,1.6,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150874,150966,Puente Peatonal  la Estancia N-s,Estación la Estancia N-s,4.3,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150875,150922,Puente Peatonal Menzuly N-s,Paradero Menzuly S-n,29.5,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150875,150967,Puente Peatonal Menzuly N-s,Estación Menzuly N-s,9.1,no,manual_review_keep_separate_until_verified
+P8,RD27/RD15,150879,150971,Puente Peatonal  Españolita N-s,Estación Españolita N-s,0.1,no,manual_review_keep_separate_until_verified
+RD27/RD15,P19,151149,150817,Estación de Transferencia Provenza Oriental,Estacion de transferencia Provenza Oriental,2.5,yes,manual_review_keep_separate_until_verified
+RD27/RD15,P19,150957,150864,Payador N-s,Puente Peatonal  Payador N-s,9.2,no,manual_review_keep_separate_until_verified
+RD27/RD15,P3,150958,150865,Puente Peatonal Hormigueros Occidental N-s,Puente Peatonal  Hormigueros N-s,2.4,no,manual_review_keep_separate_until_verified
+P10,P19,151156,150948,Estación San Mateo N-s,Estación San Mateo Ns,20.8,yes,manual_review_keep_separate_until_verified
