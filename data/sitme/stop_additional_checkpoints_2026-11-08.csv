@@ -1,0 +1,425 @@
+route,api_id,detail_order,detail_id,location_id,name,reason,repeated_location_count_in_checkpoints,action
+P16S,3341,44,69927,164171,Carrera 4 Calle 0 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,91,69930,150880,Portal de Piedecuesta N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,108,69931,150800,Centro Comercial Eco centro,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,121,69932,150917,Parada ICP S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,147,69933,150802,Puente Peatonal Españolita S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,160,69934,150919,Paradero Campo Alegre S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,166,69935,150804,Vivero Platacero,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,196,69936,150805,Puente Peatonal Palmichal S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,214,69937,150806,Puente Peatonal Menzuly S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,228,69938,150807,Puente Peatonal  la Estancia S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,251,69939,150808,Mac Pollo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,256,69940,150809,EDS Aranzoque S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,267,69941,150926,Papi Quiero Piña Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,275,69942,150927,Universidad Santo Tomas Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,281,69943,150812,Puente Peatonal Lagos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,291,69944,150813,Panamericano Cañaveral paralela S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,295,69945,150929,Estación Cañaveral Vagón Norte s-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,309,69946,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,318,69947,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,324,69948,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,335,69949,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,345,69950,150818,Miradores de San Lorenzo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,352,69951,150819,Glorieta Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,357,69952,150820,Centro Comercial Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,370,69953,150821,Colegio la Merced S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,374,69954,150822,Clinica Bucaramanga S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,378,69955,150823,Gratamira S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,384,69956,150824,Parque San Pio S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,389,69957,150825,Carrera 33 calle 42 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,394,69958,150826,Carrera 33 calle 38 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,398,69959,150827,Carrera 33 calle 34 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,403,69960,150828,plaza Guarín S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,409,69961,150846,Centro Comercial Megamoll S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,414,70329,150844,Quinta Brigada S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,419,70334,150832,Velódromo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,425,70335,150833,Estadio Américo Montanini S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,429,70359,163549,Parada Colegio Tecnológico.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,454,70360,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,470,70361,159204,Parada SENA N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,476,70362,163601,Parada Carrera 27 Calle 19 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,493,70363,155754,Parque de los Niños,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,495,70364,163623,Parada Carrera 27 Calle 34 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,503,70365,163624,Parada Carrera 27 Calle 37. ,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,510,70366,163634,Parada Parque TURBAY N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,516,70453,163642,Parada Carrera 27 Calle 55 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,519,70454,164650,Conucos N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,541,70455,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,552,70456,150955,Estación Diamante N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,571,70457,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,590,70458,150864,Puente Peatonal  Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,597,70459,150865,Puente Peatonal  Hormigueros N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,603,70460,150959,Puente Peatonal Molinos Occidental N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,614,70461,150867,Cañaveral Paralela N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,618,70462,150868,Estación Panamericano,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,626,70463,150869,Puente Peatonal  lagos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,633,70464,150962,Estación la Riviera,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,640,70465,150963,Papi Quiero Piña N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,648,70466,150872,EDS el TIGGER,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,652,70467,150965,Mac Pollo N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,670,70468,150874,Puente Peatonal  la Estancia N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,684,70469,150967,Estación Menzuly N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,705,70470,150968,Puente Peatonal Palmichal N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,732,70471,150877,Pretecor N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,739,70472,150970,Estación Campo Alegre N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,752,70473,150879,Puente Peatonal  Españolita N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,782,70474,150972,Portal de Piedecuesta,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16S,3341,788,70475,150881,Centro Comercial DELACUESTA,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,87,68691,163015,Parada la VEGA S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,163,68831,150880,Portal de Piedecuesta N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,198,68833,150917,Parada ICP S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,220,68834,150802,Puente Peatonal Españolita S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,235,68836,150804,Vivero Platacero,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,265,68837,150921,Paradero Palmichal S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,281,68838,150922,Paradero Menzuly S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,323,68840,150808,Mac Pollo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,329,68841,150809,EDS Aranzoque S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,343,68843,150926,Papi Quiero Piña Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,352,68844,150927,Universidad Santo Tomas Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,360,68845,150812,Puente Peatonal Lagos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,372,68846,150813,Panamericano Cañaveral paralela S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,376,68847,150929,Estación Cañaveral Vagón Norte s-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,390,68848,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,443,68852,150818,Miradores de San Lorenzo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,452,68853,150819,Glorieta Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,458,68854,150820,Centro Comercial Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,483,68855,150821,Colegio la Merced S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,488,68856,150822,Clinica Bucaramanga S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,495,68857,150823,Gratamira S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,501,68858,150824,Parque San Pio S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,506,68859,150825,Carrera 33 calle 42 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,512,68860,150826,Carrera 33 calle 38 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,520,68861,150827,Carrera 33 calle 34 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,525,69211,150828,plaza Guarín S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,531,69212,150829,UCC,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,539,69213,150830,Carrera 32 Calle 19 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,545,69214,150831,Carrera 32 Calle 14 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,549,69215,150832,Velódromo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,559,69216,150833,Estadio Américo Montanini S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,570,69258,163549,Parada Colegio Tecnológico.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,602,69259,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,622,69312,159204,Parada SENA N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,629,69313,163601,Parada Carrera 27 Calle 19 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,645,69314,155754,Parque de los Niños,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,646,69336,163623,Parada Carrera 27 Calle 34 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,650,69337,163624,Parada Carrera 27 Calle 37. ,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,657,69348,163634,Parada Parque TURBAY N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,665,69357,163642,Parada Carrera 27 Calle 55 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,685,69358,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,693,69359,150955,Estación Diamante N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,707,69360,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,718,69361,150957,Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,726,69362,150865,Puente Peatonal  Hormigueros N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,732,69363,150959,Puente Peatonal Molinos Occidental N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,739,69364,150867,Cañaveral Paralela N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,744,69365,150868,Estación Panamericano,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,752,69366,150961,Estación Lagos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,759,69367,150962,Estación la Riviera,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,766,69368,150963,Papi Quiero Piña N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,775,69369,150872,EDS el TIGGER,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,779,69370,150965,Mac Pollo N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,794,69371,150966,Estación la Estancia N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,810,69372,150967,Estación Menzuly N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,847,69374,150877,Pretecor N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,852,69375,150970,Estación Campo Alegre N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,862,69376,150971,Estación Españolita N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P16N,3342,892,69377,150972,Portal de Piedecuesta,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,272,37934,150912,La Normal Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,292,37935,150797,San francisco S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,322,37895,150798,San Carlos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,346,37937,150915,Quinta Granada Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,371,37898,150800,Centro Comercial Eco centro,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,450,37936,150802,Puente Peatonal Españolita S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,588,37903,150807,Puente Peatonal  la Estancia S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,634,37945,150809,EDS Aranzoque S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,723,37912,150813,Panamericano Cañaveral paralela S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,750,37913,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,763,37942,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,774,37914,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,790,37915,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,809,37916,150818,Miradores de San Lorenzo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,823,37917,150819,Glorieta Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,828,37918,150820,Centro Comercial Cacique S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,865,37919,150821,Colegio la Merced S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,876,37938,150822,Clinica Bucaramanga S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,888,37939,150823,Gratamira S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,896,37941,150824,Parque San Pio S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,902,37940,150825,Carrera 33 calle 42 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,908,37920,150826,Carrera 33 calle 38 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,915,37921,150827,Carrera 33 calle 34 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,920,37922,150828,plaza Guarín S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,929,37923,150829,UCC,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,938,37924,150830,Carrera 32 Calle 19 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,946,37925,150831,Carrera 32 Calle 14 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,951,37926,150832,Velódromo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,967,37927,150833,Estadio Américo Montanini S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,994,37928,150834,Calle 9 Carrera 23,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1002,37932,150835,Iglesia Cristo Rey,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1007,37933,150836,Calle 11 carrera 18 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1015,37929,150837,Calle 11 Carrera 20 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1021,37930,150838,Calle 11 carrera 23 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1035,37931,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1036,38868,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1362,41326,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1379,41327,150864,Puente Peatonal  Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1388,41328,150865,Puente Peatonal  Hormigueros N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1423,41333,150962,Estación la Riviera,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1439,41336,150873,Mac Pollo N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1489,41339,150876,Puente Peatonal  Palmichal N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1512,41340,150969,Pretecor N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P8,3345,1518,41341,150970,Estación Campo Alegre N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,72,70848,165019,Colegio Vicente Azuero S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,91,70849,165020,Calle 41 Carrera 4 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,98,70850,165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,106,70948,165123,Iglesia Santamaria de Los Lagos. S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,116,70962,165136,Kr 29 Cl 8 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,119,70963,165024,Parque Acualago S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,125,70964,165025,Supermercado La Canasta.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,135,70965,165026,Carrera 12 Calle 27 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,158,70966,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,171,70967,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,181,70968,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,206,70969,151099,Calle 105 Carrera 25 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,213,70970,151100,Parada MasxMenos,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,221,70972,151101,Calle 105 Carrera 21 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,242,70974,151102,Colegio INEM S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,247,70975,151103,Colegio Divino Niño S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,252,71096,151104,Transversal Metropolitana Calle 104C S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,262,71097,151105,Transversal Metropolitana Calle 103B S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,277,71098,151106,Transversal Metropolitana Carrera 14 Venecia S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,288,71099,151107,Transversal Metropolitana Carrera 13A S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,300,71137,151108,Terminal de Transportes de Bucaramanga S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,320,71138,151109,Puente el Bueno,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,373,71139,151110,Barrio Bucaramanga S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,382,71140,151111,Calle 65 Carrera 7 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,400,71142,151113,Calle 61 Carrera 1 Occidente S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,420,71143,151117,Calle 55 Carrera 3 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,425,71144,151118,Calle 55 Carrera 6  S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,438,71145,151119,Calle 61 Carrera 7 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,457,71146,151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,469,71327,151121,Carrera 15 Calle 55 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,476,71366,151122,Carrera 17 Calle 55 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,482,71367,151150,Diagonal 15 calle 55 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,494,71368,150937,Parque Turbay Sn,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,506,71369,150824,Parque San Pio S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,510,71370,150825,Carrera 33 calle 42 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,514,71371,150826,Carrera 33 calle 38 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,518,71372,150827,Carrera 33 calle 34 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,523,71373,150828,plaza Guarín S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,528,71374,150829,UCC,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,536,71375,150830,Carrera 32 Calle 19 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,543,71376,150831,Carrera 32 Calle 14 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,547,71377,150832,Velódromo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,557,71378,150833,Estadio Américo Montanini S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,564,71379,163549,Parada Colegio Tecnológico.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,577,71473,150834,Calle 9 Carrera 23,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,587,71474,150835,Iglesia Cristo Rey,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,591,71475,150836,Calle 11 carrera 18 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,596,71476,150837,Calle 11 Carrera 20 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,602,71477,150838,Calle 11 carrera 23 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,636,71514,159204,Parada SENA N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,640,71515,163601,Parada Carrera 27 Calle 19 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,653,71516,155754,Parque de los Niños,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,656,71517,163623,Parada Carrera 27 Calle 34 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,663,71518,163624,Parada Carrera 27 Calle 37. ,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,684,71568,150951,Diagonal 15 Avenida la Rosita,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,695,71569,151124,Calle 56 Carrera 15 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,702,71570,151125,Calle 56 Carrera 14 Macaregua,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,708,71571,151126,Unidades Tecnológicas de Santander,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,720,71572,151127,Calle 57 Carrera 7 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,728,71573,151128,Calle 57 Carrera 3 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,732,71574,151129,Calle 55 Carrera 3 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,753,71575,151130,Balconcitos,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,763,71576,151131,Carrera 2 Occidente Calle 55A N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,768,71577,151132,Recrear el Mutis,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,772,71578,151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,777,71579,151134,Carrera 2W Calle 63 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,792,71580,151135,Carrera 10 Calle 64 Cancha el Bueno,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,811,71581,151136,Calle 65 carrera 3 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,818,71582,151137,Plaza de Mercado Campesino,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,869,71583,151138,Parada Puente el Bueno N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,886,71584,151139,Terminal de Transportes N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,903,71585,151140,Bomba San Fermín N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,911,71586,151141,Transversal Metropolitana Calle 103 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,923,71587,151142,Transversal Metropolitana Calle 104A,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,929,71588,151143,Colegio Divino Niño N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,933,71589,151144,Colegio INEM N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,945,71590,151145,Calle 105 Carrera 20 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,951,71591,151146,Calle 105 carrera 22 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,956,71592,151147,Parroquia Cristo Resucitado,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,980,71593,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,995,71594,150864,Puente Peatonal  Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1003,71595,150865,Puente Peatonal  Hormigueros N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1011,71596,150959,Puente Peatonal Molinos Occidental N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1023,71929,166038,Centro Comercial Cañaveral,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1039,71946,166054,Centro Comercial Parque Caracolí,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1048,71954,166061,Parque Acualago N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1064,71971,165022,Plaza la Colmena N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1078,71989,166091,Carrera 3 Calle 48 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1088,71990,166092,Colegio Vicente Azuero N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1141,72055,166154,Calle 11 Carrera 8 Servientrega.,duplicate_visit_to_endpoint_location,3,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1142,72056,166154,Calle 11 Carrera 8 Servientrega.,duplicate_visit_to_endpoint_location,3,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1150,72058,166155,Calle 205 Carrera 38A,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P14,3346,1157,72066,166157,Calle 205 Carrera 40 N-s.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,15,76816,150982,Carrera 2W Calle 24B.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,324,76860,150929,Estación Cañaveral Vagón Norte s-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,335,76861,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,345,77149,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,356,77150,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,380,77152,150818,Miradores de San Lorenzo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,527,77169,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,528,42231,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,542,42232,150944,Carrera 26 Calle 13 Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,548,42233,150945,Boulevar Santander Carrera 22 Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,583,42235,151155,Estación Quebradaseca N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,588,42236,150948,Estación San Mateo Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,592,42237,150949,Estación Chorreras Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,602,42238,150950,la Rosita Centro Comercial Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,608,42239,150951,Diagonal 15 Avenida la Rosita,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,620,42241,150953,Diagonal 15 Calle 60 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,637,42242,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,648,42243,150955,Estación Diamante N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,671,42244,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+RD27/RD15,3350,705,42247,150959,Puente Peatonal Molinos Occidental N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,18,76795,170516,Parque de la Familia - CENDAS.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,36,77354,171017,Calle 30 Carrera 7E,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,42,77361,171023,Calle 30 Carrera 5E,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,50,77370,171031,Calle 30 Carrera 3E,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,65,77371,171032,La HACIENDA S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,75,77396,171056,Carrera 3 calle 15 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,85,77397,171057,Carrera 3 Calle 13 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,92,77398,171058,Calle 11 Carrera 5,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,103,77399,171059,Plaza de Mercado SANTANA.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,114,77436,171095,Calle 4 Carrera 10 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,182,77495,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,200,77496,150934,Antonia Santos,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,218,77497,150953,Diagonal 15 Calle 60 N-s,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,224,77498,151150,Diagonal 15 calle 55 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,233,77499,150950,la Rosita Centro Comercial Ns,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,241,77565,151152,Estación Chorreras S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,244,77566,151003,Estacion San mateo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,249,77567,151154,Estación Quebradaseca S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,250,77574,151155,Estación Quebradaseca N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,254,77575,151156,Estación San Mateo N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,258,77576,150949,Estación Chorreras Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,267,77577,150950,la Rosita Centro Comercial Ns,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,274,77578,150951,Diagonal 15 Avenida la Rosita,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,281,77580,150953,Diagonal 15 Calle 60 N-s,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,296,77581,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,303,77582,150955,Estación Diamante N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,320,77583,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,340,77663,171301,Diagonal 105 Transversal 29,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,344,77664,171302,Plaza Satélite.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,350,77665,171303,Carrera 33 Calle 109 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,414,77670,171308,Calle 4 Carrera 10 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,421,77671,171309,Plaza de Mercado SANTANA N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,431,77672,171310,Calle 8 Carrera 4,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,437,77673,171311,Carrera 3 Calle 13 N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,446,77674,171312,Carrera 3 Calle 15 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,455,77675,171313,LA HACIENDA,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,467,77676,171314,Calle 30 Carrera 1.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,474,77677,171315,Calle 29A Carrera 3E.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,479,77678,171316,Calle 28 Carrera 5E.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,484,77809,171446,Calle 28 Carrera 7E.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,488,77810,171447,Calle 28 Carrera 8AE,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,492,77811,171448,Carrera 9E Calle 30,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P1,3351,496,77812,171449,Calle 31 Carrera 9E N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,69,77866,171312,Carrera 3 Calle 15 N-s,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,155,77988,165026,Carrera 12 Calle 27 S-n.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,173,78001,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,181,78002,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,188,78003,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,200,78004,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,213,78005,150934,Antonia Santos,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,226,78006,150953,Diagonal 15 Calle 60 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,236,78079,163634,Parada Parque TURBAY N-s.,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,237,78084,163634,Parada Parque TURBAY N-s.,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,305,78150,150838,Calle 11 carrera 23 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,315,78151,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,316,78164,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,400,78246,164650,Conucos N-s.,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,421,78247,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,443,78248,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,460,78295,150864,Puente Peatonal  Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,470,78296,150865,Puente Peatonal  Hormigueros N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,480,78297,150959,Puente Peatonal Molinos Occidental N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,491,78298,166038,Centro Comercial Cañaveral,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P2,3352,508,78299,166054,Centro Comercial Parque Caracolí,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,1,78487,172072,Estacion Barrio CARACOLI. ,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,135,78604,150814,Puente Peatonal  molinos S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,145,78605,150815,Puente Peatonal Hormigueros S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,152,78606,150816,Puente Peatonal  Payador S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,162,78607,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,175,78608,150934,Antonia Santos,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,285,78618,150835,Iglesia Cristo Rey,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,289,78619,150836,Calle 11 carrera 18 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,295,78620,150837,Calle 11 Carrera 20 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,301,78621,150838,Calle 11 carrera 23 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,310,78622,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,311,78797,150839,Transferencia Parque Estación UIS,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,420,78876,150954,Antonia Santos N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,434,78877,150955,Estación Diamante N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,457,78878,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,485,78879,150864,Puente Peatonal  Payador N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P3,3353,541,79017,166054,Centro Comercial Parque Caracolí,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,5,79150,172683,Iglesia el CARMEN.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,16,79153,172685,Carrera 8 calle 49.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,43,79156,172688,Calle 53 Carrera 15A.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,47,79157,172689,Calle 53 Carrera 13.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,52,79158,172690,Carrera 13 Calle 55A.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,90,79207,172738,Carrera 15A Calle 57.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,174,79215,172747,Iglesia LA INMACULADA. S-n.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,183,79332,172864,Plaza Satélite S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,228,79335,150863,Estacion de Transferencia Provenza Occidental,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,529,79682,173189,Iglesia PERPETO SOCORRO.,duplicate_visit_to_endpoint_location,4,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,530,79683,173189,Iglesia PERPETO SOCORRO.,duplicate_visit_to_endpoint_location,4,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,531,79684,173189,Iglesia PERPETO SOCORRO.,duplicate_visit_to_endpoint_location,4,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,541,79686,151001,Puente Peatonal la Rosita S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,551,79687,151152,Estación Chorreras S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,554,79688,151003,Estacion San mateo S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,559,79689,151154,Estación Quebradaseca S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,575,79690,151289,Carrera 15 Calle 22 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,579,79691,151287,Carrera 15 Calle 18 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,584,79692,151285,Carrera 15 Calle 15 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,588,79693,151282,Carrera 15 Calle 11 S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,630,79697,150839,Transferencia Parque Estación UIS,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,688,79951,151283,Carrera 15 Calle 13 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,694,79952,151284,Carrera 15 calle 16 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,700,79953,151286,Carrera 15 calle 19 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,706,79954,151288,Carrera 15 Calle 21 N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,729,79955,151155,Estación Quebradaseca N-s,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,756,79958,150950,la Rosita Centro Comercial Ns,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,766,79959,150951,Diagonal 15 Avenida la Rosita,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P10,3354,1055,80362,171301,Diagonal 105 Transversal 29,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,1,80802,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,27,80804,175129,CACIQUE CONDOMINIO.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,37,80805,175130,LA GRANJITA.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,55,80806,175131,"""Y"" entrada cementerio LAS COLINAS.",duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,66,80807,175132,Carrera 45 Calle 64.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,70,80868,175133,Calle 62 Carrera 45.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,76,80869,175134,Calle 56 Carrera 46 S-n.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,117,80870,175135,PIZZA RITMO.,duplicate_visit_to_endpoint_location,6,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,118,80871,175135,PIZZA RITMO.,duplicate_visit_to_endpoint_location,6,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,119,80872,175135,PIZZA RITMO.,duplicate_visit_to_endpoint_location,6,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,120,80873,175135,PIZZA RITMO.,duplicate_visit_to_endpoint_location,6,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,121,80874,175135,PIZZA RITMO.,duplicate_visit_to_endpoint_location,6,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,130,80923,175244,Carrera 50 Calle 54.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,138,80924,175245,Carrera 50 Calle 53.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,204,80930,175251,Glorieta PAN DE AZUCAR.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P18,3355,386,81162,150817,Estacion de transferencia Provenza Oriental,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,1,81189,175496,BOSCONIA.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,30,81190,175497,Ferreteria CHUCHO.,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,54,81191,175498,Carrera 34A Calle 16N,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,80,81192,175499,Drogueria CIUDAD NORTE,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,101,81193,175500,CAI LA ESPERANZA,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,140,81195,175502,Calle 1 Carrera 20,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,157,81196,151275,Casetas el Bosque S-n,checkpoint_location_not_in_station_endpoint,1,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,168,81197,151273,Portal Norte,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+AN3,3356,169,81357,151273,Portal Norte,checkpoint_location_not_in_station_endpoint,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,1,81610,172946,Lote Estación Ferrocarril,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,237,81791,151273,Portal Norte,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,419,81806,150953,Diagonal 15 Calle 60 N-s,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,623,82195,150929,Estación Cañaveral Vagón Norte s-n,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,732,82277,151154,Estación Quebradaseca S-n,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
+P19,3357,906,82501,176743,VILLA ALEGRIA,duplicate_visit_to_endpoint_location,2,Review source semantics; do not automatically add to GTFS stops or trips
