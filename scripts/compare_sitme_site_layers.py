@@ -130,12 +130,25 @@ def main():
                        "site_categories":";".join(sorted({t["geozone_category"] for t in s})),
                        "gtfs_boarding_stop_verified":"No"})
     write(out/"site_matches.csv",rows);write(out/"route_location_site_crosswalk.csv",joined)
+    active_endpoint=[x for x in endpoint if str(x.get("ROUTE_ID")) in ROUTES]
+    selected_lids={str(x["LOCATION_ID"]) for x in active_endpoint}
+    absent=sorted([x for x in joined if x["route_stations_selected_visits"]==0],key=lambda x:x["location_id"])
+    write(out/"locations_absent_from_route_stations.csv",absent)
+    if len(selected_lids)!=len(active_endpoint):
+        raise AssertionError("The selected endpoint is not globally unique by LOCATION_ID as expected")
+    if len(absent)!=len(loc)-len(selected_lids):
+        raise AssertionError("Unexpected nonmatching route LOCATION_ID")
+
     types=collections.Counter(r["geozone_type"] for r in rows)
     methods=collections.Counter(r["method"] for r in rows)
     summary={"source_url":URL,"utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),
              "site_records":len(rows),"route_location_ids":len(loc),"route_checkpoint_visits":sum(map(len,visits.values())),
              "route_locations_with_site_match":len(links),"route_locations_without_site_match":len(loc)-len(links),
-             "site_type_counts":dict(types),"matching_methods":dict(methods),"gtfs_ready":False}
+             "site_type_counts":dict(types),"matching_methods":dict(methods),"gtfs_ready":False,
+             "route_stations_records":len(active_endpoint),
+             "unique_route_stations_location_ids":len(selected_lids),
+             "repeat_route_checkpoint_visits":sum(map(len,visits.values()))-len(loc),
+             "unique_location_ids_absent_from_route_stations":len(absent)}
     (out/"comparison_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n")
     md=["# SITME public map sites versus route checkpoint locations","",
         f"Retrieved: {summary['utc']}","",
@@ -148,6 +161,13 @@ def main():
     md += [f"- {k or '(empty)'}: {n}" for k,n in sorted(types.items())]
     md += ["","## Match classifications",""]
     md += [f"- {k}: {n}" for k,n in sorted(methods.items())]
+    md += ["","## Global route LOCATION_ID reconciliation","",
+           f"- Route STATIONS: **{sum(map(len,visits.values()))}** visits using **{len(loc)}** unique LOCATION_IDs.",
+           f"- Repeated checkpoint visits across these IDs: **{sum(map(len,visits.values()))-len(loc)}**.",
+           f"- /route/stations: **{len(active_endpoint)}** unique LOCATION_IDs, one row each.",
+           f"- Truly missing from /route/stations: **{len(absent)}** unique LOCATION_IDs.","",
+           "### Five location IDs for focused research",""]
+    md += [f"- {x['location_id']} — {x['route_checkpoint_name']} ({x['routes']}; {x['checkpoint_visits']} visit(s))" for x in absent]
     md += ["","## Interpretation","",
            "Only explicit LOCATION_ID matches or unique exact-name-and-nearby-coordinate matches are linked. "
            "Matches remain research associations, not confirmed GTFS boarding platforms. "
