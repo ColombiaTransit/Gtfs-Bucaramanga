@@ -36,4 +36,6 @@ The [12-route SITME stop-layer audit](docs/sitme_stop_layer_audit_2026-11-08.md)
 - [Cross-route proximity review](data/sitme/stop_spatial_review_2026-11-08.csv)
 - [Re-run audit script](scripts/audit_sitme_stop_layers.py)
 
-Next: validate endpoint-selection semantics, precise platform coordinates, P18/AN3 loop stop orders and RD27/RD15 Carrera 27 geometry before GTFS generation.
+**November 9 update:** Global LOCATION_ID reconciliation reduces the apparent 424 unmatched checkpoint occurrences to **five unique missing location IDs**; 419 occurrences are repeated uses of already known IDs. The live `site/by_client/195` response contains only 10 map-site objects, not a full stop list. See [reviewed reconciliation](docs/sitme_stop_site_reconciliation_2026-11-09.md) and [automated site comparison](docs/sitme_site_layer_comparison.md).
+
+Next: validate the five truly missing location IDs, precise platform coordinates, P18/AN3 loop stop orders and RD27/RD15 Carrera 27 geometry before GTFS generation.
