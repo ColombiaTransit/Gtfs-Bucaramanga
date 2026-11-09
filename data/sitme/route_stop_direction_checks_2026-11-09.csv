@@ -1,0 +1,951 @@
+api_route_id,route_code,detail_order,source_location_id,candidate_stop_id,source_stop_name,route_point_lat,route_point_lon,osm_match_id,osm_distance_to_route_point_m,osm_offset_from_travel_m,possible_side_relative_to_travel,osm_nearest_road_id,osm_nearest_road_distance_m,road_side_verified,stop_visit_retained
+3341,P16S,1,164162,164162,Inicio Zafiro  Carrera 2 Calle 11.,6.9829497,-73.05399072,,,,unknown,,,false,true
+3341,P16S,5,164164,164164,Carrera 3 Calle 10 S-n,6.98394773,-73.05344438,,,,unknown,,,false,true
+3341,P16S,10,164163,164163, Calle 08 Carrera 3 S-n.,6.98551422,-73.05410539,,,,unknown,,,false,true
+3341,P16S,14,164165,164165,Carrera 2 Calle 7 S-n.,6.98530819,-73.05501969,,,,unknown,,,false,true
+3341,P16S,24,164166,164166,Carrera 2 Calle 4 S-n.,6.98744823,-73.0564131,,,,unknown,,,false,true
+3341,P16S,31,164167,164167,Calle 3 Carrera 2 S-n.,6.98877294,-73.05624978,,,,unknown,,,false,true
+3341,P16S,38,164168,164168,Carrera 4 Calle 1C S-n.,6.99082488,-73.05537072,,,,unknown,,,false,true
+3341,P16S,42,164169,164169,Carrera 4 Calle 1B S-n.,6.99142133,-73.05561561,,,,unknown,,,false,true
+3341,P16S,44,164171,164171,Carrera 4 Calle 0 S-n.,6.99232035,-73.05644119,,,,unknown,,,false,true
+3341,P16S,49,164170,164170,Carrera 4 Calle 0 S-n.,6.99396207,-73.05758858,,,,unknown,,,false,true
+3341,P16S,59,164172,164172,Carrera 4 Calle 3 S-n. ,6.99587484,-73.05855822,,,,unknown,,,false,true
+3341,P16S,91,150880,150880,Portal de Piedecuesta N-s,7.00223704,-73.0550805,way/929833089,32.2,-26.9,right_of_travel,way/1575095708,16.5,false,true
+3341,P16S,108,150800,150800,Centro Comercial Eco centro,7.00306911,-73.0547563,way/929833088,112.2,80.6,left_of_travel,way/929833073,2.2,false,true
+3341,P16S,121,150917,150917,Parada ICP S-n,7.00619701,-73.05571626,,,,unknown,,,false,true
+3341,P16S,147,150802,150802,Puente Peatonal Españolita S-n,7.01692676,-73.05741552,way/1427821639,26.3,,unknown,way/1046549264,4.3,false,true
+3341,P16S,160,150919,150919,Paradero Campo Alegre S-n,7.02396035,-73.06326787,way/1427821636,16.5,5.9,left_of_travel,way/1046549258,5.2,false,true
+3341,P16S,166,150804,150804,Vivero Platacero,7.02671688,-73.06626303,,,,unknown,,,false,true
+3341,P16S,196,150805,150805,Puente Peatonal Palmichal S-n,7.03844998,-73.0737872,node/5343931107,10.5,,unknown,way/1303610081,2.3,false,true
+3341,P16S,214,150806,150806,Puente Peatonal Menzuly S-n,7.04381473,-73.07751963,way/1427821634,15.0,,unknown,way/1047308458,3.1,false,true
+3341,P16S,228,150807,150807,Puente Peatonal  la Estancia S-n,7.0499447,-73.08096061,way/1575095695,20.7,9.8,left_of_travel,way/561651232,6.0,false,true
+3341,P16S,251,150808,150808,Mac Pollo S-n,7.05665757,-73.08340789,,,,unknown,,,false,true
+3341,P16S,256,150809,150809,EDS Aranzoque S-n,7.05817876,-73.08744103,,,,unknown,,,false,true
+3341,P16S,267,150926,150926,Papi Quiero Piña Sn,7.06208787,-73.09277559,node/12993316603,10.2,-9.4,right_of_travel,way/95834450,10.5,false,true
+3341,P16S,275,150927,150927,Universidad Santo Tomas Sn,7.06401244,-73.09552244,,,,unknown,,,false,true
+3341,P16S,281,150812,150812,Puente Peatonal Lagos S-n,7.06683875,-73.0995276,way/1427821632,20.3,,unknown,way/628696086,4.3,false,true
+3341,P16S,291,150813,150813,Panamericano Cañaveral paralela S-n,7.07064144,-73.10452949,way/1575095688,26.7,,unknown,way/722068007,6.4,false,true
+3341,P16S,295,150929,150929,Estación Cañaveral Vagón Norte s-n,7.07115466,-73.10531909,way/1575095687,30.1,,unknown,way/628696086,7.0,false,true
+3341,P16S,309,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,16.5,left_of_travel,way/98781433,5.0,false,true
+3341,P16S,318,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,14.1,left_of_travel,way/98781433,4.0,false,true
+3341,P16S,324,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,,unknown,way/722068009,6.3,false,true
+3341,P16S,335,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,-10.5,right_of_travel,way/1050304515,9.9,false,true
+3341,P16S,345,150818,150818,Miradores de San Lorenzo S-n,7.09440996,-73.10903764,,,,unknown,,,false,true
+3341,P16S,352,150819,150819,Glorieta Cacique S-n,7.09791013,-73.10838288,,,,unknown,,,false,true
+3341,P16S,357,150820,150820,Centro Comercial Cacique S-n,7.09887524,-73.10806104,,,,unknown,,,false,true
+3341,P16S,370,150821,150821,Colegio la Merced S-n,7.10776952,-73.10944929,,,,unknown,,,false,true
+3341,P16S,374,150822,150822,Clinica Bucaramanga S-n,7.11091096,-73.10999742,node/12205403689,3.7,-3.9,ambiguous_centre_or_geofence,way/95677436,5.0,false,true
+3341,P16S,378,150823,150823,Gratamira S-n,7.11551371,-73.11081679,,,,unknown,,,false,true
+3341,P16S,384,150824,150824,Parque San Pio S-n,7.11850355,-73.11132711,,,,unknown,,,false,true
+3341,P16S,389,150825,150825,Carrera 33 calle 42 S-n,7.12021642,-73.11165463,,,,unknown,,,false,true
+3341,P16S,394,150826,150826,Carrera 33 calle 38 S-n,7.1223763,-73.11202295,,,,unknown,,,false,true
+3341,P16S,398,150827,150827,Carrera 33 calle 34 S-n,7.12508458,-73.11252334,,,,unknown,,,false,true
+3341,P16S,403,150828,150828,plaza Guarín S-n,7.12639565,-73.11276993,,,,unknown,,,false,true
+3341,P16S,409,150846,150846,Centro Comercial Megamoll S-n.,7.12973669,-73.11250943,,,,unknown,,,false,true
+3341,P16S,414,150844,150844,Quinta Brigada S-n.,7.13315122,-73.1126733,,,,unknown,,,false,true
+3341,P16S,419,150832,150832,Velódromo S-n,7.13452024,-73.1160252,,,,unknown,,,false,true
+3341,P16S,425,150833,150833,Estadio Américo Montanini S-n,7.13556769,-73.11790049,node/7464562038,6.2,-4.0,right_of_travel,way/118198203,8.5,false,true
+3341,P16S,429,163549,163549,Parada Colegio Tecnológico.,7.13779973,-73.11891021,,,,unknown,,,false,true
+3341,P16S,454,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,18.4,left_of_travel,way/929807211,13.0,false,true
+3341,P16S,470,159204,159204,Parada SENA N-s.,7.13344449,-73.12018659,,,,unknown,,,false,true
+3341,P16S,476,163601,163601,Parada Carrera 27 Calle 19 N-s.,7.12999251,-73.11983849,,,,unknown,,,false,true
+3341,P16S,493,155754,155754,Parque de los Niños,7.12505211,-73.11833403,node/12262956711,14.9,,unknown,way/375279813,5.8,false,true
+3341,P16S,495,163623,163623,Parada Carrera 27 Calle 34 N-s,7.12340677,-73.11740453,,,,unknown,,,false,true
+3341,P16S,503,163624,163624,Parada Carrera 27 Calle 37. ,7.12007073,-73.11626898,,,,unknown,,,false,true
+3341,P16S,510,163634,163634,Parada Parque TURBAY N-s.,7.11513753,-73.11529031,node/9228907800,44.4,,unknown,way/375277562,14.0,false,true
+3341,P16S,516,163642,163642,Parada Carrera 27 Calle 55 N-s.,7.10969557,-73.11456453,,,,unknown,,,false,true
+3341,P16S,519,164650,164650,Conucos N-s.,7.10771461,-73.11421895,,,,unknown,,,false,true
+3341,P16S,541,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3341,P16S,552,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,,unknown,way/152747019,5.9,false,true
+3341,P16S,571,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,-13.7,right_of_travel,way/152745295,13.1,false,true
+3341,P16S,590,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,,unknown,way/722068009,6.3,false,true
+3341,P16S,597,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,,unknown,way/722068009,4.2,false,true
+3341,P16S,603,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,33.9,left_of_travel,way/297647347,3.3,false,true
+3341,P16S,614,150867,150867,Cañaveral Paralela N-s,7.07077923,-73.10536147,way/1575095687,22.4,22.8,left_of_travel,way/628696086,7.0,false,true
+3341,P16S,618,150868,150868,Estación Panamericano,7.06935689,-73.10377426,way/1575095693,4.3,,unknown,way/1575095691,4.1,false,true
+3341,P16S,626,150869,150869,Puente Peatonal  lagos N-s,7.06661821,-73.09972536,way/1575095694,13.2,,unknown,way/628696105,4.6,false,true
+3341,P16S,633,150962,150962,Estación la Riviera,7.0640091,-73.09611901,,,,unknown,,,false,true
+3341,P16S,640,150963,150963,Papi Quiero Piña N-s,7.06096569,-73.09176581,node/13034917937,74.5,,unknown,way/1509230370,14.3,false,true
+3341,P16S,648,150872,150872,EDS el TIGGER,7.05803234,-73.08746525,,,,unknown,,,false,true
+3341,P16S,652,150965,150965,Mac Pollo N-s,7.0566945,-73.08394614,,,,unknown,,,false,true
+3341,P16S,670,150874,150874,Puente Peatonal  la Estancia N-s,7.049546,-73.0808144,way/1575095695,26.5,,unknown,way/561651232,6.0,false,true
+3341,P16S,684,150967,150967,Estación Menzuly N-s,7.04367766,-73.07767916,way/1427821634,11.4,,unknown,way/1047308458,3.1,false,true
+3341,P16S,705,150968,150968,Puente Peatonal Palmichal N-s,7.03831111,-73.07390529,node/5343931107,10.7,6.0,left_of_travel,way/1303610081,2.3,false,true
+3341,P16S,732,150877,150969,Pretecor N-s,7.02663739,-73.0663612,,,,unknown,,,false,true
+3341,P16S,739,150970,150970,Estación Campo Alegre N-s,7.02386723,-73.0634297,way/1427821636,18.8,11.6,left_of_travel,way/1046549258,5.2,false,true
+3341,P16S,752,150879,150879,Puente Peatonal  Españolita N-s,7.01723289,-73.05766287,way/1575095699,17.3,-1.2,ambiguous_centre_or_geofence,way/1046549264,4.2,false,true
+3341,P16S,782,150972,150972,Portal de Piedecuesta,7.0024479,-73.05556351,way/929833088,8.6,,unknown,way/929833073,2.2,false,true
+3341,P16S,788,150881,150881,Centro Comercial DELACUESTA,7.00100942,-73.05421408,,,,unknown,,,false,true
+3341,P16S,794,164913,164913,Centro Comercial DE LA CUESTA.,7.00005036,-73.05410885,,,,unknown,,,false,true
+3341,P16S,799,164918,164918,Calle 3AN Carrera 8 N-s.,6.99889599,-73.05484639,,,,unknown,,,false,true
+3341,P16S,806,164926,164926,Calle 3AN Carrera 6 N-s.,6.99750472,-73.05582921,,,,unknown,,,false,true
+3341,P16S,808,164930,164930,Calle 3AN Carrera 5 la Argentina N-s,6.9969068,-73.05645517,,,,unknown,,,false,true
+3341,P16S,816,164931,164931,Calle 3AN Carrera 4,6.99626505,-73.0579732,,,,unknown,,,false,true
+3341,P16S,831,164932,164932,Carrera 4 Calle 1AD N-s.,6.99392927,-73.05762686,,,,unknown,,,false,true
+3341,P16S,839,164933,164933,Carrera 4 No. 0-30 N-s.,6.99233908,-73.05652086,,,,unknown,,,false,true
+3341,P16S,843,164934,164934,Carrera 4 Avenida 1B N-s.,6.99138938,-73.0556463,,,,unknown,,,false,true
+3341,P16S,848,164935,164935,Torres de Campo Verde Carrera 4 Calle 1D N-s.,6.99081836,-73.05540364,,,,unknown,,,false,true
+3341,P16S,853,164936,164936,Calle 2 Carrera 3 N-s.,6.99016791,-73.05654746,,,,unknown,,,false,true
+3341,P16S,859,164937,164937,Calle 2 Carrera 2.,6.98960462,-73.05740405,,,,unknown,,,false,true
+3341,P16S,868,164938,164938,Parada Cancha Los Tigres.,6.98766154,-73.05770429,,,,unknown,,,false,true
+3341,P16S,876,164939,164939,Calle 2 carrera 3 Chacarita N-s.,6.98726444,-73.05647486,,,,unknown,,,false,true
+3341,P16S,889,164940,164940,Finalizacion Carrera 2 Calle 9.,6.98412625,-73.05455306,,,,unknown,,,false,true
+3342,P16N,1,163009,163009,Estación Ruta P16N,6.99623125,-73.08357237,,,,unknown,,,false,true
+3342,P16N,14,163010,163010,Parada Fundación Nueva Colombia.,6.99621607,-73.08192765,,,,unknown,,,false,true
+3342,P16N,29,163011,163011,Parada Quebrada Nueva Colombia,6.99616028,-73.07980375,,,,unknown,,,false,true
+3342,P16N,43,163012,163012,Parada los Bambues,6.99484219,-73.07843442,,,,unknown,,,false,true
+3342,P16N,72,163014,163014,Parada Primera Y Guatiguara S-n,6.990902,-73.0738237,,,,unknown,,,false,true
+3342,P16N,87,163015,163024,Parada la VEGA S-n.,6.99064952,-73.07077289,,,,unknown,,,false,true
+3342,P16N,100,163023,163023,Parada Puerto Nuevo S-n.,6.99132822,-73.06899534,,,,unknown,,,false,true
+3342,P16N,108,163021,163021,Parada SENA Guatiguara S-n,6.99176123,-73.0675615,,,,unknown,,,false,true
+3342,P16N,121,163020,163020,Parada ASOPENDER S-n,6.99329027,-73.06741444,,,,unknown,,,false,true
+3342,P16N,132,163017,163017,Parada SEDE UIS - Guatiguara S-n.,6.99552992,-73.06605278,,,,unknown,,,false,true
+3342,P16N,142,163025,163025,Parada Barrio el Paraiso S-n.,6.99815324,-73.06254081,,,,unknown,,,false,true
+3342,P16N,146,163157,163157,Parada Coovicop Guatiguara S-n,6.99931548,-73.06149223,,,,unknown,,,false,true
+3342,P16N,151,163158,163158,Parada Kilometro 4 Via Guatiguara S-n.,7.00090561,-73.05920769,,,,unknown,,,false,true
+3342,P16N,154,163159,163159,Parada Portal de Santillana  S-n.,7.00161708,-73.05767227,,,,unknown,,,false,true
+3342,P16N,163,150880,150880,Portal de Piedecuesta N-s,7.00223704,-73.0550805,way/929833089,32.2,57.1,left_of_travel,way/1575095708,16.5,false,true
+3342,P16N,190,150916,150916,Centro Comercial Ecocentro Sn,7.00308163,-73.05476259,way/929833088,112.6,,unknown,way/929833073,2.2,false,true
+3342,P16N,198,150917,150917,Parada ICP S-n,7.00619701,-73.05571626,,,,unknown,,,false,true
+3342,P16N,220,150802,150802,Puente Peatonal Españolita S-n,7.01692676,-73.05741552,way/1427821639,26.3,14.6,left_of_travel,way/1046549264,4.3,false,true
+3342,P16N,230,150878,150878,Campo Alegre N-s,7.02380216,-73.06339161,way/1427821636,13.6,13.8,left_of_travel,way/1046549258,5.2,false,true
+3342,P16N,235,150804,150804,Vivero Platacero,7.02671688,-73.06626303,,,,unknown,,,false,true
+3342,P16N,265,150921,150921,Paradero Palmichal S-n,7.03863987,-73.0739596,way/1575095697,15.0,13.2,left_of_travel,way/1303610080,3.4,false,true
+3342,P16N,281,150922,150922,Paradero Menzuly S-n,7.04383871,-73.07752895,way/1427821634,17.1,,unknown,way/1047308458,3.1,false,true
+3342,P16N,296,150923,150923,Estación Estancia Sn,7.04992169,-73.08094495,way/1575095695,17.8,10.1,left_of_travel,way/561651232,6.0,false,true
+3342,P16N,323,150808,150808,Mac Pollo S-n,7.05665757,-73.08340789,,,,unknown,,,false,true
+3342,P16N,329,150809,150809,EDS Aranzoque S-n,7.05817876,-73.08744103,,,,unknown,,,false,true
+3342,P16N,343,150926,150926,Papi Quiero Piña Sn,7.06208787,-73.09277559,node/12993316603,10.2,-9.7,right_of_travel,way/95834450,10.5,false,true
+3342,P16N,352,150927,150927,Universidad Santo Tomas Sn,7.06401244,-73.09552244,,,,unknown,,,false,true
+3342,P16N,360,150812,150812,Puente Peatonal Lagos S-n,7.06683875,-73.0995276,way/1427821632,20.3,20.5,left_of_travel,way/628696086,4.3,false,true
+3342,P16N,372,150813,150813,Panamericano Cañaveral paralela S-n,7.07064144,-73.10452949,way/1575095688,26.7,25.4,left_of_travel,way/722068007,6.4,false,true
+3342,P16N,376,150929,150929,Estación Cañaveral Vagón Norte s-n,7.07115466,-73.10531909,way/1575095687,30.1,24.4,left_of_travel,way/628696086,7.0,false,true
+3342,P16N,390,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,21.0,left_of_travel,way/98781433,5.0,false,true
+3342,P16N,408,150931,150931,Hormigueros Sn,7.07876563,-73.10796904,way/1575095681,5.8,,unknown,way/98781433,4.0,false,true
+3342,P16N,417,150932,150932,Payador Sn,7.08447844,-73.10777255,way/1575095680,10.4,22.3,left_of_travel,way/722068009,6.3,false,true
+3342,P16N,433,150933,150933,Estacion de Transferencia Provenza Sn,7.09098459,-73.1091076,way/1575095677,30.9,,unknown,way/152747019,5.3,false,true
+3342,P16N,443,150818,150818,Miradores de San Lorenzo S-n,7.09440996,-73.10903764,,,,unknown,,,false,true
+3342,P16N,452,150819,150819,Glorieta Cacique S-n,7.09791013,-73.10838288,,,,unknown,,,false,true
+3342,P16N,458,150820,150820,Centro Comercial Cacique S-n,7.09887524,-73.10806104,,,,unknown,,,false,true
+3342,P16N,483,150821,150821,Colegio la Merced S-n,7.10776952,-73.10944929,,,,unknown,,,false,true
+3342,P16N,488,150822,150822,Clinica Bucaramanga S-n,7.11091096,-73.10999742,node/12205403689,3.7,,unknown,way/95677436,5.0,false,true
+3342,P16N,495,150823,150823,Gratamira S-n,7.11551371,-73.11081679,,,,unknown,,,false,true
+3342,P16N,501,150824,150824,Parque San Pio S-n,7.11850355,-73.11132711,,,,unknown,,,false,true
+3342,P16N,506,150825,150825,Carrera 33 calle 42 S-n,7.12021642,-73.11165463,,,,unknown,,,false,true
+3342,P16N,512,150826,150826,Carrera 33 calle 38 S-n,7.1223763,-73.11202295,,,,unknown,,,false,true
+3342,P16N,520,150827,150827,Carrera 33 calle 34 S-n,7.12508458,-73.11252334,,,,unknown,,,false,true
+3342,P16N,525,150828,150828,plaza Guarín S-n,7.12639565,-73.11276993,,,,unknown,,,false,true
+3342,P16N,531,150829,150829,UCC,7.12906957,-73.11392588,,,,unknown,,,false,true
+3342,P16N,539,150830,150830,Carrera 32 Calle 19 S-n,7.13129009,-73.11485861,,,,unknown,,,false,true
+3342,P16N,545,150831,150831,Carrera 32 Calle 14 S-n,7.13356506,-73.11531559,,,,unknown,,,false,true
+3342,P16N,549,150832,150832,Velódromo S-n,7.13452024,-73.1160252,,,,unknown,,,false,true
+3342,P16N,559,150833,150833,Estadio Américo Montanini S-n,7.13556769,-73.11790049,node/7464562038,6.2,-5.9,right_of_travel,way/118198203,8.5,false,true
+3342,P16N,570,163549,163549,Parada Colegio Tecnológico.,7.13779973,-73.11891021,,,,unknown,,,false,true
+3342,P16N,602,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,,unknown,way/929807211,13.0,false,true
+3342,P16N,622,159204,159204,Parada SENA N-s.,7.13344449,-73.12018659,,,,unknown,,,false,true
+3342,P16N,629,163601,163601,Parada Carrera 27 Calle 19 N-s.,7.12999251,-73.11983849,,,,unknown,,,false,true
+3342,P16N,645,155754,155754,Parque de los Niños,7.12505211,-73.11833403,node/12262956711,14.9,,unknown,way/375279813,5.8,false,true
+3342,P16N,646,163623,163623,Parada Carrera 27 Calle 34 N-s,7.12340677,-73.11740453,,,,unknown,,,false,true
+3342,P16N,650,163624,163624,Parada Carrera 27 Calle 37. ,7.12007073,-73.11626898,,,,unknown,,,false,true
+3342,P16N,657,163634,163634,Parada Parque TURBAY N-s.,7.11513753,-73.11529031,node/9228907800,44.4,,unknown,way/375277562,14.0,false,true
+3342,P16N,665,163642,163642,Parada Carrera 27 Calle 55 N-s.,7.10969557,-73.11456453,,,,unknown,,,false,true
+3342,P16N,685,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3342,P16N,693,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,21.1,left_of_travel,way/152747019,5.9,false,true
+3342,P16N,707,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,-15.1,right_of_travel,way/152745295,13.1,false,true
+3342,P16N,718,150957,150957,Payador N-s,7.0842699,-73.10807556,way/1575095680,35.7,,unknown,way/722068009,6.3,false,true
+3342,P16N,726,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,13.3,left_of_travel,way/722068009,4.2,false,true
+3342,P16N,732,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,18.5,left_of_travel,way/297647347,3.3,false,true
+3342,P16N,739,150867,150867,Cañaveral Paralela N-s,7.07077923,-73.10536147,way/1575095687,22.4,20.1,left_of_travel,way/628696086,7.0,false,true
+3342,P16N,744,150868,150868,Estación Panamericano,7.06935689,-73.10377426,way/1575095693,4.3,-4.3,right_of_travel,way/1575095691,4.1,false,true
+3342,P16N,752,150961,150961,Estación Lagos N-s,7.0665903,-73.09968578,way/1575095694,11.8,7.1,left_of_travel,way/628696105,4.6,false,true
+3342,P16N,759,150962,150962,Estación la Riviera,7.0640091,-73.09611901,,,,unknown,,,false,true
+3342,P16N,766,150963,150963,Papi Quiero Piña N-s,7.06096569,-73.09176581,node/13034917937,74.5,,unknown,way/1509230370,14.3,false,true
+3342,P16N,775,150872,150872,EDS el TIGGER,7.05803234,-73.08746525,,,,unknown,,,false,true
+3342,P16N,779,150965,150965,Mac Pollo N-s,7.0566945,-73.08394614,,,,unknown,,,false,true
+3342,P16N,794,150966,150966,Estación la Estancia N-s,7.04958287,-73.08082707,way/1575095695,22.1,9.0,left_of_travel,way/561651232,6.0,false,true
+3342,P16N,810,150967,150967,Estación Menzuly N-s,7.04367766,-73.07767916,way/1427821634,11.4,7.6,left_of_travel,way/1047308458,3.1,false,true
+3342,P16N,825,150968,150968,Puente Peatonal Palmichal N-s,7.03831111,-73.07390529,node/5343931107,10.7,,unknown,way/1303610081,2.3,false,true
+3342,P16N,847,150877,150969,Pretecor N-s,7.02663739,-73.0663612,,,,unknown,,,false,true
+3342,P16N,852,150970,150970,Estación Campo Alegre N-s,7.02386723,-73.0634297,way/1427821636,18.8,9.9,left_of_travel,way/1046549258,5.2,false,true
+3342,P16N,862,150971,150971,Estación Españolita N-s,7.01723394,-73.05766362,way/1575095699,17.4,10.4,left_of_travel,way/1046549264,4.2,false,true
+3342,P16N,892,150972,150972,Portal de Piedecuesta,7.0024479,-73.05556351,way/929833088,8.6,,unknown,way/929833073,2.2,false,true
+3342,P16N,924,163018,163018,Parada SEDE UIS Guatiguara N-s.,6.99567654,-73.06622563,,,,unknown,,,false,true
+3342,P16N,935,163881,163881,Parada ASOPENDER N-s.,6.99315616,-73.06749188,,,,unknown,,,false,true
+3342,P16N,948,163022,163022,Parada SENA Guatiguara N-s.,6.9918478,-73.06750558,,,,unknown,,,false,true
+3342,P16N,956,163016,163016,Parada Puerto Nuevo N-s..,6.99131589,-73.06899263,,,,unknown,,,false,true
+3342,P16N,969,163024,163024,Parada la VEGA S-n.,6.99063192,-73.07075222,,,,unknown,,,false,true
+3342,P16N,983,163013,163013,Parada Primera Y Guatiguara N-s.,6.99087255,-73.07378113,,,,unknown,,,false,true
+3342,P16N,1013,163923,163923,Parada Conjunto Residencial La Vega de San Roque..,6.99484832,-73.07827401,,,,unknown,,,false,true
+3342,P16N,1029,163924,163924,Parada Quebrada Nueva Colombia N-s.,6.99608154,-73.07967211,,,,unknown,,,false,true
+3342,P16N,1051,163925,163925,Parada Fundación Nueva Colombia N-s.,6.99615111,-73.08194497,,,,unknown,,,false,true
+3342,P16N,1066,163926,163926,Fin - Estación Matecaña.,6.99621034,-73.08345867,,,,unknown,,,false,true
+3345,P8,1,150779,150779,Inicio  Tejaditos,6.97195819,-73.06106015,,,,unknown,,,false,true
+3345,P8,8,150780,150780,Comuneros S-n,6.97216154,-73.05972926,,,,unknown,,,false,true
+3345,P8,18,150781,150781,Aires de Belén S-n,6.97258762,-73.05757535,,,,unknown,,,false,true
+3345,P8,37,150782,150782,Urbanización Miraflores Avenida 173W S-n,6.97391392,-73.05563934,,,,unknown,,,false,true
+3345,P8,44,150783,150783,Calle 173W Barro Blanco S-n,6.97454939,-73.05502888,,,,unknown,,,false,true
+3345,P8,59,150784,150784,Carrera 17 Puente del Portal del Valle,6.97537643,-73.05381423,,,,unknown,,,false,true
+3345,P8,79,150785,150785,Calle 172W Villa Marcela S-n,6.97652654,-73.0531563,,,,unknown,,,false,true
+3345,P8,108,150786,150786,Carrera 171W Hoyo Grande,6.97747524,-73.05163262,,,,unknown,,,false,true
+3345,P8,145,150787,150787,Carrera 4 calle 16 S-n,6.97898274,-73.05065373,,,,unknown,,,false,true
+3345,P8,159,150788,150788,Calle 15 carrera 4 S-n,6.98046983,-73.05083159,,,,unknown,,,false,true
+3345,P8,182,150789,150789,Calle 15 Carrera 6 S-n,6.98113649,-73.04917279,,,,unknown,,,false,true
+3345,P8,195,150790,150790,Carrera 7 Calle 14 S-n,6.98223689,-73.04863576,,,,unknown,,,false,true
+3345,P8,205,150791,150791,Carrera 7 Calle 12 S-n,6.98377978,-73.04930719,,,,unknown,,,false,true
+3345,P8,212,150792,150792,Carrera 7 calle 10 S-n,6.98507063,-73.04986635,,,,unknown,,,false,true
+3345,P8,222,150793,150793,Calle 10 carrera 8 S-n,6.98601989,-73.04862056,,,,unknown,,,false,true
+3345,P8,231,150794,150794,Carrera 9 calle 7 S-n,6.98798676,-73.04917731,,,,unknown,,,false,true
+3345,P8,261,150911,150911,Cabecera del Llano Sn,6.99144346,-73.04574669,node/6584530986,110.9,,unknown,way/96125606,9.5,false,true
+3345,P8,272,150912,150912,La Normal Sn,6.99313742,-73.04711942,node/12570339739,23.3,,unknown,way/628921414,8.2,false,true
+3345,P8,292,150797,150797,San francisco S-n,6.99591252,-73.04917247,,,,unknown,,,false,true
+3345,P8,322,150798,150798,San Carlos S-n,6.99871609,-73.05217343,node/5343931821,27.8,,unknown,way/628921415,7.9,false,true
+3345,P8,346,150915,150915,Quinta Granada Sn,7.00062859,-73.05318156,,,,unknown,,,false,true
+3345,P8,371,150800,150800,Centro Comercial Eco centro,7.00306911,-73.0547563,way/929833088,112.2,,unknown,way/929833073,2.2,false,true
+3345,P8,400,150801,150801,ICP,7.00619988,-73.05571667,,,,unknown,,,false,true
+3345,P8,450,150802,150802,Puente Peatonal Españolita S-n,7.01692676,-73.05741552,way/1427821639,26.3,,unknown,way/1046549264,4.3,false,true
+3345,P8,475,150803,150803,Puente Peatonal Campoalegre S-n,7.02396327,-73.06326494,way/1427821636,16.8,9.5,left_of_travel,way/1046549258,5.2,false,true
+3345,P8,484,150804,150804,Vivero Platacero,7.02671688,-73.06626303,,,,unknown,,,false,true
+3345,P8,533,150805,150805,Puente Peatonal Palmichal S-n,7.03844998,-73.0737872,node/5343931107,10.5,,unknown,way/1303610081,2.3,false,true
+3345,P8,557,150806,150806,Puente Peatonal Menzuly S-n,7.04381473,-73.07751963,way/1427821634,15.0,,unknown,way/1047308458,3.1,false,true
+3345,P8,588,150807,150807,Puente Peatonal  la Estancia S-n,7.0499447,-73.08096061,way/1575095695,20.7,,unknown,way/561651232,6.0,false,true
+3345,P8,622,150808,150808,Mac Pollo S-n,7.05665757,-73.08340789,,,,unknown,,,false,true
+3345,P8,634,150809,150809,EDS Aranzoque S-n,7.05817876,-73.08744103,,,,unknown,,,false,true
+3345,P8,657,150810,150810,PQP S-n,7.06205159,-73.09277428,node/12993316603,13.5,,unknown,way/95834450,10.5,false,true
+3345,P8,667,150811,150811,Universidad Santo Tomas S-n,7.06402338,-73.09553858,,,,unknown,,,false,true
+3345,P8,684,150812,150812,Puente Peatonal Lagos S-n,7.06683875,-73.0995276,way/1427821632,20.3,,unknown,way/628696086,4.3,false,true
+3345,P8,723,150813,150813,Panamericano Cañaveral paralela S-n,7.07064144,-73.10452949,way/1575095688,26.7,,unknown,way/722068007,6.4,false,true
+3345,P8,750,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,15.1,left_of_travel,way/98781433,5.0,false,true
+3345,P8,763,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,15.4,left_of_travel,way/98781433,4.0,false,true
+3345,P8,774,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,24.3,left_of_travel,way/722068009,6.3,false,true
+3345,P8,790,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,-5.6,right_of_travel,way/1050304515,9.9,false,true
+3345,P8,809,150818,150818,Miradores de San Lorenzo S-n,7.09440996,-73.10903764,,,,unknown,,,false,true
+3345,P8,823,150819,150819,Glorieta Cacique S-n,7.09791013,-73.10838288,,,,unknown,,,false,true
+3345,P8,828,150820,150820,Centro Comercial Cacique S-n,7.09887524,-73.10806104,,,,unknown,,,false,true
+3345,P8,865,150821,150821,Colegio la Merced S-n,7.10776952,-73.10944929,,,,unknown,,,false,true
+3345,P8,876,150822,150822,Clinica Bucaramanga S-n,7.11091096,-73.10999742,node/12205403689,3.7,,unknown,way/95677436,5.0,false,true
+3345,P8,888,150823,150823,Gratamira S-n,7.11551371,-73.11081679,,,,unknown,,,false,true
+3345,P8,896,150824,150824,Parque San Pio S-n,7.11850355,-73.11132711,,,,unknown,,,false,true
+3345,P8,902,150825,150825,Carrera 33 calle 42 S-n,7.12021642,-73.11165463,,,,unknown,,,false,true
+3345,P8,908,150826,150826,Carrera 33 calle 38 S-n,7.1223763,-73.11202295,,,,unknown,,,false,true
+3345,P8,915,150827,150827,Carrera 33 calle 34 S-n,7.12508458,-73.11252334,,,,unknown,,,false,true
+3345,P8,920,150828,150828,plaza Guarín S-n,7.12639565,-73.11276993,,,,unknown,,,false,true
+3345,P8,929,150829,150829,UCC,7.12906957,-73.11392588,,,,unknown,,,false,true
+3345,P8,938,150830,150830,Carrera 32 Calle 19 S-n,7.13129009,-73.11485861,,,,unknown,,,false,true
+3345,P8,946,150831,150831,Carrera 32 Calle 14 S-n,7.13356506,-73.11531559,,,,unknown,,,false,true
+3345,P8,951,150832,150832,Velódromo S-n,7.13452024,-73.1160252,,,,unknown,,,false,true
+3345,P8,967,150833,150833,Estadio Américo Montanini S-n,7.13556769,-73.11790049,node/7464562038,6.2,,unknown,way/118198203,8.5,false,true
+3345,P8,994,150834,150834,Calle 9 Carrera 23,7.13801311,-73.12427604,,,,unknown,,,false,true
+3345,P8,1002,150835,150835,Iglesia Cristo Rey,7.13643612,-73.12866923,,,,unknown,,,false,true
+3345,P8,1007,150836,150836,Calle 11 carrera 18 S-n,7.13562582,-73.12812796,,,,unknown,,,false,true
+3345,P8,1015,150837,150837,Calle 11 Carrera 20 S-n,7.13596602,-73.1262635,,,,unknown,,,false,true
+3345,P8,1021,150838,150838,Calle 11 carrera 23 S-n,7.13643975,-73.12375295,,,,unknown,,,false,true
+3345,P8,1035,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,,unknown,way/929807211,13.0,false,true
+3345,P8,1036,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,,unknown,way/929807211,13.0,false,true
+3345,P8,1060,150840,150840,Calle 11 Carrera 28 N-s,7.13710265,-73.11897715,,,,unknown,,,false,true
+3345,P8,1069,150841,150841,Estadio Américo Montanini N-s,7.13549923,-73.11801122,node/7464562038,20.1,,unknown,way/118198203,8.5,false,true
+3345,P8,1100,150842,150842,Velódromo N-s,7.1344256,-73.11583905,,,,unknown,,,false,true
+3345,P8,1107,150843,150843,Calle 14 Carrera 32C N-s,7.13433218,-73.1136099,,,,unknown,,,false,true
+3345,P8,1113,150844,150844,Quinta Brigada S-n.,7.13315122,-73.1126733,,,,unknown,,,false,true
+3345,P8,1118,150845,150845,2 Quinta Brigada  N-s,7.13161781,-73.11276047,,,,unknown,,,false,true
+3345,P8,1128,150846,150846,Centro Comercial Megamoll S-n.,7.12973669,-73.11250943,,,,unknown,,,false,true
+3345,P8,1138,150847,150847,Plaza Guarín N-s,7.12720853,-73.11209668,,,,unknown,,,false,true
+3345,P8,1146,150848,150848,Carrera 33 Calle 35 Viejo chiflas N-s,7.12439772,-73.11246882,,,,unknown,,,false,true
+3345,P8,1153,150849,150849,Carrera 33 Calle 37 N-s,7.12271858,-73.11218135,,,,unknown,,,false,true
+3345,P8,1162,150850,150850,Carrera 33 Calle 42 N-s,7.12020033,-73.11174368,,,,unknown,,,false,true
+3345,P8,1170,150851,150851,Carrera 33 calle 45 N-s,7.11812097,-73.11136874,,,,unknown,,,false,true
+3345,P8,1174,150852,150852,Carrera 33 Calle 47 N-s,7.11709007,-73.11118283,,,,unknown,,,false,true
+3345,P8,1180,150853,150853,Carrera 33 calle 49 N-s Club Unión,7.11483756,-73.11078589,,,,unknown,,,false,true
+3345,P8,1193,150854,150854,Clínica Bucaramanga N-s,7.11113543,-73.11014266,node/12205403689,30.8,,unknown,way/95677436,5.0,false,true
+3345,P8,1201,150855,150855,Carrera 33 calle 58 N-s,7.10890341,-73.10974786,,,,unknown,,,false,true
+3345,P8,1207,150856,150856,Colegio La merced N-s,7.10684078,-73.10940099,,,,unknown,,,false,true
+3345,P8,1243,150857,150857,Centro comercial Cacique N-s,7.09887854,-73.10818994,,,,unknown,,,false,true
+3345,P8,1300,150858,150858,Carrera 24 Calle 80 N-s,7.09482388,-73.11125747,way/1575095671,103.4,,unknown,way/152747019,5.9,false,true
+3345,P8,1312,150859,150859,Calle 83 Carrera 23,7.09329371,-73.11197466,,,,unknown,,,false,true
+3345,P8,1326,150860,150860,Calle 89 carrera 21 N-s,7.09155555,-73.11498839,,,,unknown,,,false,true
+3345,P8,1336,150861,150861,Calle 89 Carrera 23 N-s,7.09087983,-73.11329805,,,,unknown,,,false,true
+3345,P8,1343,150862,150862,Calle 89 carrera 25 N-s,7.09015852,-73.11148965,,,,unknown,,,false,true
+3345,P8,1362,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3345,P8,1379,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,22.4,left_of_travel,way/722068009,6.3,false,true
+3345,P8,1388,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,14.3,left_of_travel,way/722068009,4.2,false,true
+3345,P8,1395,150866,150866,Puente Peatonal Molinos N-s,7.07439825,-73.10840519,way/1575095684,98.4,,unknown,way/297647347,3.3,false,true
+3345,P8,1406,150867,150867,Cañaveral Paralela N-s,7.07077923,-73.10536147,way/1575095687,22.4,,unknown,way/628696086,7.0,false,true
+3345,P8,1410,150868,150868,Estación Panamericano,7.06935689,-73.10377426,way/1575095693,4.3,,unknown,way/1575095691,4.1,false,true
+3345,P8,1418,150869,150869,Puente Peatonal  lagos N-s,7.06661821,-73.09972536,way/1575095694,13.2,,unknown,way/628696105,4.6,false,true
+3345,P8,1423,150962,150962,Estación la Riviera,7.0640091,-73.09611901,,,,unknown,,,false,true
+3345,P8,1428,150871,150871,PQP N-s,7.06101076,-73.09181009,node/13034917937,81.5,,unknown,way/1509230370,14.3,false,true
+3345,P8,1434,150872,150872,EDS el TIGGER,7.05803234,-73.08746525,,,,unknown,,,false,true
+3345,P8,1439,150873,150965,Mac Pollo N-s,7.05672099,-73.08400088,,,,unknown,,,false,true
+3345,P8,1458,150874,150874,Puente Peatonal  la Estancia N-s,7.049546,-73.0808144,way/1575095695,26.5,,unknown,way/561651232,6.0,false,true
+3345,P8,1475,150875,150875,Puente Peatonal Menzuly N-s,7.04360177,-73.07764837,node/5343931445,9.9,,unknown,way/1047308458,2.5,false,true
+3345,P8,1489,150876,150876,Puente Peatonal  Palmichal N-s,7.03834389,-73.07399542,node/5343931107,15.4,,unknown,way/1303610081,2.3,false,true
+3345,P8,1512,150969,150969,Pretecor N-s,7.02667084,-73.06640092,,,,unknown,,,false,true
+3345,P8,1518,150970,150970,Estación Campo Alegre N-s,7.02386723,-73.0634297,way/1427821636,18.8,,unknown,way/1046549258,5.2,false,true
+3345,P8,1529,150879,150879,Puente Peatonal  Españolita N-s,7.01723289,-73.05766287,way/1575095699,17.3,,unknown,way/1046549264,4.2,false,true
+3345,P8,1553,150880,150880,Portal de Piedecuesta N-s,7.00223704,-73.0550805,way/929833089,32.2,,unknown,way/1575095708,16.5,false,true
+3345,P8,1557,150881,150881,Centro Comercial DELACUESTA,7.00100942,-73.05421408,,,,unknown,,,false,true
+3345,P8,1570,150882,150882,Carrera 16 1NC Paseo Galicia,6.99783387,-73.05296792,node/5343931821,109.8,,unknown,way/628921415,7.9,false,true
+3345,P8,1585,150883,150883,Diagonal 6 Carrera 8,6.99497446,-73.05241175,,,,unknown,,,false,true
+3345,P8,1597,150884,150884,Carrera 8 Calle 2,6.99230979,-73.05185984,,,,unknown,,,false,true
+3345,P8,1602,150885,150885,Carrera 8 Calle 3,6.99066851,-73.05126816,,,,unknown,,,false,true
+3345,P8,1607,150886,150886,Carrera 8 Calle 5,6.98926873,-73.05060993,,,,unknown,,,false,true
+3345,P8,1611,150887,150887,Carrera 8 Calle 7,6.98779907,-73.05008008,,,,unknown,,,false,true
+3345,P8,1615,150888,150888,Carrera 8 calle 9,6.98635078,-73.04941489,,,,unknown,,,false,true
+3345,P8,1618,150889,150889,Carrera 8 Calle 10,6.98539795,-73.04901751,,,,unknown,,,false,true
+3345,P8,1623,150890,150890,Carrera 8 calle 12,6.98391807,-73.04808548,,,,unknown,,,false,true
+3345,P8,1629,150891,150891,Calle 14 Carrera 7 N-s,6.98240552,-73.04852745,,,,unknown,,,false,true
+3345,P8,1635,150892,150892,Calle 14 Carrera 6 N-s,6.98191282,-73.04969506,node/9917110318,85.6,,unknown,way/96123959,21.4,false,true
+3345,P8,1639,150893,150893,Carrera 6 calle 14,6.98119645,-73.04944482,,,,unknown,,,false,true
+3345,P8,1643,150894,150894,Carrera 6 calle 16,6.97998652,-73.04904267,,,,unknown,,,false,true
+3345,P8,1646,150895,150895,Carrera 6 Calle 14 N-s,6.97989334,-73.04901048,,,,unknown,,,false,true
+3345,P8,1652,150897,150897,Calle 17 Carrera 4 N-s,6.97895998,-73.05042606,,,,unknown,,,false,true
+3345,P8,1666,150898,150898,Carrera 17 1W Hoyo Grande,6.97768711,-73.05134516,,,,unknown,,,false,true
+3345,P8,1679,150899,150899,Calle 17 Carrera 0W Villa Marcela,6.97684258,-73.05305547,,,,unknown,,,false,true
+3345,P8,1697,150900,150900,Calle 17 carrera 2W N-s.,6.97483807,-73.05471003,,,,unknown,,,false,true
+3345,P8,1704,150901,150901,Tejaditos,6.97377068,-73.05576313,,,,unknown,,,false,true
+3345,P8,1714,150902,150902,Carrera 5W Calle 16D N-s,6.97269101,-73.0570079,,,,unknown,,,false,true
+3345,P8,1722,150903,150903,FIN Tejaditos,6.97206532,-73.06037422,,,,unknown,,,false,true
+3346,P14,1,165014,165014,Inicio Calle 5 Carrera 13 Altamira,7.06432721,-73.08225386,node/5171558628,2.8,,unknown,way/70865317,3.2,false,true
+3346,P14,8,165015,165015,Calle 5 Carrera 10.,7.06355884,-73.08444395,,,,unknown,,,false,true
+3346,P14,15,165016,165016,Carrera 8 Calle 3 S-n.,7.06408236,-73.08684658,,,,unknown,,,false,true
+3346,P14,26,165017,165017,Conjunto Residencial Paragüitas I.,7.06568693,-73.08771414,,,,unknown,,,false,true
+3346,P14,58,165018,165018,Jardín Botánico ELOY VALENZUELA.,7.06806639,-73.08995628,,,,unknown,,,false,true
+3346,P14,72,165019,165019,Colegio Vicente Azuero S-n,7.06844799,-73.09200428,,,,unknown,,,false,true
+3346,P14,91,165020,165020,Calle 41 Carrera 4 S-n.,7.06990921,-73.09497837,,,,unknown,,,false,true
+3346,P14,98,165021,165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,7.06962973,-73.09669583,,,,unknown,,,false,true
+3346,P14,106,165123,165123,Iglesia Santamaria de Los Lagos. S-n.,7.07028717,-73.0976638,,,,unknown,,,false,true
+3346,P14,116,165136,165136,Kr 29 Cl 8 S-n.,7.07216356,-73.10021133,,,,unknown,,,false,true
+3346,P14,119,165024,165024,Parque Acualago S-n.,7.07236354,-73.10145848,,,,unknown,,,false,true
+3346,P14,125,165025,165025,Supermercado La Canasta.,7.07245706,-73.10426875,,,,unknown,,,false,true
+3346,P14,135,165026,165026,Carrera 12 Calle 27 S-n.,7.0733584,-73.10537736,,,,unknown,,,false,true
+3346,P14,158,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,,unknown,way/98781433,5.0,false,true
+3346,P14,171,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,,unknown,way/98781433,4.0,false,true
+3346,P14,181,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,,unknown,way/722068009,6.3,false,true
+3346,P14,206,151099,151099,Calle 105 Carrera 25 S-n,7.08689279,-73.11001549,node/5462671222,8.7,-3.7,ambiguous_centre_or_geofence,way/1424726687,3.5,false,true
+3346,P14,213,151100,151100,Parada MasxMenos,7.08544173,-73.112162,,,,unknown,,,false,true
+3346,P14,221,151101,151101,Calle 105 Carrera 21 S-n,7.08542165,-73.11579288,,,,unknown,,,false,true
+3346,P14,242,151102,151102,Colegio INEM S-n,7.08453277,-73.11863438,node/5458093524,6.8,-4.8,right_of_travel,way/627866440,5.4,false,true
+3346,P14,247,151103,151103,Colegio Divino Niño S-n,7.0837963,-73.11983337,,,,unknown,,,false,true
+3346,P14,252,151104,151104,Transversal Metropolitana Calle 104C S-n,7.08413408,-73.1215071,,,,unknown,,,false,true
+3346,P14,262,151105,151105,Transversal Metropolitana Calle 103B S-n,7.0863709,-73.12236216,node/5458093525,12.6,-10.3,right_of_travel,way/1410266951,11.5,false,true
+3346,P14,277,151106,151106,Transversal Metropolitana Carrera 14 Venecia S-n,7.08836883,-73.12378811,,,,unknown,,,false,true
+3346,P14,288,151107,151107,Transversal Metropolitana Carrera 13A S-n,7.08870534,-73.12637397,,,,unknown,,,false,true
+3346,P14,300,151108,151108,Terminal de Transportes de Bucaramanga S-n,7.08760254,-73.12975724,way/1319885176,120.0,,unknown,way/253593051,10.5,false,true
+3346,P14,320,151109,151109,Puente el Bueno,7.08911003,-73.13320575,node/4497209689,32.1,14.0,left_of_travel,way/474943371,1.4,false,true
+3346,P14,373,151110,151110,Barrio Bucaramanga S-n,7.09400185,-73.12914046,,,,unknown,,,false,true
+3346,P14,382,151111,151111,Calle 65 Carrera 7 S-n,7.09461496,-73.12653693,,,,unknown,,,false,true
+3346,P14,394,151112,151112,Barrio Guayacanes,7.09787363,-73.12542728,,,,unknown,,,false,true
+3346,P14,400,151113,151113,Calle 61 Carrera 1 Occidente S-n,7.09839161,-73.12638956,,,,unknown,,,false,true
+3346,P14,420,151117,151117,Calle 55 Carrera 3 S-n,7.10409787,-73.12794788,,,,unknown,,,false,true
+3346,P14,425,151118,151118,Calle 55 Carrera 6  S-n,7.10387023,-73.12619288,,,,unknown,,,false,true
+3346,P14,438,151119,151119,Calle 61 Carrera 7 S-n,7.1028161,-73.12419863,,,,unknown,,,false,true
+3346,P14,457,151120,151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,7.1047187,-73.12236433,node/12986488260,51.1,-8.4,right_of_travel,way/95713795,8.0,false,true
+3346,P14,469,151121,151121,Carrera 15 Calle 55 S-n,7.10730058,-73.12117751,,,,unknown,,,false,true
+3346,P14,476,151122,151122,Carrera 17 Calle 55 S-n,7.10834467,-73.11971025,,,,unknown,,,false,true
+3346,P14,482,151150,151150,Diagonal 15 calle 55 S-n,7.10900235,-73.11742876,,,,unknown,,,false,true
+3346,P14,494,150937,150937,Parque Turbay Sn,7.11523272,-73.11502959,node/9228907800,17.0,,unknown,way/375277562,14.0,false,true
+3346,P14,506,150824,150824,Parque San Pio S-n,7.11850355,-73.11132711,,,,unknown,,,false,true
+3346,P14,510,150825,150825,Carrera 33 calle 42 S-n,7.12021642,-73.11165463,,,,unknown,,,false,true
+3346,P14,514,150826,150826,Carrera 33 calle 38 S-n,7.1223763,-73.11202295,,,,unknown,,,false,true
+3346,P14,518,150827,150827,Carrera 33 calle 34 S-n,7.12508458,-73.11252334,,,,unknown,,,false,true
+3346,P14,523,150828,150828,plaza Guarín S-n,7.12639565,-73.11276993,,,,unknown,,,false,true
+3346,P14,528,150829,150829,UCC,7.12906957,-73.11392588,,,,unknown,,,false,true
+3346,P14,536,150830,150830,Carrera 32 Calle 19 S-n,7.13129009,-73.11485861,,,,unknown,,,false,true
+3346,P14,543,150831,150831,Carrera 32 Calle 14 S-n,7.13356506,-73.11531559,,,,unknown,,,false,true
+3346,P14,547,150832,150832,Velódromo S-n,7.13452024,-73.1160252,,,,unknown,,,false,true
+3346,P14,557,150833,150833,Estadio Américo Montanini S-n,7.13556769,-73.11790049,node/7464562038,6.2,-7.7,right_of_travel,way/118198203,8.5,false,true
+3346,P14,564,163549,163549,Parada Colegio Tecnológico.,7.13779973,-73.11891021,,,,unknown,,,false,true
+3346,P14,577,150834,150834,Calle 9 Carrera 23,7.13801311,-73.12427604,,,,unknown,,,false,true
+3346,P14,587,150835,150835,Iglesia Cristo Rey,7.13643612,-73.12866923,,,,unknown,,,false,true
+3346,P14,591,150836,150836,Calle 11 carrera 18 S-n,7.13562582,-73.12812796,,,,unknown,,,false,true
+3346,P14,596,150837,150837,Calle 11 Carrera 20 S-n,7.13596602,-73.1262635,,,,unknown,,,false,true
+3346,P14,602,150838,150838,Calle 11 carrera 23 S-n,7.13643975,-73.12375295,,,,unknown,,,false,true
+3346,P14,615,150943,150943,ESTACION UIS,7.13740644,-73.12217396,way/929807213,26.4,15.4,left_of_travel,way/929807211,13.0,false,true
+3346,P14,636,159204,159204,Parada SENA N-s.,7.13344449,-73.12018659,,,,unknown,,,false,true
+3346,P14,640,163601,163601,Parada Carrera 27 Calle 19 N-s.,7.12999251,-73.11983849,,,,unknown,,,false,true
+3346,P14,653,155754,155754,Parque de los Niños,7.12505211,-73.11833403,node/12262956711,14.9,,unknown,way/375279813,5.8,false,true
+3346,P14,656,163623,163623,Parada Carrera 27 Calle 34 N-s,7.12340677,-73.11740453,,,,unknown,,,false,true
+3346,P14,663,163624,163624,Parada Carrera 27 Calle 37. ,7.12007073,-73.11626898,,,,unknown,,,false,true
+3346,P14,684,150951,150951,Diagonal 15 Avenida la Rosita,7.11223676,-73.12174155,way/1575095665,16.2,17.2,left_of_travel,way/95696596,6.1,false,true
+3346,P14,695,151124,151124,Calle 56 Carrera 15 N-s.,7.10670698,-73.12048215,,,,unknown,,,false,true
+3346,P14,702,151125,151125,Calle 56 Carrera 14 Macaregua,7.1059244,-73.12135791,,,,unknown,,,false,true
+3346,P14,708,151126,151126,Unidades Tecnológicas de Santander,7.10436045,-73.12308697,node/12986488260,40.6,22.1,left_of_travel,way/95713795,8.0,false,true
+3346,P14,720,151127,151127,Calle 57 Carrera 7 N-s,7.10316014,-73.12487211,,,,unknown,,,false,true
+3346,P14,728,151128,151128,Calle 57 Carrera 3 N-s,7.10391979,-73.1265485,,,,unknown,,,false,true
+3346,P14,732,151129,151129,Calle 55 Carrera 3 N-s,7.10417362,-73.12823502,,,,unknown,,,false,true
+3346,P14,753,151130,151130,Balconcitos,7.10353767,-73.13054729,,,,unknown,,,false,true
+3346,P14,763,151131,151131,Carrera 2 Occidente Calle 55A N-s,7.10192371,-73.13077348,,,,unknown,,,false,true
+3346,P14,768,151132,151132,Recrear el Mutis,7.1004907,-73.12970301,,,,unknown,,,false,true
+3346,P14,772,151133,151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,7.09996464,-73.12930827,,,,unknown,,,false,true
+3346,P14,777,151134,151134,Carrera 2W Calle 63 N-s,7.09928683,-73.12799356,,,,unknown,,,false,true
+3346,P14,792,151135,151135,Carrera 10 Calle 64 Cancha el Bueno,7.09720248,-73.12702142,,,,unknown,,,false,true
+3346,P14,811,151136,151136,Calle 65 carrera 3 N-s,7.09450675,-73.12855399,,,,unknown,,,false,true
+3346,P14,818,151137,151137,Plaza de Mercado Campesino,7.0931821,-73.13024422,,,,unknown,,,false,true
+3346,P14,869,151138,151138,Parada Puente el Bueno N-s,7.08873076,-73.13336478,node/4497209689,13.7,2.7,ambiguous_centre_or_geofence,way/474943371,1.4,false,true
+3346,P14,886,151139,151139,Terminal de Transportes N-s,7.08736514,-73.12945495,,,,unknown,,,false,true
+3346,P14,903,151140,151140,Bomba San Fermín N-s,7.08810246,-73.12336746,,,,unknown,,,false,true
+3346,P14,911,151141,151141,Transversal Metropolitana Calle 103 N-s,7.08703589,-73.12243918,node/12294265915,8.3,-7.7,right_of_travel,way/1049410558,10.1,false,true
+3346,P14,923,151142,151142,Transversal Metropolitana Calle 104A,7.0844632,-73.12185634,,,,unknown,,,false,true
+3346,P14,929,151143,151143,Colegio Divino Niño N-s,7.08322446,-73.12055221,,,,unknown,,,false,true
+3346,P14,933,151144,151144,Colegio INEM N-s,7.08414046,-73.11912547,node/5458093524,73.0,12.7,left_of_travel,way/627866440,5.4,false,true
+3346,P14,945,151145,151145,Calle 105 Carrera 20 N-s,7.08536465,-73.11723538,node/6419781485,10.9,-8.7,right_of_travel,way/1505089448,7.4,false,true
+3346,P14,951,151146,151146,Calle 105 carrera 22 N-s,7.0853028,-73.11476858,,,,unknown,,,false,true
+3346,P14,956,151147,151147,Parroquia Cristo Resucitado,7.08529593,-73.11248875,,,,unknown,,,false,true
+3346,P14,980,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3346,P14,995,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,,unknown,way/722068009,6.3,false,true
+3346,P14,1003,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,12.6,left_of_travel,way/722068009,4.2,false,true
+3346,P14,1011,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,29.7,left_of_travel,way/297647347,3.3,false,true
+3346,P14,1023,166038,166038,Centro Comercial Cañaveral,7.07026358,-73.10663391,,,,unknown,,,false,true
+3346,P14,1039,166054,166054,Centro Comercial Parque Caracolí,7.0724263,-73.10532445,node/13104681309,95.2,-69.8,right_of_travel,way/587944351,5.0,false,true
+3346,P14,1048,166061,166061,Parque Acualago N-s.,7.07231008,-73.10166289,,,,unknown,,,false,true
+3346,P14,1053,165023,165023,Carrera 29 Calle 8 S-n.,7.0711772,-73.09811327,,,,unknown,,,false,true
+3346,P14,1064,165022,165022,Plaza la Colmena N-s.,7.06976422,-73.09759319,,,,unknown,,,false,true
+3346,P14,1078,166091,166091,Carrera 3 Calle 48 N-s.,7.06889386,-73.09264203,,,,unknown,,,false,true
+3346,P14,1088,166092,166092,Colegio Vicente Azuero N-s.,7.06819277,-73.09103743,,,,unknown,,,false,true
+3346,P14,1121,166133,166133,Hospital San Juan de Dios.,7.0638539,-73.08686906,,,,unknown,,,false,true
+3346,P14,1127,166134,166134,Plaza de Mercado Floridablanca,7.06162662,-73.08597237,,,,unknown,,,false,true
+3346,P14,1133,166135,166135,Dirrecion de Transito de Floridablanca.,7.05962487,-73.08522027,node/5457645923,17.6,-10.0,right_of_travel,way/95834303,10.1,false,true
+3346,P14,1141,166154,166154,Calle 11 Carrera 8 Servientrega.,7.05851003,-73.08347948,node/5457648023,4.7,-10.2,right_of_travel,way/56115173,7.1,false,true
+3346,P14,1142,166154,166154,Calle 11 Carrera 8 Servientrega.,7.05851003,-73.08347948,node/5457648023,4.7,-10.2,right_of_travel,way/56115173,7.1,false,true
+3346,P14,1143,166154,166154,Calle 11 Carrera 8 Servientrega.,7.05851003,-73.08347948,node/5457648023,4.7,-10.2,right_of_travel,way/56115173,7.1,false,true
+3346,P14,1150,166155,166155,Calle 205 Carrera 38A,7.05941154,-73.08161375,node/5457655021,4.4,-36.6,right_of_travel,way/95834382,6.7,false,true
+3346,P14,1151,166155,166155,Calle 205 Carrera 38A,7.05941154,-73.08161375,node/5457655021,4.4,-36.6,right_of_travel,way/95834382,6.7,false,true
+3346,P14,1157,166157,166157,Calle 205 Carrera 40 N-s.,7.0611874,-73.07917702,node/5457648024,116.7,109.0,left_of_travel,way/95853754,3.1,false,true
+3346,P14,1158,166157,166157,Calle 205 Carrera 40 N-s.,7.0611874,-73.07917702,node/5457648024,116.7,109.0,left_of_travel,way/95853754,3.1,false,true
+3346,P14,1161,166169,166169,Carrera 40 Calle 204B los ANDES.,7.06205872,-73.07941752,node/5457648024,16.6,-4.3,right_of_travel,way/95853754,3.1,false,true
+3346,P14,1172,166156,166156,Finalización Calle 5 Limoncito.,7.06499364,-73.0802626,,,,unknown,,,false,true
+3350,RD27/RD15,1,150985,150985,Inicio Portal del Valle,6.97455645,-73.05279134,node/12318733694,11.7,,unknown,way/558977282,7.7,false,true
+3350,RD27/RD15,11,150904,150904,Carrera 2W Calle 23 S-n,6.97205694,-73.05192289,,,,unknown,,,false,true
+3350,RD27/RD15,15,150982,150982,Carrera 2W Calle 24B.,6.97099636,-73.05131237,,,,unknown,,,false,true
+3350,RD27/RD15,21,150905,150905,Cisnes Sn,6.97089588,-73.05038833,,,,unknown,,,false,true
+3350,RD27/RD15,30,150906,150906,Salida de los Cisnes Sn,6.97375407,-73.04608064,,,,unknown,,,false,true
+3350,RD27/RD15,38,150907,150907,Condominio Hacienda San Juan Sn,6.97564869,-73.04575169,,,,unknown,,,false,true
+3350,RD27/RD15,42,150908,150908,EDS Barlovento Sn,6.97800789,-73.0460665,,,,unknown,,,false,true
+3350,RD27/RD15,50,170489,170489,Sede Recreacional Lomas del Viento.,6.98112727,-73.0447561,,,,unknown,,,false,true
+3350,RD27/RD15,59,150909,150909,EDS el Molino del Viento Sn,6.98515924,-73.04311173,,,,unknown,,,false,true
+3350,RD27/RD15,73,150910,150910,Los Troncos S-n,6.98893756,-73.04324839,,,,unknown,,,false,true
+3350,RD27/RD15,86,150795,150795,Cabecera del Llano S-n,6.99144719,-73.04575126,node/6584530986,110.3,41.5,left_of_travel,way/96125606,9.5,false,true
+3350,RD27/RD15,91,150912,150912,La Normal Sn,6.99313742,-73.04711942,node/12570339739,23.3,,unknown,way/628921414,8.2,false,true
+3350,RD27/RD15,97,150797,150797,San francisco S-n,6.99591252,-73.04917247,,,,unknown,,,false,true
+3350,RD27/RD15,107,150914,150914,San Carlos S-n,6.99881597,-73.05226516,node/5343931821,39.2,,unknown,way/628921415,7.9,false,true
+3350,RD27/RD15,123,150915,150915,Quinta Granada Sn,7.00062859,-73.05318156,,,,unknown,,,false,true
+3350,RD27/RD15,132,150800,150800,Centro Comercial Eco centro,7.00306911,-73.0547563,way/929833088,112.2,110.0,left_of_travel,way/929833073,2.2,false,true
+3350,RD27/RD15,146,150917,150917,Parada ICP S-n,7.00619701,-73.05571626,,,,unknown,,,false,true
+3350,RD27/RD15,165,150802,150802,Puente Peatonal Españolita S-n,7.01692676,-73.05741552,way/1427821639,26.3,13.1,left_of_travel,way/1046549264,4.3,false,true
+3350,RD27/RD15,179,150919,150919,Paradero Campo Alegre S-n,7.02396035,-73.06326787,way/1427821636,16.5,7.2,left_of_travel,way/1046549258,5.2,false,true
+3350,RD27/RD15,187,150920,150920,Paradero Vivero Platacero Sn,7.02672301,-73.06625047,,,,unknown,,,false,true
+3350,RD27/RD15,216,150921,150921,Paradero Palmichal S-n,7.03863987,-73.0739596,way/1575095697,15.0,,unknown,way/1303610080,3.4,false,true
+3350,RD27/RD15,234,150922,150922,Paradero Menzuly S-n,7.04383871,-73.07752895,way/1427821634,17.1,9.7,left_of_travel,way/1047308458,3.1,false,true
+3350,RD27/RD15,255,150807,150807,Puente Peatonal  la Estancia S-n,7.0499447,-73.08096061,way/1575095695,20.7,11.4,left_of_travel,way/561651232,6.0,false,true
+3350,RD27/RD15,282,150924,150924,Mac Pollo Sn,7.05666488,-73.08343465,,,,unknown,,,false,true
+3350,RD27/RD15,285,150809,150809,EDS Aranzoque S-n,7.05817876,-73.08744103,,,,unknown,,,false,true
+3350,RD27/RD15,295,150926,150926,Papi Quiero Piña Sn,7.06208787,-73.09277559,node/12993316603,10.2,,unknown,way/95834450,10.5,false,true
+3350,RD27/RD15,303,150927,150927,Universidad Santo Tomas Sn,7.06401244,-73.09552244,,,,unknown,,,false,true
+3350,RD27/RD15,310,150928,150928,Estación Lagos Sn,7.06672629,-73.09954998,way/1427821632,9.1,,unknown,way/628696086,4.3,false,true
+3350,RD27/RD15,320,150813,150813,Panamericano Cañaveral paralela S-n,7.07064144,-73.10452949,way/1575095688,26.7,,unknown,way/722068007,6.4,false,true
+3350,RD27/RD15,324,150929,150929,Estación Cañaveral Vagón Norte s-n,7.07115466,-73.10531909,way/1575095687,30.1,,unknown,way/628696086,7.0,false,true
+3350,RD27/RD15,335,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,20.6,left_of_travel,way/98781433,5.0,false,true
+3350,RD27/RD15,345,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,,unknown,way/98781433,4.0,false,true
+3350,RD27/RD15,356,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,,unknown,way/722068009,6.3,false,true
+3350,RD27/RD15,368,151149,151149,Estación de Transferencia Provenza Oriental,7.09117684,-73.10892811,way/1575095674,9.9,,unknown,way/1050304515,9.9,false,true
+3350,RD27/RD15,380,150818,150818,Miradores de San Lorenzo S-n,7.09440996,-73.10903764,,,,unknown,,,false,true
+3350,RD27/RD15,390,150819,150819,Glorieta Cacique S-n,7.09791013,-73.10838288,,,,unknown,,,false,true
+3350,RD27/RD15,395,150820,150820,Centro Comercial Cacique S-n,7.09887524,-73.10806104,,,,unknown,,,false,true
+3350,RD27/RD15,420,150821,150821,Colegio la Merced S-n,7.10776952,-73.10944929,,,,unknown,,,false,true
+3350,RD27/RD15,426,150822,150822,Clinica Bucaramanga S-n,7.11091096,-73.10999742,node/12205403689,3.7,-3.3,ambiguous_centre_or_geofence,way/95677436,5.0,false,true
+3350,RD27/RD15,432,150823,150823,Gratamira S-n,7.11551371,-73.11081679,,,,unknown,,,false,true
+3350,RD27/RD15,437,150824,150824,Parque San Pio S-n,7.11850355,-73.11132711,,,,unknown,,,false,true
+3350,RD27/RD15,441,150825,150825,Carrera 33 calle 42 S-n,7.12021642,-73.11165463,,,,unknown,,,false,true
+3350,RD27/RD15,446,150826,150826,Carrera 33 calle 38 S-n,7.1223763,-73.11202295,,,,unknown,,,false,true
+3350,RD27/RD15,452,150827,150827,Carrera 33 calle 34 S-n,7.12508458,-73.11252334,,,,unknown,,,false,true
+3350,RD27/RD15,456,150828,150828,plaza Guarín S-n,7.12639565,-73.11276993,,,,unknown,,,false,true
+3350,RD27/RD15,461,150829,150829,UCC,7.12906957,-73.11392588,,,,unknown,,,false,true
+3350,RD27/RD15,466,150830,150830,Carrera 32 Calle 19 S-n,7.13129009,-73.11485861,,,,unknown,,,false,true
+3350,RD27/RD15,472,150831,150831,Carrera 32 Calle 14 S-n,7.13356506,-73.11531559,,,,unknown,,,false,true
+3350,RD27/RD15,477,150832,150832,Velódromo S-n,7.13452024,-73.1160252,,,,unknown,,,false,true
+3350,RD27/RD15,488,150833,150833,Estadio Américo Montanini S-n,7.13556769,-73.11790049,node/7464562038,6.2,,unknown,way/118198203,8.5,false,true
+3350,RD27/RD15,493,163549,163549,Parada Colegio Tecnológico.,7.13779973,-73.11891021,,,,unknown,,,false,true
+3350,RD27/RD15,527,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,,unknown,way/929807211,13.0,false,true
+3350,RD27/RD15,528,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,,unknown,way/929807211,13.0,false,true
+3350,RD27/RD15,542,150944,150944,Carrera 26 Calle 13 Ns,7.13494307,-73.12135565,,,,unknown,,,false,true
+3350,RD27/RD15,548,150945,150945,Boulevar Santander Carrera 22 Ns,7.13274587,-73.12402717,,,,unknown,,,false,true
+3350,RD27/RD15,565,150946,150946,Boulevar Santander carreras 17-18,7.1277709,-73.12738871,,,,unknown,,,false,true
+3350,RD27/RD15,583,151155,151155,Estación Quebradaseca N-s,7.12197974,-73.1280735,way/1575095655,17.0,,unknown,way/475414904,3.9,false,true
+3350,RD27/RD15,588,150948,150948,Estación San Mateo Ns,7.11885068,-73.12682167,way/1575095659,5.7,,unknown,way/475414904,4.5,false,true
+3350,RD27/RD15,592,150949,150949,Estación Chorreras Ns,7.11691903,-73.12606545,way/1575095661,7.3,,unknown,way/475414904,4.6,false,true
+3350,RD27/RD15,602,150950,150950,la Rosita Centro Comercial Ns,7.11321997,-73.12380235,,,,unknown,,,false,true
+3350,RD27/RD15,608,150951,150951,Diagonal 15 Avenida la Rosita,7.11223676,-73.12174155,way/1575095665,16.2,,unknown,way/95696596,6.1,false,true
+3350,RD27/RD15,617,150952,150952,Estación la Isla,7.10784109,-73.11622996,way/1575095669,17.4,,unknown,way/47403383,5.9,false,true
+3350,RD27/RD15,620,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3350,RD27/RD15,637,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3350,RD27/RD15,648,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,,unknown,way/152747019,5.9,false,true
+3350,RD27/RD15,671,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3350,RD27/RD15,691,150957,150957,Payador N-s,7.0842699,-73.10807556,way/1575095680,35.7,24.5,left_of_travel,way/722068009,6.3,false,true
+3350,RD27/RD15,697,150958,150958,Puente Peatonal Hormigueros Occidental N-s,7.07833757,-73.10832432,way/1575095682,54.3,14.2,left_of_travel,way/722068009,4.2,false,true
+3350,RD27/RD15,705,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,,unknown,way/297647347,3.3,false,true
+3350,RD27/RD15,719,150960,150960,Estación Cañaveral N-s,7.07084522,-73.10530568,way/1575095687,13.1,,unknown,way/628696086,7.0,false,true
+3350,RD27/RD15,726,150961,150961,Estación Lagos N-s,7.0665903,-73.09968578,way/1575095694,11.8,,unknown,way/628696105,4.6,false,true
+3350,RD27/RD15,730,150962,150962,Estación la Riviera,7.0640091,-73.09611901,,,,unknown,,,false,true
+3350,RD27/RD15,735,150963,150963,Papi Quiero Piña N-s,7.06096569,-73.09176581,node/13034917937,74.5,,unknown,way/1509230370,14.3,false,true
+3350,RD27/RD15,742,150964,150964,EDS el Tigger N-s,7.05804195,-73.08745483,,,,unknown,,,false,true
+3350,RD27/RD15,746,150965,150965,Mac Pollo N-s,7.0566945,-73.08394614,,,,unknown,,,false,true
+3350,RD27/RD15,770,150966,150966,Estación la Estancia N-s,7.04958287,-73.08082707,way/1575095695,22.1,,unknown,way/561651232,6.0,false,true
+3350,RD27/RD15,790,150967,150967,Estación Menzuly N-s,7.04367766,-73.07767916,way/1427821634,11.4,,unknown,way/1047308458,3.1,false,true
+3350,RD27/RD15,811,150876,150876,Puente Peatonal  Palmichal N-s,7.03834389,-73.07399542,node/5343931107,15.4,,unknown,way/1303610081,2.3,false,true
+3350,RD27/RD15,838,150969,150969,Pretecor N-s,7.02667084,-73.06640092,,,,unknown,,,false,true
+3350,RD27/RD15,845,150970,150970,Estación Campo Alegre N-s,7.02386723,-73.0634297,way/1427821636,18.8,,unknown,way/1046549258,5.2,false,true
+3350,RD27/RD15,858,150971,150971,Estación Españolita N-s,7.01723394,-73.05766362,way/1575095699,17.4,,unknown,way/1046549264,4.2,false,true
+3350,RD27/RD15,887,150972,150972,Portal de Piedecuesta,7.0024479,-73.05556351,way/929833088,8.6,,unknown,way/929833073,2.2,false,true
+3350,RD27/RD15,900,150973,150973,San Carlos N-s,6.99862481,-73.05220194,node/5343931821,17.4,,unknown,way/628921415,7.9,false,true
+3350,RD27/RD15,903,150974,150974,San Francisco N-s,6.997537,-73.05132592,,,,unknown,,,false,true
+3350,RD27/RD15,918,150975,150975,San Luis N-s,6.9938245,-73.04770868,,,,unknown,,,false,true
+3350,RD27/RD15,922,150976,150976,Puerto Madero N-s,6.99253897,-73.04681215,node/6584530986,78.6,-30.0,right_of_travel,way/96125606,9.5,false,true
+3350,RD27/RD15,928,150977,150977,Cabecera del llano N-s,6.99119906,-73.04564782,,,,unknown,,,false,true
+3350,RD27/RD15,953,150978,150978,EDS el Molino N-s,6.98554171,-73.04300786,,,,unknown,,,false,true
+3350,RD27/RD15,969,150979,150979,Lomas del Viento N-s,6.98150314,-73.04470905,,,,unknown,,,false,true
+3350,RD27/RD15,983,150980,150980,EDS Barlovento N-s,6.9782156,-73.04609725,,,,unknown,,,false,true
+3350,RD27/RD15,993,150981,150981,Condominio Hacienda San Miguel N-s,6.97576957,-73.04577605,,,,unknown,,,false,true
+3350,RD27/RD15,1030,150982,150982,Carrera 2W Calle 24B.,6.97099636,-73.05131237,,,,unknown,,,false,true
+3350,RD27/RD15,1033,150983,150983,Carrera 2W Calle 24 N-s,6.97124497,-73.05148694,,,,unknown,,,false,true
+3350,RD27/RD15,1047,150984,150984,Fin Portal del Valle,6.97439604,-73.05262706,node/12318733694,14.9,,unknown,way/558977282,7.7,false,true
+3351,P1,1,170504,170504,Inicio CENDAS.,7.08319157,-73.08999732,,,,unknown,,,false,true
+3351,P1,8,170505,170505,Carrera 54 Calle 141.,7.08204304,-73.09004575,,,,unknown,,,false,true
+3351,P1,12,170512,170512,Calle 142 Carrera 55,7.08079413,-73.08942154,,,,unknown,,,false,true
+3351,P1,18,170516,170516,Parque de la Familia - CENDAS.,7.08019527,-73.0882982,,,,unknown,,,false,true
+3351,P1,25,170530,170530,Carrera 9E Calle 33.,7.0786143,-73.08821586,,,,unknown,,,false,true
+3351,P1,36,171017,171017,Calle 30 Carrera 7E,7.07701377,-73.08836869,,,,unknown,,,false,true
+3351,P1,42,171023,171023,Calle 30 Carrera 5E,7.07618148,-73.08950427,,,,unknown,,,false,true
+3351,P1,50,171031,171031,Calle 30 Carrera 3E,7.07548018,-73.09048982,,,,unknown,,,false,true
+3351,P1,65,171032,171032,La HACIENDA S-n,7.07632682,-73.09352036,,,,unknown,,,false,true
+3351,P1,75,171056,171056,Carrera 3 calle 15 S-n,7.07824742,-73.09580699,,,,unknown,,,false,true
+3351,P1,85,171057,171057,Carrera 3 Calle 13 S-n.,7.0794764,-73.09715465,,,,unknown,,,false,true
+3351,P1,92,171058,171058,Calle 11 Carrera 5,7.08004976,-73.09829192,,,,unknown,,,false,true
+3351,P1,103,171059,171059,Plaza de Mercado SANTANA.,7.08211844,-73.09912126,,,,unknown,,,false,true
+3351,P1,114,171095,171095,Calle 4 Carrera 10 S-n,7.08294615,-73.10063581,,,,unknown,,,false,true
+3351,P1,134,171115,171115,Puente Peatonal la GALLERA.,7.08664572,-73.10082996,,,,unknown,,,false,true
+3351,P1,162,171116,171116,Puente Peatonal la CASTELLANA S-n,7.08675973,-73.10417288,,,,unknown,,,false,true
+3351,P1,171,171117,171117,Calle 114 Carrera 28 NIZA,7.08756311,-73.1060383,,,,unknown,,,false,true
+3351,P1,182,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3351,P1,200,150934,150934,Antonia Santos,7.10078002,-73.11155147,,,,unknown,,,false,true
+3351,P1,218,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3351,P1,224,151150,151150,Diagonal 15 calle 55 S-n,7.10900235,-73.11742876,,,,unknown,,,false,true
+3351,P1,233,150950,150950,la Rosita Centro Comercial Ns,7.11321997,-73.12380235,,,,unknown,,,false,true
+3351,P1,241,151152,151152,Estación Chorreras S-n,7.11704592,-73.12600353,way/1575095661,14.5,,unknown,way/475414904,4.6,false,true
+3351,P1,244,151003,151003,Estacion San mateo S-n,7.11897154,-73.12676218,way/1575095659,13.8,,unknown,way/475414904,4.5,false,true
+3351,P1,249,151154,151154,Estación Quebradaseca S-n,7.12228902,-73.12808321,way/1575095655,17.5,-1.3,ambiguous_centre_or_geofence,way/475414904,3.9,false,true
+3351,P1,250,151155,151155,Estación Quebradaseca N-s,7.12197974,-73.1280735,way/1575095655,17.0,3.0,ambiguous_centre_or_geofence,way/475414904,3.9,false,true
+3351,P1,254,151156,151156,Estación San Mateo N-s,7.1186767,-73.12675162,way/1575095659,19.1,,unknown,way/475414904,4.5,false,true
+3351,P1,258,150949,150949,Estación Chorreras Ns,7.11691903,-73.12606545,way/1575095661,7.3,7.5,left_of_travel,way/475414904,4.6,false,true
+3351,P1,267,150950,150950,la Rosita Centro Comercial Ns,7.11321997,-73.12380235,,,,unknown,,,false,true
+3351,P1,274,150951,150951,Diagonal 15 Avenida la Rosita,7.11223676,-73.12174155,way/1575095665,16.2,15.7,left_of_travel,way/95696596,6.1,false,true
+3351,P1,278,151272,151272,Calle 56 Diagonal 15 S-n.,7.10838365,-73.11735764,,,,unknown,,,false,true
+3351,P1,281,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3351,P1,296,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3351,P1,303,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,,unknown,way/152747019,5.9,false,true
+3351,P1,320,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3351,P1,340,171301,171301,Diagonal 105 Transversal 29,7.09024945,-73.10694241,,,,unknown,,,false,true
+3351,P1,344,171302,171302,Plaza Satélite.,7.09153031,-73.10576883,,,,unknown,,,false,true
+3351,P1,350,171303,171303,Carrera 33 Calle 109 N-s.,7.09074896,-73.10521487,,,,unknown,,,false,true
+3351,P1,366,171304,171304,CAI NIZA,7.08812715,-73.10583834,,,,unknown,,,false,true
+3351,P1,378,171305,171305,Puente Peatonal la CASTELLANA N-s.,7.08678718,-73.10428386,,,,unknown,,,false,true
+3351,P1,395,171306,171306,Puente Peatonal la GALLERA N-s.,7.08637151,-73.10084366,,,,unknown,,,false,true
+3351,P1,410,171307,171307,Casetas de Villabel.,7.08311977,-73.10120151,,,,unknown,,,false,true
+3351,P1,414,171308,171308,Calle 4 Carrera 10 N-s.,7.08298413,-73.10039548,,,,unknown,,,false,true
+3351,P1,421,171309,171309,Plaza de Mercado SANTANA N-s.,7.08228286,-73.09929119,,,,unknown,,,false,true
+3351,P1,431,171310,171310,Calle 8 Carrera 4,7.07974379,-73.09793871,,,,unknown,,,false,true
+3351,P1,437,171311,171311,Carrera 3 Calle 13 N-s.,7.07938403,-73.09731707,,,,unknown,,,false,true
+3351,P1,446,171312,171312,Carrera 3 Calle 15 N-s,7.07834029,-73.09619499,,,,unknown,,,false,true
+3351,P1,455,171313,171313,LA HACIENDA,7.07631978,-73.09324587,,,,unknown,,,false,true
+3351,P1,467,171314,171314,Calle 30 Carrera 1.,7.07554924,-73.09131836,,,,unknown,,,false,true
+3351,P1,474,171315,171315,Calle 29A Carrera 3E.,7.07504263,-73.09010479,,,,unknown,,,false,true
+3351,P1,479,171316,171316,Calle 28 Carrera 5E.,7.07439076,-73.08894433,,,,unknown,,,false,true
+3351,P1,484,171446,171446,Calle 28 Carrera 7E.,7.07534692,-73.08746631,,,,unknown,,,false,true
+3351,P1,488,171447,171447,Calle 28 Carrera 8AE,7.07601551,-73.08641202,,,,unknown,,,false,true
+3351,P1,492,171448,171448,Carrera 9E Calle 30,7.07752787,-73.08704186,,,,unknown,,,false,true
+3351,P1,496,171449,171449,Calle 31 Carrera 9E N-s.,7.07889579,-73.08748965,,,,unknown,,,false,true
+3351,P1,502,170516,170516,Parque de la Familia - CENDAS.,7.08019527,-73.0882982,,,,unknown,,,false,true
+3351,P1,508,171451,171451,Carrera 54 Calle 142 N-s,7.0813266,-73.09000655,,,,unknown,,,false,true
+3351,P1,513,171452,171452,Fin Estacion CENDAS.,7.08337902,-73.09002392,,,,unknown,,,false,true
+3352,P2,1,171447,171447,Calle 28 Carrera 8AE,7.07601551,-73.08641202,,,,unknown,,,false,true
+3352,P2,5,171448,171448,Carrera 9E Calle 30,7.07752787,-73.08704186,,,,unknown,,,false,true
+3352,P2,9,171449,171449,Calle 31 Carrera 9E N-s.,7.07889579,-73.08748965,,,,unknown,,,false,true
+3352,P2,13,171483,171483,Carrera 11E Calle 30A,7.07961241,-73.08647113,,,,unknown,,,false,true
+3352,P2,20,171493,171493,Calle 30 Carrera 9E N-s.,7.07815301,-73.08699884,,,,unknown,,,false,true
+3352,P2,25,171017,171017,Calle 30 Carrera 7E,7.07701377,-73.08836869,,,,unknown,,,false,true
+3352,P2,33,171023,171023,Calle 30 Carrera 5E,7.07618148,-73.08950427,,,,unknown,,,false,true
+3352,P2,42,171031,171031,Calle 30 Carrera 3E,7.07548018,-73.09048982,,,,unknown,,,false,true
+3352,P2,55,171032,171032,La HACIENDA S-n,7.07632682,-73.09352036,,,,unknown,,,false,true
+3352,P2,66,171056,171056,Carrera 3 calle 15 S-n,7.07824742,-73.09580699,,,,unknown,,,false,true
+3352,P2,69,171312,171312,Carrera 3 Calle 15 N-s,7.07834029,-73.09619499,,,,unknown,,,false,true
+3352,P2,78,171057,171057,Carrera 3 Calle 13 S-n.,7.0794764,-73.09715465,,,,unknown,,,false,true
+3352,P2,86,171058,171058,Calle 11 Carrera 5,7.08004976,-73.09829192,,,,unknown,,,false,true
+3352,P2,100,171059,171059,Plaza de Mercado SANTANA.,7.08211844,-73.09912126,,,,unknown,,,false,true
+3352,P2,109,171095,171095,Calle 4 Carrera 10 S-n,7.08294615,-73.10063581,,,,unknown,,,false,true
+3352,P2,123,171581,171581,Carrera 11 Calle 11 S-n.,7.07974803,-73.10114351,,,,unknown,,,false,true
+3352,P2,130,171582,171582,Carrera 12 Calle 12. S-n.,7.07869884,-73.10337413,,,,unknown,,,false,true
+3352,P2,136,171601,171601,Carrera 12 Calle 16 S-n.,7.07731001,-73.10363439,,,,unknown,,,false,true
+3352,P2,142,171608,171608,Carrera 12 Calle 19 S-n.,7.07605267,-73.10408707,,,,unknown,,,false,true
+3352,P2,147,171602,171602,Carrera 12 Calle 23 S.n,7.07437471,-73.10455847,,,,unknown,,,false,true
+3352,P2,155,165026,165026,Carrera 12 Calle 27 S-n.,7.0733584,-73.10537736,,,,unknown,,,false,true
+3352,P2,173,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,,unknown,way/98781433,5.0,false,true
+3352,P2,181,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,16.8,left_of_travel,way/98781433,4.0,false,true
+3352,P2,188,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,,unknown,way/722068009,6.3,false,true
+3352,P2,200,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3352,P2,213,150934,150934,Antonia Santos,7.10078002,-73.11155147,,,,unknown,,,false,true
+3352,P2,226,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3352,P2,233,171691,171691,Carrera 21 Calle 54 S-n.,7.1099122,-73.11684376,,,,unknown,,,false,true
+3352,P2,236,163634,163634,Parada Parque TURBAY N-s.,7.11513753,-73.11529031,node/9228907800,44.4,,unknown,way/375277562,14.0,false,true
+3352,P2,237,163634,163634,Parada Parque TURBAY N-s.,7.11513753,-73.11529031,node/9228907800,44.4,,unknown,way/375277562,14.0,false,true
+3352,P2,240,171696,171696,Parque la CONCORDIA.,7.11342867,-73.1186473,,,,unknown,,,false,true
+3352,P2,252,171698,171698,Carrera 21 Calle 37,7.11823071,-73.1209589,,,,unknown,,,false,true
+3352,P2,258,171699,171699,Carrera 21 Calle 34.,7.12066616,-73.12175644,,,,unknown,,,false,true
+3352,P2,263,171700,171700,Parque ANTONIA SANTOS.,7.12247059,-73.12261249,node/12277242462,4.8,,unknown,way/95597271,10.2,false,true
+3352,P2,268,171702,171702,Carrera 21 Calle 28.,7.12498175,-73.12354393,,,,unknown,,,false,true
+3352,P2,275,171701,171701,Carrera 21 Calle 20.,7.12839611,-73.12443123,,,,unknown,,,false,true
+3352,P2,294,171703,171703,Carrera 21 Calle 15.,7.13242304,-73.12519301,,,,unknown,,,false,true
+3352,P2,305,150838,150838,Calle 11 carrera 23 S-n,7.13643975,-73.12375295,,,,unknown,,,false,true
+3352,P2,315,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,18.4,left_of_travel,way/929807211,13.0,false,true
+3352,P2,316,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,18.4,left_of_travel,way/929807211,13.0,false,true
+3352,P2,332,150944,150944,Carrera 26 Calle 13 Ns,7.13494307,-73.12135565,,,,unknown,,,false,true
+3352,P2,341,150945,150945,Boulevar Santander Carrera 22 Ns,7.13274587,-73.12402717,,,,unknown,,,false,true
+3352,P2,351,171804,171804,Carrera 22 Calle 22.,7.12665757,-73.12316268,,,,unknown,,,false,true
+3352,P2,360,171805,171805,Parque ANTONIA SANTOS N-s.,7.12286203,-73.1217566,node/12277242463,17.3,-15.2,right_of_travel,way/95565248,15.1,false,true
+3352,P2,366,171806,171806,Carrera 22 calle 34.,7.12127963,-73.12119615,,,,unknown,,,false,true
+3352,P2,373,171807,171807,Carrera 22 Calle 39.,7.11796891,-73.11981356,,,,unknown,,,false,true
+3352,P2,377,171808,171808,Carrera 22 calle 45.,7.11637943,-73.11908011,,,,unknown,,,false,true
+3352,P2,382,171809,171809,Parque la CONCORDIA N-s.,7.11377021,-73.11790438,,,,unknown,,,false,true
+3352,P2,390,171810,171810,Carrera 22 Calle 53.,7.11090754,-73.11635893,,,,unknown,,,false,true
+3352,P2,394,171850,171850,Carrera 22 Calle 55,7.10933337,-73.11583044,,,,unknown,,,false,true
+3352,P2,400,164650,164650,Conucos N-s.,7.10771461,-73.11421895,,,,unknown,,,false,true
+3352,P2,421,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3352,P2,443,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3352,P2,460,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,22.8,left_of_travel,way/722068009,6.3,false,true
+3352,P2,470,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,13.0,left_of_travel,way/722068009,4.2,false,true
+3352,P2,480,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,31.3,left_of_travel,way/297647347,3.3,false,true
+3352,P2,491,166038,166038,Centro Comercial Cañaveral,7.07026358,-73.10663391,,,,unknown,,,false,true
+3352,P2,508,166054,166054,Centro Comercial Parque Caracolí,7.0724263,-73.10532445,node/13104681309,95.2,-68.9,right_of_travel,way/587944351,5.0,false,true
+3352,P2,514,171961,171961,Carrera 12 calle 22 N-s.,7.07421582,-73.10460264,,,,unknown,,,false,true
+3352,P2,517,171965,171965,Carrera 12 calle 19 N-s.,7.07597698,-73.1039388,,,,unknown,,,false,true
+3352,P2,525,171966,171966,Plaza de Mercado VILLABEL N-s.,7.07869589,-73.10301538,,,,unknown,,,false,true
+3352,P2,533,171967,171967,Carrera 11 Calle 8 N-s.,7.0800381,-73.10096451,,,,unknown,,,false,true
+3352,P2,543,171968,171968,Estación de Bombeo Amb N-s.,7.08162689,-73.10054624,,,,unknown,,,false,true
+3352,P2,551,171308,171308,Calle 4 Carrera 10 N-s.,7.08298413,-73.10039548,,,,unknown,,,false,true
+3352,P2,562,171309,171309,Plaza de Mercado SANTANA N-s.,7.08228286,-73.09929119,,,,unknown,,,false,true
+3352,P2,574,171310,171310,Calle 8 Carrera 4,7.07974379,-73.09793871,,,,unknown,,,false,true
+3352,P2,580,171311,171311,Carrera 3 Calle 13 N-s.,7.07938403,-73.09731707,,,,unknown,,,false,true
+3352,P2,589,171312,171312,Carrera 3 Calle 15 N-s,7.07834029,-73.09619499,,,,unknown,,,false,true
+3352,P2,600,171313,171313,LA HACIENDA,7.07631978,-73.09324587,,,,unknown,,,false,true
+3352,P2,614,171314,171314,Calle 30 Carrera 1.,7.07554924,-73.09131836,,,,unknown,,,false,true
+3352,P2,622,171315,171315,Calle 29A Carrera 3E.,7.07504263,-73.09010479,,,,unknown,,,false,true
+3352,P2,627,171316,171316,Calle 28 Carrera 5E.,7.07439076,-73.08894433,,,,unknown,,,false,true
+3352,P2,633,171446,171446,Calle 28 Carrera 7E.,7.07534692,-73.08746631,,,,unknown,,,false,true
+3353,P3,1,172072,172072,Estacion Barrio CARACOLI. ,7.07069767,-73.08322789,way/554117798,21.5,,unknown,way/554117797,17.8,false,true
+3353,P3,13,172073,172073,Calle 8 Carrera 6.,7.07067838,-73.08120463,,,,unknown,,,false,true
+3353,P3,17,172074,172074,Carrera 7 Calle 5 S-n.,7.06960138,-73.0812199,,,,unknown,,,false,true
+3353,P3,24,172075,172075,Sector 18 S-n.,7.06746662,-73.08206807,,,,unknown,,,false,true
+3353,P3,28,172076,172076,Sector 19 S-n.,7.06753042,-73.08295398,,,,unknown,,,false,true
+3353,P3,36,172077,172077,Mercomfenalco BUCARICA.,7.06885619,-73.08427919,,,,unknown,,,false,true
+3353,P3,41,172078,172078,Sector 10-10 S-n.,7.06954536,-73.08568605,,,,unknown,,,false,true
+3353,P3,48,172079,172079,Cancha BUCARICA.,7.06906929,-73.0869486,,,,unknown,,,false,true
+3353,P3,52,172080,172080,Sector 3-3 S-n.,7.06900304,-73.08891316,node/5695156132,32.6,,unknown,way/70865342,5.8,false,true
+3353,P3,69,165019,165019,Colegio Vicente Azuero S-n,7.06844799,-73.09200428,,,,unknown,,,false,true
+3353,P3,85,165020,165020,Calle 41 Carrera 4 S-n.,7.06990921,-73.09497837,,,,unknown,,,false,true
+3353,P3,91,165021,165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,7.06962973,-73.09669583,,,,unknown,,,false,true
+3353,P3,99,165123,165123,Iglesia Santamaria de Los Lagos. S-n.,7.07028717,-73.0976638,,,,unknown,,,false,true
+3353,P3,105,165136,165136,Kr 29 Cl 8 S-n.,7.07216356,-73.10021133,,,,unknown,,,false,true
+3353,P3,106,165024,165024,Parque Acualago S-n.,7.07236354,-73.10145848,,,,unknown,,,false,true
+3353,P3,110,165025,165025,Supermercado La Canasta.,7.07245706,-73.10426875,,,,unknown,,,false,true
+3353,P3,117,165026,165026,Carrera 12 Calle 27 S-n.,7.0733584,-73.10537736,,,,unknown,,,false,true
+3353,P3,135,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,,unknown,way/98781433,5.0,false,true
+3353,P3,145,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,14.6,left_of_travel,way/98781433,4.0,false,true
+3353,P3,152,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,,unknown,way/722068009,6.3,false,true
+3353,P3,162,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3353,P3,175,150934,150934,Antonia Santos,7.10078002,-73.11155147,,,,unknown,,,false,true
+3353,P3,191,150935,150935,Conucos S-n,7.10647142,-73.11302765,node/12205541758,10.8,-14.3,right_of_travel,way/214874112,7.5,false,true
+3353,P3,201,150936,150936,Carrera 27 Calle 55 Sn,7.10979432,-73.11430598,,,,unknown,,,false,true
+3353,P3,208,150937,150937,Parque Turbay Sn,7.11523272,-73.11502959,node/9228907800,17.0,,unknown,way/375277562,14.0,false,true
+3353,P3,217,150938,150938,Carrera 27 Calle 37 Sn,7.12016272,-73.11606582,,,,unknown,,,false,true
+3353,P3,228,150939,150939,Decoriente Sn,7.12430347,-73.11767592,,,,unknown,,,false,true
+3353,P3,249,150940,150940,Carrera 27 Calle 19 Sn,7.13011502,-73.11952099,,,,unknown,,,false,true
+3353,P3,255,150941,150941,Sena Sn,7.13415659,-73.12017634,,,,unknown,,,false,true
+3353,P3,259,150942,150942,Carrera 27 Calle 11 Sn,7.1368288,-73.12023736,,,,unknown,,,false,true
+3353,P3,277,150834,150834,Calle 9 Carrera 23,7.13801311,-73.12427604,,,,unknown,,,false,true
+3353,P3,285,150835,150835,Iglesia Cristo Rey,7.13643612,-73.12866923,,,,unknown,,,false,true
+3353,P3,289,150836,150836,Calle 11 carrera 18 S-n,7.13562582,-73.12812796,,,,unknown,,,false,true
+3353,P3,295,150837,150837,Calle 11 Carrera 20 S-n,7.13596602,-73.1262635,,,,unknown,,,false,true
+3353,P3,301,150838,150838,Calle 11 carrera 23 S-n,7.13643975,-73.12375295,,,,unknown,,,false,true
+3353,P3,310,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,-12.6,right_of_travel,way/929807211,13.0,false,true
+3353,P3,311,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,-12.6,right_of_travel,way/929807211,13.0,false,true
+3353,P3,328,159204,159204,Parada SENA N-s.,7.13344449,-73.12018659,,,,unknown,,,false,true
+3353,P3,333,163601,163601,Parada Carrera 27 Calle 19 N-s.,7.12999251,-73.11983849,,,,unknown,,,false,true
+3353,P3,352,155754,155754,Parque de los Niños,7.12505211,-73.11833403,node/12262956711,14.9,,unknown,way/375279813,5.8,false,true
+3353,P3,356,163623,163623,Parada Carrera 27 Calle 34 N-s,7.12340677,-73.11740453,,,,unknown,,,false,true
+3353,P3,365,163624,163624,Parada Carrera 27 Calle 37. ,7.12007073,-73.11626898,,,,unknown,,,false,true
+3353,P3,375,163634,163634,Parada Parque TURBAY N-s.,7.11513753,-73.11529031,node/9228907800,44.4,,unknown,way/375277562,14.0,false,true
+3353,P3,382,163642,163642,Parada Carrera 27 Calle 55 N-s.,7.10969557,-73.11456453,,,,unknown,,,false,true
+3353,P3,389,164650,164650,Conucos N-s.,7.10771461,-73.11421895,,,,unknown,,,false,true
+3353,P3,420,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3353,P3,434,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,,unknown,way/152747019,5.9,false,true
+3353,P3,457,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,-13.2,right_of_travel,way/152745295,13.1,false,true
+3353,P3,485,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,,unknown,way/722068009,6.3,false,true
+3353,P3,492,150865,150865,Puente Peatonal  Hormigueros N-s,7.07831584,-73.10832196,way/1575095682,56.5,,unknown,way/722068009,4.2,false,true
+3353,P3,503,150959,150959,Puente Peatonal Molinos Occidental N-s,7.07438266,-73.10839533,way/1575095684,100.0,33.7,left_of_travel,way/297647347,3.3,false,true
+3353,P3,517,166038,166038,Centro Comercial Cañaveral,7.07026358,-73.10663391,,,,unknown,,,false,true
+3353,P3,541,166054,166054,Centro Comercial Parque Caracolí,7.0724263,-73.10532445,node/13104681309,95.2,-70.5,right_of_travel,way/587944351,5.0,false,true
+3353,P3,550,166061,166061,Parque Acualago N-s.,7.07231008,-73.10166289,,,,unknown,,,false,true
+3353,P3,562,165022,165022,Plaza la Colmena N-s.,7.06976422,-73.09759319,,,,unknown,,,false,true
+3353,P3,580,166091,166091,Carrera 3 Calle 48 N-s.,7.06889386,-73.09264203,,,,unknown,,,false,true
+3353,P3,595,166092,166092,Colegio Vicente Azuero N-s.,7.06819277,-73.09103743,,,,unknown,,,false,true
+3353,P3,606,172628,172628,Sector 3-2 N-s.,7.06883313,-73.08920918,node/5695156132,5.6,-3.7,ambiguous_centre_or_geofence,way/70865342,5.8,false,true
+3353,P3,610,172629,172629,Sector 6-5 N-s.,7.06885281,-73.08774073,,,,unknown,,,false,true
+3353,P3,617,172630,172630,Sector 13-3 N-s.,7.06762074,-73.08583152,,,,unknown,,,false,true
+3353,P3,626,172631,172631,Sede Bomberos de Floridablanca.,7.06668969,-73.08365112,,,,unknown,,,false,true
+3353,P3,634,172632,172632,Sector 21-9 N-s.,7.0676514,-73.08190711,,,,unknown,,,false,true
+3353,P3,640,172633,172633,Carrera 6 Calle 5 N-s.,7.06961831,-73.08171819,,,,unknown,,,false,true
+3353,P3,649,172634,172634,Calle 7A Carrera 5 N-s.,7.07034181,-73.08170673,,,,unknown,,,false,true
+3353,P3,658,172072,172072,Estacion Barrio CARACOLI. ,7.07069767,-73.08322789,way/554117798,21.5,,unknown,way/554117797,17.8,false,true
+3354,P10,1,172682,172682,Inicio Avenida 60 calle 142.,7.08393989,-73.0849645,,,,unknown,,,false,true
+3354,P10,5,172683,172683,Iglesia el CARMEN.,7.08466136,-73.08671907,,,,unknown,,,false,true
+3354,P10,6,172683,172683,Iglesia el CARMEN.,7.08466136,-73.08671907,,,,unknown,,,false,true
+3354,P10,9,172684,172684,Avenida 60  Calle 46 S-n.,7.08564862,-73.08837986,,,,unknown,,,false,true
+3354,P10,16,172685,172685,Carrera 8 calle 49.,7.087564,-73.0886701,,,,unknown,,,false,true
+3354,P10,21,172686,172686,Calle 50 Carrera 9,7.08777168,-73.08951358,,,,unknown,,,false,true
+3354,P10,29,172687,172687,Plaza de Mercado VILLALUZ.,7.08789762,-73.09110077,,,,unknown,,,false,true
+3354,P10,43,172688,172688,Calle 53 Carrera 15A.,7.08935321,-73.09232516,,,,unknown,,,false,true
+3354,P10,47,172689,172689,Calle 53 Carrera 13.,7.09010983,-73.09122212,,,,unknown,,,false,true
+3354,P10,52,172690,172690,Carrera 13 Calle 55A.,7.09175503,-73.09090945,,,,unknown,,,false,true
+3354,P10,54,172690,172690,Carrera 13 Calle 55A.,7.09175503,-73.09090945,,,,unknown,,,false,true
+3354,P10,62,172734,172734,Calle 53 Carrera 13  Cancha ALARES,7.09334344,-73.0913355,,,,unknown,,,false,true
+3354,P10,67,172735,172735,Calle 58 Carrera 14A.,7.09314559,-73.09228889,,,,unknown,,,false,true
+3354,P10,72,172736,172736,Carrera 15 Calle 57.,7.09255607,-73.0926234,,,,unknown,,,false,true
+3354,P10,76,172737,172737,Carrera 15 Calle 57A.,7.09152053,-73.09353525,,,,unknown,,,false,true
+3354,P10,90,172738,172738,Carrera 15A Calle 57.,7.09229212,-73.09386399,,,,unknown,,,false,true
+3354,P10,101,172739,172739,SANTA HELENA DE LA SIERRA.,7.09362993,-73.09497922,node/7512106990,14.3,-12.4,right_of_travel,way/70285788,6.2,false,true
+3354,P10,114,172740,172740,Calle 59 Carrera 18A.,7.09323591,-73.09597003,,,,unknown,,,false,true
+3354,P10,120,172741,172741,Carrera 20 Calle 107 CAMPANAZO.,7.09327166,-73.09642838,,,,unknown,,,false,true
+3354,P10,126,172742,172742,SAN BERNARDO.,7.0934214,-73.09750172,,,,unknown,,,false,true
+3354,P10,152,172743,172743,Calle 107 Carrera 37.,7.09190851,-73.10130128,,,,unknown,,,false,true
+3354,P10,159,172744,172744,Carrera 37 Calle 119 S-n.,7.0898824,-73.10154435,,,,unknown,,,false,true
+3354,P10,166,172745,172745,Virgen la CASTELLANA S-n.,7.08847869,-73.10304635,,,,unknown,,,false,true
+3354,P10,174,172747,172747,Iglesia LA INMACULADA. S-n.,7.08961961,-73.1046424,,,,unknown,,,false,true
+3354,P10,183,172864,172864,Plaza Satélite S-n,7.09140903,-73.10614312,,,,unknown,,,false,true
+3354,P10,187,172865,172865,Transversal 29 Diagonal 105.,7.09001915,-73.10708911,,,,unknown,,,false,true
+3354,P10,201,151099,151099,Calle 105 Carrera 25 S-n,7.08689279,-73.11001549,node/5462671222,8.7,-3.5,ambiguous_centre_or_geofence,way/1424726687,3.5,false,true
+3354,P10,228,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,-13.5,right_of_travel,way/152745295,13.1,false,true
+3354,P10,237,151098,151098,Conjunto Residencial Moravia,7.08868659,-73.10890556,,,,unknown,,,false,true
+3354,P10,249,151100,151100,Parada MasxMenos,7.08544173,-73.112162,,,,unknown,,,false,true
+3354,P10,255,151101,151101,Calle 105 Carrera 21 S-n,7.08542165,-73.11579288,,,,unknown,,,false,true
+3354,P10,270,151102,151102,Colegio INEM S-n,7.08453277,-73.11863438,node/5458093524,6.8,-4.8,right_of_travel,way/627866440,5.4,false,true
+3354,P10,274,151103,151103,Colegio Divino Niño S-n,7.0837963,-73.11983337,,,,unknown,,,false,true
+3354,P10,282,151104,151104,Transversal Metropolitana Calle 104C S-n,7.08413408,-73.1215071,,,,unknown,,,false,true
+3354,P10,293,151105,151105,Transversal Metropolitana Calle 103B S-n,7.0863709,-73.12236216,node/5458093525,12.6,-10.1,right_of_travel,way/1410266951,11.5,false,true
+3354,P10,308,151106,151106,Transversal Metropolitana Carrera 14 Venecia S-n,7.08836883,-73.12378811,,,,unknown,,,false,true
+3354,P10,316,151107,151107,Transversal Metropolitana Carrera 13A S-n,7.08870534,-73.12637397,,,,unknown,,,false,true
+3354,P10,331,151108,151108,Terminal de Transportes de Bucaramanga S-n,7.08760254,-73.12975724,way/1319885176,120.0,,unknown,way/253593051,10.5,false,true
+3354,P10,348,151109,151109,Puente el Bueno,7.08911003,-73.13320575,node/4497209689,32.1,11.8,left_of_travel,way/474943371,1.4,false,true
+3354,P10,390,151110,151110,Barrio Bucaramanga S-n,7.09400185,-73.12914046,,,,unknown,,,false,true
+3354,P10,400,151111,151111,Calle 65 Carrera 7 S-n,7.09461496,-73.12653693,,,,unknown,,,false,true
+3354,P10,424,151113,151113,Calle 61 Carrera 1 Occidente S-n,7.09839161,-73.12638956,,,,unknown,,,false,true
+3354,P10,442,151114,151114,Carrera 2 Occidente Calle 64 S-n,7.09924474,-73.12774598,,,,unknown,,,false,true
+3354,P10,449,151115,151115,Carrera 2 Occidente Calle 57 S-n,7.10123094,-73.13021289,,,,unknown,,,false,true
+3354,P10,456,151116,151116,Calle 55 carrera 1 Occidente S-n,7.1029706,-73.13031802,,,,unknown,,,false,true
+3354,P10,464,151117,151117,Calle 55 Carrera 3 S-n,7.10409787,-73.12794788,,,,unknown,,,false,true
+3354,P10,468,151118,151118,Calle 55 Carrera 6  S-n,7.10387023,-73.12619288,,,,unknown,,,false,true
+3354,P10,484,151119,151119,Calle 61 Carrera 7 S-n,7.1028161,-73.12419863,,,,unknown,,,false,true
+3354,P10,504,151120,151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,7.1047187,-73.12236433,node/12986488260,51.1,-8.7,right_of_travel,way/95713795,8.0,false,true
+3354,P10,516,151121,151121,Carrera 15 Calle 55 S-n,7.10730058,-73.12117751,,,,unknown,,,false,true
+3354,P10,523,151122,151122,Carrera 17 Calle 55 S-n,7.10834467,-73.11971025,,,,unknown,,,false,true
+3354,P10,529,173189,173189,Iglesia PERPETO SOCORRO.,7.11074812,-73.12077476,,,,unknown,,,false,true
+3354,P10,530,173189,173189,Iglesia PERPETO SOCORRO.,7.11074812,-73.12077476,,,,unknown,,,false,true
+3354,P10,531,173189,173189,Iglesia PERPETO SOCORRO.,7.11074812,-73.12077476,,,,unknown,,,false,true
+3354,P10,532,173189,173189,Iglesia PERPETO SOCORRO.,7.11074812,-73.12077476,,,,unknown,,,false,true
+3354,P10,541,151001,151001,Puente Peatonal la Rosita S-n,7.1134056,-73.12399383,,,,unknown,,,false,true
+3354,P10,551,151152,151152,Estación Chorreras S-n,7.11704592,-73.12600353,way/1575095661,14.5,,unknown,way/475414904,4.6,false,true
+3354,P10,554,151003,151003,Estacion San mateo S-n,7.11897154,-73.12676218,way/1575095659,13.8,,unknown,way/475414904,4.5,false,true
+3354,P10,559,151154,151154,Estación Quebradaseca S-n,7.12228902,-73.12808321,way/1575095655,17.5,,unknown,way/475414904,3.9,false,true
+3354,P10,575,151289,151289,Carrera 15 Calle 22 S-n,7.1256817,-73.12904794,,,,unknown,,,false,true
+3354,P10,579,151287,151287,Carrera 15 Calle 18 S-n,7.12910014,-73.12971432,,,,unknown,,,false,true
+3354,P10,584,151285,151285,Carrera 15 Calle 15 S-n,7.13161776,-73.13021174,,,,unknown,,,false,true
+3354,P10,588,151282,151282,Carrera 15 Calle 11 S-n,7.13501162,-73.13086826,,,,unknown,,,false,true
+3354,P10,597,150836,150836,Calle 11 carrera 18 S-n,7.13562582,-73.12812796,,,,unknown,,,false,true
+3354,P10,601,150837,150837,Calle 11 Carrera 20 S-n,7.13596602,-73.1262635,,,,unknown,,,false,true
+3354,P10,607,150838,150838,Calle 11 carrera 23 S-n,7.13643975,-73.12375295,,,,unknown,,,false,true
+3354,P10,630,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,-18.3,right_of_travel,way/929807211,13.0,false,true
+3354,P10,631,150839,150839,Transferencia Parque Estación UIS,7.13705303,-73.12219397,way/929807213,13.6,-18.3,right_of_travel,way/929807211,13.0,false,true
+3354,P10,663,154170,154170,Calle 10 Carrera 23,7.13719652,-73.12399869,,,,unknown,,,false,true
+3354,P10,672,150835,150835,Iglesia Cristo Rey,7.13643612,-73.12866923,,,,unknown,,,false,true
+3354,P10,678,154171,154171,Colegio Bethlemitas,7.13559383,-73.13018092,,,,unknown,,,false,true
+3354,P10,688,151283,151283,Carrera 15 Calle 13 N-s,7.13356632,-73.13077048,,,,unknown,,,false,true
+3354,P10,694,151284,151284,Carrera 15 calle 16 N-s,7.13120155,-73.13029485,,,,unknown,,,false,true
+3354,P10,700,151286,151286,Carrera 15 calle 19 N-s,7.12865055,-73.12980624,,,,unknown,,,false,true
+3354,P10,706,151288,151288,Carrera 15 Calle 21 N-s,7.12645766,-73.12934614,,,,unknown,,,false,true
+3354,P10,729,151155,151155,Estación Quebradaseca N-s,7.12197974,-73.1280735,way/1575095655,17.0,,unknown,way/475414904,3.9,false,true
+3354,P10,736,151156,151156,Estación San Mateo N-s,7.1186767,-73.12675162,way/1575095659,19.1,,unknown,way/475414904,4.5,false,true
+3354,P10,742,151157,151157,Estación chorreras N-s,7.11657148,-73.12592963,way/1575095663,9.6,,unknown,way/475414904,4.5,false,true
+3354,P10,756,150950,150950,la Rosita Centro Comercial Ns,7.11321997,-73.12380235,,,,unknown,,,false,true
+3354,P10,766,150951,150951,Diagonal 15 Avenida la Rosita,7.11223676,-73.12174155,way/1575095665,16.2,17.3,left_of_travel,way/95696596,6.1,false,true
+3354,P10,778,173774,173774,Carrera 17 calle 51A.,7.11029965,-73.1207554,,,,unknown,,,false,true
+3354,P10,786,151124,151124,Calle 56 Carrera 15 N-s.,7.10670698,-73.12048215,,,,unknown,,,false,true
+3354,P10,792,151125,151125,Calle 56 Carrera 14 Macaregua,7.1059244,-73.12135791,,,,unknown,,,false,true
+3354,P10,797,151126,151126,Unidades Tecnológicas de Santander,7.10436045,-73.12308697,node/12986488260,40.6,,unknown,way/95713795,8.0,false,true
+3354,P10,813,151127,151127,Calle 57 Carrera 7 N-s,7.10316014,-73.12487211,,,,unknown,,,false,true
+3354,P10,824,151128,151128,Calle 57 Carrera 3 N-s,7.10391979,-73.1265485,,,,unknown,,,false,true
+3354,P10,829,151129,151129,Calle 55 Carrera 3 N-s,7.10417362,-73.12823502,,,,unknown,,,false,true
+3354,P10,856,151130,151130,Balconcitos,7.10353767,-73.13054729,,,,unknown,,,false,true
+3354,P10,867,151131,151131,Carrera 2 Occidente Calle 55A N-s,7.10192371,-73.13077348,,,,unknown,,,false,true
+3354,P10,871,151132,151132,Recrear el Mutis,7.1004907,-73.12970301,,,,unknown,,,false,true
+3354,P10,875,151133,151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,7.09996464,-73.12930827,,,,unknown,,,false,true
+3354,P10,881,151134,151134,Carrera 2W Calle 63 N-s,7.09928683,-73.12799356,,,,unknown,,,false,true
+3354,P10,893,151135,151135,Carrera 10 Calle 64 Cancha el Bueno,7.09720248,-73.12702142,,,,unknown,,,false,true
+3354,P10,909,151136,151136,Calle 65 carrera 3 N-s,7.09450675,-73.12855399,,,,unknown,,,false,true
+3354,P10,914,151137,151137,Plaza de Mercado Campesino,7.0931821,-73.13024422,,,,unknown,,,false,true
+3354,P10,960,151138,151138,Parada Puente el Bueno N-s,7.08873076,-73.13336478,node/4497209689,13.7,1.3,ambiguous_centre_or_geofence,way/474943371,1.4,false,true
+3354,P10,974,151139,151139,Terminal de Transportes N-s,7.08736514,-73.12945495,,,,unknown,,,false,true
+3354,P10,991,151140,151140,Bomba San Fermín N-s,7.08810246,-73.12336746,,,,unknown,,,false,true
+3354,P10,1000,151141,151141,Transversal Metropolitana Calle 103 N-s,7.08703589,-73.12243918,node/12294265915,8.3,-7.0,right_of_travel,way/1049410558,10.1,false,true
+3354,P10,1009,151142,151142,Transversal Metropolitana Calle 104A,7.0844632,-73.12185634,,,,unknown,,,false,true
+3354,P10,1013,151143,151143,Colegio Divino Niño N-s,7.08322446,-73.12055221,,,,unknown,,,false,true
+3354,P10,1016,151144,151144,Colegio INEM N-s,7.08414046,-73.11912547,node/5458093524,73.0,,unknown,way/627866440,5.4,false,true
+3354,P10,1028,151145,151145,Calle 105 Carrera 20 N-s,7.08536465,-73.11723538,node/6419781485,10.9,-8.0,right_of_travel,way/1505089448,7.4,false,true
+3354,P10,1032,151146,151146,Calle 105 carrera 22 N-s,7.0853028,-73.11476858,,,,unknown,,,false,true
+3354,P10,1036,151147,151147,Parroquia Cristo Resucitado,7.08529593,-73.11248875,,,,unknown,,,false,true
+3354,P10,1043,151148,151148,Calle 105 Carrera 25 N-s,7.08705957,-73.10969038,node/5462671222,35.4,,unknown,way/1424726687,3.5,false,true
+3354,P10,1055,171301,171301,Diagonal 105 Transversal 29,7.09024945,-73.10694241,,,,unknown,,,false,true
+3354,P10,1058,171302,171302,Plaza Satélite.,7.09153031,-73.10576883,,,,unknown,,,false,true
+3354,P10,1063,171303,171303,Carrera 33 Calle 109 N-s.,7.09074896,-73.10521487,,,,unknown,,,false,true
+3354,P10,1070,172747,172747,Iglesia LA INMACULADA. S-n.,7.08961961,-73.1046424,,,,unknown,,,false,true
+3354,P10,1081,174693,174693,"VIRGEN DE LA CASTELLANA N-s,",7.08843384,-73.10331083,,,,unknown,,,false,true
+3354,P10,1088,174694,174694,Colegio ISIDRO CABALLERO.,7.0901645,-73.10145861,,,,unknown,,,false,true
+3354,P10,1097,174695,174695,Calle 107 Carrera 39.,7.09266213,-73.1009634,,,,unknown,,,false,true
+3354,P10,1120,174696,174696,SAN BERNARDO N-s.,7.0933191,-73.09787198,,,,unknown,,,false,true
+3354,P10,1132,174698,174698,Calle 59 Carrera 18A N-s.,7.09326732,-73.09573691,node/7512106990,100.0,,unknown,way/70285788,6.2,false,true
+3354,P10,1144,174699,174699,SANTA HELENA DE LA SIERRA N-s.,7.09370332,-73.09505443,node/7512106990,10.5,,unknown,way/70285788,6.2,false,true
+3354,P10,1156,172738,172738,Carrera 15A Calle 57.,7.09229212,-73.09386399,,,,unknown,,,false,true
+3354,P10,1175,174701,174701,Carrera 16 Calle 56 N-s.,7.09088946,-73.09362426,,,,unknown,,,false,true
+3354,P10,1183,174702,174702,Carrera 14 Calle 58 N-s.,7.09232226,-73.09161019,,,,unknown,,,false,true
+3354,P10,1189,174703,174703,Cancha ALARES N-s.,7.09299065,-73.09094824,,,,unknown,,,false,true
+3354,P10,1200,172689,172689,Calle 53 Carrera 13.,7.09010983,-73.09122212,,,,unknown,,,false,true
+3354,P10,1203,172688,172688,Calle 53 Carrera 15A.,7.08935321,-73.09232516,,,,unknown,,,false,true
+3354,P10,1215,174704,174704,Calle 51 Carrera 12 N-s.,7.08790895,-73.0914279,,,,unknown,,,false,true
+3354,P10,1226,174705,174705,Carrera 8 Calle 49 N-s.,7.08774395,-73.08927395,,,,unknown,,,false,true
+3354,P10,1232,172685,172685,Carrera 8 calle 49.,7.087564,-73.0886701,,,,unknown,,,false,true
+3354,P10,1237,174706,174706,CAI EL CARMEN.,7.08684586,-73.08907224,,,,unknown,,,false,true
+3354,P10,1244,174707,174707,Puente Peatonal COLEGIO EL CARMEN.,7.08518761,-73.08820978,,,,unknown,,,false,true
+3354,P10,1250,174708,174708,Avenida 60 Calle 139.,7.08400291,-73.08578022,,,,unknown,,,false,true
+3355,P18,1,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3355,P18,13,150818,150818,Miradores de San Lorenzo S-n,7.09440996,-73.10903764,,,,unknown,,,false,true
+3355,P18,27,175129,175129,CACIQUE CONDOMINIO.,7.09825741,-73.10896474,,,,unknown,,,false,true
+3355,P18,37,175130,175130,LA GRANJITA.,7.10065093,-73.10838501,,,,unknown,,,false,true
+3355,P18,55,175131,175131,"""Y"" entrada cementerio LAS COLINAS.",7.10396528,-73.10628285,,,,unknown,,,false,true
+3355,P18,66,175132,175132,Carrera 45 Calle 64.,7.10649284,-73.10637694,,,,unknown,,,false,true
+3355,P18,70,175133,175133,Calle 62 Carrera 45.,7.10794817,-73.10608563,,,,unknown,,,false,true
+3355,P18,76,175134,175134,Calle 56 Carrera 46 S-n.,7.10974532,-73.10539966,,,,unknown,,,false,true
+3355,P18,117,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,118,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,119,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,120,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,121,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,130,175244,175244,Carrera 50 Calle 54.,7.11219098,-73.10276951,,,,unknown,,,false,true
+3355,P18,138,175245,175245,Carrera 50 Calle 53.,7.1137452,-73.10266029,,,,unknown,,,false,true
+3355,P18,162,175246,175246,Carrera 51 Calle 50 LOS CEDROS.,7.11713619,-73.10240181,,,,unknown,,,false,true
+3355,P18,169,175247,175247,Carrera 55 Calle 50.,7.11803311,-73.10275151,,,,unknown,,,false,true
+3355,P18,179,175248,175248,Carrera 55 Calle 51.,7.11742618,-73.1009706,,,,unknown,,,false,true
+3355,P18,187,175249,175249,Carrera 54 Calle 52.,7.11576202,-73.10086631,,,,unknown,,,false,true
+3355,P18,195,175250,175250,Carrera 52 Calle 52.,7.11580067,-73.10201722,,,,unknown,,,false,true
+3355,P18,204,175251,175251,Glorieta PAN DE AZUCAR.,7.11574904,-73.10287704,,,,unknown,,,false,true
+3355,P18,205,175251,175251,Glorieta PAN DE AZUCAR.,7.11574904,-73.10287704,,,,unknown,,,false,true
+3355,P18,226,175245,175245,Carrera 50 Calle 53.,7.1137452,-73.10266029,,,,unknown,,,false,true
+3355,P18,233,175244,175244,Carrera 50 Calle 54.,7.11219098,-73.10276951,,,,unknown,,,false,true
+3355,P18,244,175135,175135,PIZZA RITMO.,7.11013063,-73.10328717,,,,unknown,,,false,true
+3355,P18,296,175134,175134,Calle 56 Carrera 46 S-n.,7.10974532,-73.10539966,,,,unknown,,,false,true
+3355,P18,302,175133,175133,Calle 62 Carrera 45.,7.10794817,-73.10608563,,,,unknown,,,false,true
+3355,P18,307,175132,175132,Carrera 45 Calle 64.,7.10649284,-73.10637694,,,,unknown,,,false,true
+3355,P18,320,175131,175131,"""Y"" entrada cementerio LAS COLINAS.",7.10396528,-73.10628285,,,,unknown,,,false,true
+3355,P18,338,175130,175130,LA GRANJITA.,7.10065093,-73.10838501,,,,unknown,,,false,true
+3355,P18,349,175129,175129,CACIQUE CONDOMINIO.,7.09825741,-73.10896474,,,,unknown,,,false,true
+3355,P18,358,175469,175469,Barrio LA LIBERTAD.,7.09515939,-73.10690294,,,,unknown,,,false,true
+3355,P18,372,172864,172864,Plaza Satélite S-n,7.09140903,-73.10614312,,,,unknown,,,false,true
+3355,P18,376,171301,171301,Diagonal 105 Transversal 29,7.09024945,-73.10694241,,,,unknown,,,false,true
+3355,P18,386,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3356,AN3,1,175496,175496,BOSCONIA.,7.15448667,-73.11196841,,,,unknown,,,false,true
+3356,AN3,30,175497,175497,Ferreteria CHUCHO.,7.14940561,-73.11732571,,,,unknown,,,false,true
+3356,AN3,54,175498,175498,Carrera 34A Calle 16N,7.15287633,-73.12341865,,,,unknown,,,false,true
+3356,AN3,80,175499,175499,Drogueria CIUDAD NORTE,7.14873646,-73.12614112,,,,unknown,,,false,true
+3356,AN3,101,175500,175500,CAI LA ESPERANZA,7.14632333,-73.12647679,,,,unknown,,,false,true
+3356,AN3,122,175501,175501,Carrera 26 Calle 8N,7.14599878,-73.12400095,,,,unknown,,,false,true
+3356,AN3,140,175502,175502,Calle 1 Carrera 20,7.14353416,-73.12805964,,,,unknown,,,false,true
+3356,AN3,157,151275,151275,Casetas el Bosque S-n,7.14519997,-73.13282169,,,,unknown,,,false,true
+3356,AN3,168,151273,151273,Portal Norte,7.1471122,-73.13045263,,,,unknown,,,false,true
+3356,AN3,169,151273,151273,Portal Norte,7.1471122,-73.13045263,,,,unknown,,,false,true
+3356,AN3,206,175502,175502,Calle 1 Carrera 20,7.14353416,-73.12805964,,,,unknown,,,false,true
+3356,AN3,248,175500,175500,CAI LA ESPERANZA,7.14632333,-73.12647679,,,,unknown,,,false,true
+3356,AN3,268,175499,175499,Drogueria CIUDAD NORTE,7.14873646,-73.12614112,,,,unknown,,,false,true
+3356,AN3,307,175498,175498,Carrera 34A Calle 16N,7.15287633,-73.12341865,,,,unknown,,,false,true
+3356,AN3,356,175497,175497,Ferreteria CHUCHO.,7.14940561,-73.11732571,,,,unknown,,,false,true
+3356,AN3,421,175496,175496,BOSCONIA.,7.15448667,-73.11196841,,,,unknown,,,false,true
+3357,P19,1,172946,172946,Lote Estación Ferrocarril,7.16268848,-73.13949229,,,,unknown,,,false,true
+3357,P19,19,173188,173188,Carrera 8b Calle 35 an,7.16418841,-73.13933829,,,,unknown,,,false,true
+3357,P19,32,175909,175909,Colegio CAFE MADRID.,7.16276817,-73.14038699,,,,unknown,,,false,true
+3357,P19,37,174697,174697,Carrera 8-B Calle 34-AN,7.16230732,-73.14090312,,,,unknown,,,false,true
+3357,P19,44,174700,174700,Calle 34N Carrera 8C,7.16110661,-73.14013507,,,,unknown,,,false,true
+3357,P19,56,174709,174709,Vía la cemento girón,7.16011254,-73.14071788,,,,unknown,,,false,true
+3357,P19,66,175128,175128,Avenida Café Madrid Kra 10,7.1582693,-73.14139544,,,,unknown,,,false,true
+3357,P19,120,176042,176042,Retorno las HAMACAS,7.15898201,-73.13720401,,,,unknown,,,false,true
+3357,P19,130,176044,176044,LAS HAMACASC,7.15775346,-73.13723537,,,,unknown,,,false,true
+3357,P19,146,176043,176043,Balconcitos del KENNEDY,7.15573358,-73.13767608,,,,unknown,,,false,true
+3357,P19,156,176045,176045,Carrera 12 calle 21N,7.15418758,-73.13573013,,,,unknown,,,false,true
+3357,P19,163,176079,176079,Plaza de Mercado KENNEDY,7.15229528,-73.13481088,,,,unknown,,,false,true
+3357,P19,186,175503,175503,COLSEGUROS,7.14708054,-73.13387333,,,,unknown,,,false,true
+3357,P19,237,151273,151273,Portal Norte,7.1471122,-73.13045263,,,,unknown,,,false,true
+3357,P19,262,151274,151274,Ancianato Albeiro Vargas N-s,7.14511441,-73.13244241,,,,unknown,,,false,true
+3357,P19,297,151276,151276,Carrera 15 Calle 3N San Rafael N-s,7.14398035,-73.13554366,,,,unknown,,,false,true
+3357,P19,311,151277,151277,Parada la Virgen N-s,7.14111363,-73.13334112,,,,unknown,,,false,true
+3357,P19,323,151279,151279,Carrera 15 calle 9 N-s,7.13682779,-73.13180632,,,,unknown,,,false,true
+3357,P19,331,151283,151283,Carrera 15 Calle 13 N-s,7.13356632,-73.13077048,,,,unknown,,,false,true
+3357,P19,336,151284,151284,Carrera 15 calle 16 N-s,7.13120155,-73.13029485,,,,unknown,,,false,true
+3357,P19,341,151286,151286,Carrera 15 calle 19 N-s,7.12865055,-73.12980624,,,,unknown,,,false,true
+3357,P19,347,151288,151288,Carrera 15 Calle 21 N-s,7.12645766,-73.12934614,,,,unknown,,,false,true
+3357,P19,368,151155,151155,Estación Quebradaseca N-s,7.12197974,-73.1280735,way/1575095655,17.0,,unknown,way/475414904,3.9,false,true
+3357,P19,375,150948,150948,Estación San Mateo Ns,7.11885068,-73.12682167,way/1575095659,5.7,5.7,left_of_travel,way/475414904,4.5,false,true
+3357,P19,380,150949,150949,Estación Chorreras Ns,7.11691903,-73.12606545,way/1575095661,7.3,7.0,left_of_travel,way/475414904,4.6,false,true
+3357,P19,393,150950,150950,la Rosita Centro Comercial Ns,7.11321997,-73.12380235,,,,unknown,,,false,true
+3357,P19,402,150951,150951,Diagonal 15 Avenida la Rosita,7.11223676,-73.12174155,way/1575095665,16.2,15.5,left_of_travel,way/95696596,6.1,false,true
+3357,P19,414,151158,151158,Diagonal 15 Calle 56 N-s,7.1082673,-73.11676065,way/1575095669,87.7,12.8,left_of_travel,way/47403383,5.9,false,true
+3357,P19,419,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3357,P19,435,150954,150954,Antonia Santos N-s,7.10108056,-73.11179597,,,,unknown,,,false,true
+3357,P19,449,150955,150955,Estación Diamante N-s,7.0952761,-73.11066035,way/1575095671,21.0,,unknown,way/152747019,5.9,false,true
+3357,P19,473,150863,150863,Estacion de Transferencia Provenza Occidental,7.09030046,-73.10971786,way/1575095673,13.5,,unknown,way/152745295,13.1,false,true
+3357,P19,498,150864,150864,Puente Peatonal  Payador N-s,7.08435031,-73.10805746,way/1575095680,28.0,,unknown,way/722068009,6.3,false,true
+3357,P19,515,176419,176419,VILLA ESPAÑA,7.0780018,-73.11107712,,,,unknown,,,false,true
+3357,P19,521,176420,176420,PARQUE SAN AGUSTIN.,7.07567197,-73.11168267,,,,unknown,,,false,true
+3357,P19,552,176460,176460,FOSCAL INTERNACIONAL FOSUNAB.,7.07120133,-73.11384278,node/766744702,31.2,,unknown,way/1460144037,4.3,false,true
+3357,P19,567,176422,176422,IROKA,7.06973639,-73.10970787,,,,unknown,,,false,true
+3357,P19,608,166054,166054,Centro Comercial Parque Caracolí,7.0724263,-73.10532445,node/13104681309,95.2,-71.5,right_of_travel,way/587944351,5.0,false,true
+3357,P19,623,150929,150929,Estación Cañaveral Vagón Norte s-n,7.07115466,-73.10531909,way/1575095687,30.1,,unknown,way/628696086,7.0,false,true
+3357,P19,624,150929,150929,Estación Cañaveral Vagón Norte s-n,7.07115466,-73.10531909,way/1575095687,30.1,,unknown,way/628696086,7.0,false,true
+3357,P19,636,150814,150814,Puente Peatonal  molinos S-n,7.07521454,-73.10795723,way/1575095683,19.5,,unknown,way/98781433,5.0,false,true
+3357,P19,644,150815,150815,Puente Peatonal Hormigueros S-n,7.07880353,-73.10787518,way/1575095681,15.0,,unknown,way/98781433,4.0,false,true
+3357,P19,649,150816,150816,Puente Peatonal  Payador S-n,7.08447143,-73.1076542,way/1575095680,23.3,54.9,left_of_travel,way/722068009,6.3,false,true
+3357,P19,661,150817,150817,Estacion de transferencia Provenza Oriental,7.09117018,-73.10894963,way/1575095674,12.3,,unknown,way/1050304515,9.9,false,true
+3357,P19,682,150934,150934,Antonia Santos,7.10078002,-73.11155147,,,,unknown,,,false,true
+3357,P19,696,150953,150953,Diagonal 15 Calle 60 N-s,7.10695235,-73.11504132,,,,unknown,,,false,true
+3357,P19,701,151150,151150,Diagonal 15 calle 55 S-n,7.10900235,-73.11742876,,,,unknown,,,false,true
+3357,P19,714,151001,151001,Puente Peatonal la Rosita S-n,7.1134056,-73.12399383,,,,unknown,,,false,true
+3357,P19,723,151152,151152,Estación Chorreras S-n,7.11704592,-73.12600353,way/1575095661,14.5,5.4,left_of_travel,way/475414904,4.6,false,true
+3357,P19,727,151003,151003,Estacion San mateo S-n,7.11897154,-73.12676218,way/1575095659,13.8,3.5,ambiguous_centre_or_geofence,way/475414904,4.5,false,true
+3357,P19,732,151154,151154,Estación Quebradaseca S-n,7.12228902,-73.12808321,way/1575095655,17.5,2.6,ambiguous_centre_or_geofence,way/475414904,3.9,false,true
+3357,P19,736,151154,151154,Estación Quebradaseca S-n,7.12228902,-73.12808321,way/1575095655,17.5,,unknown,way/475414904,3.9,false,true
+3357,P19,744,151289,151289,Carrera 15 Calle 22 S-n,7.1256817,-73.12904794,,,,unknown,,,false,true
+3357,P19,748,151287,151287,Carrera 15 Calle 18 S-n,7.12910014,-73.12971432,,,,unknown,,,false,true
+3357,P19,751,151285,151285,Carrera 15 Calle 15 S-n,7.13161776,-73.13021174,,,,unknown,,,false,true
+3357,P19,754,151282,151282,Carrera 15 Calle 11 S-n,7.13501162,-73.13086826,,,,unknown,,,false,true
+3357,P19,762,151280,151280,Carrera 15 Calle 9 S-n,7.13672754,-73.13163097,,,,unknown,,,false,true
+3357,P19,770,151278,151278,Carrera 15 Calle 4 S-n,7.1404096,-73.133088,,,,unknown,,,false,true
+3357,P19,810,151275,151275,Casetas el Bosque S-n,7.14519997,-73.13282169,,,,unknown,,,false,true
+3357,P19,820,151273,151273,Portal Norte,7.1471122,-73.13045263,,,,unknown,,,false,true
+3357,P19,849,176080,176080,Hospital del NORTE.,7.14882715,-73.13428219,,,,unknown,,,false,true
+3357,P19,861,176740,176740,TEJAR NORTE.,7.15049778,-73.13558594,,,,unknown,,,false,true
+3357,P19,874,176741,176741,Carrera 10 Calle 18N,7.15257381,-73.1361134,,,,unknown,,,false,true
+3357,P19,879,176742,176742,Carrera 10 Calle 21.,7.15362447,-73.13693639,,,,unknown,,,false,true
+3357,P19,906,176743,176743,VILLA ALEGRIA,7.16057086,-73.1375487,,,,unknown,,,false,true
+3357,P19,907,176743,176743,VILLA ALEGRIA,7.16057086,-73.1375487,,,,unknown,,,false,true
+3357,P19,942,172946,172946,Lote Estación Ferrocarril,7.16268848,-73.13949229,,,,unknown,,,false,true

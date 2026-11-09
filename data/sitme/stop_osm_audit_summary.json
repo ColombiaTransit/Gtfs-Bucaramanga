@@ -1,0 +1,20 @@
+{
+  "run_utc": "2026-11-09T17:23:49+00:00",
+  "input_candidates": 528,
+  "input_route_visits": 950,
+  "osm_stop_features": 156,
+  "osm_road_features": 11495,
+  "osm_bbox": "6.965896,-73.146395,7.169188,-73.038008",
+  "quality_counts": {
+    "A_strong_candidate": 2,
+    "B_probable": 23,
+    "C_manual_review": 503
+  },
+  "manual_review_count": 503,
+  "osm_source_status": "OSM stop evidence retrieved",
+  "gtfs_ready_count": 0,
+  "notes": [
+    "OSM stops fetched live from configured Overpass API.",
+    "Road geometry downloaded for direction-side diagnostics; never used to prove boarding."
+  ]
+}
