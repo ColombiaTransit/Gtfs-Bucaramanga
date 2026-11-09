@@ -41,7 +41,7 @@ NEVER_MERGE = {frozenset(('150798', '150973')),
                frozenset(('164171', '164933'))}
 STOP_TAGS = {'highway': 'bus_stop', 'public_transport': 'platform'}
 ROAD_TYPES = 'trunk|primary|secondary|tertiary|residential|unclassified|living_street|service|busway'
-DEFAULT_OVERPASS = 'https://overpass.private.coffee/api/interpreter'
+
 
 
 def csv_rows(path):
@@ -383,8 +383,9 @@ def score_candidates(candidates, stops, visits, details, roads):
 
 
 def overpass(query, endpoint, retries=3):
-    hdr={'User-Agent':'Mozilla/5.0 (compatible; ColombiaTransit-SITME-GTFS-Research/1.0)',
-         'Accept':'application/json','Content-Type':'application/x-www-form-urlencoded'}
+    hdr={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+         'Accept':'application/json', 'Accept-Language':'en-US,en;q=0.9',
+         'Content-Type':'application/x-www-form-urlencoded'}
     extra=os.environ.get('OVERPASS_EXTRA_HEADERS_JSON','').strip()
     if extra:
         custom=json.loads(extra)
@@ -393,9 +394,15 @@ def overpass(query, endpoint, retries=3):
         hdr.update(custom)
     token=os.environ.get('OVERPASS_BEARER_TOKEN','').strip()
     if token:hdr['Authorization']='Bearer '+token
+    cf_id=os.environ.get('CF_ACCESS_CLIENT_ID','').strip()
+    cf_secret=os.environ.get('CF_ACCESS_CLIENT_SECRET','').strip()
+    if bool(cf_id)!=bool(cf_secret):
+        raise ValueError('Cloudflare Access client ID and secret must both be configured')
+    if cf_id:
+        hdr['CF-Access-Client-Id']=cf_id
+        hdr['CF-Access-Client-Secret']=cf_secret
     data=urllib.parse.urlencode({'data':query}).encode('utf-8')
     last=None
-    host=urllib.parse.urlsplit(endpoint).netloc
     for i in range(retries):
         try:
             req=urllib.request.Request(endpoint,data=data,headers=hdr,method='POST')
@@ -407,16 +414,16 @@ def overpass(query, endpoint, retries=3):
                 return parsed
         except urllib.error.HTTPError as exc:
             last=exc
-            print(f'Overpass server {host} returned HTTP {exc.code} (attempt {i+1}/{retries})',file=sys.stderr)
+            print(f'Overpass service returned HTTP {exc.code} (attempt {i+1}/{retries})',file=sys.stderr)
             # These are not transient. In particular, do not spam a 406/403/400/401.
             if exc.code in (400,401,403,406):break
             if i+1<retries:time.sleep(30 if exc.code==429 else 15)
         except (OSError, ValueError, json.JSONDecodeError) as exc:
             last=exc
-            print(f'Overpass server {host}: {type(exc).__name__} (attempt {i+1}/{retries})',file=sys.stderr)
+            print(f'Overpass service: {type(exc).__name__} (attempt {i+1}/{retries})',file=sys.stderr)
             if i+1<retries:time.sleep(15)
     code=f' HTTP {last.code}' if isinstance(last,urllib.error.HTTPError) else ''
-    raise RuntimeError(f'Overpass failed at {host}:{code or type(last).__name__}')
+    raise RuntimeError(f'Overpass request failed: {code or type(last).__name__}')
 
 
 def get_osm(candidates, args, out):
@@ -528,8 +535,12 @@ def main():
     parser.add_argument('--osm-roads')
     parser.add_argument('--fetch-osm',action='store_true')
     parser.add_argument('--skip-roads',action='store_true')
-    parser.add_argument('--overpass-url',default=(os.getenv('OVERPASS_URL') or DEFAULT_OVERPASS))
+    parser.add_argument('--overpass-url',default=os.getenv('OVERPASS_URL','').strip())
     args=parser.parse_args()
+    if args.fetch_osm:
+        endpoint=urllib.parse.urlsplit(args.overpass_url)
+        if endpoint.scheme.lower()!='https' or not endpoint.netloc:
+            parser.error('Private HTTPS Overpass endpoint is required in API_OVERPASS (OVERPASS_URL); no public fallback')
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     candidates=csv_rows(args.candidates); visits=csv_rows(args.visits)
     details=load_snapshot(args.snapshot)
