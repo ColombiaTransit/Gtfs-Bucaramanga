@@ -494,3 +494,18 @@ These are **status observations**, not edits to or replacements for [`baseline_r
 
 **This reclassifies the earlier point-3 "secondary only" assessment for P18 only; AN3 and RD27-15 remain as separately assessed.**
 
+### P18 active inclusion decision — official SITME/Unitransa poster (2026-11-09)
+
+**User-approved research decision (2026-11-09): classify `P18` / SITME API ID `3355` as `active_assumed_official_operator_poster_user_decision` for the provisional SITME route register.** This is a working selection rule grounded in an official-branded route advertisement, **not** an independently observed live trip or verified poster publication date.
+
+The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://www.facebook.com/metrolinearedes/photos/d41d8cd9/1380073644158861/), headed **NUEVA RUTA P18**, with SITME and **Unitransa S.A.** branding. Directly legible details:
+- "**PRIMER RECORRIDO:** 5:00 a.m." and "**ÚLTIMO RECORRIDO:** 8:00 p.m." → published **05:00–20:00**.
+- "**ESTACIÓN PROVENZA ORIENTAL – PAN DE AZÚCAR**", and key locations **Estación Prov. Oriental, La Floresta, Terrazas, Pan de Azúcar, Los Cedros**.
+- The provided **image does not show** a publication date, operating day types, frequency/headway or definitive terminal-specific departure location. The Facebook page URL is the source locator; this research decision **does not invent dates or weekend service**.
+
+**Model data policy:** keep P18 in the provisional **12 complementary-route** inventory as *assumed operating* and use **05:00–20:00** as the working first/last operating window, **only for day types later supported by evidence**. Keep `day_type=not_specified` for the official poster (Moovit separately says Mon–Fri only, currently unverified by the operator). The official Q1 2026 **30 min peak / 30 min off-peak** table remains the starting headway; Moovit's **50 min** conflicting service remains preserved as a distinct secondary record. Do not mistake a publicly advertised trip span for the exact first/last departure from every terminus.
+
+**Registration:** `official_schedule_sources.csv` updates the P18 window provenance from Moovit to **`SITME_UNITRANSA_P18_POSTER_UNDATED`**; `route_activity_assessment_2026-11-08.csv` has the explicit user-approved `active_assumed_official_operator_poster_user_decision` status. New evidence rows are appended to `first_last_departure_evidence.csv` and `route_change_log.csv` rather than overwriting earlier Moovit observations. The 2024 baseline is unchanged because P18 is not on the 2024 route poster.
+
+**Remaining P18 tasks are data-quality checks**, not a reason to omit P18 from provisional scope: confirm Saturday/Sunday/holiday service, reconcile 30 vs 50 minute headway, and validate stops/geometry/direction, and separately validate live operation if needed. The `eligible_for_current_gtfs_without_more_evidence` flag remains **No**, because no validated GTFS generator or feed exists and schedule/stop verification is outstanding. **Do not re-open the "is P18 active?" research question without substantive contradictory evidence.**
+
