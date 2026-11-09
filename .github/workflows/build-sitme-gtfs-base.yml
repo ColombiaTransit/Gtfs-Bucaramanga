@@ -1,0 +1,106 @@
+name: Build SITME-only GTFS foundation (no OSM)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-sitme-gtfs-base.yml'
+      - 'scripts/build_sitme_gtfs_base.py'
+      - 'tests/test_build_sitme_gtfs_base.py'
+      - 'data/sitme/stop_identity_decisions_2026-11-09.csv'
+      - 'data/sitme/stop_candidates_reconciled_2026-11-09.csv'
+      - 'data/sitme/route_stop_visits_reconciled_2026-11-09.csv'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: sitme-gtfs-foundation
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prefer repository-pinned original SITME snapshot
+        id: snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -s data/sitme/snapshots/sitme-route-snapshot-2026-11-08.zip ]]; then
+            cp data/sitme/snapshots/sitme-route-snapshot-2026-11-08.zip sitme-route-snapshot.zip
+            echo 'stored=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'stored=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Download immutable SITME API snapshot if not stored in repo yet
+        if: steps.snapshot.outputs.stored == 'false'
+        uses: actions/download-artifact@v4
+        with:
+          name: sitme-route-snapshot
+          run-id: 42471926616
+          repository: ColombiaTransit/Gtfs-Bucaramanga
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: source_snapshot
+      - name: Package original snapshot if downloaded
+        if: steps.snapshot.outputs.stored == 'false'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s source_snapshot/2026-11-08/route_detail.json
+          test -s source_snapshot/2026-11-08/route_stations.json
+          (cd source_snapshot && zip -q -r ../sitme-route-snapshot.zip .)
+      - name: Check SITME-only GTFS source tables
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s sitme-route-snapshot.zip
+          test -s data/sitme/stop_candidates_reconciled_2026-11-09.csv
+          test -s data/sitme/route_stop_visits_reconciled_2026-11-09.csv
+          test -s data/sitme/stop_identity_decisions_2026-11-09.csv
+          SITME_SNAPSHOT=sitme-route-snapshot.zip python3 -m unittest discover \
+            -s tests -p 'test_build_sitme_gtfs_base.py' -v
+      - name: Generate SITME-only GTFS foundation
+        run: |
+          python3 scripts/build_sitme_gtfs_base.py \
+            --snapshot sitme-route-snapshot.zip \
+            --candidates data/sitme/stop_candidates_reconciled_2026-11-09.csv \
+            --visits data/sitme/route_stop_visits_reconciled_2026-11-09.csv \
+            --output sitme-gtfs-base
+      - name: Verify expected SITME source totals
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path('sitme-gtfs-base/source_audit/build_summary.json').read_text(encoding='utf-8'))
+          assert (s['routes'],s['stops'],s['stop_visits'],s['shape_points']) == (12,528,950,10699)
+          assert not s['external_osm_used']
+          assert not (Path('sitme-gtfs-base/gtfs_base')/'stop_times.txt').exists()
+          PY
+      - name: Upload research-only GTFS foundation
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitme-gtfs-foundation
+          path: sitme-gtfs-base/
+          if-no-files-found: error
+          retention-days: 7
+      - name: Preserve immutable SITME source and concise build summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/sitme/snapshots
+          if [[ ! -f data/sitme/snapshots/sitme-route-snapshot-2026-11-08.zip ]]; then
+            cp sitme-route-snapshot.zip data/sitme/snapshots/sitme-route-snapshot-2026-11-08.zip
+          fi
+          cp sitme-gtfs-base/source_audit/build_summary.json data/sitme/sitme_gtfs_base_summary.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/sitme/snapshots/sitme-route-snapshot-2026-11-08.zip \
+            data/sitme/sitme_gtfs_base_summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve SITME November snapshot and GTFS-base generation summary'
+            git push
+          fi
