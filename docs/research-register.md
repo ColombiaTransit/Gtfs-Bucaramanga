@@ -652,3 +652,21 @@ The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://
 Live `/site/by_client/195` was successfully fetched on 2026-11-09: just **10 objects** (6 Estación, 2 Parque, 2 Dependencias de gobierno), a map-site catalog, not the route-stop inventory. Only one site matched a route checkpoint using unique exact normalized name plus distance; four were spatially near but need interpretation. No route stop may be excluded because it lacks a match in this small site catalog.
 
 See [full corrected interpretation](sitme_stop_site_reconciliation_2026-11-09.md), [automated site-layer report](sitme_site_layer_comparison.md), and [reproducible comparison script](../scripts/compare_sitme_site_layers.py). The earlier per-route '370 missing locations' phrase counted missing **per-route** appearances, not distinct globally missing stops; do not use it for the GTFS stop count.
+
+### Physical-stop ID decision — user verification (2026-11-09)
+
+The 5 omitted source LOCATION_ID values were manually reconciled with candidate nearby locations by the user. **Do not use distances between derived polygon centroids to merge two stops or infer that they are on the same roadside.**
+
+| Omitted LOCATION_ID | Compared LOCATION_ID | Verified relationship | Preparation decision |
+|---|---|---|---|
+| 150798 San Carlos S-n | 150973 San Carlos N-s | **Different direction; opposite sides of road** | Keep separate; no merge |
+| 150873 Mac Pollo N-s | 150965 Mac Pollo N-s | **Same physical stop** | Canonical ID 150965 |
+| 150877 Pretecor N-s | 150969 Pretecor N-s | **Same physical stop** | Canonical ID 150969 |
+| 163015 Parada la VEGA S-n | 163024 Parada la VEGA S-n | **Same physical stop** | Canonical ID 163024; retain both P16N route visits (orders 87 and 969) |
+| 164171 Carrera 4 Calle 0 S-n | 164933 Carrera 4 No. 0-30 N-s | **Different physical stops; user reports physical separation too great for merger, with at least a different road side** | Keep separate; no merge |
+
+**Important qualification:** Distances such as ~9 m between 164171 and 164933 reported by the earlier script are distances between *derived coordinate centers of polygons*. They are **not verified stop-to-stop boarding-point distances** and must not override the user's direct assessment. A further `150914 San Carlos S-n` is present in the source; do not automatically equate it to 150798, which has a different source ID, until reviewed.
+
+The five source IDs must remain in the unchanged 950 route-STATIONS/checkpoint visits; the three confirmed same-stop relationships are candidate GTFS stop identity *aliases*, not permission to delete route visits. Applying only those three identities to the 531 original unique LOCATION_IDs produces **528 tentative candidate stops**, all requiring precise boarding-coordinate and usability verification; it does **not** establish a final GTFS stops.txt count.
+
+**Machine-readable decision file:** [stop_identity_decisions_2026-11-09.csv](../data/sitme/stop_identity_decisions_2026-11-09.csv). The 2026-11-08 immutable API snapshot and earlier evidence remain intact.
