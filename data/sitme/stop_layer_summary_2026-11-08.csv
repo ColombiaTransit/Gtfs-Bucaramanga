@@ -1,0 +1,13 @@
+route,api_id,detail_points,detail_checkpoint_rows,embedded_station_rows,endpoint_station_rows,endpoint_unique_location_ids,checkpoint_unique_location_ids,additional_checkpoint_rows,additional_distinct_locations,repeated_checkpoint_occurrences,endpoint_id_order_location_matches,embedded_stations_exact_checkpoint_subset,endpoint_duplicate_location_ids,detail_order_gaps,detail_broken_links,endpoint_missing_coordinates,endpoint_multipoint_geometry,status
+P16S,3341,889,91,91,24,24,91,67,67,0,True,True,0,0,0,0,24,research_consistent_not_gtfs_ready
+P16N,3342,1066,89,89,30,30,89,59,59,0,True,True,0,0,0,0,30,research_consistent_not_gtfs_ready
+P8,3345,1722,125,125,81,81,124,44,43,1,True,True,0,0,0,0,81,research_consistent_not_gtfs_ready
+P14,3346,1172,109,109,16,16,105,93,89,4,True,True,0,0,0,0,16,research_consistent_not_gtfs_ready
+RD27/RD15,3350,1047,94,94,74,74,92,20,18,2,True,True,0,0,0,0,74,research_consistent_not_gtfs_ready
+P1,3351,513,58,58,15,15,55,43,40,3,True,True,0,0,0,0,15,research_consistent_not_gtfs_ready
+P2,3352,633,73,73,52,52,70,21,18,3,True,True,0,0,0,0,52,research_consistent_not_gtfs_ready
+P3,3353,658,65,65,48,48,63,17,15,2,True,True,0,0,0,0,48,research_consistent_not_gtfs_ready
+P10,3354,1250,128,128,99,99,117,29,18,11,True,True,0,0,0,0,99,research_consistent_not_gtfs_ready
+P18,3355,386,35,35,19,19,20,16,1,15,True,True,0,0,0,0,19,research_consistent_not_gtfs_ready
+AN3,3356,421,16,16,7,7,9,9,2,7,True,True,0,0,0,0,7,research_consistent_not_gtfs_ready
+P19,3357,942,67,67,61,61,61,6,0,6,True,True,0,0,0,0,61,research_consistent_not_gtfs_ready
