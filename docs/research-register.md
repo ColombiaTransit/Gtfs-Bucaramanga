@@ -597,3 +597,18 @@ The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://
 - [Python reproduction script](../scripts/audit_sitme_stop_layers.py): download archived ZIP while the Actions artifact is retained, run with `--snapshot ... --output ...`.
 
 **Status:** cross-layer audit completed; stop usability/geometry verification pending. Do not treat preliminary stop records, derived centroids, or the mismatched RD27 direction as GTFS-ready. No new generator has been created.
+
+
+### UI category hypothesis and checkpoint-field verification — 2026-11-09
+
+**Trigger:** User provided a mobile webpage screenshot showing the map layer menu **"Puntos de Recarga"**, **"Estaciones y Paraderos"**, **"Estaciones más cercanas"**, and **"Sitios de Interés"**, with a separate "Seleccione Una Ruta" control. An identical *menu vocabulary* is discoverable on the METSIU/MET GROUP web template at https://juarezbus.chihuahua.gob.mx/rutas . This identifies a likely common UI template **but not the source URL of the user's screenshot** and not proof that the Chihuahua implementation uses Bucaramanga's datasets. **No actual JavaScript bundle from the user's photographed page was supplied or inspected**; UI control handlers, backend requests and filtering rules therefore remain unknown.
+
+**Direct structural checks from our archived Bucaramanga SITME JSON (2026-11-08):**
+- In the 12 selected routes, `DETAIL` has **10,699 rows**, of which **950** have `IS_CHECKPOINT=1` and match the embedded `STATIONS` array. The independent `route_stations` response selects only **526** of the 950.
+- **All 950 checkpoint records**, including both the **526 endpoint-selected** and **424 endpoint-omitted** entries, have `location_id.CODE=null`; thus that field **does not explain the exclusion**. By contrast, geometry-only rows typically have `location_id.CODE="BREAK"`.
+- `location_id.COORDINATES` frequently describes polygons (not verified individual boarding-point coordinates) in **both** sets: **254/526** selected and **300/424** omitted have **37 coordinate vertices**. Both groups have identically shaped underlying checkpoint records, so neither geometry shape nor the checkpoint flag separates the groups.
+- The omitted set includes explicitly transit-related names: P14 **"Parada MasxMenos"**, P16S **"Paradero Campo Alegre S-n"** and **"Parada ICP S-n"**, P18 **"Estacion de transferencia Provenza Oriental"**, AN3 **"Portal Norte"** (twice). Those may be genuine public access/transfer sites. **Do not treat omitted checkpoints as non-passenger geometry-only control points**.
+- Conversely, many selected records include `Inicio`/`Fin` names. **Do not claim every selected row is a confirmed boarding location** without validation.
+- UI category labels **are not** supported evidence that these are implemented as distinct backend `station_type` values; the "nearest stations" layer could be a spatial query over the same station inventory rather than a new stop category.
+
+**Research rule:** Preserve the 950 checkpoint source occurrences and the 526 endpoint selections, but avoid making either subset the final GTFS boarding-stop list. Keep `BREAK` route geometry separate. Obtain **the exact route page URL or its HTML/JS bundle** and inspect (1) the click handler for "Estaciones y Paraderos"; (2) request URL(s) and parameters, including route ID and client ID; (3) response schema and status/type flags; (4) how markers and stop-list rows are filtered; and (5) whether route-specific `STATIONS`, global location markers and `route_stations` are different services. Correlate backend IDs with checkpoint `LOCATION_ID`, `ORDER` and `IS_CHECKPOINT` to classify genuine boarding stops. **Do not claim JavaScript source analysis is complete yet.**
