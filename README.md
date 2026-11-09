@@ -39,3 +39,14 @@ The [12-route SITME stop-layer audit](docs/sitme_stop_layer_audit_2026-11-08.md)
 **November 9 update:** Global LOCATION_ID reconciliation reduces the apparent 424 unmatched checkpoint occurrences to **five unique missing location IDs**; 419 occurrences are repeated uses of already known IDs. The live `site/by_client/195` response contains only 10 map-site objects, not a full stop list. See [reviewed reconciliation](docs/sitme_stop_site_reconciliation_2026-11-09.md) and [automated site comparison](docs/sitme_site_layer_comparison.md).
 
 Next: validate the five truly missing location IDs, precise platform coordinates, P18/AN3 loop stop orders and RD27/RD15 Carrera 27 geometry before GTFS generation.
+
+### User-verified physical stop identities (2026-11-09)
+
+The five route LOCATION_ID exceptions are now classified in [the manual decision register](data/sitme/stop_identity_decisions_2026-11-09.csv). **Three** pairs denote the same physical stop: Mac Pollo `150873→150965`, Pretecor `150877→150969`, and La Vega `163015→163024`. **Two** are distinct physical stops and must not be merged: San Carlos `150798` vs `150973` and Carrera 4 Calle 0 `164171` vs `164933`. Spatial proximity between *polygon centroids* is not a valid platform-merging rule.
+
+- [528 preliminary stop identities (not GTFS-ready)](data/sitme/stop_candidates_reconciled_2026-11-09.csv)
+- [950 preserved ordered checkpoint visits](data/sitme/route_stop_visits_reconciled_2026-11-09.csv)
+- [Evidence, limitations and mapping rationale](docs/sitme_stop_candidate_preparation_2026-11-09.md)
+- [Rebuild script](scripts/prepare_sitme_stop_candidates.py) — use `--snapshot path/to/sitme-route-snapshot.zip --decisions data/sitme/stop_identity_decisions_2026-11-09.csv --output out/`
+
+All positions are research-only polygon centroids; actual boarding coordinates, accessibility, stop validity and service schedules remain unverified. This is **not a published stops.txt or stop_times.txt**.
