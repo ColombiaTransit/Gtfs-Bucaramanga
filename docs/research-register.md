@@ -1,6 +1,6 @@
 # Metrolínea / SITME — source and verification register
 
-Last updated: 2026-11-07. All items below are **leads pending verification**, not accepted facts for the published GTFS.
+Last updated: 2026-11-09. All items below are **leads pending verification**, not accepted facts for the published GTFS.
 
 ## Background / scope
 - Historic Bucaramanga BRT: Metrolínea; more recent services may use SITME branding.
@@ -530,3 +530,17 @@ The user supplied a clear image of a [Metrolínea/SITME Facebook photo](https://
 
 **Disposition for point 3:** AN3 should no longer be blocked by lack of a recent October detour bulletin. Maintain it in the provisional active route selection unless materially conflicting operator evidence is discovered. Shift future AN3 work to **variant reconciliation, stops and valid calendar**, not rediscovery of the same activity evidence.
 
+### AN3 official SITME / Transcolombia X poster — March 2026 service announcement (received 2026-11-09)
+
+**Primary-source upgrade for the AN3 operating window.** The user supplied a clearly legible image attributed to SITME's official X account, branded SITME and **Transcolombia**, headed **NUEVA RUTA AN3** and explicitly reading **"A partir del miércoles 4 de marzo de 2026"**. The graphic directly displays:
+- **PRIMER RECORRIDO 5:00 a.m.** → **05:00**;
+- **ÚLTIMO RECORRIDO 7:48 p.m.** → **19:48**;
+- **PUNTOS CLAVE:** María Paz, Portal Norte, La Juventud, Los Ángeles, Bosconia.
+
+**Date semantics:** **2026-03-04** is the **advertised service start/effective date**, NOT a verified date when the graphic was posted to X. The user supplied an image but no direct X-post URL establishing this particular graphic's permalink; do **not** invent one or automatically ascribe it to the previously supplied but unreadable `https://x.com/Metrolinea/status/2029300457479225391`. The poster itself does **not** establish operating weekdays, Saturday/Sunday/holiday availability, direction or terminal of the first/last departure, actual November vehicle dispatch, or frequency/headway.
+
+**Reconciliation with prior evidence:** Moovit's two AN3 variants independently listed **05:00–19:48**, so their **time window** now has direct official-operator-branded corroboration. However, Moovit's **Monday–Saturday** and **20-minute** frequency claims remain **secondary** and must not be promoted to official facts based on this poster. The **Q1 2026 official HP/HV 10/12-minute** planned frequency remains a distinct baseline, and stop-order/variant mapping to API ID **3356** remains outstanding. Earlier **2022 Cotrander AN3** launch and suspension must not override the new **2026 Transcolombia AN3**.
+
+**Register selection:** Keep AN3 in the **provisional active** complementary-service inventory, with source ID `SITME_TRANSCOL_AN3_X_POSTER_2026_03_04` for the dated **first/last `recorrido` span** and `day_type=not_specified`; preserve separate Moovit evidence and 2026 Q1 frequency evidence. This supersedes the prior statement that Moovit was the *only* source for AN3's 05:00–19:48 window. The 2026-11-08 API snapshot and the operator directory add support for the provisional selection but do not prove observed vehicle movement. The `eligible_for_current_gtfs_without_more_evidence` status remains **No** until calendar, stops/shape and exact service semantics are validated. The advertisement is evidence of **announced service**, not proof that every scheduled trip was operated.
+
+**Files changed:** `official_schedule_sources.csv`, `first_last_departure_evidence.csv`, `route_change_log.csv`, `route_operational_status_2026-11-08.csv`, and `route_activity_assessment_2026-11-08.csv`. No 2024 poster baseline or generator timetable is changed.
