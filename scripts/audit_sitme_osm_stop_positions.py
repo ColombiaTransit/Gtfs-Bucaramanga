@@ -41,7 +41,7 @@ NEVER_MERGE = {frozenset(('150798', '150973')),
                frozenset(('164171', '164933'))}
 STOP_TAGS = {'highway': 'bus_stop', 'public_transport': 'platform'}
 ROAD_TYPES = 'trunk|primary|secondary|tertiary|residential|unclassified|living_street|service|busway'
-DEFAULT_OVERPASS = 'https://overpass-api.de/api/interpreter'
+DEFAULT_OVERPASS = 'https://overpass.private.coffee/api/interpreter'
 
 
 def csv_rows(path):
@@ -395,6 +395,7 @@ def overpass(query, endpoint, retries=3):
     if token:hdr['Authorization']='Bearer '+token
     data=urllib.parse.urlencode({'data':query}).encode('utf-8')
     last=None
+    host=urllib.parse.urlsplit(endpoint).netloc
     for i in range(retries):
         try:
             req=urllib.request.Request(endpoint,data=data,headers=hdr,method='POST')
@@ -404,10 +405,18 @@ def overpass(query, endpoint, retries=3):
                 parsed=json.loads(body)
                 if 'elements' not in parsed:raise ValueError('No Overpass elements property')
                 return parsed
+        except urllib.error.HTTPError as exc:
+            last=exc
+            print(f'Overpass server {host} returned HTTP {exc.code} (attempt {i+1}/{retries})',file=sys.stderr)
+            # These are not transient. In particular, do not spam a 406/403/400/401.
+            if exc.code in (400,401,403,406):break
+            if i+1<retries:time.sleep(30 if exc.code==429 else 15)
         except (OSError, ValueError, json.JSONDecodeError) as exc:
             last=exc
-            if i+1<retries:time.sleep(min(30,4*(i+1)))
-    raise RuntimeError('Overpass unavailable after retries: '+type(last).__name__)
+            print(f'Overpass server {host}: {type(exc).__name__} (attempt {i+1}/{retries})',file=sys.stderr)
+            if i+1<retries:time.sleep(15)
+    code=f' HTTP {last.code}' if isinstance(last,urllib.error.HTTPError) else ''
+    raise RuntimeError(f'Overpass failed at {host}:{code or type(last).__name__}')
 
 
 def get_osm(candidates, args, out):
