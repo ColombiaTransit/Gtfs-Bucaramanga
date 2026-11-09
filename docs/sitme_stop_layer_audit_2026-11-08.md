@@ -1,5 +1,7 @@
 # SITME stop layer audit — 2026-11-08
 
+> **Correction, 2026-11-09:** 950 route checkpoint visits represent 531 unique LOCATION_IDs. The endpoint contains 526 globally unique IDs; **only five unique IDs** are actually absent. The older 424/370 omission figures describe per-route occurrence differences, not globally missing passenger stops. [Reviewed reconciliation](sitme_stop_site_reconciliation_2026-11-09.md).
+
 Snapshot source: ColombiaTransit/Gtfs-Bucaramanga Actions run **42471926616**, artifact **13613444443** (`sitme-route-snapshot`). 12 active-inventory complementary routes (excluding historical PTB and two PTN entries). Generated via `scripts/audit_sitme_stop_layers.py` using only standard-library Python.
 
 ## Verified cross-layer results
