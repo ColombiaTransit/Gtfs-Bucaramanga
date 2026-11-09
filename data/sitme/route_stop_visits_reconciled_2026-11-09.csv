@@ -1,0 +1,951 @@
+api_route_id,route_code,detail_order,detail_record_id,source_location_id,candidate_stop_id,source_stop_name,canonicalized,checkpoint_in_snapshot,boarding_stop_verified,proposed_gtfs_status
+3341,P16S,1,69915,164162,164162,Inicio Zafiro  Carrera 2 Calle 11.,false,true,false,research_only
+3341,P16S,5,69920,164164,164164,Carrera 3 Calle 10 S-n,false,true,false,research_only
+3341,P16S,10,69921,164163,164163, Calle 08 Carrera 3 S-n.,false,true,false,research_only
+3341,P16S,14,69922,164165,164165,Carrera 2 Calle 7 S-n.,false,true,false,research_only
+3341,P16S,24,69923,164166,164166,Carrera 2 Calle 4 S-n.,false,true,false,research_only
+3341,P16S,31,69924,164167,164167,Calle 3 Carrera 2 S-n.,false,true,false,research_only
+3341,P16S,38,69925,164168,164168,Carrera 4 Calle 1C S-n.,false,true,false,research_only
+3341,P16S,42,69926,164169,164169,Carrera 4 Calle 1B S-n.,false,true,false,research_only
+3341,P16S,44,69927,164171,164171,Carrera 4 Calle 0 S-n.,false,true,false,research_only
+3341,P16S,49,69928,164170,164170,Carrera 4 Calle 0 S-n.,false,true,false,research_only
+3341,P16S,59,69929,164172,164172,Carrera 4 Calle 3 S-n. ,false,true,false,research_only
+3341,P16S,91,69930,150880,150880,Portal de Piedecuesta N-s,false,true,false,research_only
+3341,P16S,108,69931,150800,150800,Centro Comercial Eco centro,false,true,false,research_only
+3341,P16S,121,69932,150917,150917,Parada ICP S-n,false,true,false,research_only
+3341,P16S,147,69933,150802,150802,Puente Peatonal Españolita S-n,false,true,false,research_only
+3341,P16S,160,69934,150919,150919,Paradero Campo Alegre S-n,false,true,false,research_only
+3341,P16S,166,69935,150804,150804,Vivero Platacero,false,true,false,research_only
+3341,P16S,196,69936,150805,150805,Puente Peatonal Palmichal S-n,false,true,false,research_only
+3341,P16S,214,69937,150806,150806,Puente Peatonal Menzuly S-n,false,true,false,research_only
+3341,P16S,228,69938,150807,150807,Puente Peatonal  la Estancia S-n,false,true,false,research_only
+3341,P16S,251,69939,150808,150808,Mac Pollo S-n,false,true,false,research_only
+3341,P16S,256,69940,150809,150809,EDS Aranzoque S-n,false,true,false,research_only
+3341,P16S,267,69941,150926,150926,Papi Quiero Piña Sn,false,true,false,research_only
+3341,P16S,275,69942,150927,150927,Universidad Santo Tomas Sn,false,true,false,research_only
+3341,P16S,281,69943,150812,150812,Puente Peatonal Lagos S-n,false,true,false,research_only
+3341,P16S,291,69944,150813,150813,Panamericano Cañaveral paralela S-n,false,true,false,research_only
+3341,P16S,295,69945,150929,150929,Estación Cañaveral Vagón Norte s-n,false,true,false,research_only
+3341,P16S,309,69946,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3341,P16S,318,69947,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3341,P16S,324,69948,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3341,P16S,335,69949,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3341,P16S,345,69950,150818,150818,Miradores de San Lorenzo S-n,false,true,false,research_only
+3341,P16S,352,69951,150819,150819,Glorieta Cacique S-n,false,true,false,research_only
+3341,P16S,357,69952,150820,150820,Centro Comercial Cacique S-n,false,true,false,research_only
+3341,P16S,370,69953,150821,150821,Colegio la Merced S-n,false,true,false,research_only
+3341,P16S,374,69954,150822,150822,Clinica Bucaramanga S-n,false,true,false,research_only
+3341,P16S,378,69955,150823,150823,Gratamira S-n,false,true,false,research_only
+3341,P16S,384,69956,150824,150824,Parque San Pio S-n,false,true,false,research_only
+3341,P16S,389,69957,150825,150825,Carrera 33 calle 42 S-n,false,true,false,research_only
+3341,P16S,394,69958,150826,150826,Carrera 33 calle 38 S-n,false,true,false,research_only
+3341,P16S,398,69959,150827,150827,Carrera 33 calle 34 S-n,false,true,false,research_only
+3341,P16S,403,69960,150828,150828,plaza Guarín S-n,false,true,false,research_only
+3341,P16S,409,69961,150846,150846,Centro Comercial Megamoll S-n.,false,true,false,research_only
+3341,P16S,414,70329,150844,150844,Quinta Brigada S-n.,false,true,false,research_only
+3341,P16S,419,70334,150832,150832,Velódromo S-n,false,true,false,research_only
+3341,P16S,425,70335,150833,150833,Estadio Américo Montanini S-n,false,true,false,research_only
+3341,P16S,429,70359,163549,163549,Parada Colegio Tecnológico.,false,true,false,research_only
+3341,P16S,454,70360,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3341,P16S,470,70361,159204,159204,Parada SENA N-s.,false,true,false,research_only
+3341,P16S,476,70362,163601,163601,Parada Carrera 27 Calle 19 N-s.,false,true,false,research_only
+3341,P16S,493,70363,155754,155754,Parque de los Niños,false,true,false,research_only
+3341,P16S,495,70364,163623,163623,Parada Carrera 27 Calle 34 N-s,false,true,false,research_only
+3341,P16S,503,70365,163624,163624,Parada Carrera 27 Calle 37. ,false,true,false,research_only
+3341,P16S,510,70366,163634,163634,Parada Parque TURBAY N-s.,false,true,false,research_only
+3341,P16S,516,70453,163642,163642,Parada Carrera 27 Calle 55 N-s.,false,true,false,research_only
+3341,P16S,519,70454,164650,164650,Conucos N-s.,false,true,false,research_only
+3341,P16S,541,70455,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3341,P16S,552,70456,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3341,P16S,571,70457,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3341,P16S,590,70458,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3341,P16S,597,70459,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3341,P16S,603,70460,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3341,P16S,614,70461,150867,150867,Cañaveral Paralela N-s,false,true,false,research_only
+3341,P16S,618,70462,150868,150868,Estación Panamericano,false,true,false,research_only
+3341,P16S,626,70463,150869,150869,Puente Peatonal  lagos N-s,false,true,false,research_only
+3341,P16S,633,70464,150962,150962,Estación la Riviera,false,true,false,research_only
+3341,P16S,640,70465,150963,150963,Papi Quiero Piña N-s,false,true,false,research_only
+3341,P16S,648,70466,150872,150872,EDS el TIGGER,false,true,false,research_only
+3341,P16S,652,70467,150965,150965,Mac Pollo N-s,false,true,false,research_only
+3341,P16S,670,70468,150874,150874,Puente Peatonal  la Estancia N-s,false,true,false,research_only
+3341,P16S,684,70469,150967,150967,Estación Menzuly N-s,false,true,false,research_only
+3341,P16S,705,70470,150968,150968,Puente Peatonal Palmichal N-s,false,true,false,research_only
+3341,P16S,732,70471,150877,150969,Pretecor N-s,true,true,false,research_only
+3341,P16S,739,70472,150970,150970,Estación Campo Alegre N-s,false,true,false,research_only
+3341,P16S,752,70473,150879,150879,Puente Peatonal  Españolita N-s,false,true,false,research_only
+3341,P16S,782,70474,150972,150972,Portal de Piedecuesta,false,true,false,research_only
+3341,P16S,788,70475,150881,150881,Centro Comercial DELACUESTA,false,true,false,research_only
+3341,P16S,794,70740,164913,164913,Centro Comercial DE LA CUESTA.,false,true,false,research_only
+3341,P16S,799,70746,164918,164918,Calle 3AN Carrera 8 N-s.,false,true,false,research_only
+3341,P16S,806,70755,164926,164926,Calle 3AN Carrera 6 N-s.,false,true,false,research_only
+3341,P16S,808,70760,164930,164930,Calle 3AN Carrera 5 la Argentina N-s,false,true,false,research_only
+3341,P16S,816,70762,164931,164931,Calle 3AN Carrera 4,false,true,false,research_only
+3341,P16S,831,70763,164932,164932,Carrera 4 Calle 1AD N-s.,false,true,false,research_only
+3341,P16S,839,70764,164933,164933,Carrera 4 No. 0-30 N-s.,false,true,false,research_only
+3341,P16S,843,70765,164934,164934,Carrera 4 Avenida 1B N-s.,false,true,false,research_only
+3341,P16S,848,70766,164935,164935,Torres de Campo Verde Carrera 4 Calle 1D N-s.,false,true,false,research_only
+3341,P16S,853,70767,164936,164936,Calle 2 Carrera 3 N-s.,false,true,false,research_only
+3341,P16S,859,70768,164937,164937,Calle 2 Carrera 2.,false,true,false,research_only
+3341,P16S,868,70769,164938,164938,Parada Cancha Los Tigres.,false,true,false,research_only
+3341,P16S,876,70770,164939,164939,Calle 2 carrera 3 Chacarita N-s.,false,true,false,research_only
+3341,P16S,889,70771,164940,164940,Finalizacion Carrera 2 Calle 9.,false,true,false,research_only
+3342,P16N,1,68686,163009,163009,Estación Ruta P16N,false,true,false,research_only
+3342,P16N,14,68687,163010,163010,Parada Fundación Nueva Colombia.,false,true,false,research_only
+3342,P16N,29,68688,163011,163011,Parada Quebrada Nueva Colombia,false,true,false,research_only
+3342,P16N,43,68689,163012,163012,Parada los Bambues,false,true,false,research_only
+3342,P16N,72,68690,163014,163014,Parada Primera Y Guatiguara S-n,false,true,false,research_only
+3342,P16N,87,68691,163015,163024,Parada la VEGA S-n.,true,true,false,research_only
+3342,P16N,100,68692,163023,163023,Parada Puerto Nuevo S-n.,false,true,false,research_only
+3342,P16N,108,68693,163021,163021,Parada SENA Guatiguara S-n,false,true,false,research_only
+3342,P16N,121,68694,163020,163020,Parada ASOPENDER S-n,false,true,false,research_only
+3342,P16N,132,68695,163017,163017,Parada SEDE UIS - Guatiguara S-n.,false,true,false,research_only
+3342,P16N,142,68696,163025,163025,Parada Barrio el Paraiso S-n.,false,true,false,research_only
+3342,P16N,146,68828,163157,163157,Parada Coovicop Guatiguara S-n,false,true,false,research_only
+3342,P16N,151,68829,163158,163158,Parada Kilometro 4 Via Guatiguara S-n.,false,true,false,research_only
+3342,P16N,154,68830,163159,163159,Parada Portal de Santillana  S-n.,false,true,false,research_only
+3342,P16N,163,68831,150880,150880,Portal de Piedecuesta N-s,false,true,false,research_only
+3342,P16N,190,68832,150916,150916,Centro Comercial Ecocentro Sn,false,true,false,research_only
+3342,P16N,198,68833,150917,150917,Parada ICP S-n,false,true,false,research_only
+3342,P16N,220,68834,150802,150802,Puente Peatonal Españolita S-n,false,true,false,research_only
+3342,P16N,230,68835,150878,150878,Campo Alegre N-s,false,true,false,research_only
+3342,P16N,235,68836,150804,150804,Vivero Platacero,false,true,false,research_only
+3342,P16N,265,68837,150921,150921,Paradero Palmichal S-n,false,true,false,research_only
+3342,P16N,281,68838,150922,150922,Paradero Menzuly S-n,false,true,false,research_only
+3342,P16N,296,68839,150923,150923,Estación Estancia Sn,false,true,false,research_only
+3342,P16N,323,68840,150808,150808,Mac Pollo S-n,false,true,false,research_only
+3342,P16N,329,68841,150809,150809,EDS Aranzoque S-n,false,true,false,research_only
+3342,P16N,343,68843,150926,150926,Papi Quiero Piña Sn,false,true,false,research_only
+3342,P16N,352,68844,150927,150927,Universidad Santo Tomas Sn,false,true,false,research_only
+3342,P16N,360,68845,150812,150812,Puente Peatonal Lagos S-n,false,true,false,research_only
+3342,P16N,372,68846,150813,150813,Panamericano Cañaveral paralela S-n,false,true,false,research_only
+3342,P16N,376,68847,150929,150929,Estación Cañaveral Vagón Norte s-n,false,true,false,research_only
+3342,P16N,390,68848,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3342,P16N,408,68849,150931,150931,Hormigueros Sn,false,true,false,research_only
+3342,P16N,417,68850,150932,150932,Payador Sn,false,true,false,research_only
+3342,P16N,433,68851,150933,150933,Estacion de Transferencia Provenza Sn,false,true,false,research_only
+3342,P16N,443,68852,150818,150818,Miradores de San Lorenzo S-n,false,true,false,research_only
+3342,P16N,452,68853,150819,150819,Glorieta Cacique S-n,false,true,false,research_only
+3342,P16N,458,68854,150820,150820,Centro Comercial Cacique S-n,false,true,false,research_only
+3342,P16N,483,68855,150821,150821,Colegio la Merced S-n,false,true,false,research_only
+3342,P16N,488,68856,150822,150822,Clinica Bucaramanga S-n,false,true,false,research_only
+3342,P16N,495,68857,150823,150823,Gratamira S-n,false,true,false,research_only
+3342,P16N,501,68858,150824,150824,Parque San Pio S-n,false,true,false,research_only
+3342,P16N,506,68859,150825,150825,Carrera 33 calle 42 S-n,false,true,false,research_only
+3342,P16N,512,68860,150826,150826,Carrera 33 calle 38 S-n,false,true,false,research_only
+3342,P16N,520,68861,150827,150827,Carrera 33 calle 34 S-n,false,true,false,research_only
+3342,P16N,525,69211,150828,150828,plaza Guarín S-n,false,true,false,research_only
+3342,P16N,531,69212,150829,150829,UCC,false,true,false,research_only
+3342,P16N,539,69213,150830,150830,Carrera 32 Calle 19 S-n,false,true,false,research_only
+3342,P16N,545,69214,150831,150831,Carrera 32 Calle 14 S-n,false,true,false,research_only
+3342,P16N,549,69215,150832,150832,Velódromo S-n,false,true,false,research_only
+3342,P16N,559,69216,150833,150833,Estadio Américo Montanini S-n,false,true,false,research_only
+3342,P16N,570,69258,163549,163549,Parada Colegio Tecnológico.,false,true,false,research_only
+3342,P16N,602,69259,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3342,P16N,622,69312,159204,159204,Parada SENA N-s.,false,true,false,research_only
+3342,P16N,629,69313,163601,163601,Parada Carrera 27 Calle 19 N-s.,false,true,false,research_only
+3342,P16N,645,69314,155754,155754,Parque de los Niños,false,true,false,research_only
+3342,P16N,646,69336,163623,163623,Parada Carrera 27 Calle 34 N-s,false,true,false,research_only
+3342,P16N,650,69337,163624,163624,Parada Carrera 27 Calle 37. ,false,true,false,research_only
+3342,P16N,657,69348,163634,163634,Parada Parque TURBAY N-s.,false,true,false,research_only
+3342,P16N,665,69357,163642,163642,Parada Carrera 27 Calle 55 N-s.,false,true,false,research_only
+3342,P16N,685,69358,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3342,P16N,693,69359,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3342,P16N,707,69360,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3342,P16N,718,69361,150957,150957,Payador N-s,false,true,false,research_only
+3342,P16N,726,69362,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3342,P16N,732,69363,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3342,P16N,739,69364,150867,150867,Cañaveral Paralela N-s,false,true,false,research_only
+3342,P16N,744,69365,150868,150868,Estación Panamericano,false,true,false,research_only
+3342,P16N,752,69366,150961,150961,Estación Lagos N-s,false,true,false,research_only
+3342,P16N,759,69367,150962,150962,Estación la Riviera,false,true,false,research_only
+3342,P16N,766,69368,150963,150963,Papi Quiero Piña N-s,false,true,false,research_only
+3342,P16N,775,69369,150872,150872,EDS el TIGGER,false,true,false,research_only
+3342,P16N,779,69370,150965,150965,Mac Pollo N-s,false,true,false,research_only
+3342,P16N,794,69371,150966,150966,Estación la Estancia N-s,false,true,false,research_only
+3342,P16N,810,69372,150967,150967,Estación Menzuly N-s,false,true,false,research_only
+3342,P16N,825,69373,150968,150968,Puente Peatonal Palmichal N-s,false,true,false,research_only
+3342,P16N,847,69374,150877,150969,Pretecor N-s,true,true,false,research_only
+3342,P16N,852,69375,150970,150970,Estación Campo Alegre N-s,false,true,false,research_only
+3342,P16N,862,69376,150971,150971,Estación Españolita N-s,false,true,false,research_only
+3342,P16N,892,69377,150972,150972,Portal de Piedecuesta,false,true,false,research_only
+3342,P16N,924,69378,163018,163018,Parada SEDE UIS Guatiguara N-s.,false,true,false,research_only
+3342,P16N,935,69617,163881,163881,Parada ASOPENDER N-s.,false,true,false,research_only
+3342,P16N,948,69618,163022,163022,Parada SENA Guatiguara N-s.,false,true,false,research_only
+3342,P16N,956,69641,163016,163016,Parada Puerto Nuevo N-s..,false,true,false,research_only
+3342,P16N,969,69642,163024,163024,Parada la VEGA S-n.,false,true,false,research_only
+3342,P16N,983,69662,163013,163013,Parada Primera Y Guatiguara N-s.,false,true,false,research_only
+3342,P16N,1013,69663,163923,163923,Parada Conjunto Residencial La Vega de San Roque..,false,true,false,research_only
+3342,P16N,1029,69664,163924,163924,Parada Quebrada Nueva Colombia N-s.,false,true,false,research_only
+3342,P16N,1051,69665,163925,163925,Parada Fundación Nueva Colombia N-s.,false,true,false,research_only
+3342,P16N,1066,69666,163926,163926,Fin - Estación Matecaña.,false,true,false,research_only
+3345,P8,1,37885,150779,150779,Inicio  Tejaditos,false,true,false,research_only
+3345,P8,8,37886,150780,150780,Comuneros S-n,false,true,false,research_only
+3345,P8,18,37888,150781,150781,Aires de Belén S-n,false,true,false,research_only
+3345,P8,37,37887,150782,150782,Urbanización Miraflores Avenida 173W S-n,false,true,false,research_only
+3345,P8,44,37891,150783,150783,Calle 173W Barro Blanco S-n,false,true,false,research_only
+3345,P8,59,37908,150784,150784,Carrera 17 Puente del Portal del Valle,false,true,false,research_only
+3345,P8,79,37890,150785,150785,Calle 172W Villa Marcela S-n,false,true,false,research_only
+3345,P8,108,37889,150786,150786,Carrera 171W Hoyo Grande,false,true,false,research_only
+3345,P8,145,37896,150787,150787,Carrera 4 calle 16 S-n,false,true,false,research_only
+3345,P8,159,37897,150788,150788,Calle 15 carrera 4 S-n,false,true,false,research_only
+3345,P8,182,37893,150789,150789,Calle 15 Carrera 6 S-n,false,true,false,research_only
+3345,P8,195,37892,150790,150790,Carrera 7 Calle 14 S-n,false,true,false,research_only
+3345,P8,205,37899,150791,150791,Carrera 7 Calle 12 S-n,false,true,false,research_only
+3345,P8,212,37894,150792,150792,Carrera 7 calle 10 S-n,false,true,false,research_only
+3345,P8,222,37900,150793,150793,Calle 10 carrera 8 S-n,false,true,false,research_only
+3345,P8,231,37904,150794,150794,Carrera 9 calle 7 S-n,false,true,false,research_only
+3345,P8,261,37902,150911,150911,Cabecera del Llano Sn,false,true,false,research_only
+3345,P8,272,37934,150912,150912,La Normal Sn,false,true,false,research_only
+3345,P8,292,37935,150797,150797,San francisco S-n,false,true,false,research_only
+3345,P8,322,37895,150798,150798,San Carlos S-n,false,true,false,research_only
+3345,P8,346,37937,150915,150915,Quinta Granada Sn,false,true,false,research_only
+3345,P8,371,37898,150800,150800,Centro Comercial Eco centro,false,true,false,research_only
+3345,P8,400,37906,150801,150801,ICP,false,true,false,research_only
+3345,P8,450,37936,150802,150802,Puente Peatonal Españolita S-n,false,true,false,research_only
+3345,P8,475,37901,150803,150803,Puente Peatonal Campoalegre S-n,false,true,false,research_only
+3345,P8,484,37907,150804,150804,Vivero Platacero,false,true,false,research_only
+3345,P8,533,37905,150805,150805,Puente Peatonal Palmichal S-n,false,true,false,research_only
+3345,P8,557,37943,150806,150806,Puente Peatonal Menzuly S-n,false,true,false,research_only
+3345,P8,588,37903,150807,150807,Puente Peatonal  la Estancia S-n,false,true,false,research_only
+3345,P8,622,37944,150808,150808,Mac Pollo S-n,false,true,false,research_only
+3345,P8,634,37945,150809,150809,EDS Aranzoque S-n,false,true,false,research_only
+3345,P8,657,37909,150810,150810,PQP S-n,false,true,false,research_only
+3345,P8,667,37910,150811,150811,Universidad Santo Tomas S-n,false,true,false,research_only
+3345,P8,684,37911,150812,150812,Puente Peatonal Lagos S-n,false,true,false,research_only
+3345,P8,723,37912,150813,150813,Panamericano Cañaveral paralela S-n,false,true,false,research_only
+3345,P8,750,37913,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3345,P8,763,37942,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3345,P8,774,37914,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3345,P8,790,37915,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3345,P8,809,37916,150818,150818,Miradores de San Lorenzo S-n,false,true,false,research_only
+3345,P8,823,37917,150819,150819,Glorieta Cacique S-n,false,true,false,research_only
+3345,P8,828,37918,150820,150820,Centro Comercial Cacique S-n,false,true,false,research_only
+3345,P8,865,37919,150821,150821,Colegio la Merced S-n,false,true,false,research_only
+3345,P8,876,37938,150822,150822,Clinica Bucaramanga S-n,false,true,false,research_only
+3345,P8,888,37939,150823,150823,Gratamira S-n,false,true,false,research_only
+3345,P8,896,37941,150824,150824,Parque San Pio S-n,false,true,false,research_only
+3345,P8,902,37940,150825,150825,Carrera 33 calle 42 S-n,false,true,false,research_only
+3345,P8,908,37920,150826,150826,Carrera 33 calle 38 S-n,false,true,false,research_only
+3345,P8,915,37921,150827,150827,Carrera 33 calle 34 S-n,false,true,false,research_only
+3345,P8,920,37922,150828,150828,plaza Guarín S-n,false,true,false,research_only
+3345,P8,929,37923,150829,150829,UCC,false,true,false,research_only
+3345,P8,938,37924,150830,150830,Carrera 32 Calle 19 S-n,false,true,false,research_only
+3345,P8,946,37925,150831,150831,Carrera 32 Calle 14 S-n,false,true,false,research_only
+3345,P8,951,37926,150832,150832,Velódromo S-n,false,true,false,research_only
+3345,P8,967,37927,150833,150833,Estadio Américo Montanini S-n,false,true,false,research_only
+3345,P8,994,37928,150834,150834,Calle 9 Carrera 23,false,true,false,research_only
+3345,P8,1002,37932,150835,150835,Iglesia Cristo Rey,false,true,false,research_only
+3345,P8,1007,37933,150836,150836,Calle 11 carrera 18 S-n,false,true,false,research_only
+3345,P8,1015,37929,150837,150837,Calle 11 Carrera 20 S-n,false,true,false,research_only
+3345,P8,1021,37930,150838,150838,Calle 11 carrera 23 S-n,false,true,false,research_only
+3345,P8,1035,37931,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3345,P8,1036,38868,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3345,P8,1060,38869,150840,150840,Calle 11 Carrera 28 N-s,false,true,false,research_only
+3345,P8,1069,38872,150841,150841,Estadio Américo Montanini N-s,false,true,false,research_only
+3345,P8,1100,38870,150842,150842,Velódromo N-s,false,true,false,research_only
+3345,P8,1107,38921,150843,150843,Calle 14 Carrera 32C N-s,false,true,false,research_only
+3345,P8,1113,38871,150844,150844,Quinta Brigada S-n.,false,true,false,research_only
+3345,P8,1118,38877,150845,150845,2 Quinta Brigada  N-s,false,true,false,research_only
+3345,P8,1128,38883,150846,150846,Centro Comercial Megamoll S-n.,false,true,false,research_only
+3345,P8,1138,38873,150847,150847,Plaza Guarín N-s,false,true,false,research_only
+3345,P8,1146,38874,150848,150848,Carrera 33 Calle 35 Viejo chiflas N-s,false,true,false,research_only
+3345,P8,1153,38882,150849,150849,Carrera 33 Calle 37 N-s,false,true,false,research_only
+3345,P8,1162,38917,150850,150850,Carrera 33 Calle 42 N-s,false,true,false,research_only
+3345,P8,1170,38875,150851,150851,Carrera 33 calle 45 N-s,false,true,false,research_only
+3345,P8,1174,38876,150852,150852,Carrera 33 Calle 47 N-s,false,true,false,research_only
+3345,P8,1180,38886,150853,150853,Carrera 33 calle 49 N-s Club Unión,false,true,false,research_only
+3345,P8,1193,38918,150854,150854,Clínica Bucaramanga N-s,false,true,false,research_only
+3345,P8,1201,38878,150855,150855,Carrera 33 calle 58 N-s,false,true,false,research_only
+3345,P8,1207,38879,150856,150856,Colegio La merced N-s,false,true,false,research_only
+3345,P8,1243,38880,150857,150857,Centro comercial Cacique N-s,false,true,false,research_only
+3345,P8,1300,38915,150858,150858,Carrera 24 Calle 80 N-s,false,true,false,research_only
+3345,P8,1312,38887,150859,150859,Calle 83 Carrera 23,false,true,false,research_only
+3345,P8,1326,38881,150860,150860,Calle 89 carrera 21 N-s,false,true,false,research_only
+3345,P8,1336,38884,150861,150861,Calle 89 Carrera 23 N-s,false,true,false,research_only
+3345,P8,1343,38916,150862,150862,Calle 89 carrera 25 N-s,false,true,false,research_only
+3345,P8,1362,41326,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3345,P8,1379,41327,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3345,P8,1388,41328,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3345,P8,1395,41329,150866,150866,Puente Peatonal Molinos N-s,false,true,false,research_only
+3345,P8,1406,41330,150867,150867,Cañaveral Paralela N-s,false,true,false,research_only
+3345,P8,1410,41331,150868,150868,Estación Panamericano,false,true,false,research_only
+3345,P8,1418,41332,150869,150869,Puente Peatonal  lagos N-s,false,true,false,research_only
+3345,P8,1423,41333,150962,150962,Estación la Riviera,false,true,false,research_only
+3345,P8,1428,41334,150871,150871,PQP N-s,false,true,false,research_only
+3345,P8,1434,41335,150872,150872,EDS el TIGGER,false,true,false,research_only
+3345,P8,1439,41336,150873,150965,Mac Pollo N-s,true,true,false,research_only
+3345,P8,1458,41337,150874,150874,Puente Peatonal  la Estancia N-s,false,true,false,research_only
+3345,P8,1475,41338,150875,150875,Puente Peatonal Menzuly N-s,false,true,false,research_only
+3345,P8,1489,41339,150876,150876,Puente Peatonal  Palmichal N-s,false,true,false,research_only
+3345,P8,1512,41340,150969,150969,Pretecor N-s,false,true,false,research_only
+3345,P8,1518,41341,150970,150970,Estación Campo Alegre N-s,false,true,false,research_only
+3345,P8,1529,41342,150879,150879,Puente Peatonal  Españolita N-s,false,true,false,research_only
+3345,P8,1553,41343,150880,150880,Portal de Piedecuesta N-s,false,true,false,research_only
+3345,P8,1557,41344,150881,150881,Centro Comercial DELACUESTA,false,true,false,research_only
+3345,P8,1570,41345,150882,150882,Carrera 16 1NC Paseo Galicia,false,true,false,research_only
+3345,P8,1585,41346,150883,150883,Diagonal 6 Carrera 8,false,true,false,research_only
+3345,P8,1597,41347,150884,150884,Carrera 8 Calle 2,false,true,false,research_only
+3345,P8,1602,41348,150885,150885,Carrera 8 Calle 3,false,true,false,research_only
+3345,P8,1607,41349,150886,150886,Carrera 8 Calle 5,false,true,false,research_only
+3345,P8,1611,41350,150887,150887,Carrera 8 Calle 7,false,true,false,research_only
+3345,P8,1615,41351,150888,150888,Carrera 8 calle 9,false,true,false,research_only
+3345,P8,1618,41352,150889,150889,Carrera 8 Calle 10,false,true,false,research_only
+3345,P8,1623,41353,150890,150890,Carrera 8 calle 12,false,true,false,research_only
+3345,P8,1629,41354,150891,150891,Calle 14 Carrera 7 N-s,false,true,false,research_only
+3345,P8,1635,41355,150892,150892,Calle 14 Carrera 6 N-s,false,true,false,research_only
+3345,P8,1639,41356,150893,150893,Carrera 6 calle 14,false,true,false,research_only
+3345,P8,1643,41357,150894,150894,Carrera 6 calle 16,false,true,false,research_only
+3345,P8,1646,41358,150895,150895,Carrera 6 Calle 14 N-s,false,true,false,research_only
+3345,P8,1652,41359,150897,150897,Calle 17 Carrera 4 N-s,false,true,false,research_only
+3345,P8,1666,41360,150898,150898,Carrera 17 1W Hoyo Grande,false,true,false,research_only
+3345,P8,1679,41361,150899,150899,Calle 17 Carrera 0W Villa Marcela,false,true,false,research_only
+3345,P8,1697,41362,150900,150900,Calle 17 carrera 2W N-s.,false,true,false,research_only
+3345,P8,1704,41363,150901,150901,Tejaditos,false,true,false,research_only
+3345,P8,1714,41364,150902,150902,Carrera 5W Calle 16D N-s,false,true,false,research_only
+3345,P8,1722,41365,150903,150903,FIN Tejaditos,false,true,false,research_only
+3346,P14,1,70843,165014,165014,Inicio Calle 5 Carrera 13 Altamira,false,true,false,research_only
+3346,P14,8,70844,165015,165015,Calle 5 Carrera 10.,false,true,false,research_only
+3346,P14,15,70845,165016,165016,Carrera 8 Calle 3 S-n.,false,true,false,research_only
+3346,P14,26,70846,165017,165017,Conjunto Residencial Paragüitas I.,false,true,false,research_only
+3346,P14,58,70847,165018,165018,Jardín Botánico ELOY VALENZUELA.,false,true,false,research_only
+3346,P14,72,70848,165019,165019,Colegio Vicente Azuero S-n,false,true,false,research_only
+3346,P14,91,70849,165020,165020,Calle 41 Carrera 4 S-n.,false,true,false,research_only
+3346,P14,98,70850,165021,165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,false,true,false,research_only
+3346,P14,106,70948,165123,165123,Iglesia Santamaria de Los Lagos. S-n.,false,true,false,research_only
+3346,P14,116,70962,165136,165136,Kr 29 Cl 8 S-n.,false,true,false,research_only
+3346,P14,119,70963,165024,165024,Parque Acualago S-n.,false,true,false,research_only
+3346,P14,125,70964,165025,165025,Supermercado La Canasta.,false,true,false,research_only
+3346,P14,135,70965,165026,165026,Carrera 12 Calle 27 S-n.,false,true,false,research_only
+3346,P14,158,70966,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3346,P14,171,70967,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3346,P14,181,70968,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3346,P14,206,70969,151099,151099,Calle 105 Carrera 25 S-n,false,true,false,research_only
+3346,P14,213,70970,151100,151100,Parada MasxMenos,false,true,false,research_only
+3346,P14,221,70972,151101,151101,Calle 105 Carrera 21 S-n,false,true,false,research_only
+3346,P14,242,70974,151102,151102,Colegio INEM S-n,false,true,false,research_only
+3346,P14,247,70975,151103,151103,Colegio Divino Niño S-n,false,true,false,research_only
+3346,P14,252,71096,151104,151104,Transversal Metropolitana Calle 104C S-n,false,true,false,research_only
+3346,P14,262,71097,151105,151105,Transversal Metropolitana Calle 103B S-n,false,true,false,research_only
+3346,P14,277,71098,151106,151106,Transversal Metropolitana Carrera 14 Venecia S-n,false,true,false,research_only
+3346,P14,288,71099,151107,151107,Transversal Metropolitana Carrera 13A S-n,false,true,false,research_only
+3346,P14,300,71137,151108,151108,Terminal de Transportes de Bucaramanga S-n,false,true,false,research_only
+3346,P14,320,71138,151109,151109,Puente el Bueno,false,true,false,research_only
+3346,P14,373,71139,151110,151110,Barrio Bucaramanga S-n,false,true,false,research_only
+3346,P14,382,71140,151111,151111,Calle 65 Carrera 7 S-n,false,true,false,research_only
+3346,P14,394,71141,151112,151112,Barrio Guayacanes,false,true,false,research_only
+3346,P14,400,71142,151113,151113,Calle 61 Carrera 1 Occidente S-n,false,true,false,research_only
+3346,P14,420,71143,151117,151117,Calle 55 Carrera 3 S-n,false,true,false,research_only
+3346,P14,425,71144,151118,151118,Calle 55 Carrera 6  S-n,false,true,false,research_only
+3346,P14,438,71145,151119,151119,Calle 61 Carrera 7 S-n,false,true,false,research_only
+3346,P14,457,71146,151120,151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,false,true,false,research_only
+3346,P14,469,71327,151121,151121,Carrera 15 Calle 55 S-n,false,true,false,research_only
+3346,P14,476,71366,151122,151122,Carrera 17 Calle 55 S-n,false,true,false,research_only
+3346,P14,482,71367,151150,151150,Diagonal 15 calle 55 S-n,false,true,false,research_only
+3346,P14,494,71368,150937,150937,Parque Turbay Sn,false,true,false,research_only
+3346,P14,506,71369,150824,150824,Parque San Pio S-n,false,true,false,research_only
+3346,P14,510,71370,150825,150825,Carrera 33 calle 42 S-n,false,true,false,research_only
+3346,P14,514,71371,150826,150826,Carrera 33 calle 38 S-n,false,true,false,research_only
+3346,P14,518,71372,150827,150827,Carrera 33 calle 34 S-n,false,true,false,research_only
+3346,P14,523,71373,150828,150828,plaza Guarín S-n,false,true,false,research_only
+3346,P14,528,71374,150829,150829,UCC,false,true,false,research_only
+3346,P14,536,71375,150830,150830,Carrera 32 Calle 19 S-n,false,true,false,research_only
+3346,P14,543,71376,150831,150831,Carrera 32 Calle 14 S-n,false,true,false,research_only
+3346,P14,547,71377,150832,150832,Velódromo S-n,false,true,false,research_only
+3346,P14,557,71378,150833,150833,Estadio Américo Montanini S-n,false,true,false,research_only
+3346,P14,564,71379,163549,163549,Parada Colegio Tecnológico.,false,true,false,research_only
+3346,P14,577,71473,150834,150834,Calle 9 Carrera 23,false,true,false,research_only
+3346,P14,587,71474,150835,150835,Iglesia Cristo Rey,false,true,false,research_only
+3346,P14,591,71475,150836,150836,Calle 11 carrera 18 S-n,false,true,false,research_only
+3346,P14,596,71476,150837,150837,Calle 11 Carrera 20 S-n,false,true,false,research_only
+3346,P14,602,71477,150838,150838,Calle 11 carrera 23 S-n,false,true,false,research_only
+3346,P14,615,71478,150943,150943,ESTACION UIS,false,true,false,research_only
+3346,P14,636,71514,159204,159204,Parada SENA N-s.,false,true,false,research_only
+3346,P14,640,71515,163601,163601,Parada Carrera 27 Calle 19 N-s.,false,true,false,research_only
+3346,P14,653,71516,155754,155754,Parque de los Niños,false,true,false,research_only
+3346,P14,656,71517,163623,163623,Parada Carrera 27 Calle 34 N-s,false,true,false,research_only
+3346,P14,663,71518,163624,163624,Parada Carrera 27 Calle 37. ,false,true,false,research_only
+3346,P14,684,71568,150951,150951,Diagonal 15 Avenida la Rosita,false,true,false,research_only
+3346,P14,695,71569,151124,151124,Calle 56 Carrera 15 N-s.,false,true,false,research_only
+3346,P14,702,71570,151125,151125,Calle 56 Carrera 14 Macaregua,false,true,false,research_only
+3346,P14,708,71571,151126,151126,Unidades Tecnológicas de Santander,false,true,false,research_only
+3346,P14,720,71572,151127,151127,Calle 57 Carrera 7 N-s,false,true,false,research_only
+3346,P14,728,71573,151128,151128,Calle 57 Carrera 3 N-s,false,true,false,research_only
+3346,P14,732,71574,151129,151129,Calle 55 Carrera 3 N-s,false,true,false,research_only
+3346,P14,753,71575,151130,151130,Balconcitos,false,true,false,research_only
+3346,P14,763,71576,151131,151131,Carrera 2 Occidente Calle 55A N-s,false,true,false,research_only
+3346,P14,768,71577,151132,151132,Recrear el Mutis,false,true,false,research_only
+3346,P14,772,71578,151133,151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,false,true,false,research_only
+3346,P14,777,71579,151134,151134,Carrera 2W Calle 63 N-s,false,true,false,research_only
+3346,P14,792,71580,151135,151135,Carrera 10 Calle 64 Cancha el Bueno,false,true,false,research_only
+3346,P14,811,71581,151136,151136,Calle 65 carrera 3 N-s,false,true,false,research_only
+3346,P14,818,71582,151137,151137,Plaza de Mercado Campesino,false,true,false,research_only
+3346,P14,869,71583,151138,151138,Parada Puente el Bueno N-s,false,true,false,research_only
+3346,P14,886,71584,151139,151139,Terminal de Transportes N-s,false,true,false,research_only
+3346,P14,903,71585,151140,151140,Bomba San Fermín N-s,false,true,false,research_only
+3346,P14,911,71586,151141,151141,Transversal Metropolitana Calle 103 N-s,false,true,false,research_only
+3346,P14,923,71587,151142,151142,Transversal Metropolitana Calle 104A,false,true,false,research_only
+3346,P14,929,71588,151143,151143,Colegio Divino Niño N-s,false,true,false,research_only
+3346,P14,933,71589,151144,151144,Colegio INEM N-s,false,true,false,research_only
+3346,P14,945,71590,151145,151145,Calle 105 Carrera 20 N-s,false,true,false,research_only
+3346,P14,951,71591,151146,151146,Calle 105 carrera 22 N-s,false,true,false,research_only
+3346,P14,956,71592,151147,151147,Parroquia Cristo Resucitado,false,true,false,research_only
+3346,P14,980,71593,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3346,P14,995,71594,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3346,P14,1003,71595,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3346,P14,1011,71596,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3346,P14,1023,71929,166038,166038,Centro Comercial Cañaveral,false,true,false,research_only
+3346,P14,1039,71946,166054,166054,Centro Comercial Parque Caracolí,false,true,false,research_only
+3346,P14,1048,71954,166061,166061,Parque Acualago N-s.,false,true,false,research_only
+3346,P14,1053,71955,165023,165023,Carrera 29 Calle 8 S-n.,false,true,false,research_only
+3346,P14,1064,71971,165022,165022,Plaza la Colmena N-s.,false,true,false,research_only
+3346,P14,1078,71989,166091,166091,Carrera 3 Calle 48 N-s.,false,true,false,research_only
+3346,P14,1088,71990,166092,166092,Colegio Vicente Azuero N-s.,false,true,false,research_only
+3346,P14,1121,72032,166133,166133,Hospital San Juan de Dios.,false,true,false,research_only
+3346,P14,1127,72033,166134,166134,Plaza de Mercado Floridablanca,false,true,false,research_only
+3346,P14,1133,72034,166135,166135,Dirrecion de Transito de Floridablanca.,false,true,false,research_only
+3346,P14,1141,72055,166154,166154,Calle 11 Carrera 8 Servientrega.,false,true,false,research_only
+3346,P14,1142,72056,166154,166154,Calle 11 Carrera 8 Servientrega.,false,true,false,research_only
+3346,P14,1143,72057,166154,166154,Calle 11 Carrera 8 Servientrega.,false,true,false,research_only
+3346,P14,1150,72058,166155,166155,Calle 205 Carrera 38A,false,true,false,research_only
+3346,P14,1151,72059,166155,166155,Calle 205 Carrera 38A,false,true,false,research_only
+3346,P14,1157,72066,166157,166157,Calle 205 Carrera 40 N-s.,false,true,false,research_only
+3346,P14,1158,72067,166157,166157,Calle 205 Carrera 40 N-s.,false,true,false,research_only
+3346,P14,1161,72073,166169,166169,Carrera 40 Calle 204B los ANDES.,false,true,false,research_only
+3346,P14,1172,72074,166156,166156,Finalización Calle 5 Limoncito.,false,true,false,research_only
+3350,RD27/RD15,1,76814,150985,150985,Inicio Portal del Valle,false,true,false,research_only
+3350,RD27/RD15,11,76815,150904,150904,Carrera 2W Calle 23 S-n,false,true,false,research_only
+3350,RD27/RD15,15,76816,150982,150982,Carrera 2W Calle 24B.,false,true,false,research_only
+3350,RD27/RD15,21,76817,150905,150905,Cisnes Sn,false,true,false,research_only
+3350,RD27/RD15,30,76835,150906,150906,Salida de los Cisnes Sn,false,true,false,research_only
+3350,RD27/RD15,38,76836,150907,150907,Condominio Hacienda San Juan Sn,false,true,false,research_only
+3350,RD27/RD15,42,76837,150908,150908,EDS Barlovento Sn,false,true,false,research_only
+3350,RD27/RD15,50,76838,170489,170489,Sede Recreacional Lomas del Viento.,false,true,false,research_only
+3350,RD27/RD15,59,76839,150909,150909,EDS el Molino del Viento Sn,false,true,false,research_only
+3350,RD27/RD15,73,76840,150910,150910,Los Troncos S-n,false,true,false,research_only
+3350,RD27/RD15,86,76841,150795,150795,Cabecera del Llano S-n,false,true,false,research_only
+3350,RD27/RD15,91,76842,150912,150912,La Normal Sn,false,true,false,research_only
+3350,RD27/RD15,97,76843,150797,150797,San francisco S-n,false,true,false,research_only
+3350,RD27/RD15,107,76844,150914,150914,San Carlos S-n,false,true,false,research_only
+3350,RD27/RD15,123,76845,150915,150915,Quinta Granada Sn,false,true,false,research_only
+3350,RD27/RD15,132,76846,150800,150800,Centro Comercial Eco centro,false,true,false,research_only
+3350,RD27/RD15,146,76847,150917,150917,Parada ICP S-n,false,true,false,research_only
+3350,RD27/RD15,165,76848,150802,150802,Puente Peatonal Españolita S-n,false,true,false,research_only
+3350,RD27/RD15,179,76849,150919,150919,Paradero Campo Alegre S-n,false,true,false,research_only
+3350,RD27/RD15,187,76850,150920,150920,Paradero Vivero Platacero Sn,false,true,false,research_only
+3350,RD27/RD15,216,76851,150921,150921,Paradero Palmichal S-n,false,true,false,research_only
+3350,RD27/RD15,234,76852,150922,150922,Paradero Menzuly S-n,false,true,false,research_only
+3350,RD27/RD15,255,76853,150807,150807,Puente Peatonal  la Estancia S-n,false,true,false,research_only
+3350,RD27/RD15,282,76854,150924,150924,Mac Pollo Sn,false,true,false,research_only
+3350,RD27/RD15,285,76855,150809,150809,EDS Aranzoque S-n,false,true,false,research_only
+3350,RD27/RD15,295,76856,150926,150926,Papi Quiero Piña Sn,false,true,false,research_only
+3350,RD27/RD15,303,76857,150927,150927,Universidad Santo Tomas Sn,false,true,false,research_only
+3350,RD27/RD15,310,76858,150928,150928,Estación Lagos Sn,false,true,false,research_only
+3350,RD27/RD15,320,76859,150813,150813,Panamericano Cañaveral paralela S-n,false,true,false,research_only
+3350,RD27/RD15,324,76860,150929,150929,Estación Cañaveral Vagón Norte s-n,false,true,false,research_only
+3350,RD27/RD15,335,76861,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3350,RD27/RD15,345,77149,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3350,RD27/RD15,356,77150,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3350,RD27/RD15,368,77151,151149,151149,Estación de Transferencia Provenza Oriental,false,true,false,research_only
+3350,RD27/RD15,380,77152,150818,150818,Miradores de San Lorenzo S-n,false,true,false,research_only
+3350,RD27/RD15,390,77153,150819,150819,Glorieta Cacique S-n,false,true,false,research_only
+3350,RD27/RD15,395,77154,150820,150820,Centro Comercial Cacique S-n,false,true,false,research_only
+3350,RD27/RD15,420,77155,150821,150821,Colegio la Merced S-n,false,true,false,research_only
+3350,RD27/RD15,426,77156,150822,150822,Clinica Bucaramanga S-n,false,true,false,research_only
+3350,RD27/RD15,432,77157,150823,150823,Gratamira S-n,false,true,false,research_only
+3350,RD27/RD15,437,77158,150824,150824,Parque San Pio S-n,false,true,false,research_only
+3350,RD27/RD15,441,77159,150825,150825,Carrera 33 calle 42 S-n,false,true,false,research_only
+3350,RD27/RD15,446,77160,150826,150826,Carrera 33 calle 38 S-n,false,true,false,research_only
+3350,RD27/RD15,452,77161,150827,150827,Carrera 33 calle 34 S-n,false,true,false,research_only
+3350,RD27/RD15,456,77162,150828,150828,plaza Guarín S-n,false,true,false,research_only
+3350,RD27/RD15,461,77163,150829,150829,UCC,false,true,false,research_only
+3350,RD27/RD15,466,77164,150830,150830,Carrera 32 Calle 19 S-n,false,true,false,research_only
+3350,RD27/RD15,472,77165,150831,150831,Carrera 32 Calle 14 S-n,false,true,false,research_only
+3350,RD27/RD15,477,77166,150832,150832,Velódromo S-n,false,true,false,research_only
+3350,RD27/RD15,488,77167,150833,150833,Estadio Américo Montanini S-n,false,true,false,research_only
+3350,RD27/RD15,493,77168,163549,163549,Parada Colegio Tecnológico.,false,true,false,research_only
+3350,RD27/RD15,527,77169,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3350,RD27/RD15,528,42231,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3350,RD27/RD15,542,42232,150944,150944,Carrera 26 Calle 13 Ns,false,true,false,research_only
+3350,RD27/RD15,548,42233,150945,150945,Boulevar Santander Carrera 22 Ns,false,true,false,research_only
+3350,RD27/RD15,565,42234,150946,150946,Boulevar Santander carreras 17-18,false,true,false,research_only
+3350,RD27/RD15,583,42235,151155,151155,Estación Quebradaseca N-s,false,true,false,research_only
+3350,RD27/RD15,588,42236,150948,150948,Estación San Mateo Ns,false,true,false,research_only
+3350,RD27/RD15,592,42237,150949,150949,Estación Chorreras Ns,false,true,false,research_only
+3350,RD27/RD15,602,42238,150950,150950,la Rosita Centro Comercial Ns,false,true,false,research_only
+3350,RD27/RD15,608,42239,150951,150951,Diagonal 15 Avenida la Rosita,false,true,false,research_only
+3350,RD27/RD15,617,42240,150952,150952,Estación la Isla,false,true,false,research_only
+3350,RD27/RD15,620,42241,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3350,RD27/RD15,637,42242,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3350,RD27/RD15,648,42243,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3350,RD27/RD15,671,42244,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3350,RD27/RD15,691,42245,150957,150957,Payador N-s,false,true,false,research_only
+3350,RD27/RD15,697,42246,150958,150958,Puente Peatonal Hormigueros Occidental N-s,false,true,false,research_only
+3350,RD27/RD15,705,42247,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3350,RD27/RD15,719,42248,150960,150960,Estación Cañaveral N-s,false,true,false,research_only
+3350,RD27/RD15,726,42249,150961,150961,Estación Lagos N-s,false,true,false,research_only
+3350,RD27/RD15,730,42250,150962,150962,Estación la Riviera,false,true,false,research_only
+3350,RD27/RD15,735,42251,150963,150963,Papi Quiero Piña N-s,false,true,false,research_only
+3350,RD27/RD15,742,42252,150964,150964,EDS el Tigger N-s,false,true,false,research_only
+3350,RD27/RD15,746,42253,150965,150965,Mac Pollo N-s,false,true,false,research_only
+3350,RD27/RD15,770,42254,150966,150966,Estación la Estancia N-s,false,true,false,research_only
+3350,RD27/RD15,790,42255,150967,150967,Estación Menzuly N-s,false,true,false,research_only
+3350,RD27/RD15,811,42256,150876,150876,Puente Peatonal  Palmichal N-s,false,true,false,research_only
+3350,RD27/RD15,838,42257,150969,150969,Pretecor N-s,false,true,false,research_only
+3350,RD27/RD15,845,42258,150970,150970,Estación Campo Alegre N-s,false,true,false,research_only
+3350,RD27/RD15,858,42259,150971,150971,Estación Españolita N-s,false,true,false,research_only
+3350,RD27/RD15,887,42260,150972,150972,Portal de Piedecuesta,false,true,false,research_only
+3350,RD27/RD15,900,42261,150973,150973,San Carlos N-s,false,true,false,research_only
+3350,RD27/RD15,903,42262,150974,150974,San Francisco N-s,false,true,false,research_only
+3350,RD27/RD15,918,42263,150975,150975,San Luis N-s,false,true,false,research_only
+3350,RD27/RD15,922,42264,150976,150976,Puerto Madero N-s,false,true,false,research_only
+3350,RD27/RD15,928,42265,150977,150977,Cabecera del llano N-s,false,true,false,research_only
+3350,RD27/RD15,953,42266,150978,150978,EDS el Molino N-s,false,true,false,research_only
+3350,RD27/RD15,969,42267,150979,150979,Lomas del Viento N-s,false,true,false,research_only
+3350,RD27/RD15,983,42268,150980,150980,EDS Barlovento N-s,false,true,false,research_only
+3350,RD27/RD15,993,42269,150981,150981,Condominio Hacienda San Miguel N-s,false,true,false,research_only
+3350,RD27/RD15,1030,42270,150982,150982,Carrera 2W Calle 24B.,false,true,false,research_only
+3350,RD27/RD15,1033,42271,150983,150983,Carrera 2W Calle 24 N-s,false,true,false,research_only
+3350,RD27/RD15,1047,42272,150984,150984,Fin Portal del Valle,false,true,false,research_only
+3351,P1,1,76780,170504,170504,Inicio CENDAS.,false,true,false,research_only
+3351,P1,8,76783,170505,170505,Carrera 54 Calle 141.,false,true,false,research_only
+3351,P1,12,76790,170512,170512,Calle 142 Carrera 55,false,true,false,research_only
+3351,P1,18,76795,170516,170516,Parque de la Familia - CENDAS.,false,true,false,research_only
+3351,P1,25,77341,170530,170530,Carrera 9E Calle 33.,false,true,false,research_only
+3351,P1,36,77354,171017,171017,Calle 30 Carrera 7E,false,true,false,research_only
+3351,P1,42,77361,171023,171023,Calle 30 Carrera 5E,false,true,false,research_only
+3351,P1,50,77370,171031,171031,Calle 30 Carrera 3E,false,true,false,research_only
+3351,P1,65,77371,171032,171032,La HACIENDA S-n,false,true,false,research_only
+3351,P1,75,77396,171056,171056,Carrera 3 calle 15 S-n,false,true,false,research_only
+3351,P1,85,77397,171057,171057,Carrera 3 Calle 13 S-n.,false,true,false,research_only
+3351,P1,92,77398,171058,171058,Calle 11 Carrera 5,false,true,false,research_only
+3351,P1,103,77399,171059,171059,Plaza de Mercado SANTANA.,false,true,false,research_only
+3351,P1,114,77436,171095,171095,Calle 4 Carrera 10 S-n,false,true,false,research_only
+3351,P1,134,77457,171115,171115,Puente Peatonal la GALLERA.,false,true,false,research_only
+3351,P1,162,77458,171116,171116,Puente Peatonal la CASTELLANA S-n,false,true,false,research_only
+3351,P1,171,77459,171117,171117,Calle 114 Carrera 28 NIZA,false,true,false,research_only
+3351,P1,182,77495,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3351,P1,200,77496,150934,150934,Antonia Santos,false,true,false,research_only
+3351,P1,218,77497,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3351,P1,224,77498,151150,151150,Diagonal 15 calle 55 S-n,false,true,false,research_only
+3351,P1,233,77499,150950,150950,la Rosita Centro Comercial Ns,false,true,false,research_only
+3351,P1,241,77565,151152,151152,Estación Chorreras S-n,false,true,false,research_only
+3351,P1,244,77566,151003,151003,Estacion San mateo S-n,false,true,false,research_only
+3351,P1,249,77567,151154,151154,Estación Quebradaseca S-n,false,true,false,research_only
+3351,P1,250,77574,151155,151155,Estación Quebradaseca N-s,false,true,false,research_only
+3351,P1,254,77575,151156,151156,Estación San Mateo N-s,false,true,false,research_only
+3351,P1,258,77576,150949,150949,Estación Chorreras Ns,false,true,false,research_only
+3351,P1,267,77577,150950,150950,la Rosita Centro Comercial Ns,false,true,false,research_only
+3351,P1,274,77578,150951,150951,Diagonal 15 Avenida la Rosita,false,true,false,research_only
+3351,P1,278,77579,151272,151272,Calle 56 Diagonal 15 S-n.,false,true,false,research_only
+3351,P1,281,77580,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3351,P1,296,77581,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3351,P1,303,77582,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3351,P1,320,77583,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3351,P1,340,77663,171301,171301,Diagonal 105 Transversal 29,false,true,false,research_only
+3351,P1,344,77664,171302,171302,Plaza Satélite.,false,true,false,research_only
+3351,P1,350,77665,171303,171303,Carrera 33 Calle 109 N-s.,false,true,false,research_only
+3351,P1,366,77666,171304,171304,CAI NIZA,false,true,false,research_only
+3351,P1,378,77667,171305,171305,Puente Peatonal la CASTELLANA N-s.,false,true,false,research_only
+3351,P1,395,77668,171306,171306,Puente Peatonal la GALLERA N-s.,false,true,false,research_only
+3351,P1,410,77669,171307,171307,Casetas de Villabel.,false,true,false,research_only
+3351,P1,414,77670,171308,171308,Calle 4 Carrera 10 N-s.,false,true,false,research_only
+3351,P1,421,77671,171309,171309,Plaza de Mercado SANTANA N-s.,false,true,false,research_only
+3351,P1,431,77672,171310,171310,Calle 8 Carrera 4,false,true,false,research_only
+3351,P1,437,77673,171311,171311,Carrera 3 Calle 13 N-s.,false,true,false,research_only
+3351,P1,446,77674,171312,171312,Carrera 3 Calle 15 N-s,false,true,false,research_only
+3351,P1,455,77675,171313,171313,LA HACIENDA,false,true,false,research_only
+3351,P1,467,77676,171314,171314,Calle 30 Carrera 1.,false,true,false,research_only
+3351,P1,474,77677,171315,171315,Calle 29A Carrera 3E.,false,true,false,research_only
+3351,P1,479,77678,171316,171316,Calle 28 Carrera 5E.,false,true,false,research_only
+3351,P1,484,77809,171446,171446,Calle 28 Carrera 7E.,false,true,false,research_only
+3351,P1,488,77810,171447,171447,Calle 28 Carrera 8AE,false,true,false,research_only
+3351,P1,492,77811,171448,171448,Carrera 9E Calle 30,false,true,false,research_only
+3351,P1,496,77812,171449,171449,Calle 31 Carrera 9E N-s.,false,true,false,research_only
+3351,P1,502,77813,170516,170516,Parque de la Familia - CENDAS.,false,true,false,research_only
+3351,P1,508,77814,171451,171451,Carrera 54 Calle 142 N-s,false,true,false,research_only
+3351,P1,513,77815,171452,171452,Fin Estacion CENDAS.,false,true,false,research_only
+3352,P2,1,77840,171447,171447,Calle 28 Carrera 8AE,false,true,false,research_only
+3352,P2,5,77841,171448,171448,Carrera 9E Calle 30,false,true,false,research_only
+3352,P2,9,77842,171449,171449,Calle 31 Carrera 9E N-s.,false,true,false,research_only
+3352,P2,13,77849,171483,171483,Carrera 11E Calle 30A,false,true,false,research_only
+3352,P2,20,77860,171493,171493,Calle 30 Carrera 9E N-s.,false,true,false,research_only
+3352,P2,25,77861,171017,171017,Calle 30 Carrera 7E,false,true,false,research_only
+3352,P2,33,77862,171023,171023,Calle 30 Carrera 5E,false,true,false,research_only
+3352,P2,42,77863,171031,171031,Calle 30 Carrera 3E,false,true,false,research_only
+3352,P2,55,77864,171032,171032,La HACIENDA S-n,false,true,false,research_only
+3352,P2,66,77865,171056,171056,Carrera 3 calle 15 S-n,false,true,false,research_only
+3352,P2,69,77866,171312,171312,Carrera 3 Calle 15 N-s,false,true,false,research_only
+3352,P2,78,77867,171057,171057,Carrera 3 Calle 13 S-n.,false,true,false,research_only
+3352,P2,86,77921,171058,171058,Calle 11 Carrera 5,false,true,false,research_only
+3352,P2,100,77922,171059,171059,Plaza de Mercado SANTANA.,false,true,false,research_only
+3352,P2,109,77923,171095,171095,Calle 4 Carrera 10 S-n,false,true,false,research_only
+3352,P2,123,77958,171581,171581,Carrera 11 Calle 11 S-n.,false,true,false,research_only
+3352,P2,130,77959,171582,171582,Carrera 12 Calle 12. S-n.,false,true,false,research_only
+3352,P2,136,77979,171601,171601,Carrera 12 Calle 16 S-n.,false,true,false,research_only
+3352,P2,142,77986,171608,171608,Carrera 12 Calle 19 S-n.,false,true,false,research_only
+3352,P2,147,77987,171602,171602,Carrera 12 Calle 23 S.n,false,true,false,research_only
+3352,P2,155,77988,165026,165026,Carrera 12 Calle 27 S-n.,false,true,false,research_only
+3352,P2,173,78001,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3352,P2,181,78002,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3352,P2,188,78003,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3352,P2,200,78004,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3352,P2,213,78005,150934,150934,Antonia Santos,false,true,false,research_only
+3352,P2,226,78006,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3352,P2,233,78078,171691,171691,Carrera 21 Calle 54 S-n.,false,true,false,research_only
+3352,P2,236,78079,163634,163634,Parada Parque TURBAY N-s.,false,true,false,research_only
+3352,P2,237,78084,163634,163634,Parada Parque TURBAY N-s.,false,true,false,research_only
+3352,P2,240,78085,171696,171696,Parque la CONCORDIA.,false,true,false,research_only
+3352,P2,252,78086,171698,171698,Carrera 21 Calle 37,false,true,false,research_only
+3352,P2,258,78087,171699,171699,Carrera 21 Calle 34.,false,true,false,research_only
+3352,P2,263,78088,171700,171700,Parque ANTONIA SANTOS.,false,true,false,research_only
+3352,P2,268,78089,171702,171702,Carrera 21 Calle 28.,false,true,false,research_only
+3352,P2,275,78090,171701,171701,Carrera 21 Calle 20.,false,true,false,research_only
+3352,P2,294,78091,171703,171703,Carrera 21 Calle 15.,false,true,false,research_only
+3352,P2,305,78150,150838,150838,Calle 11 carrera 23 S-n,false,true,false,research_only
+3352,P2,315,78151,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3352,P2,316,78164,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3352,P2,332,78165,150944,150944,Carrera 26 Calle 13 Ns,false,true,false,research_only
+3352,P2,341,78166,150945,150945,Boulevar Santander Carrera 22 Ns,false,true,false,research_only
+3352,P2,351,78198,171804,171804,Carrera 22 Calle 22.,false,true,false,research_only
+3352,P2,360,78199,171805,171805,Parque ANTONIA SANTOS N-s.,false,true,false,research_only
+3352,P2,366,78200,171806,171806,Carrera 22 calle 34.,false,true,false,research_only
+3352,P2,373,78201,171807,171807,Carrera 22 Calle 39.,false,true,false,research_only
+3352,P2,377,78202,171808,171808,Carrera 22 calle 45.,false,true,false,research_only
+3352,P2,382,78203,171809,171809,Parque la CONCORDIA N-s.,false,true,false,research_only
+3352,P2,390,78204,171810,171810,Carrera 22 Calle 53.,false,true,false,research_only
+3352,P2,394,78245,171850,171850,Carrera 22 Calle 55,false,true,false,research_only
+3352,P2,400,78246,164650,164650,Conucos N-s.,false,true,false,research_only
+3352,P2,421,78247,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3352,P2,443,78248,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3352,P2,460,78295,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3352,P2,470,78296,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3352,P2,480,78297,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3352,P2,491,78298,166038,166038,Centro Comercial Cañaveral,false,true,false,research_only
+3352,P2,508,78299,166054,166054,Centro Comercial Parque Caracolí,false,true,false,research_only
+3352,P2,514,78365,171961,171961,Carrera 12 calle 22 N-s.,false,true,false,research_only
+3352,P2,517,78370,171965,171965,Carrera 12 calle 19 N-s.,false,true,false,research_only
+3352,P2,525,78371,171966,171966,Plaza de Mercado VILLABEL N-s.,false,true,false,research_only
+3352,P2,533,78372,171967,171967,Carrera 11 Calle 8 N-s.,false,true,false,research_only
+3352,P2,543,78373,171968,171968,Estación de Bombeo Amb N-s.,false,true,false,research_only
+3352,P2,551,78374,171308,171308,Calle 4 Carrera 10 N-s.,false,true,false,research_only
+3352,P2,562,78375,171309,171309,Plaza de Mercado SANTANA N-s.,false,true,false,research_only
+3352,P2,574,78376,171310,171310,Calle 8 Carrera 4,false,true,false,research_only
+3352,P2,580,78377,171311,171311,Carrera 3 Calle 13 N-s.,false,true,false,research_only
+3352,P2,589,78378,171312,171312,Carrera 3 Calle 15 N-s,false,true,false,research_only
+3352,P2,600,78379,171313,171313,LA HACIENDA,false,true,false,research_only
+3352,P2,614,78380,171314,171314,Calle 30 Carrera 1.,false,true,false,research_only
+3352,P2,622,78381,171315,171315,Calle 29A Carrera 3E.,false,true,false,research_only
+3352,P2,627,78382,171316,171316,Calle 28 Carrera 5E.,false,true,false,research_only
+3352,P2,633,78383,171446,171446,Calle 28 Carrera 7E.,false,true,false,research_only
+3353,P3,1,78487,172072,172072,Estacion Barrio CARACOLI. ,false,true,false,research_only
+3353,P3,13,78488,172073,172073,Calle 8 Carrera 6.,false,true,false,research_only
+3353,P3,17,78489,172074,172074,Carrera 7 Calle 5 S-n.,false,true,false,research_only
+3353,P3,24,78490,172075,172075,Sector 18 S-n.,false,true,false,research_only
+3353,P3,28,78491,172076,172076,Sector 19 S-n.,false,true,false,research_only
+3353,P3,36,78492,172077,172077,Mercomfenalco BUCARICA.,false,true,false,research_only
+3353,P3,41,78493,172078,172078,Sector 10-10 S-n.,false,true,false,research_only
+3353,P3,48,78494,172079,172079,Cancha BUCARICA.,false,true,false,research_only
+3353,P3,52,78495,172080,172080,Sector 3-3 S-n.,false,true,false,research_only
+3353,P3,69,78496,165019,165019,Colegio Vicente Azuero S-n,false,true,false,research_only
+3353,P3,85,78497,165020,165020,Calle 41 Carrera 4 S-n.,false,true,false,research_only
+3353,P3,91,78498,165021,165021,Calle 39 Carrera 5 Plaza la Colmena S-n.,false,true,false,research_only
+3353,P3,99,78499,165123,165123,Iglesia Santamaria de Los Lagos. S-n.,false,true,false,research_only
+3353,P3,105,78500,165136,165136,Kr 29 Cl 8 S-n.,false,true,false,research_only
+3353,P3,106,78501,165024,165024,Parque Acualago S-n.,false,true,false,research_only
+3353,P3,110,78502,165025,165025,Supermercado La Canasta.,false,true,false,research_only
+3353,P3,117,78503,165026,165026,Carrera 12 Calle 27 S-n.,false,true,false,research_only
+3353,P3,135,78604,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3353,P3,145,78605,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3353,P3,152,78606,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3353,P3,162,78607,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3353,P3,175,78608,150934,150934,Antonia Santos,false,true,false,research_only
+3353,P3,191,78609,150935,150935,Conucos S-n,false,true,false,research_only
+3353,P3,201,78610,150936,150936,Carrera 27 Calle 55 Sn,false,true,false,research_only
+3353,P3,208,78611,150937,150937,Parque Turbay Sn,false,true,false,research_only
+3353,P3,217,78612,150938,150938,Carrera 27 Calle 37 Sn,false,true,false,research_only
+3353,P3,228,78613,150939,150939,Decoriente Sn,false,true,false,research_only
+3353,P3,249,78614,150940,150940,Carrera 27 Calle 19 Sn,false,true,false,research_only
+3353,P3,255,78615,150941,150941,Sena Sn,false,true,false,research_only
+3353,P3,259,78616,150942,150942,Carrera 27 Calle 11 Sn,false,true,false,research_only
+3353,P3,277,78617,150834,150834,Calle 9 Carrera 23,false,true,false,research_only
+3353,P3,285,78618,150835,150835,Iglesia Cristo Rey,false,true,false,research_only
+3353,P3,289,78619,150836,150836,Calle 11 carrera 18 S-n,false,true,false,research_only
+3353,P3,295,78620,150837,150837,Calle 11 Carrera 20 S-n,false,true,false,research_only
+3353,P3,301,78621,150838,150838,Calle 11 carrera 23 S-n,false,true,false,research_only
+3353,P3,310,78622,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3353,P3,311,78797,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3353,P3,328,78798,159204,159204,Parada SENA N-s.,false,true,false,research_only
+3353,P3,333,78799,163601,163601,Parada Carrera 27 Calle 19 N-s.,false,true,false,research_only
+3353,P3,352,78800,155754,155754,Parque de los Niños,false,true,false,research_only
+3353,P3,356,78801,163623,163623,Parada Carrera 27 Calle 34 N-s,false,true,false,research_only
+3353,P3,365,78802,163624,163624,Parada Carrera 27 Calle 37. ,false,true,false,research_only
+3353,P3,375,78803,163634,163634,Parada Parque TURBAY N-s.,false,true,false,research_only
+3353,P3,382,78804,163642,163642,Parada Carrera 27 Calle 55 N-s.,false,true,false,research_only
+3353,P3,389,78875,164650,164650,Conucos N-s.,false,true,false,research_only
+3353,P3,420,78876,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3353,P3,434,78877,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3353,P3,457,78878,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3353,P3,485,78879,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3353,P3,492,78880,150865,150865,Puente Peatonal  Hormigueros N-s,false,true,false,research_only
+3353,P3,503,78881,150959,150959,Puente Peatonal Molinos Occidental N-s,false,true,false,research_only
+3353,P3,517,78882,166038,166038,Centro Comercial Cañaveral,false,true,false,research_only
+3353,P3,541,79017,166054,166054,Centro Comercial Parque Caracolí,false,true,false,research_only
+3353,P3,550,79018,166061,166061,Parque Acualago N-s.,false,true,false,research_only
+3353,P3,562,79019,165022,165022,Plaza la Colmena N-s.,false,true,false,research_only
+3353,P3,580,79020,166091,166091,Carrera 3 Calle 48 N-s.,false,true,false,research_only
+3353,P3,595,79021,166092,166092,Colegio Vicente Azuero N-s.,false,true,false,research_only
+3353,P3,606,79094,172628,172628,Sector 3-2 N-s.,false,true,false,research_only
+3353,P3,610,79095,172629,172629,Sector 6-5 N-s.,false,true,false,research_only
+3353,P3,617,79096,172630,172630,Sector 13-3 N-s.,false,true,false,research_only
+3353,P3,626,79097,172631,172631,Sede Bomberos de Floridablanca.,false,true,false,research_only
+3353,P3,634,79098,172632,172632,Sector 21-9 N-s.,false,true,false,research_only
+3353,P3,640,79099,172633,172633,Carrera 6 Calle 5 N-s.,false,true,false,research_only
+3353,P3,649,79100,172634,172634,Calle 7A Carrera 5 N-s.,false,true,false,research_only
+3353,P3,658,79101,172072,172072,Estacion Barrio CARACOLI. ,false,true,false,research_only
+3354,P10,1,79149,172682,172682,Inicio Avenida 60 calle 142.,false,true,false,research_only
+3354,P10,5,79150,172683,172683,Iglesia el CARMEN.,false,true,false,research_only
+3354,P10,6,79151,172683,172683,Iglesia el CARMEN.,false,true,false,research_only
+3354,P10,9,79152,172684,172684,Avenida 60  Calle 46 S-n.,false,true,false,research_only
+3354,P10,16,79153,172685,172685,Carrera 8 calle 49.,false,true,false,research_only
+3354,P10,21,79154,172686,172686,Calle 50 Carrera 9,false,true,false,research_only
+3354,P10,29,79155,172687,172687,Plaza de Mercado VILLALUZ.,false,true,false,research_only
+3354,P10,43,79156,172688,172688,Calle 53 Carrera 15A.,false,true,false,research_only
+3354,P10,47,79157,172689,172689,Calle 53 Carrera 13.,false,true,false,research_only
+3354,P10,52,79158,172690,172690,Carrera 13 Calle 55A.,false,true,false,research_only
+3354,P10,54,79159,172690,172690,Carrera 13 Calle 55A.,false,true,false,research_only
+3354,P10,62,79203,172734,172734,Calle 53 Carrera 13  Cancha ALARES,false,true,false,research_only
+3354,P10,67,79204,172735,172735,Calle 58 Carrera 14A.,false,true,false,research_only
+3354,P10,72,79205,172736,172736,Carrera 15 Calle 57.,false,true,false,research_only
+3354,P10,76,79206,172737,172737,Carrera 15 Calle 57A.,false,true,false,research_only
+3354,P10,90,79207,172738,172738,Carrera 15A Calle 57.,false,true,false,research_only
+3354,P10,101,79208,172739,172739,SANTA HELENA DE LA SIERRA.,false,true,false,research_only
+3354,P10,114,79209,172740,172740,Calle 59 Carrera 18A.,false,true,false,research_only
+3354,P10,120,79210,172741,172741,Carrera 20 Calle 107 CAMPANAZO.,false,true,false,research_only
+3354,P10,126,79211,172742,172742,SAN BERNARDO.,false,true,false,research_only
+3354,P10,152,79212,172743,172743,Calle 107 Carrera 37.,false,true,false,research_only
+3354,P10,159,79213,172744,172744,Carrera 37 Calle 119 S-n.,false,true,false,research_only
+3354,P10,166,79214,172745,172745,Virgen la CASTELLANA S-n.,false,true,false,research_only
+3354,P10,174,79215,172747,172747,Iglesia LA INMACULADA. S-n.,false,true,false,research_only
+3354,P10,183,79332,172864,172864,Plaza Satélite S-n,false,true,false,research_only
+3354,P10,187,79333,172865,172865,Transversal 29 Diagonal 105.,false,true,false,research_only
+3354,P10,201,79334,151099,151099,Calle 105 Carrera 25 S-n,false,true,false,research_only
+3354,P10,228,79335,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3354,P10,237,79336,151098,151098,Conjunto Residencial Moravia,false,true,false,research_only
+3354,P10,249,79337,151100,151100,Parada MasxMenos,false,true,false,research_only
+3354,P10,255,79338,151101,151101,Calle 105 Carrera 21 S-n,false,true,false,research_only
+3354,P10,270,79339,151102,151102,Colegio INEM S-n,false,true,false,research_only
+3354,P10,274,79423,151103,151103,Colegio Divino Niño S-n,false,true,false,research_only
+3354,P10,282,79424,151104,151104,Transversal Metropolitana Calle 104C S-n,false,true,false,research_only
+3354,P10,293,79425,151105,151105,Transversal Metropolitana Calle 103B S-n,false,true,false,research_only
+3354,P10,308,79426,151106,151106,Transversal Metropolitana Carrera 14 Venecia S-n,false,true,false,research_only
+3354,P10,316,79427,151107,151107,Transversal Metropolitana Carrera 13A S-n,false,true,false,research_only
+3354,P10,331,79428,151108,151108,Terminal de Transportes de Bucaramanga S-n,false,true,false,research_only
+3354,P10,348,79429,151109,151109,Puente el Bueno,false,true,false,research_only
+3354,P10,390,79430,151110,151110,Barrio Bucaramanga S-n,false,true,false,research_only
+3354,P10,400,79431,151111,151111,Calle 65 Carrera 7 S-n,false,true,false,research_only
+3354,P10,424,79432,151113,151113,Calle 61 Carrera 1 Occidente S-n,false,true,false,research_only
+3354,P10,442,79433,151114,151114,Carrera 2 Occidente Calle 64 S-n,false,true,false,research_only
+3354,P10,449,79434,151115,151115,Carrera 2 Occidente Calle 57 S-n,false,true,false,research_only
+3354,P10,456,79435,151116,151116,Calle 55 carrera 1 Occidente S-n,false,true,false,research_only
+3354,P10,464,79436,151117,151117,Calle 55 Carrera 3 S-n,false,true,false,research_only
+3354,P10,468,79437,151118,151118,Calle 55 Carrera 6  S-n,false,true,false,research_only
+3354,P10,484,79438,151119,151119,Calle 61 Carrera 7 S-n,false,true,false,research_only
+3354,P10,504,79439,151120,151120,Centro Comercial Acropolis Calle 56 Diagonal 14 S-n,false,true,false,research_only
+3354,P10,516,79440,151121,151121,Carrera 15 Calle 55 S-n,false,true,false,research_only
+3354,P10,523,79441,151122,151122,Carrera 17 Calle 55 S-n,false,true,false,research_only
+3354,P10,529,79682,173189,173189,Iglesia PERPETO SOCORRO.,false,true,false,research_only
+3354,P10,530,79683,173189,173189,Iglesia PERPETO SOCORRO.,false,true,false,research_only
+3354,P10,531,79684,173189,173189,Iglesia PERPETO SOCORRO.,false,true,false,research_only
+3354,P10,532,79685,173189,173189,Iglesia PERPETO SOCORRO.,false,true,false,research_only
+3354,P10,541,79686,151001,151001,Puente Peatonal la Rosita S-n,false,true,false,research_only
+3354,P10,551,79687,151152,151152,Estación Chorreras S-n,false,true,false,research_only
+3354,P10,554,79688,151003,151003,Estacion San mateo S-n,false,true,false,research_only
+3354,P10,559,79689,151154,151154,Estación Quebradaseca S-n,false,true,false,research_only
+3354,P10,575,79690,151289,151289,Carrera 15 Calle 22 S-n,false,true,false,research_only
+3354,P10,579,79691,151287,151287,Carrera 15 Calle 18 S-n,false,true,false,research_only
+3354,P10,584,79692,151285,151285,Carrera 15 Calle 15 S-n,false,true,false,research_only
+3354,P10,588,79693,151282,151282,Carrera 15 Calle 11 S-n,false,true,false,research_only
+3354,P10,597,79694,150836,150836,Calle 11 carrera 18 S-n,false,true,false,research_only
+3354,P10,601,79695,150837,150837,Calle 11 Carrera 20 S-n,false,true,false,research_only
+3354,P10,607,79696,150838,150838,Calle 11 carrera 23 S-n,false,true,false,research_only
+3354,P10,630,79697,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3354,P10,631,79947,150839,150839,Transferencia Parque Estación UIS,false,true,false,research_only
+3354,P10,663,79948,154170,154170,Calle 10 Carrera 23,false,true,false,research_only
+3354,P10,672,79949,150835,150835,Iglesia Cristo Rey,false,true,false,research_only
+3354,P10,678,79950,154171,154171,Colegio Bethlemitas,false,true,false,research_only
+3354,P10,688,79951,151283,151283,Carrera 15 Calle 13 N-s,false,true,false,research_only
+3354,P10,694,79952,151284,151284,Carrera 15 calle 16 N-s,false,true,false,research_only
+3354,P10,700,79953,151286,151286,Carrera 15 calle 19 N-s,false,true,false,research_only
+3354,P10,706,79954,151288,151288,Carrera 15 Calle 21 N-s,false,true,false,research_only
+3354,P10,729,79955,151155,151155,Estación Quebradaseca N-s,false,true,false,research_only
+3354,P10,736,79956,151156,151156,Estación San Mateo N-s,false,true,false,research_only
+3354,P10,742,79957,151157,151157,Estación chorreras N-s,false,true,false,research_only
+3354,P10,756,79958,150950,150950,la Rosita Centro Comercial Ns,false,true,false,research_only
+3354,P10,766,79959,150951,150951,Diagonal 15 Avenida la Rosita,false,true,false,research_only
+3354,P10,778,80095,173774,173774,Carrera 17 calle 51A.,false,true,false,research_only
+3354,P10,786,80096,151124,151124,Calle 56 Carrera 15 N-s.,false,true,false,research_only
+3354,P10,792,80338,151125,151125,Calle 56 Carrera 14 Macaregua,false,true,false,research_only
+3354,P10,797,80339,151126,151126,Unidades Tecnológicas de Santander,false,true,false,research_only
+3354,P10,813,80340,151127,151127,Calle 57 Carrera 7 N-s,false,true,false,research_only
+3354,P10,824,80341,151128,151128,Calle 57 Carrera 3 N-s,false,true,false,research_only
+3354,P10,829,80342,151129,151129,Calle 55 Carrera 3 N-s,false,true,false,research_only
+3354,P10,856,80343,151130,151130,Balconcitos,false,true,false,research_only
+3354,P10,867,80344,151131,151131,Carrera 2 Occidente Calle 55A N-s,false,true,false,research_only
+3354,P10,871,80345,151132,151132,Recrear el Mutis,false,true,false,research_only
+3354,P10,875,80346,151133,151133,Carrera 2 Occidente Calle 60 Iglesia Consolata,false,true,false,research_only
+3354,P10,881,80347,151134,151134,Carrera 2W Calle 63 N-s,false,true,false,research_only
+3354,P10,893,80348,151135,151135,Carrera 10 Calle 64 Cancha el Bueno,false,true,false,research_only
+3354,P10,909,80349,151136,151136,Calle 65 carrera 3 N-s,false,true,false,research_only
+3354,P10,914,80350,151137,151137,Plaza de Mercado Campesino,false,true,false,research_only
+3354,P10,960,80351,151138,151138,Parada Puente el Bueno N-s,false,true,false,research_only
+3354,P10,974,80352,151139,151139,Terminal de Transportes N-s,false,true,false,research_only
+3354,P10,991,80353,151140,151140,Bomba San Fermín N-s,false,true,false,research_only
+3354,P10,1000,80354,151141,151141,Transversal Metropolitana Calle 103 N-s,false,true,false,research_only
+3354,P10,1009,80355,151142,151142,Transversal Metropolitana Calle 104A,false,true,false,research_only
+3354,P10,1013,80356,151143,151143,Colegio Divino Niño N-s,false,true,false,research_only
+3354,P10,1016,80357,151144,151144,Colegio INEM N-s,false,true,false,research_only
+3354,P10,1028,80358,151145,151145,Calle 105 Carrera 20 N-s,false,true,false,research_only
+3354,P10,1032,80359,151146,151146,Calle 105 carrera 22 N-s,false,true,false,research_only
+3354,P10,1036,80360,151147,151147,Parroquia Cristo Resucitado,false,true,false,research_only
+3354,P10,1043,80361,151148,151148,Calle 105 Carrera 25 N-s,false,true,false,research_only
+3354,P10,1055,80362,171301,171301,Diagonal 105 Transversal 29,false,true,false,research_only
+3354,P10,1058,80363,171302,171302,Plaza Satélite.,false,true,false,research_only
+3354,P10,1063,80364,171303,171303,Carrera 33 Calle 109 N-s.,false,true,false,research_only
+3354,P10,1070,80365,172747,172747,Iglesia LA INMACULADA. S-n.,false,true,false,research_only
+3354,P10,1081,80366,174693,174693,"VIRGEN DE LA CASTELLANA N-s,",false,true,false,research_only
+3354,P10,1088,80367,174694,174694,Colegio ISIDRO CABALLERO.,false,true,false,research_only
+3354,P10,1097,80368,174695,174695,Calle 107 Carrera 39.,false,true,false,research_only
+3354,P10,1120,80369,174696,174696,SAN BERNARDO N-s.,false,true,false,research_only
+3354,P10,1132,80370,174698,174698,Calle 59 Carrera 18A N-s.,false,true,false,research_only
+3354,P10,1144,80371,174699,174699,SANTA HELENA DE LA SIERRA N-s.,false,true,false,research_only
+3354,P10,1156,80372,172738,172738,Carrera 15A Calle 57.,false,true,false,research_only
+3354,P10,1175,80373,174701,174701,Carrera 16 Calle 56 N-s.,false,true,false,research_only
+3354,P10,1183,80374,174702,174702,Carrera 14 Calle 58 N-s.,false,true,false,research_only
+3354,P10,1189,80375,174703,174703,Cancha ALARES N-s.,false,true,false,research_only
+3354,P10,1200,80376,172689,172689,Calle 53 Carrera 13.,false,true,false,research_only
+3354,P10,1203,80377,172688,172688,Calle 53 Carrera 15A.,false,true,false,research_only
+3354,P10,1215,80378,174704,174704,Calle 51 Carrera 12 N-s.,false,true,false,research_only
+3354,P10,1226,80379,174705,174705,Carrera 8 Calle 49 N-s.,false,true,false,research_only
+3354,P10,1232,80380,172685,172685,Carrera 8 calle 49.,false,true,false,research_only
+3354,P10,1237,80381,174706,174706,CAI EL CARMEN.,false,true,false,research_only
+3354,P10,1244,80382,174707,174707,Puente Peatonal COLEGIO EL CARMEN.,false,true,false,research_only
+3354,P10,1250,80383,174708,174708,Avenida 60 Calle 139.,false,true,false,research_only
+3355,P18,1,80802,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3355,P18,13,80803,150818,150818,Miradores de San Lorenzo S-n,false,true,false,research_only
+3355,P18,27,80804,175129,175129,CACIQUE CONDOMINIO.,false,true,false,research_only
+3355,P18,37,80805,175130,175130,LA GRANJITA.,false,true,false,research_only
+3355,P18,55,80806,175131,175131,"""Y"" entrada cementerio LAS COLINAS.",false,true,false,research_only
+3355,P18,66,80807,175132,175132,Carrera 45 Calle 64.,false,true,false,research_only
+3355,P18,70,80868,175133,175133,Calle 62 Carrera 45.,false,true,false,research_only
+3355,P18,76,80869,175134,175134,Calle 56 Carrera 46 S-n.,false,true,false,research_only
+3355,P18,117,80870,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,118,80871,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,119,80872,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,120,80873,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,121,80874,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,130,80923,175244,175244,Carrera 50 Calle 54.,false,true,false,research_only
+3355,P18,138,80924,175245,175245,Carrera 50 Calle 53.,false,true,false,research_only
+3355,P18,162,80925,175246,175246,Carrera 51 Calle 50 LOS CEDROS.,false,true,false,research_only
+3355,P18,169,80926,175247,175247,Carrera 55 Calle 50.,false,true,false,research_only
+3355,P18,179,80927,175248,175248,Carrera 55 Calle 51.,false,true,false,research_only
+3355,P18,187,80928,175249,175249,Carrera 54 Calle 52.,false,true,false,research_only
+3355,P18,195,80929,175250,175250,Carrera 52 Calle 52.,false,true,false,research_only
+3355,P18,204,80930,175251,175251,Glorieta PAN DE AZUCAR.,false,true,false,research_only
+3355,P18,205,81006,175251,175251,Glorieta PAN DE AZUCAR.,false,true,false,research_only
+3355,P18,226,81007,175245,175245,Carrera 50 Calle 53.,false,true,false,research_only
+3355,P18,233,81008,175244,175244,Carrera 50 Calle 54.,false,true,false,research_only
+3355,P18,244,81009,175135,175135,PIZZA RITMO.,false,true,false,research_only
+3355,P18,296,81010,175134,175134,Calle 56 Carrera 46 S-n.,false,true,false,research_only
+3355,P18,302,81011,175133,175133,Calle 62 Carrera 45.,false,true,false,research_only
+3355,P18,307,81012,175132,175132,Carrera 45 Calle 64.,false,true,false,research_only
+3355,P18,320,81013,175131,175131,"""Y"" entrada cementerio LAS COLINAS.",false,true,false,research_only
+3355,P18,338,81014,175130,175130,LA GRANJITA.,false,true,false,research_only
+3355,P18,349,81015,175129,175129,CACIQUE CONDOMINIO.,false,true,false,research_only
+3355,P18,358,81159,175469,175469,Barrio LA LIBERTAD.,false,true,false,research_only
+3355,P18,372,81160,172864,172864,Plaza Satélite S-n,false,true,false,research_only
+3355,P18,376,81161,171301,171301,Diagonal 105 Transversal 29,false,true,false,research_only
+3355,P18,386,81162,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3356,AN3,1,81189,175496,175496,BOSCONIA.,false,true,false,research_only
+3356,AN3,30,81190,175497,175497,Ferreteria CHUCHO.,false,true,false,research_only
+3356,AN3,54,81191,175498,175498,Carrera 34A Calle 16N,false,true,false,research_only
+3356,AN3,80,81192,175499,175499,Drogueria CIUDAD NORTE,false,true,false,research_only
+3356,AN3,101,81193,175500,175500,CAI LA ESPERANZA,false,true,false,research_only
+3356,AN3,122,81194,175501,175501,Carrera 26 Calle 8N,false,true,false,research_only
+3356,AN3,140,81195,175502,175502,Calle 1 Carrera 20,false,true,false,research_only
+3356,AN3,157,81196,151275,151275,Casetas el Bosque S-n,false,true,false,research_only
+3356,AN3,168,81197,151273,151273,Portal Norte,false,true,false,research_only
+3356,AN3,169,81357,151273,151273,Portal Norte,false,true,false,research_only
+3356,AN3,206,81358,175502,175502,Calle 1 Carrera 20,false,true,false,research_only
+3356,AN3,248,81359,175500,175500,CAI LA ESPERANZA,false,true,false,research_only
+3356,AN3,268,81360,175499,175499,Drogueria CIUDAD NORTE,false,true,false,research_only
+3356,AN3,307,81361,175498,175498,Carrera 34A Calle 16N,false,true,false,research_only
+3356,AN3,356,81362,175497,175497,Ferreteria CHUCHO.,false,true,false,research_only
+3356,AN3,421,81363,175496,175496,BOSCONIA.,false,true,false,research_only
+3357,P19,1,81610,172946,172946,Lote Estación Ferrocarril,false,true,false,research_only
+3357,P19,19,81633,173188,173188,Carrera 8b Calle 35 an,false,true,false,research_only
+3357,P19,32,81634,175909,175909,Colegio CAFE MADRID.,false,true,false,research_only
+3357,P19,37,81635,174697,174697,Carrera 8-B Calle 34-AN,false,true,false,research_only
+3357,P19,44,81636,174700,174700,Calle 34N Carrera 8C,false,true,false,research_only
+3357,P19,56,81637,174709,174709,Vía la cemento girón,false,true,false,research_only
+3357,P19,66,81638,175128,175128,Avenida Café Madrid Kra 10,false,true,false,research_only
+3357,P19,120,81752,176042,176042,Retorno las HAMACAS,false,true,false,research_only
+3357,P19,130,81753,176044,176044,LAS HAMACASC,false,true,false,research_only
+3357,P19,146,81754,176043,176043,Balconcitos del KENNEDY,false,true,false,research_only
+3357,P19,156,81755,176045,176045,Carrera 12 calle 21N,false,true,false,research_only
+3357,P19,163,81789,176079,176079,Plaza de Mercado KENNEDY,false,true,false,research_only
+3357,P19,186,81790,175503,175503,COLSEGUROS,false,true,false,research_only
+3357,P19,237,81791,151273,151273,Portal Norte,false,true,false,research_only
+3357,P19,262,81792,151274,151274,Ancianato Albeiro Vargas N-s,false,true,false,research_only
+3357,P19,297,81793,151276,151276,Carrera 15 Calle 3N San Rafael N-s,false,true,false,research_only
+3357,P19,311,81794,151277,151277,Parada la Virgen N-s,false,true,false,research_only
+3357,P19,323,81795,151279,151279,Carrera 15 calle 9 N-s,false,true,false,research_only
+3357,P19,331,81796,151283,151283,Carrera 15 Calle 13 N-s,false,true,false,research_only
+3357,P19,336,81797,151284,151284,Carrera 15 calle 16 N-s,false,true,false,research_only
+3357,P19,341,81798,151286,151286,Carrera 15 calle 19 N-s,false,true,false,research_only
+3357,P19,347,81799,151288,151288,Carrera 15 Calle 21 N-s,false,true,false,research_only
+3357,P19,368,81800,151155,151155,Estación Quebradaseca N-s,false,true,false,research_only
+3357,P19,375,81801,150948,150948,Estación San Mateo Ns,false,true,false,research_only
+3357,P19,380,81802,150949,150949,Estación Chorreras Ns,false,true,false,research_only
+3357,P19,393,81803,150950,150950,la Rosita Centro Comercial Ns,false,true,false,research_only
+3357,P19,402,81804,150951,150951,Diagonal 15 Avenida la Rosita,false,true,false,research_only
+3357,P19,414,81805,151158,151158,Diagonal 15 Calle 56 N-s,false,true,false,research_only
+3357,P19,419,81806,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3357,P19,435,81807,150954,150954,Antonia Santos N-s,false,true,false,research_only
+3357,P19,449,81808,150955,150955,Estación Diamante N-s,false,true,false,research_only
+3357,P19,473,81809,150863,150863,Estacion de Transferencia Provenza Occidental,false,true,false,research_only
+3357,P19,498,81810,150864,150864,Puente Peatonal  Payador N-s,false,true,false,research_only
+3357,P19,515,82151,176419,176419,VILLA ESPAÑA,false,true,false,research_only
+3357,P19,521,82152,176420,176420,PARQUE SAN AGUSTIN.,false,true,false,research_only
+3357,P19,552,82192,176460,176460,FOSCAL INTERNACIONAL FOSUNAB.,false,true,false,research_only
+3357,P19,567,82193,176422,176422,IROKA,false,true,false,research_only
+3357,P19,608,82194,166054,166054,Centro Comercial Parque Caracolí,false,true,false,research_only
+3357,P19,623,82195,150929,150929,Estación Cañaveral Vagón Norte s-n,false,true,false,research_only
+3357,P19,624,82266,150929,150929,Estación Cañaveral Vagón Norte s-n,false,true,false,research_only
+3357,P19,636,82267,150814,150814,Puente Peatonal  molinos S-n,false,true,false,research_only
+3357,P19,644,82268,150815,150815,Puente Peatonal Hormigueros S-n,false,true,false,research_only
+3357,P19,649,82269,150816,150816,Puente Peatonal  Payador S-n,false,true,false,research_only
+3357,P19,661,82270,150817,150817,Estacion de transferencia Provenza Oriental,false,true,false,research_only
+3357,P19,682,82271,150934,150934,Antonia Santos,false,true,false,research_only
+3357,P19,696,82272,150953,150953,Diagonal 15 Calle 60 N-s,false,true,false,research_only
+3357,P19,701,82273,151150,151150,Diagonal 15 calle 55 S-n,false,true,false,research_only
+3357,P19,714,82274,151001,151001,Puente Peatonal la Rosita S-n,false,true,false,research_only
+3357,P19,723,82275,151152,151152,Estación Chorreras S-n,false,true,false,research_only
+3357,P19,727,82276,151003,151003,Estacion San mateo S-n,false,true,false,research_only
+3357,P19,732,82277,151154,151154,Estación Quebradaseca S-n,false,true,false,research_only
+3357,P19,736,82278,151154,151154,Estación Quebradaseca S-n,false,true,false,research_only
+3357,P19,744,82279,151289,151289,Carrera 15 Calle 22 S-n,false,true,false,research_only
+3357,P19,748,82280,151287,151287,Carrera 15 Calle 18 S-n,false,true,false,research_only
+3357,P19,751,82281,151285,151285,Carrera 15 Calle 15 S-n,false,true,false,research_only
+3357,P19,754,82282,151282,151282,Carrera 15 Calle 11 S-n,false,true,false,research_only
+3357,P19,762,82283,151280,151280,Carrera 15 Calle 9 S-n,false,true,false,research_only
+3357,P19,770,82284,151278,151278,Carrera 15 Calle 4 S-n,false,true,false,research_only
+3357,P19,810,82285,151275,151275,Casetas el Bosque S-n,false,true,false,research_only
+3357,P19,820,82286,151273,151273,Portal Norte,false,true,false,research_only
+3357,P19,849,82287,176080,176080,Hospital del NORTE.,false,true,false,research_only
+3357,P19,861,82498,176740,176740,TEJAR NORTE.,false,true,false,research_only
+3357,P19,874,82499,176741,176741,Carrera 10 Calle 18N,false,true,false,research_only
+3357,P19,879,82500,176742,176742,Carrera 10 Calle 21.,false,true,false,research_only
+3357,P19,906,82501,176743,176743,VILLA ALEGRIA,false,true,false,research_only
+3357,P19,907,82550,176743,176743,VILLA ALEGRIA,false,true,false,research_only
+3357,P19,942,82551,172946,172946,Lote Estación Ferrocarril,false,true,false,research_only
